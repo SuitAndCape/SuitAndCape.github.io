@@ -1,0 +1,713 @@
+
+/***! HTML5 Responsive Normalplate
+   *    Custom Template by Ali Esmaili
+   *    v1.0.0
+   *    MIT License
+   *    http://SuitAndCape.github.io/
+   *    Code heavily borrowed from the following sources...
+   *! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/
+   *! normalize.css v3.0.2 | MIT License | git.io/normalize
+   *! Responsive.gs v3.0.0 | GPL & MIT | http://responsive.gs
+*–––––––––––––––––––––––––––––––––––––––––––––––––!*/
+
+/***! Statement of Purpose
+   *    To gain a deeper understanding of CSS3, HTML5, Sass, &
+   *    popular StyleSheet Templates
+*–––––––––––––––––––––––––––––––––––––––––––––––––!*/
+
+/**** BOX MODEL BROWSER COMPATIBILITY
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+/**** HTML5 DISPLAY
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+article, aside, details, figcaption, figure, footer, header,
+hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, img, progress, video {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+/**** BASE
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+body, button, html, input, select, textarea {
+  color: #333333;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  overflow-y: scroll;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-moz-selection {
+  background: #5B5BDF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #5B5BDF;
+  text-shadow: none;
+}
+
+/**** TYPOGRAPHY
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+abbr[title] {
+  border-bottom: 0.0625em dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+blockquote {
+  margin: 1em 2.5em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0.1em 0;
+  /*margin: 0.4em 0;*/
+}
+
+h1 {
+  font-size: 2em;
+  /*margin: 0.67em 0;*/
+}
+
+h2 {
+  font-size: 1.50em;
+  /*margin: 0.83em 0;*/
+}
+
+h3 {
+  font-size: 1.17em;
+  /*margin: 1em 0;*/
+}
+
+h4 {
+  font-size: 1em;
+  /*margin: 1.33em 0;*/
+}
+
+h5 {
+  font-size: 0.83em;
+  /*margin: 1.67em 0;*/
+}
+
+h6 {
+  font-size: 0.67em;
+  /*margin: 2.33em 0;*/
+}
+
+mark {
+  background: #FFFF00;
+  color: #000000;
+}
+
+p, pre {
+  margin: 1em 0;
+}
+
+small {
+  font-size: 0.80em;
+}
+
+sub, sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub{
+  bottom: -0.25em;
+}
+
+sup{
+  top: -0.5em;
+}
+
+/**** ADJUSTMENTS
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+fieldset {
+  border: 0.0625em solid #080860;
+  margin: 0 0.125em;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+figure {
+  margin: 1em 2.5em;
+}
+
+form {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 0.0625em solid #CCCCCC;
+  display: block;
+  height: 0.0625em;
+  margin: 1em 0;
+  padding: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+/**** LINKS
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+a:active, a:hover {
+  outline: 0;
+}
+
+a:active, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/**** LISTS
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+dd {
+  margin: 0 0 0 40px;
+}
+
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+menu, ol, ul {
+  padding: 0;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+ol, ul {
+  border: 0;
+  font-size: 1em;
+  font: inherit;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+/**** TABLES
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/**** EMBEDDED CONTENT
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**** FORMS
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+button, html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow:visible;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/**** GRID
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.column:after, .container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.row {
+  padding-bottom: 0em;
+}
+
+@media (min-width : 768px) {
+/*  COLUMN LEGIBILITY SPACER  */
+  .rift .column {
+    margin-left: 2%;
+  }
+
+  .rift .column:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (min-width : 768px) {
+/*  COLUMN WIDTH FOR DISPLAYS +768px  */
+  .extent_01 {
+    width: 8.33333333333%;
+  }
+
+  .extent_02 {
+    width: 16.6666666667%;
+  }
+
+  .extent_03 {
+    width: 25%;
+  }
+
+  .extent_04 {
+    width: 33.3333333333%;
+  }
+
+  .extent_05 {
+    width: 41.6666666667%;
+  }
+
+  .extent_06 {
+    width: 50%;
+  }
+
+  .extent_07 {
+    width: 58.3333333333%;
+  }
+
+  .extent_08 {
+    width: 66.6666666667%;
+  }
+
+  .extent_09 {
+    width: 75%;
+  }
+
+  .extent_10 {
+    width: 83.3333333333%;
+  }
+
+  .extent_11 {
+    width: 91.6666666667%;
+  }
+
+  .extent_12 {
+    width: 100%;
+  }
+
+  .rift .extent_01 {
+    width: 6.5%;
+  }
+
+  .rift .extent_02 {
+    width: 15.0%;
+  }
+
+  .rift .extent_03 {
+    width: 23.5%;
+  }
+
+  .rift .extent_04 {
+    width: 32.0%;
+  }
+
+  .rift .extent_05 {
+    width: 40.5%;
+  }
+
+  .rift .extent_06 {
+    width: 49.0%;
+  }
+
+  .rift .extent_07 {
+    width: 57.5%;
+  }
+
+  .rift .extent_08 {
+    width: 66.0%;
+  }
+
+  .rift .extent_09 {
+    width: 74.5%;
+  }
+
+  .rift .extent_10 {
+    width: 83.0%;
+  }
+
+  .rift .extent_11 {
+    width: 91.5%;
+  }
+
+  .rift .extent_12 {
+    width: 100%;
+  }
+}
+
+/**** MEDIA QUERIES
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+@media only screen and (min-width: 35em) {
+/*  ADJUSTMENTS FOR VIEWPORTS THAT MEET THE CONDITION  */
+}
+
+@media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+/*  ADJUSTMENTS FOR HI-REZ DEVICES  */
+}
+
+/**** HELPERS
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0.0625em;
+  margin: -0.0625em;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.0625em;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/**** PRINT STYLES
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@media print {
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  img, tr {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/**** PRIMARY
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.container {
+  max-width: 37.5em;
+  margin: 0 auto;
+}
+
+.display_block {
+  display: block;
+}
+
+.display_inline {
+  display: inline;
+}
+
+.list-bullets_none {
+  list-style-type: none;
+}
+
+.main_font {
+  font-family: "Hoefler Text", Baskerville, Prata, Garamond,
+  "Baskerville Old Face", "Times New Roman", serif;
+}
+
+.margin-ends_large {
+  margin: 2.5em 0;
+}
+
+.margin-caps_small {
+  margin: 0.75em 0;
+}
+
+.margin-sides_large {
+  margin: 0 2.5em;
+}
+
+.margin-sides_small {
+  margin: 0 0.75em;
+}
+
+.padding-around_small {
+  padding: 0.75em;
+}
+
+.text-align_center {
+  text-align: center;
+}
+
+.text-align_right {
+  text-align: right;
+}
+
+.text-color_cool {
+  color: #235E96;
+}
+
+.text-color_soft {
+  color: #BFCCD4;
+}
+
+.text-color_warm {
+  color: #A33C36;
+}
+
+.text-size_large {
+  font-size: 5.0em
+}
+
+.text-size_medium {
+  font-size: 1.8em;
+}
+
+.text-size_small {
+  font-size: 1.2em;
+}
+
+/**** HEADER
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/**/
+
+/**** MAIN
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/**/
+
+/**** ASIDE
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/**/
+
+/**** FOOTER
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/**/
+
+/**** SAD BROWSER
+*––––––––––––––––––––––––––––––––––––––––––––––––––*/
+#sadbrowser {
+  margin: 0.2em 0;
+  background: #CCCCCC;
+  color: #000000;
+  padding: 0.2em 0;
+}
+
