@@ -693,22 +693,16 @@ optgroup {
 }
 
 @media (max-width: 330px) {
-  .header_one {
-    font-size: 4em;
-  }
   .headshot {
     width: 4.6875em;
   }
 }
 
-/*@media (max-width: 640px) {
+@media (max-width: 380px) {
   .header_one {
     font-size: 4em;
   }
-  .headshot {
-    width: 4.6875em;
-  }
-}*/
+}
 
 
 /**** MAIN
