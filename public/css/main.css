@@ -207,6 +207,15 @@ hr {
   box-sizing: content-box;
 }
 
+p {
+  font-size: 1.15em;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 3px;
+  -webkit-margin-end: 0px;
+}
+
 pre {
   overflow: auto;
   white-space: pre;
@@ -222,6 +231,10 @@ textarea {
 
 /**** LINKS
 *============================================================*/
+a {
+  cursor: default;
+}
+
 a:active, a:hover {
   outline: 0;
 }
@@ -231,14 +244,11 @@ a:active, a:link, a:visited {
 }
 
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 
 a:hover {
-  background: #0099CC;
-  color: #FFFFFF;
-  border: 2px solid #0099CC;
-  border-radius: 0.3em;
+  text-decoration: none;
 }
 
 /**** LISTS
@@ -383,7 +393,7 @@ optgroup {
   padding-bottom: 0em;
 }
 
-@media (min-width : 768px) {
+@media screen and (min-width : 768px) {
 /*  COLUMN LEGIBILITY SPACER  */
   .rift .column {
     margin-left: 2%;
@@ -394,7 +404,7 @@ optgroup {
   }
 }
 
-@media (min-width : 768px) {
+@media screen and (min-width : 768px) {
 /*  COLUMN WIDTH FOR DISPLAYS +768px  */
   .extent_01 {
     width: 8.33333333333%;
@@ -684,37 +694,6 @@ optgroup {
   font-size: 1.2em;
 }
 
-/**** HEADER
-*============================================================*/
-.headshot {
-  border-radius: 6.25em;
-  transition: 500ms linear0s;
-  width: 8em;
-}
-
-@media (max-width: 330px) {
-  .headshot {
-    width: 4.6875em;
-  }
-}
-
-@media (max-width: 380px) {
-  .header_one {
-    font-size: 4em;
-  }
-}
-
-
-/**** MAIN
-*============================================================*/
-
-/**/
-
-/**** FOOTER
-*============================================================*/
-
-/**/
-
 /**** SAD BROWSER
 *============================================================*/
 #sadbrowser {
@@ -722,4 +701,147 @@ optgroup {
   background: #CCCCCC;
   color: #000000;
   padding: 0.2em 0;
+}
+
+/**** HEADER
+*============================================================*/
+.profile_photo {
+  border-radius: 6.25em;
+  transition: 0.3s linear 0s;
+  width: 8em;
+}
+
+.way_home, .way_home:hover {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 330px) {
+  .profile_photo {
+    width: 4.6875em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header_one {
+    font-size: 4em;
+  }
+}
+
+/**** MAIN
+*============================================================*/
+a .icons {
+  cursor: pointer;
+}
+
+.content_list a:hover {
+  background: #0099CC;
+  color: #FFFFFF;
+  border: 2px solid #0099CC;
+  border-radius: 0.3em;
+  text-decoration: none;
+}
+
+.icons {
+  margin: 0 2.5%;
+  height: 2em;
+  width: 2em;
+}
+
+/**** FOOTER
+*============================================================*/
+
+/**/
+
+/**** GEL
+*============================================================*/
+.gel {
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+}
+
+.gel_box {
+}
+
+.gel_screen_close {
+  background: url(../images/icons/X_white-58x58.png) no-repeat center center;
+  /*border: 2px solid #000000;*/
+  border: none;
+  border-radius: 0.3em;
+  color: transparent;
+  display: inline-block;
+  height: 2.3em;
+  width: 2.3em;
+  overflow: auto;
+  outline: none;
+  z-index: 100;
+}
+
+.gel_title {
+  display: block;
+  font-weight: 500;
+  padding: 1em;
+  color: #FFFFFF;
+  background: #00394C;
+  margin: 5% auto 0;
+  overflow: hidden;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.gel_content {
+  margin: 0 auto;
+  padding: 1em;
+  background: #0099CC;
+  overflow: hidden;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.gel_screen {
+    visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.gel_screen.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+#gel_trigger {
+  cursor: default;
+}
+
+
+@media screen and (max-width: 544px) {
+  .gel {
+    font-size: 80%;
+  }
+  .gel .gel_screen_close {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.65);
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .gel_title, .gel_content {
+    max-width: 320px;
+    min-width: 320px;
+  }
 }

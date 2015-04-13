@@ -22,43 +22,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Ali Esmaili | Web Developer | v1.0</title>
     <meta name="author" content="Ali Esmaili">
-    <link rel="author" type="text/plain" href="humans.txt" />
-    <meta name="keywords" content="Ruby, JavaScript, Rails,
-    Ruby on Rails, Sinatra, HTML, HTML5, CSS, CSS3, Sass, Haml,
-    AJAX, jQuery, AngularJS, Angular, SQL, PostgreSQL, Ionic,
-    Ionic Mobile Framework, React, React.js, Git, GitHub, Rad,
-    Web Developer, Web Development, Web Design, Design,
-    Portfolio, Object-Oriented, OOP, Model View Controller,
-    MVC, REST, RESTful Routing, Agile, Version Control,
-    Mobile First Design, Pair Programming, User Experience,
-    UX, User Interface, UI, Minimum Viable Product, MVP,
-    Responsive Web Design, Test-Driven Development, TDD,
-    Behavior-Driven Development, BDD, User Experience Workflow,
-    UX Workflow, Wireframing, Whiteboarding, CCNA, Networking,
-    Suit & Cape, Suit&Cape, Suit and Cape, SuitAndCape, AESM,
-    Al E, Ali Esmaili, Full-Stack, Front-End, Back-End, Bay,
-    Bay Area, California, CA, South Bay, East Bay, North Bay,
-    Campbell, San Jose, SJ, San Francisco, SF">
+    <link rel="author" type="text/plain" href="humans.txt">
+    <meta name="keywords" content="Ruby, JavaScript, Rails, HTML, CSS, Sass, Haml, AJAX, jQuery, Angular, SQL, PostgreSQL, Ionic, React, Web Developer, Web Development, Web Design, Portfolio, Mobile First Design, User Experience, UX, User Interface, UI, Responsive Web Design, Test-Driven Development, Behavior-Driven Development, CCNA, Networking, SuitAndCape, AESM, Al E, Ali Esmaili, Full-Stack, Front-End, Back-End, California, CA, Bay Area, San Jose, SJ, San Francisco, SF">
     <meta name="description" content="Ali Esmaili is a web
-    developer, UI designer, Ruby & JavaScript enthusiast, with
-    a passion for dancing like an Autobot possessed.">
+    developer, UI designer, Ruby and JavaScript enthusiast,
+    with a passion for dancing like an Autobot possessed.">
     <meta name="theme-color" content="#FFFFFF">
 
 <!--= MOBILE SPECIFIC METAS
 ============================================================-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <!--= FONTS
 ============================================================-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prata">
 
-<!--= STYLE SHEETS
+<!--= STYLE RESOURCES
 ============================================================-->
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
+    <script type="text/javascript" src="public/js/modernizr.custom.overlay.js"></script>
 
-<!--= FAVICON
+<!--= TOOLBAR FAVICON
 ============================================================-->
-    <link rel="icon" type="image/png" href="public/images/favicon.png">
+    <link rel="icon" type="image/png" href="public/images/favicons/toolbar-16x16.png">
   </head>
 
 <!--= PRIMARY PAGE LAYOUT
@@ -70,10 +56,11 @@
 
     <div class="row" id="container">
       <header role="banner" class="margin-caps_large row text-align_center">
-        <!-- <a href="index.html"></a> -->
-        <img class="headshot" src="public/images/SuitAndCape_Headshot.jpg">
+        <a href="index.html" class="way_home">
+          <img src="public/images/SuitAndCape_Headshot.jpg" alt="Photograph of Ali Esmaili" class="profile_photo" >
 
-        <h1 class="column extent_12 header_one main_font text-size_large">Ali Esmaili</h1>
+          <h1 class="column extent_12 header_one main_font text-size_large">Ali Esmaili</h1>
+        </a>
 
         <span class="display_block main_font rift row text-color_cool text-size_small">
           <span class="column extent_04">Developer.</span>
@@ -84,31 +71,44 @@
 
       <main role="main" class="row">
         <article class="column extent_12">
-          <h2 class="main_font text-align_center text-size_medium">Say Hi!</h2>
+          <h2 class="main_font text-align_center text-size_medium">More Things:</h2>
 
-          <ul class="list-bullets_none rift row text-align_center">
-            <li class="column extent_02">
-              <a class="main_font text-color_cool text-size_small" href="~URL~">about</a>
+          <ul class="content_list list-bullets_none rift row text-align_center">
+            <li class="column extent_03">
+              <a id="gel_trigger" class="main_font text-color_cool text-size_small">about</a>
+              <!-- <a href="about.html" class="main_font text-color_cool text-size_small">about</a> -->
             </li>
-            <li class="column extent_02">
-              <a class="main_font text-color_cool text-size_small" href="mailto:AESM85@gmail.com">email</a>
+            <li class="column extent_03">
+              <a href="projects.html" class="main_font text-color_cool text-size_small">projects</a>
             </li>
-            <li class="column extent_02">
-              <a class="main_font text-color_cool text-size_small" href="http://twitter.com/SuitAndCape" target="_blank">twitter</a>
-            </li>
-            <li class="column extent_02">
-              <a class="main_font text-color_cool text-size_small" href="http://www.linkedin.com/in/SuitAndCape" target="_blank">linkedin</a>
-            </li>
-            <li class="column extent_02">
-              <a class="main_font text-color_cool text-size_small" href="http://github.com/AESM" target="_blank">github</a>
-            </li>
-            <li class="column extent_02">
+            <li class="column extent_03">
               <a href="public/resume/Ali_Esmaili-Resume.pdf"  target="_blank" class="main_font text-color_cool text-size_small">résumé</a>
+            </li>
+            <li class="column extent_03">
+              <a href="mailto:AESM85@gmail.com" class="main_font text-color_cool text-size_small">email</a>
+            </li>
+          </ul>
+
+          <ul class="list-bullets_none row text-align_center">
+            <li class="column extent_12">
+              <a href="http://www.linkedin.com/in/SuitAndCape" target="_blank" class="main_font text-color_cool text-size_small">
+                <img src="public/images/icons/linkedin_plain-256x256.png" alt="linkedin" class="icons">
+              </a>
+<!--             </li>
+            <li class="column extent_04"> -->
+              <a href="http://www.github.com/AESM" target="_blank" class="main_font text-color_cool text-size_small">
+                <img src="public/images/icons/github_plain-256x256.png" alt="github" class="icons">
+              </a>
+<!--             </li>
+            <li class="column extent_04"> -->
+              <a href="http://www.twitter.com/SuitAndCape" target="_blank" class="main_font text-color_cool text-size_small">
+                <img src="public/images/icons/twitter_plain-256x256.png" alt="twitter" class="icons">
+              </a>
             </li>
           </ul>
         </article>
 
-        <aside role="complimentary" class="column extent_04">
+        <aside role="complementary" class="column extent_04">
           <!-- Secondary Content -->
         </aside>
       </main>
@@ -118,10 +118,26 @@
           <a href="URL">&copy; Ali-Bo-Bally</a>
         </small> -->
       </footer>
+    </div> <!-- /container -->
+
+    <div class="gel gel_screen">
+      <div class="gel_box">
+        <h1 class="gel_title main_font">About</h1>
+        <div class="gel_content">
+          <p class="main_font">I'm a full-stack web developer who loves to make beautiful, thoughtful, and meaningful things; both digital and physical.
+          <br><br>
+          I have always been driven by playful curiosity.  I build, I tinker, I research, I embrace confusion challenges present, allowing me to solve problems I have never encountered before and to understand the underlying "why."
+          <br><br>
+          My favorite technologies and frameworks at the moment are Ruby, Rails, JavaScript, Angular, jQuery, and Ionic.</p>
+          <button type="button" class="gel_screen_close"></button>
+        </div>
+      </div>
     </div>
 
 <!--= SCRIPTS
 ============================================================-->
+    <script type="text/javascript" src="public/js/classie.js"></script>
+    <script type="text/javascript" src="public/js/gelscript.js"></script>
     <script type="text/javascript" src="public/js/main.js"></script>
 
 <!--= GOOGLE ANALYTICS

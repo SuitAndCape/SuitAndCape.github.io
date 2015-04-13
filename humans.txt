@@ -15,7 +15,7 @@
 
 /**** SITE
 *============================================================*/
-  Last update: 2015/04/05
+  Last update: 2015/04/13
   Language: English
   Doctype: HTML5
   IDE: Sublime Text, Illustrator, Photoshop
