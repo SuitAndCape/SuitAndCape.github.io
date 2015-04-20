@@ -1,6 +1,7 @@
+humans.txt
 
 !++++ AUTHOR
-+============================================================+!
++=======================================================================+!
     Developer & Designer: Ali Esmaili
     Email: AESM85@gmail.com
     LinkedIn: https://www.linkedin.com/in/SuitAndCape
@@ -10,9 +11,9 @@
     Location: Bay Area
 
 !++++ THANKS
-+============================================================+!
++=======================================================================+!
 
-  !+ PHOTO TEAM +!
+  !+===== PHOTO TEAM =====+!
     Photographer, Director: Bekka Bjorke
     Email: bjorkephoto@gmail.com
     LinkedIn: https://www.linkedin.com/in/bekka
@@ -34,8 +35,8 @@
     Location: Bay Area
 
 !++++ SITE
-+============================================================+!
-    Last update: 2015/04/17
++=======================================================================+!
+    Last update: 2015/04/19
     Language: English
     Doctype: HTML5
     IDE: Sublime Text, Illustrator, Photoshop
