@@ -65,21 +65,21 @@ STORIES, MVP, & PSEUDOCODE
 
 ###Pseudocode
 ######TECHNOLOGIES:
-- HTML5
-- CSS3
-  - Animations
-  - Transitions
+- Structure
+  - HTML5
+- Styling, Animations, and Transitions
+  - CSS3
 - Compiler
   - Sass
-- JavaScript
+- Behavior
+  - JavaScript
   - jQuery
-  - (?!) AJAX (!?)
+  - AJAX
   - requireJS
   - (?!) underscore.js (!?)
   - (?!) Modernizr (!?)
-- Single-Page Website Markup
-  - (?!) Handlebars.js (!?)
-  - (?!) Haml (!?)
+- Semantic Web Template System
+  - Handlebars.js
 
 ######PROCESS:
 - Whiteboard goals
