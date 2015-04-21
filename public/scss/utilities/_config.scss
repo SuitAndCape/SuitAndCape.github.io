@@ -1,0 +1,102 @@
+/*_config.scss*/
+
+/**** FONT STACKS
+*=======================================================================*/
+$font-url--google       : "http://fonts.googleapis.com/css?family=Prata";
+
+$font-family--primary   : "Hoefler Text", Baskerville, Prata, Garamond,
+  "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--secondary : Baskerville, Prata, Garamond,
+  "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+
+/**** FONT WEIGHTS
+*=======================================================================*/
+/*
+$font-weight--thin        : 100;
+$font-weight--ultra-light : 200;
+$font-weight--light       : 300;
+$font-weight--normal      : 400;
+$font-weight--medium      : 500;
+$font-weight--demi-bold   : 600;
+$font-weight--bold        : 700;
+$font-weight--ultra-bold  : 800;
+$font-weight--heavy       : 900;
+*/
+
+/**** DESCRIPTIVE BASE COLORS
+*=======================================================================*/
+$black          : #0B0B0B;
+$grey           : #797E83;
+$white          : #FFFFFF;
+
+$prussian-blue  : #003153;
+$pacific-blue   : #009DC4;
+$ebony-clay     : #222F40;
+$jungle-green   : #29AB87;
+$st-tropaz      : #2D569B;
+$scooter        : #2EBFD4;
+$tuna           : #31353F;
+$meteorite      : #3C1F76;
+$steel-blue     : #4682B4;
+$havelock-blue  : #5590D9;
+$fountain-blue  : #56B4BE;
+$emerald        : #5ECE7F;
+$purple-majesty : #9678B6;
+$stiletto       : #9C3336;
+$heather        : #B7C3D0;
+$sunglo         : #E16865;
+$porcelain      : #EFF2F3;
+$coral          : #FF7F50;
+
+/**** COLOR USAGE
+*=======================================================================*/
+$color-primary   : $pacific-blue;
+$color-secondary : $prussian-blue;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+/**** COLOR PALETTE MODIFIERS
+*=======================================================================*/
+
+  /**/
+
+/**** UI-COLORS
+*=======================================================================*/
+$ui-colors: (
+  default    : $pacific-blue,
+  success    : $jungle-green,
+  error      : $sunglo,
+  warning    : $coral,
+  info       : $meteorite,
+  background : $ebony-clay
+);
+
+/**** TEXT
+*=======================================================================*/
+
+  /**/
+
+/**** BORDER RADIUS
+*=======================================================================*/
+
+  /**/
+
+/**** TRANSITIONS
+*=======================================================================*/
+
+  /**/
+
+/**** PATH TO ASSETS
+*=======================================================================*/
+
+  /**/
+
+/**** GRID VARIABLES
+*=======================================================================*/
+
+  /**/
+
+/**** MEDIA QUERY BREAKPOINTS
+*=======================================================================*/
+
+  /**/

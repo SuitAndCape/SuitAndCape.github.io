@@ -1,6 +1,6 @@
 /*design_tests.css*/
 
-/**** LAYOUT
+/**** MODULES
 *=======================================================================*/
 .design_test {
   background-color: #B202B2;
@@ -16,8 +16,6 @@
   text-decoration: none;
 }
 
-/**** MODULES
-*=======================================================================*/
 .test_button {
   display: inline-block;
   background-color: #CBCACA;
