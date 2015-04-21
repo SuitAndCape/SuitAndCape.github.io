@@ -1,0 +1,46 @@
+/*_helpers.scss*/
+
+/**** CLEARFIX PLACEHOLDER
+*=======================================================================*/
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/**** SCREEN READER TEXT
+*=======================================================================*/
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+/**** CENTER ALIGNMENT
+*=======================================================================*/
+%center-align {
+  text-align: center;
+}
+
+/**** PSEUDO-ELEMENTS
+*=======================================================================*/
+%pseudos {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+/**** CENTER ALIGNMENT
+*=======================================================================*/
+.centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -2,11 +2,10 @@
 
 /**** FONT STACKS
 *=======================================================================*/
-$font-url--google       : "http://fonts.googleapis.com/css?family=Prata";
-
-$font-family--primary   : "Hoefler Text", Baskerville, Prata, Garamond,
+$font-url--google         : "http://fonts.googleapis.com/css?family=Prata";
+$font-family--primary     : "Hoefler Text", Baskerville, Prata, Garamond,
   "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--secondary : Baskerville, Prata, Garamond,
+$font-family--secondary   : Baskerville, Prata, Garamond,
   "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
 /**** FONT WEIGHTS
@@ -25,78 +24,100 @@ $font-weight--heavy       : 900;
 
 /**** DESCRIPTIVE BASE COLORS
 *=======================================================================*/
-$black          : #0B0B0B;
-$grey           : #797E83;
-$white          : #FFFFFF;
+$black                    : #0B0B0B;
+$grey                     : #797E83;
+$white                    : #FFFFFF;
 
-$prussian-blue  : #003153;
-$pacific-blue   : #009DC4;
-$ebony-clay     : #222F40;
-$jungle-green   : #29AB87;
-$st-tropaz      : #2D569B;
-$scooter        : #2EBFD4;
-$tuna           : #31353F;
-$meteorite      : #3C1F76;
-$steel-blue     : #4682B4;
-$havelock-blue  : #5590D9;
-$fountain-blue  : #56B4BE;
-$emerald        : #5ECE7F;
-$purple-majesty : #9678B6;
-$stiletto       : #9C3336;
-$heather        : #B7C3D0;
-$sunglo         : #E16865;
-$porcelain      : #EFF2F3;
-$coral          : #FF7F50;
+$prussian-blue            : #003153;
+$pacific-blue             : #009DC4;
+$ebony-clay               : #222F40;
+$jungle-green             : #29AB87;
+$st-tropaz                : #2D569B;
+$scooter                  : #2EBFD4;
+$tuna                     : #31353F;
+$meteorite                : #3C1F76;
+$steel-blue               : #4682B4;
+$havelock-blue            : #5590D9;
+$fountain-blue            : #56B4BE;
+$emerald                  : #5ECE7F;
+$purple-majesty           : #9678B6;
+$stiletto                 : #9C3336;
+$heather                  : #B7C3D0;
+$sunglo                   : #E16865;
+$porcelain                : #EFF2F3;
+$coral                    : #FF7F50;
 
 /**** COLOR USAGE
 *=======================================================================*/
-$color-primary   : $pacific-blue;
-$color-secondary : $prussian-blue;
-$color-accent    : $emerald;
-$color-shadow    : rgba($black, .2);
+$color-primary            : $pacific-blue;
+$color-secondary          : $prussian-blue;
+$color-accent             : $emerald;
+$color-shadow             : rgba($black, .2);
 
 /**** COLOR PALETTE MODIFIERS
 *=======================================================================*/
-
-  /**/
+$color-palettes: (
+  grey: (
+    xx-light              : lighten($grey, 43%),
+    x-light               : lighten($grey, 35%),
+    light                 : lighten($grey, 12%),
+    base                  : $grey,
+    dark                  : darken($grey, 8%),
+    x-dark                : darken($grey, 16%)
+  ),
+  black: (
+    light                 : lighten($black, 10%),
+    base                  : $black,
+    dark                  : darken($black, 10%)
+  )
+);
 
 /**** UI-COLORS
 *=======================================================================*/
 $ui-colors: (
-  default    : $pacific-blue,
-  success    : $jungle-green,
-  error      : $sunglo,
-  warning    : $coral,
-  info       : $meteorite,
-  background : $ebony-clay
+  default                 : $pacific-blue,
+  success                 : $jungle-green,
+  error                   : $sunglo,
+  warning                 : $coral,
+  info                    : $meteorite,
+  background              : $ebony-clay
 );
 
 /**** TEXT
 *=======================================================================*/
-
-  /**/
+$base__font-size          : 16px;
+$base__line               : 24px;
+$letter-space             : 1px;
 
 /**** BORDER RADIUS
 *=======================================================================*/
-
-  /**/
+$br--default              : .4rem;
+$br--round                : 50%;
 
 /**** TRANSITIONS
 *=======================================================================*/
-
-  /**/
+$trns-duration            : .3s;
 
 /**** PATH TO ASSETS
 *=======================================================================*/
-
-  /**/
+$path--rel                : "../images";
 
 /**** GRID VARIABLES
 *=======================================================================*/
-
-  /**/
+$g-col-width              : 65px;
+$g-gutter-width           : 20px;
+$g-col-count              : 12;
+$g-cont-max-w             : 1050px;
 
 /**** MEDIA QUERY BREAKPOINTS
 *=======================================================================*/
-
-  /**/
+$brkpoint-sm              : 1px;
+$brkpoint-md              : 768px;
+$brkpoint-lg              : 1100px;
+/*
+$brkpoint-xs              : "(max-width: 480px)";
+$brkpoint-sm              : "(max-width: 736px)";
+$brkpoint-md              : "(max-width: 980px)";
+$brkpoint-lg              : "(max-width: 1280px)";
+$brkpoint-xl              : "(max-width: 1680px)";
+*/
