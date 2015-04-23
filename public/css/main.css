@@ -624,14 +624,14 @@ footer {
 
 /*===== Import design tests =====*/
 /*design_tests.scss*/
-/**** DESIGN TESTS
+/**** DESIGN TEST BUTTONS
 *=======================================================================*/
 .design_test {
   background-color: #B202B2;
-  border: 0.125rem solid #000033;
-  border-radius: 0.625rem;
-  margin: 1.47rem 0 2rem;
-  max-width: 40.4rem; }
+  border: 2px solid #000033;
+  border-radius: 10px;
+  margin: 23.52px 0 32px;
+  max-width: 710px; }
   .design_test a {
     color: #E80000;
     font-weight: 600;
@@ -640,12 +640,12 @@ footer {
 .test_button {
   display: inline-block;
   background-color: #CBCACA;
-  border: 0.0625rem solid #000066;
-  border-radius: 0.625rem;
-  padding: 1rem 1.125rem;
-  margin: 1rem; }
+  border: 1px solid #000066;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 16px; }
 
-/*===== State =====*/
+/*===== Hover state =====*/
 .design_test a:hover {
   background-color: #4F4F4F;
   color: #31157A; }
@@ -855,6 +855,42 @@ h2, .headline-secondary, .headline-secondary--grouped {
 /*_index.scss*/
 /**** STATES MANIFEST
 *=======================================================================*/
+/*===== Import collapsed states =====*/
+/*_collapsed.scss*/
+/**** COLLAPSED STATES
+*=======================================================================*/
+/*===== Import collapsed states =====*/
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-collapsed-mobile {
+    visibility: collapse;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0; } }
+
+/*===== Import grid-display states =====*/
+/*_grid-display.scss*/
+/**** GRID DISPLAY STATES
+*=======================================================================*/
+/*===== Mobile display =====*/
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-displayed-mobile {
+    display: block; }
+    .is-hidden-mobile {
+      display: none; } }
+@media (min-width: 769px) {
+  .is-displayed-mobile {
+    display: none; } }
+
+/*===== Import design test button states =====*/
+/*design_tests.scss*/
+/**** DESIGN TEST BUTTON STATES
+*=======================================================================*/
+/*===== Hover state =====*/
+.design_test a:hover {
+  background-color: #4F4F4F;
+  color: #31157A; }
+
 /*===== Import themes =====*/
 /*_index.scss*/
 /**** STATES THEMES
