@@ -1,0 +1,82 @@
+/*_extends.scss*/
+
+/**** PLACEHOLDER SELECTORS
+*=======================================================================*/
+/*===== Buttons =====*/
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : rem(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+/*===== Headlines =====*/
+%hdln-prim {
+  color: palette(grey, x-dark);
+  font-weight: $font-weight--light;
+  font-size: rem(42px);
+  line-height: (46px / 42px);
+  margin-top: 0;
+}
+%hdln-sec {
+  color: palette(grey, light);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--thin;
+  font-size: rem(24px);
+  font-family: $font-family--secondary;
+}
+
+/*===== Icons =====*/
+%icn--ui {
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*===== Navigation items =====*/
+%nav-item-horz {
+  @include mq(medium) {
+    display: inline-block;
+    margin: 0 rem(12px);
+  }
+}
+
+%nav-item-link {
+  font-weight: $font-weight--light;
+  text-align: center;
+  font-size: rem(18px);
+  display: block;
+  padding: rem(8px, 18px);
+  border-bottom: 1px solid transparent;
+  @include mq(small) {
+    border-bottom-color: palette(grey, xx-light);
+    padding-top: rem(14px, 18px);
+    padding-bottom: rem(14px, 18px);
+  }
+}
+
+%nav-item-on {
+  color: palette(black);
+  border-color: $color-primary;
+}
+
+/*===== Menu link =====*/
+%menu-link {
+  display: block;
+  padding-top: em(16px);
+  padding-bottom: rem(16px);
+  color: $white;
+  text-align: center;
+  text-shadow: 0 1px $color-shadow;
+  font-size: rem(18px);
+}

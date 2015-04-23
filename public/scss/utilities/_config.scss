@@ -1,16 +1,15 @@
 /*_config.scss*/
 
-/**** FONT STACKS
+/**** GLOBAL CONFIGURATION
 *=======================================================================*/
+/*===== Font stacks =====*/
 $font-url--google         : "http://fonts.googleapis.com/css?family=Prata";
 $font-family--primary     : "Hoefler Text", Baskerville, Prata, Garamond,
   "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 $font-family--secondary   : Baskerville, Prata, Garamond,
   "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
-/**** FONT WEIGHTS
-*=======================================================================*/
-/*
+/*===== Font weights =====*/
 $font-weight--thin        : 100;
 $font-weight--ultra-light : 200;
 $font-weight--light       : 300;
@@ -20,10 +19,8 @@ $font-weight--demi-bold   : 600;
 $font-weight--bold        : 700;
 $font-weight--ultra-bold  : 800;
 $font-weight--heavy       : 900;
-*/
 
-/**** DESCRIPTIVE BASE COLORS
-*=======================================================================*/
+/*===== Descriptive base colors =====*/
 $black                    : #0B0B0B;
 $grey                     : #797E83;
 $white                    : #FFFFFF;
@@ -47,15 +44,13 @@ $sunglo                   : #E16865;
 $porcelain                : #EFF2F3;
 $coral                    : #FF7F50;
 
-/**** COLOR USAGE
-*=======================================================================*/
+/*===== Color usage =====*/
 $color-primary            : $pacific-blue;
 $color-secondary          : $prussian-blue;
 $color-accent             : $emerald;
 $color-shadow             : rgba($black, .2);
 
-/**** COLOR PALETTE MODIFIERS
-*=======================================================================*/
+/*===== Color palette modifiers map =====*/
 $color-palettes: (
   grey: (
     xx-light              : lighten($grey, 43%),
@@ -72,8 +67,7 @@ $color-palettes: (
   )
 );
 
-/**** UI-COLORS
-*=======================================================================*/
+/*===== User interface colors map =====*/
 $ui-colors: (
   default                 : $pacific-blue,
   success                 : $jungle-green,
@@ -83,34 +77,28 @@ $ui-colors: (
   background              : $ebony-clay
 );
 
-/**** TEXT
-*=======================================================================*/
+/*===== Text =====*/
 $base__font-size          : 16px;
 $base__line               : 24px;
 $letter-space             : 1px;
 
-/**** BORDER RADIUS
-*=======================================================================*/
+/*===== Border radius =====*/
 $br--default              : .4rem;
 $br--round                : 50%;
 
-/**** TRANSITIONS
-*=======================================================================*/
+/*===== Transitions =====*/
 $trns-duration            : .3s;
 
-/**** PATH TO ASSETS
-*=======================================================================*/
+/*===== Path to assets =====*/
 $path--rel                : "../images";
 
-/**** GRID VARIABLES
-*=======================================================================*/
+/*===== Grid variables =====*/
 $g-col-width              : 65px;
 $g-gutter-width           : 20px;
 $g-col-count              : 12;
 $g-cont-max-w             : 1050px;
 
-/**** MEDIA QUERY BREAKPOINTS
-*=======================================================================*/
+/*===== Media query breakpoints =====*/
 $brkpoint-sm              : 1px;
 $brkpoint-md              : 768px;
 $brkpoint-lg              : 1100px;

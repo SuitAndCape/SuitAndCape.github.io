@@ -1,0 +1,28 @@
+/*_headlines.scss*/
+
+/**** HEADLINES
+*=======================================================================*/
+.headline {
+
+  &-primary {
+    @extend %hdln-prim;
+    margin-bottom: rem(70px, 42px);
+
+    @include m(grouped) {
+      @extend %hdln-prim;
+      margin-bottom: 0;
+    }
+  }
+
+  &-secondary {
+    @extend %hdln-sec;
+    margin-bottom: rem(22px, 24px);
+
+    @include m(grouped) {
+      @extend %hdln-sec;
+      margin-top: rem(10px, 24px);
+      margin-bottom: rem(54px, 24px);
+    }
+  }
+
+}

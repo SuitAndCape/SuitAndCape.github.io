@@ -1,0 +1,22 @@
+/*_img.scss*/
+
+/**** IMAGES
+*=======================================================================*/
+.img {
+  @include m(wrap) {
+    border: 1px solid palette(grey, x-light);
+    padding: rem(12px);
+  }
+  @include m(avatar) {
+    display: block;
+    border-radius: $br--round;
+    margin-top: rem(24px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include m(hero) {
+    @media (min-width: 769px) {
+      margin-bottom: rem(42px);
+    }
+  }
+}

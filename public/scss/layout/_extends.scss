@@ -1,0 +1,18 @@
+/*_extends.scss*/
+
+/**** PLACEHOLDER SELECTORS
+*=======================================================================*/
+%panel-default {
+  padding-top: rem(30px);
+  @include mq(medium) {
+    padding-bottom: rem(20px);
+  }
+}
+
+%panel-padding {
+  padding-top: rem(34px);
+  @include mq(medium) {
+    padding-top: rem(80px);
+    padding-bottom: rem(34px);
+  }
+}

@@ -2,12 +2,14 @@
 
 /**** BASE STYLES
 *=======================================================================*/
+/*===== Box-sizing style =====*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+/*===== Body style =====*/
 body {
   color: palette(grey);
   font-size: $base__font-size;
@@ -15,8 +17,13 @@ body {
   line-height: ($base__line / $base__font-size);
 }
 
-/**** TEXT
-*=======================================================================*/
+// /*===== Header style =====*/
+// header {
+//   text-align:center;
+//   padding: rem(48px) 0;
+// }
+
+/*===== Text style =====*/
 h1 {
   @extend %hdln-prim;
 }
@@ -58,32 +65,28 @@ blockquote {
   font-size: rem(20px);
 }
 
-/**** LINKS
-*=======================================================================*/
+/*===== Links style =====*/
 a {
   color: palette(grey, dark);
   text-decoration: none;
   font-weight: $font-weight--medium;
 }
 
-/**** LISTS
-*=======================================================================*/
+/*===== Lists style =====*/
 ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/**** IMAGES
-*=======================================================================*/
+/*===== Images style =====*/
 img {
   margin-bottom: rem(24px);
   max-width: 100%;
   height: auto;
 }
 
-/**** FORM ELEMENTS
-*=======================================================================*/
+/*===== Form elements style =====*/
 input, textarea {
   display: block;
   padding: 15px;
@@ -96,14 +99,12 @@ input:focus, textarea:focus {
   transition: $trns_duration;
 }
 
-/**** BUTTON
-*=======================================================================*/
+/*===== Button style =====*/
 button {
   outline: 0;
 }
 
-/**** FOOTER
-*=======================================================================*/
+/*===== Footer style =====*/
 footer {
   border-top: 1px solid palette(grey, xx-light);
   p {

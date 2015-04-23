@@ -1,21 +1,23 @@
 /*main.scss*/
 
-/**** BASE
+/**** MAIN MANIFEST
 *=======================================================================*/
+/*===== Import utilities =====*/
+@import "utilities/index";
 
+/*===== Import base styles =====*/
+@import "base/index";
 
-/**** LAYOUT
-*=======================================================================*/
+/*===== Import layout styles =====*/
+@import "layout/index";
 
+/*===== Import modules =====*/
+@import "modules/index";
 
-/**** MODULE
-*=======================================================================*/
+/*===== Import states =====*/
+@import "states/index";
 
+/*===== Import themes =====*/
+@import "themes/index";
 
-/**** STATE
-*=======================================================================*/
-
-
-/**** THEME
-*=======================================================================*/
-
+/*===== Import plugins =====*/

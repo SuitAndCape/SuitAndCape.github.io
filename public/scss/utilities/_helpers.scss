@@ -1,7 +1,8 @@
 /*_helpers.scss*/
 
-/**** CLEARFIX PLACEHOLDER
+/**** HELPERS
 *=======================================================================*/
+/*===== Clearfix placeholder =====*/
 %clearfix {
   &:after {
     content: "";
@@ -10,8 +11,7 @@
   }
 }
 
-/**** SCREEN READER TEXT
-*=======================================================================*/
+/*===== Screen reader text placeholder =====*/
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
@@ -23,22 +23,19 @@
   position: absolute;
 }
 
-/**** CENTER ALIGNMENT
-*=======================================================================*/
+/*===== Center alignment placeholder =====*/
 %center-align {
   text-align: center;
 }
 
-/**** PSEUDO-ELEMENTS
-*=======================================================================*/
+/*===== Pseudo-elements placeholder =====*/
 %pseudos {
   display: block;
   content: "";
   position: absolute;
 }
 
-/**** CENTER ALIGNMENT
-*=======================================================================*/
+/*===== Center elements placeholder =====*/
 .centered {
   float: none;
   margin-right: auto;

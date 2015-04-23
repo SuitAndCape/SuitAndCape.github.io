@@ -1,32 +1,29 @@
 /*_functions.scss*/
 
-/**** IMPORT IF GOOGLE FONTS URL IS DEFINED
+/**** FUNCTIONS
 *=======================================================================*/
+/*===== Import if Google Fonts URL is defined =====*/
 @if variable-exists(font-url--google) {
   @import url($font-url--google);
 }
 
-/**** CALCULATE REM VALUES
-*=======================================================================*/
+/*===== Converts pixels to rem values =====*/
 @function rem($target, $context: $base__font-size) {
   @return ($target / $context) * 1rem;
 }
 
-/**** CALL THE COLOR PALETTE MODIFIERS IN COLOR VALUES
-*=======================================================================*/
+/*===== Call the color palette modifiers in color values =====*/
 @function palette($palette, $shade: "base") {
   @return map-get(map-get($color-palettes, $palette), $shade);
 }
 
-/**** SET THE "CONTEXT" WIDTH FOR THE GRID
-*=======================================================================*/
+/*===== Establish the base context width for fluid width of grid =====*/
 @function g-context($g-col-width, $g-col-count ,$g-gutter-width) {
   $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
   @return $g-context;
 }
 
-/**** STR-REPLACE
-*=======================================================================*/
+/*===== String replacer =====*/
 /// Replace `$search` with `$replace` in `$string`
 /// Replaces a substring within another string
 /// @author Hugo Giraudel
@@ -44,8 +41,7 @@
   @return $string;
 }
 
-/**** DEEP GET IN MAPS
-*=======================================================================*/
+/*===== Deep get in maps =====*/
 /// Map deep get
 /// @author Hugo Giraudel
 /// @access public

@@ -1,9 +1,9 @@
 /*_index.scss*/
 
-/**** IMPORT BASE
+/**** BASE MANIFEST
 *=======================================================================*/
-@import "base";
-
-/**** IMPORT NORMALIZE
-*=======================================================================*/
+/*===== Import normalize reset =====*/
 @import "normalize";
+
+/*===== Import base =====*/
+@import "base";

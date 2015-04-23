@@ -1,7 +1,8 @@
 /*_mixins.scss*/
 
-/**** BEM SELECTORS MIXIN
+/**** MIXINS
 *=======================================================================*/
+/*===== BEM selectors =====*/
 @mixin e($element) {
   &__#{$element} {
     @content;
@@ -13,10 +14,15 @@
   }
 }
 
-/**** MEDIA QUERIES MIXIN
-*=======================================================================*/
+/*===== Media queries =====*/
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
 @mixin mq($break) {
+// If the key exists in the map
   @if $break == "small" {
+    // Prints a media query based on the value
     @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
       @content;
     }
@@ -31,13 +37,13 @@
       @content;
     }
   }
+  // If the key doesn't exist in the map
    @else {
     @error "Whoops! No value could be retrieved for `#{$break}`. "
   }
 }
 
-/**** GENERATE MODIFIER COLOR CLASSES MIXIN
-*=======================================================================*/
+/*===== Generate modifier color classes =====*/
 @mixin bg-colors($map) {
   @each $theme, $color in $map {
     &--#{$theme} {
@@ -46,8 +52,7 @@
   }
 }
 
-/**** GENERATE :BEFORE OR :AFTER PSEUDO-ELEMENT SHAPES MIXIN
-*=======================================================================*/
+/*===== Generate :before or :after pseudo-element shapes =====*/
 @mixin p-el(
   $el,
   $el-w: null,
@@ -65,8 +70,7 @@
   }
 }
 
-/**** BACKGROUND IMAGE REPLACEMENT MIXIN
-*=======================================================================*/
+/*===== Background image replacement =====*/
 @mixin img-replace($img, $w, $h, $disp: block) {
   background-image: url('#{$path--rel}/#{$img}');
   background-repeat: no-repeat;
@@ -75,8 +79,7 @@
   display: $disp;
 }
 
-/**** ADJACENT SIBLING MARGINS MIXIN
-*=======================================================================*/
+/*===== Adjacent sibling margins =====*/
 @mixin doubly($margin: 1rem) {
   & + & {
     margin-left: $margin;
@@ -84,8 +87,7 @@
   }
 }
 
-/**** GRID COLUMNS MIXIN
-*=======================================================================*/
+/*===== Grid columns =====*/
 @mixin g-columns {
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;
