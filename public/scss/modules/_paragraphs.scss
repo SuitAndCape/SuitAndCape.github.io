@@ -1,0 +1,16 @@
+/*_headlines.scss*/
+
+/**** HEADLINES
+*=======================================================================*/
+.para {
+  &-primary {
+    @extend %prgrph-prim;
+    font-family: $font-family--default;
+    margin: 0 0 rem(30px, 18px);
+
+    @include m(grouped) {
+      @extend %prgrph-prim;
+    }
+  }
+
+}

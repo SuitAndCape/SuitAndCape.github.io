@@ -3,7 +3,6 @@
 /**** HEADLINES
 *=======================================================================*/
 .headline {
-
   &-primary {
     @extend %hdln-prim;
     margin-bottom: rem(70px, 42px);
@@ -23,6 +22,21 @@
       margin-top: rem(10px, 24px);
       margin-bottom: rem(54px, 24px);
     }
+  }
+
+  &-tertiary {
+    @extend %hdln-ter;
+    margin-bottom: rem(22px, 24px);
+
+    @include m(grouped) {
+      @extend %hdln-ter;
+      margin-top: rem(10px, 24px);
+      margin-bottom: rem(54px, 24px);
+    }
+  }
+
+  &-menu {
+    font-family: $font-family--default;
   }
 
 }

@@ -2,12 +2,15 @@
 
 /**** GLOBAL CONFIGURATION
 *=======================================================================*/
+/*===== Font sources =====*/
+$font-url--prata          : "http://fonts.googleapis.com/css?family=Prata";
+$font-url--open-sans      : "http://fonts.googleapis.com/css?family=Open+Sans";
+
 /*===== Font stacks =====*/
-$font-url--google         : "http://fonts.googleapis.com/css?family=Prata";
-$font-family--primary     : "Hoefler Text", Baskerville, Prata, Garamond,
-  "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--secondary   : Baskerville, Prata, Garamond,
-  "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--default     : "Open Sans", Arial, sans-serif, serif;
+$font-family--primary     : "Hoefler Text", Baskerville, "Baskerville Old Face", Prata, Garamond, "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--secondary   : Baskerville, Prata, Garamond, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--tertiary    : Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
 /*===== Font weights =====*/
 $font-weight--thin        : 100;
@@ -27,6 +30,7 @@ $white                    : #FFFFFF;
 
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
+$java                     : #1FC2C2;
 $ebony-clay               : #222F40;
 $jungle-green             : #29AB87;
 $st-tropaz                : #2D569B;
@@ -37,6 +41,7 @@ $steel-blue               : #4682B4;
 $havelock-blue            : #5590D9;
 $fountain-blue            : #56B4BE;
 $emerald                  : #5ECE7F;
+$studio                   : #714AB2;
 $purple-majesty           : #9678B6;
 $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
@@ -50,23 +55,6 @@ $color-secondary          : $prussian-blue;
 $color-accent             : $emerald;
 $color-shadow             : rgba($black, .2);
 
-/*===== Color palette modifiers map =====*/
-$color-palettes: (
-  grey: (
-    xx-light              : lighten($grey, 43%),
-    x-light               : lighten($grey, 35%),
-    light                 : lighten($grey, 12%),
-    base                  : $grey,
-    dark                  : darken($grey, 8%),
-    x-dark                : darken($grey, 16%)
-  ),
-  black: (
-    light                 : lighten($black, 10%),
-    base                  : $black,
-    dark                  : darken($black, 10%)
-  )
-);
-
 /*===== User interface colors map =====*/
 $ui-colors: (
   default                 : $pacific-blue,
@@ -74,8 +62,43 @@ $ui-colors: (
   error                   : $sunglo,
   warning                 : $coral,
   info                    : $meteorite,
-  background              : $ebony-clay
+  background              : $ebony-clay,
+  zero                    : $meteorite,
+  un                      : $prussian-blue,
+  deux                    : $purple-majesty,
+  trois                   : $java,
+  quatre                  : $studio,
+  cinq                    : $havelock-blue,
+  six                     : $meteorite,
+  sept                    : $java,
+  huit                    : $meteorite,
+  neuf                    : $java,
+  dix                     : $meteorite
 );
+
+/*===== Color palette modifiers map =====*/
+$color-palettes: (
+  grey: (
+    xx-light              : lighten($grey, 36%),
+    x-light               : lighten($grey, 27%),
+    light                 : lighten($grey, 12%),
+    base                  : $grey,
+    dark                  : darken($grey, 8%),
+    x-dark                : darken($grey, 16%),
+    xx-dark               : darken($grey, 24%)
+  ),
+  black: (
+    light                 : lighten($black, 10%),
+    base                  : $black,
+    dark                  : darken($black, 10%)
+  ),
+  white: (
+    light                 : lighten($white, 5%),
+    base                  : $white,
+    dark                  : darken($white, 1%)
+  )
+);
+
 
 /*===== Text =====*/
 $base__font-size          : 16px;
@@ -83,11 +106,11 @@ $base__line               : 24px;
 $letter-space             : 1px;
 
 /*===== Border radius =====*/
-$br--default              : .4rem;
+$br--default              : .4em;
 $br--round                : 50%;
 
 /*===== Transitions =====*/
-$trns-duration            : .3s;
+$trns-x-quick               : .3s;
 
 /*===== Path to assets =====*/
 $path--rel                : "../images";
@@ -96,7 +119,8 @@ $path--rel                : "../images";
 $g-col-width              : 65px;
 $g-gutter-width           : 20px;
 $g-col-count              : 12;
-$g-cont-max-w             : 1050px;
+$g-cont-max-w             : 1600px;
+// $g-cont-max-w             : 1050px;
 
 /*===== Media query breakpoints =====*/
 $brkpoint-sm              : 1px;

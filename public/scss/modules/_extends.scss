@@ -1,17 +1,17 @@
 /*_extends.scss*/
 
-/**** PLACEHOLDER SELECTORS
+/**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
 /*===== Buttons =====*/
 %btn {
   padding: 15px 30px;
   border: 0;
-  border-radius : $br--default;
-  color: $white;
+  border-radius: $br--default;
+  color: palette(white, base);
   text-transform: uppercase;
   font-size : rem(14px);
   font-weight: $font-weight--medium;
-  transition: opacity $trns-duration;
+  transition: opacity $trns-x-quick;
   display: block;
   &:hover {
     opacity: .75;
@@ -24,17 +24,35 @@
 /*===== Headlines =====*/
 %hdln-prim {
   color: palette(grey, x-dark);
-  font-weight: $font-weight--light;
+  font-family: $font-family--primary;
+  font-weight: $font-weight--demi-bold;
   font-size: rem(42px);
   line-height: (46px / 42px);
   margin-top: 0;
 }
+
 %hdln-sec {
-  color: palette(grey, light);
+  color: palette(white, base);
   letter-spacing: $letter-space;
-  font-weight: $font-weight--thin;
-  font-size: rem(24px);
   font-family: $font-family--secondary;
+  font-weight: $font-weight--thin;
+  font-size: rem(26px);
+}
+
+%hdln-ter {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--medium;
+  font-size: rem(22px);
+}
+
+/*===== Paragraphs =====*/
+%prgrph-prim {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--normal;
+  font-size: rem(18px);
+  line-height: (27px / 18px);
 }
 
 /*===== Icons =====*/

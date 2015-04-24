@@ -37,10 +37,6 @@
 =======================================================================-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!--= FONTS
-=======================================================================-->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prata">
-
 <!--= STYLE RESOURCES
 =======================================================================-->
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
@@ -96,8 +92,8 @@
       <p class="sad_browser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/">upgrade your browser</a>, you'll have a good time.</p> <![endif]-->
 
       <!-- Banner -->
-      <header role="banner" id="banner" class="grid">
-        <div class="grid__col--12 panel--padded--centered">
+      <header role="banner" id="banner" class="grid panel--padded--centered">
+        <div class="grid__col--12">
           <a href="index.html">
             <h1 class="headline-primary--grouped">Hi, my name is Ali Esmaili.<br>
               Something about liking to build things, & how I think dinosaurs are cool. Holla!</h1></a>
@@ -105,19 +101,19 @@
       </header>
 
       <!-- Sidebar -->
-      <aside role="navigation" id="sidebar" class="grid">
-        <h1>
+      <aside role="navigation" id="sidebar" class="grid panel">
+        <h1 class="headline-menu">
           <a href="index.html">SuitAndCape</a>
         </h1>
-        <nav id="nav" class="navbar">
-          <ul>
-            <li>
-              <a href="#" class="menu-toggle">
+        <nav class="navbar">
+          <!-- <ul>
+            <li> -->
+              <!-- <a href="#" class="menu-toggle"> -->
                 <!-- <span>Menu</span> -->
                 <span id="toggle" class="icn--nav-toggle is-displayed-mobile"><b class="srt">Menu</b></span>
-              </a>
-              <div id="menu">
-                <ul>
+              <!-- </a> -->
+              <!-- <div id="menu"> -->
+                <ul class="nav is-collapsed-mobile">
                   <li class="nav__item">
                     <a href="index.html">Home</a>
                   </li>
@@ -137,147 +133,174 @@
                     <a href="flyer.html">Flyer</a>
                   </li>
                 </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
+              <!-- </div> -->
+            <!-- </li>
+          </ul> -->
+        </nav></div>
       </aside>
 
       <!-- Blurb -->
-      <section id="blurb" class="grid">
-        <div class="grid__col--12 panel--centered">
-          <header>
+      <section id="blurb" class="layer--zero">
+        <article class="grid">
+          <header class="grid__col--12 panel--centered">
             <h2 class="headline-secondary--grouped">This is a short blurb about myself<br>will end up going</h2>
-            <p>You've got an ugly butt, and it's stupid, butt!  Oh!<br>
+            <p class="para-primary">You've got an ugly butt, and it's stupid, butt!  Oh!<br>
               Oh girl you got an ugly butt!  Oh girl you got an stupid butt!  Oh girl you got an ugly butt!  Oh girl you got an stupid butt!<br>
               Oh girl, ugly butt!  Stupid butt!  Oh girl you got an ugly butt!  Oh girl you got an stupid butt!  Uh!</p>
           </header>
-        </div>
+          <span></span>
+        </article>
       </section>
 
       <!-- About -->
-      <section id="about" class="grid">
-        <div class="grid__col--5">
-          VECTOR ICONS HOOK
-        </div>
-
-        <div class="grid__col--6">
-          <header>
+      <section id="about" class="layer--un">
+        <article class="grid">
+          <header class="panel--centered">
             <h2 class="headline-secondary--grouped">About me as a person</h2>
           </header>
-          <p>Everybody to the limit, everybody to the limit, everybody come on fhqwhgads!<br>
-            I said come on fhqwhgads, I said come on fhqwhgads, everybody to the limit - who's that?  He's to the limit, everybody come on fhqwhgads!<br>
-            Come on fhqwhgads.  I see you jockin me, try'n'a play like, you-know-me!<br>
-            I'm like come on fhqwhgads, I said come on fhqwhgads, everybody to the limit, the Cheat is to the limit, everybody come on fhqwhgads!</p>
-        </div>
+          <span class="grid__col--5">
+            VECTOR ICONS HOOK
+          </span>
+
+          <span class="grid__col--6">
+            <p class="para-primary">I said come on Fhqwhgads, I said come on Fhqwhgads, everybody to the limit, everybody to the limit, everybody come on fhqwhgads!<br>
+              I said come on fhqwhgads, I said come on fhqwhgads, everybody to the limit - who's that?  He's to the limit, everybody come on fhqwhgads!<br>
+              Come on fhqwhgads.  I see you jockin me, try'n'a play like, you-know-me!<br>
+              I'm like come on fhqwhgads, I said come on fhqwhgads, everybody to the limit, the Cheat is to the limit, everybody come on fhqwhgads!<br>
+              I said ooh ah Fhqwhgads, I said ooh ah Fhqwhgads, who's that fh-huh-hoo-huga-wha, I said who is that Fhqwhgads!<br>
+              I don't know who it is, but it probably is Fhqwhgads, I asked my friend Joe, I asked my friend Jake, they said it was Fhqwhgads!</p>
+          </span>
+        </article>
       </section>
 
       <!-- Experience -->
-      <section id="experience" class="grid">
-        <div class="grid__col--6">
-          <header>
+      <section id="experience" class="layer--deux">
+        <article class="grid">
+          <header class="panel--centered">
             <h2 class="headline-secondary--grouped">I have Experience in life</h2>
           </header>
-          <p>Banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana.<br>
-          Kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty.<br>
-          LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL!</p>
-        </div>
 
-        <div class="grid__col--5">
-          <span>
-            <img class="img--avatar" src="public/images/test_picture_01.jpg" alt="">
+          <span class="grid__col--5">
+            <p class="para-primary">Banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana banana.<br>
+            Kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty.<br>
+            Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!  Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!  Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!<br>
+            Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger - SNAAAKE SNAAAKE OUUUUH IT'S A SNAAAAAKE!  <br>
+            LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL!</p>
           </span>
-        </div>
+
+          <span class="grid__col--6">
+            <span>
+              <img class="img--avatar img--wrap" src="public/images/test_picture_01.jpg" alt="">
+            </span>
+          </span>
+        </article>
       </section>
 
       <!-- Tools -->
-      <section class="grid panel--centered">
-        <div class="grid__col--12">
-          <header>
+      <section class="layer--trois">
+        <article class="grid">
+          <header class="panel--centered">
             <h2 class="headline-secondary--grouped">Tools I appreciate working with</h2>
           </header>
-          <h3>Digital</h3>
-          <p>
-            Code, framework, code, framework, code, framework, code, framework, code, framework, code, framework
-          </p>
 
-          <h3>Physical</h3>
-          <p>
-            Manual, powered, manual, powered, manual, powered, manual, powered, manual, powered
-          </p>
+          <span class="grid__col--12">
+            <h3>Digital</h3>
+            <p class="para-primary">
+              Code, framework, code, framework, code, framework, code, framework, code, framework, code, framework
+            </p>
 
-          <h3>Other</h3>
-          <p>
-            Thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff
-          </p>
-        </div>
+            <h3>Physical</h3>
+            <p class="para-primary">
+              Manual, powered, manual, powered, manual, powered, manual, powered, manual, powered
+            </p>
+
+            <h3>Other</h3>
+            <p class="para-primary">
+              Thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff
+            </p>
+          </span>
+        </article>
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="grid">
-        <div class="grid__col--12">
-          <header>
+      <section id="projects" class="layer--quatre">
+        <article class="grid">
+          <header class="panel--centered">
             <h2 class="headline-secondary--grouped">Projects</h2>
           </header>
 
-          <div class="grid__col--12 panel--centered">
-            <article class="grid__col--4">
-              <a href="#" class="image fit thumb"><img src="public/images/test_picture_04.jpg" alt="" /></a>
-              <h3>Project One</h3>
-              <p>And we will never be alone again, 'Cause it doesn't happen every day</p>
-            </article>
-            <article class="grid__col--4">
-              <a href="#" class="image fit thumb"><img src="public/images/test_picture_05.jpg" alt="" /></a>
-              <h3>Project Two</h3>
-              <p>Kinda counted on you being a friend, Can I give it up or give it away</p>
-            </article>
-            <article class="grid__col--4">
-              <a href="#" class="image fit thumb"><img src="public/images/test_picture_06.jpg" alt="" /></a>
-              <h3>Project Three</h3>
-              <p>Now I thought about what I wanna say, But I never really know where to go</p>
-            </article>
-          </div>
+          <span class="grid__col--12">
+            <span class="grid__col--12 panel--centered">
+              <article class="grid__col--4">
+                <a href="#" class="image fit thumb"><img src="public/images/test_picture_04.jpg" alt=""></a>
+                <h3>Project One</h3>
+                <p class="para-primary">And we will never be alone again, 'Cause it doesn't happen every day</p>
+              </article>
 
-          <ul class="actions">
-            <li><a href="#" class="button">Projects Page</a></li>
-          </ul>
+              <article class="grid__col--4">
+                <a href="#" class="image fit thumb"><img src="public/images/test_picture_05.jpg" alt=""></a>
+                <h3>Project Two</h3>
+                <p class="para-primary">Kinda counted on you being a friend, Can I give it up or give it away</p>
+              </article>
 
-        </div>
+              <article class="grid__col--4">
+                <a href="#" class="image fit thumb"><img src="public/images/test_picture_06.jpg" alt=""></a>
+                <h3>Project Three</h3>
+                <p class="para-primary">Now I thought about what I wanna say, But I never really know where to go</p>
+              </article>
+            </span>
+
+            <ul class="grid__col--12 panel">
+              <li>
+                <button href="#" class="button btn--default">Projects Page</button>
+                <!-- <a href="#" class="button">Projects Page</a> -->
+              </li>
+            </ul>
+          </span>
+        </article>
       </section>
 
       <!-- Footer -->
-      <footer role="contentinfo" id="footer" class="grid">
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon fav--email">
-              <span class="label">Email</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon fav--linkedin">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon fav--github">
-              <span class="label">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon fav--twitter">
-              <span class="label">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="icon fav--dribbble">
-              <span class="label">Dribbble</span>
-            </a>
-          </li>
-        </ul>
+      <footer role="contentinfo" id="footer">
+        <article class="grid">
+          <header class="panel--centered">
+            <h2 class="headline-secondary--grouped">Say Hi!</h2>
+          </header>
 
-        <ul class="copyright">
-          <li>&copy; Ali Esmaili</li>
-        </ul>
+          <span class="grid__col--12 panel--centered">
+          <ul class="icons">
+            <li class="nav__item">
+              <a href="#" class="icon fav--email">
+                <span class="label">Email</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="icon fav--linkedin">
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="icon fav--github">
+                <span class="label">Github</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="icon fav--twitter">
+                <span class="label">Twitter</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="icon fav--dribbble">
+                <span class="label">Dribbble</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="copyright panel">
+            <li>&copy; Ali Esmaili</li>
+          </ul>
+          </span>
+        </article>
       </footer>
 
 <!--= SCRIPTS

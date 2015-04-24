@@ -9,12 +9,13 @@
 /*_config.scss*/
 /**** GLOBAL CONFIGURATION
 *=======================================================================*/
+/*===== Font sources =====*/
 /*===== Font stacks =====*/
 /*===== Font weights =====*/
 /*===== Descriptive base colors =====*/
 /*===== Color usage =====*/
-/*===== Color palette modifiers map =====*/
 /*===== User interface colors map =====*/
+/*===== Color palette modifiers map =====*/
 /*===== Text =====*/
 /*===== Border radius =====*/
 /*===== Transitions =====*/
@@ -34,6 +35,7 @@ $brkpoint-xl              : "(max-width: 1680px)";
 *=======================================================================*/
 /*===== Import if Google Fonts URL is defined =====*/
 @import url("http://fonts.googleapis.com/css?family=Prata");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 /*===== Converts pixels to rem values =====*/
 /*===== Call the color palette modifiers in color values =====*/
 /*===== Establish the base context width for fluid width of grid =====*/
@@ -70,7 +72,7 @@ $brkpoint-xl              : "(max-width: 1680px)";
   content: "";
   position: absolute; }
 
-/*===== Center elements placeholder =====*/
+/*===== Center elements helper =====*/
 .centered, .grid {
   float: none;
   margin-right: auto;
@@ -80,7 +82,8 @@ $brkpoint-xl              : "(max-width: 1680px)";
 /*_mixins.scss*/
 /**** MIXINS
 *=======================================================================*/
-/*===== BEM selectors =====*/
+/*===== BEM element selector mixin =====*/
+/*===== BEM modifier selector mixin =====*/
 /*===== Media queries =====*/
 /*===== Generate modifier color classes =====*/
 /*===== Generate :before or :after pseudo-element shapes =====*/
@@ -430,27 +433,21 @@ td, th {
 body {
   color: #797E83;
   font-size: 16px;
-  font-family: "Hoefler Text", Baskerville, Prata, Garamond, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: "Hoefler Text", Baskerville, "Baskerville Old Face", Prata, Garamond, "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   line-height: 1.5; }
 
 /*===== Text style =====*/
 h3 {
-  font-size: 1.125rem; }
+  font-family: Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif; }
 
 h4 {
   margin-top: 1.57143rem;
   margin-bottom: 2.28571rem;
-  color: #d6d7d9;
+  color: #c0c3c5;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 0.875rem; }
-
-p {
-  margin: 0 0 1.66667rem;
-  font-weight: 300;
-  font-size: 1.125rem;
-  line-height: 1.5; }
 
 blockquote {
   font-weight: 300;
@@ -460,7 +457,7 @@ blockquote {
     blockquote {
       margin: 1.33333rem 0;
       padding: 0 0 0 5%;
-      border-left: 0.33333rem solid #ebecec;
+      border-left: 0.33333rem solid #d8dadb;
       font-size: 1.5rem; } }
 
 /*===== Links style =====*/
@@ -498,7 +495,7 @@ button {
 
 /*===== Footer style =====*/
 footer {
-  border-top: 1px solid #ebecec; }
+  border-top: 1px solid #d8dadb; }
   footer p {
     font-size: 1rem;
     margin-top: 1.375rem; }
@@ -509,16 +506,18 @@ footer {
 *=======================================================================*/
 /*===== Import placeholder selectors =====*/
 /*_extends.scss*/
-/**** PLACEHOLDER SELECTORS
+/**** BASE LAYOUT EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
 .panel, .panel--centered {
-  padding-top: 1.875rem; }
+  padding-top: 1.875rem;
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 769px) {
     .panel, .panel--centered {
       padding-bottom: 1.25rem; } }
 
 .panel--padded, .panel--padded--centered {
-  padding-top: 2.125rem; }
+  padding-top: 2.125rem;
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 769px) {
     .panel--padded, .panel--padded--centered {
       padding-top: 5rem;
@@ -529,47 +528,66 @@ footer {
 /**** GRID COLUMNS
 *=======================================================================*/
 /*===== Calculate grid columns =====*/
-@media (min-width: 769px) {
-  .grid__col--1 {
-    width: 6.5%; }
-  .grid__col--2 {
-    width: 15%; }
-  .grid__col--3 {
-    width: 23.5%; }
-  .grid__col--4 {
-    width: 32%; }
-  .grid__col--5 {
-    width: 40.5%; }
-  .grid__col--6 {
-    width: 49%; }
-  .grid__col--7 {
-    width: 57.5%; }
-  .grid__col--8 {
-    width: 66%; }
-  .grid__col--9 {
-    width: 74.5%; }
-  .grid__col--10 {
-    width: 83%; }
-  .grid__col--11 {
-    width: 91.5%; }
-  .grid__col--12 {
-    width: 100%; } }
+.grid__col {
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 769px) {
+    .grid__col {
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/
+      /*===== Generate column modifier classes =====*/ }
+      .grid__col--1 {
+        width: 6.5%; }
+      .grid__col--2 {
+        width: 15%; }
+      .grid__col--3 {
+        width: 23.5%; }
+      .grid__col--4 {
+        width: 32%; }
+      .grid__col--5 {
+        width: 40.5%; }
+      .grid__col--6 {
+        width: 49%; }
+      .grid__col--7 {
+        width: 57.5%; }
+      .grid__col--8 {
+        width: 66%; }
+      .grid__col--9 {
+        width: 74.5%; }
+      .grid__col--10 {
+        width: 83%; }
+      .grid__col--11 {
+        width: 91.5%; }
+      .grid__col--12 {
+        width: 100%; } }
 
 /*===== Column styles =====*/
-@media (min-width: 1px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem; } }
-@media (min-width: 769px) {
-  [class^="grid__col--"] {
-    float: left;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px; }
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 2%; }
-    [class^="grid__col--"]:last-of-type {
-      float: right; } }
+[class^="grid__col--"] {
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 1px) and (max-width: 768px) {
+    [class^="grid__col--"] {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem; } }
+  @media (min-width: 769px) {
+    [class^="grid__col--"] {
+      float: left;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px; }
+      [class^="grid__col--"] + [class^="grid__col--"] {
+        margin-left: 2%; }
+      [class^="grid__col--"]:last-of-type {
+        float: right; } }
 
 /*===== Import grid container =====*/
 /*_grid-container.scss*/
@@ -578,12 +596,13 @@ footer {
 .grid {
   width: 90%;
   /*===== Make nested grid 100% =====*/
-  /*===== Set a max-width for grid container =====*/ }
+  /*===== Set a max-width for grid container =====*/
+  /*===== If the key exists in the map =====*/ }
   [class*="grid__col--"] > .grid {
     width: 100%; }
   @media (min-width: 1100px) {
     .grid {
-      max-width: 1050px; } }
+      max-width: 1600px; } }
 
 /*===== Import panel layout =====*/
 /*_panel.scss*/
@@ -609,9 +628,34 @@ footer {
   background-color: #3C1F76; }
 .btn--background {
   background-color: #222F40; }
+.btn--zero {
+  background-color: #3C1F76; }
+.btn--un {
+  background-color: #003153; }
+.btn--deux {
+  background-color: #9678B6; }
+.btn--trois {
+  background-color: #1FC2C2; }
+.btn--quatre {
+  background-color: #714AB2; }
+.btn--cinq {
+  background-color: #5590D9; }
+.btn--six {
+  background-color: #3C1F76; }
+.btn--sept {
+  background-color: #1FC2C2; }
+.btn--huit {
+  background-color: #3C1F76; }
+.btn--neuf {
+  background-color: #1FC2C2; }
+.btn--dix {
+  background-color: #3C1F76; }
 
 [class^="btn--"] {
-  margin-bottom: 1.42857rem; }
+  margin-bottom: 1.42857rem;
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     [class^="btn--"] {
       width: 100%; } }
@@ -652,13 +696,13 @@ footer {
 
 /*===== Import placeholder selectors =====*/
 /*_extends.scss*/
-/**** PLACEHOLDER SELECTORS
+/**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
 /*===== Buttons =====*/
 [class^="btn--"], .form__btn {
   padding: 15px 30px;
   border: 0;
-  border-radius: 0.4rem;
+  border-radius: 0.4em;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -673,17 +717,32 @@ footer {
 /*===== Headlines =====*/
 h1, .headline-primary, .headline-primary--grouped {
   color: #525559;
-  font-weight: 300;
+  font-family: "Hoefler Text", Baskerville, "Baskerville Old Face", Prata, Garamond, "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 600;
   font-size: 2.625rem;
   line-height: 1.09524;
   margin-top: 0; }
 
 h2, .headline-secondary, .headline-secondary--grouped {
-  color: #999da1;
+  color: #FFFFFF;
   letter-spacing: 1px;
+  font-family: Baskerville, Prata, Garamond, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 100;
-  font-size: 1.5rem;
-  font-family: Baskerville, Prata, Garamond, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif; }
+  font-size: 1.625rem; }
+
+h3, .headline-tertiary, .headline-tertiary--grouped {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1.375rem; }
+
+/*===== Paragraphs =====*/
+p, .para-primary, .para-primary--grouped {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5; }
 
 /*===== Icons =====*/
 .icn--nav-toggle, .icn--close {
@@ -691,10 +750,12 @@ h2, .headline-secondary, .headline-secondary--grouped {
   cursor: pointer; }
 
 /*===== Navigation items =====*/
-@media (min-width: 769px) {
-  .nav__item, .nav__item--current {
-    display: inline-block;
-    margin: 0 0.75rem; } }
+.nav__item, .nav__item--current {
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 769px) {
+    .nav__item, .nav__item--current {
+      display: inline-block;
+      margin: 0 0.75rem; } }
 
 .nav__item a, .nav__item--current a {
   font-weight: 300;
@@ -702,10 +763,12 @@ h2, .headline-secondary, .headline-secondary--grouped {
   font-size: 1.125rem;
   display: block;
   padding: 0.44444rem;
-  border-bottom: 1px solid transparent; }
+  border-bottom: 1px solid transparent;
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     .nav__item a, .nav__item--current a {
-      border-bottom-color: #ebecec;
+      border-bottom-color: #d8dadb;
       padding-top: 0.77778rem;
       padding-bottom: 0.77778rem; } }
 
@@ -733,9 +796,9 @@ h2, .headline-secondary, .headline-secondary--grouped {
 .form__input {
   font-size: 1.125rem;
   margin-bottom: 1.11111rem;
-  border-bottom: 6px solid #d6d7d9;
-  border-radius: 0.4rem;
-  background: #ebecec;
+  border-bottom: 6px solid #c0c3c5;
+  border-radius: 0.4em;
+  background: #d8dadb;
   color: black;
   font-weight: 300; }
   .form__input:focus {
@@ -756,6 +819,13 @@ h2, .headline-secondary, .headline-secondary--grouped {
   .headline-secondary--grouped {
     margin-top: 0.41667rem;
     margin-bottom: 2.25rem; }
+.headline-tertiary {
+  margin-bottom: 0.91667rem; }
+  .headline-tertiary--grouped {
+    margin-top: 0.41667rem;
+    margin-bottom: 2.25rem; }
+.headline-menu {
+  font-family: "Open Sans", Arial, sans-serif, serif; }
 
 /*===== Import icons =====*/
 /*_icons.scss*/
@@ -799,8 +869,9 @@ h2, .headline-secondary, .headline-secondary--grouped {
 /**** IMAGES
 *=======================================================================*/
 .img--wrap {
-  border: 1px solid #d6d7d9;
-  padding: 0.75rem; }
+  border: 1px solid #797E83;
+  background-color: #999da1;
+  padding: 0.125rem; }
 .img--avatar {
   display: block;
   border-radius: 50%;
@@ -810,6 +881,45 @@ h2, .headline-secondary, .headline-secondary--grouped {
 @media (min-width: 769px) {
   .img--hero {
     margin-bottom: 2.625rem; } }
+
+/*===== Import layers =====*/
+/*_layers.scss*/
+/**** SECTION LAYERS
+*=======================================================================*/
+.layer--default {
+  background-color: #009DC4; }
+.layer--success {
+  background-color: #29AB87; }
+.layer--error {
+  background-color: #E16865; }
+.layer--warning {
+  background-color: #FF7F50; }
+.layer--info {
+  background-color: #3C1F76; }
+.layer--background {
+  background-color: #222F40; }
+.layer--zero {
+  background-color: #3C1F76; }
+.layer--un {
+  background-color: #003153; }
+.layer--deux {
+  background-color: #9678B6; }
+.layer--trois {
+  background-color: #1FC2C2; }
+.layer--quatre {
+  background-color: #714AB2; }
+.layer--cinq {
+  background-color: #5590D9; }
+.layer--six {
+  background-color: #3C1F76; }
+.layer--sept {
+  background-color: #1FC2C2; }
+.layer--huit {
+  background-color: #3C1F76; }
+.layer--neuf {
+  background-color: #1FC2C2; }
+.layer--dix {
+  background-color: #3C1F76; }
 
 /*===== Import menu =====*/
 /*_menu.scss*/
@@ -835,11 +945,20 @@ h2, .headline-secondary, .headline-secondary--grouped {
 /**** NAVIGATION BAR
 *=======================================================================*/
 .navbar {
-  position: relative; }
+  position: relative;
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 769px) {
     .navbar {
       margin-top: 3.375rem;
       margin-bottom: 0; } }
+
+/*===== Import paragraphs =====*/
+/*_headlines.scss*/
+/**** HEADLINES
+*=======================================================================*/
+.para-primary {
+  font-family: "Open Sans", Arial, sans-serif, serif;
+  margin: 0 0 1.66667rem; }
 
 /*===== Import sad browser =====*/
 /*sad_browser.scss*/
@@ -860,27 +979,34 @@ h2, .headline-secondary, .headline-secondary--grouped {
 /**** COLLAPSED STATES
 *=======================================================================*/
 /*===== Import collapsed states =====*/
-@media (min-width: 1px) and (max-width: 768px) {
-  .is-collapsed-mobile {
-    visibility: collapse;
-    padding: 0;
-    height: 0;
-    margin: 0;
-    line-height: 0; } }
+.is-collapsed-mobile {
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .is-collapsed-mobile {
+      visibility: collapse;
+      padding: 0;
+      height: 0;
+      margin: 0;
+      line-height: 0; } }
 
 /*===== Import grid-display states =====*/
 /*_grid-display.scss*/
 /**** GRID DISPLAY STATES
 *=======================================================================*/
 /*===== Mobile display =====*/
-@media (min-width: 1px) and (max-width: 768px) {
-  .is-displayed-mobile {
-    display: block; }
-    .is-hidden-mobile {
+.is-displayed-mobile {
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .is-displayed-mobile {
+      display: block; }
+      .is-hidden-mobile {
+        display: none; } }
+  @media (min-width: 769px) {
+    .is-displayed-mobile {
       display: none; } }
-@media (min-width: 769px) {
-  .is-displayed-mobile {
-    display: none; } }
 
 /*===== Import design test button states =====*/
 /*design_tests.scss*/

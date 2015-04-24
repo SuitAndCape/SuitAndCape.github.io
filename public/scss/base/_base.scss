@@ -17,12 +17,6 @@ body {
   line-height: ($base__line / $base__font-size);
 }
 
-// /*===== Header style =====*/
-// header {
-//   text-align:center;
-//   padding: rem(48px) 0;
-// }
-
 /*===== Text style =====*/
 h1 {
   @extend %hdln-prim;
@@ -33,7 +27,8 @@ h2 {
 }
 
 h3 {
-  font-size: rem(18px);
+  @extend %hdln-ter;
+  font-family: $font-family--tertiary;
 }
 
 h4 {
@@ -47,10 +42,7 @@ h4 {
 }
 
 p {
-  margin: 0 0 rem(30px, 18px);
-  font-weight: $font-weight--light;
-  font-size: rem(18px);
-  line-height: (27px / 18px);
+  @extend %prgrph-prim;
 }
 
 blockquote {
@@ -96,7 +88,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  transition: $trns_duration;
+  transition: $trns-x-quick;
 }
 
 /*===== Button style =====*/

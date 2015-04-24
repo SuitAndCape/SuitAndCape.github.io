@@ -2,12 +2,14 @@
 
 /**** MIXINS
 *=======================================================================*/
-/*===== BEM selectors =====*/
+/*===== BEM element selector mixin =====*/
 @mixin e($element) {
   &__#{$element} {
     @content;
   }
 }
+
+/*===== BEM modifier selector mixin =====*/
 @mixin m($modifier) {
   &--#{$modifier} {
     @content;
@@ -20,9 +22,9 @@
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
 @mixin mq($break) {
-// If the key exists in the map
+/*===== If the key exists in the map =====*/
   @if $break == "small" {
-    // Prints a media query based on the value
+    /*===== Prints a media query based on the value =====*/
     @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
       @content;
     }
@@ -37,7 +39,7 @@
       @content;
     }
   }
-  // If the key doesn't exist in the map
+  /*===== If the key doesn't exist in the map =====*/
    @else {
     @error "Whoops! No value could be retrieved for `#{$break}`. "
   }
@@ -92,8 +94,7 @@
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;
     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
-
-    // Generate column modifier classes
+    /*===== Generate column modifier classes =====*/
     &--#{$i} {
       width: percentage($target / $context);
     }

@@ -15,6 +15,7 @@
     margin-top: rem(12px);
     margin-bottom: rem(12px);
   }
+
   @include mq(medium) {
     @include doubly(percentage($g-gutter-width / $context));
     float: left;
@@ -25,4 +26,5 @@
       float: right;
     }
   }
+
 }

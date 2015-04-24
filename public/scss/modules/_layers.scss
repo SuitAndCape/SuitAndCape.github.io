@@ -1,0 +1,7 @@
+/*_layers.scss*/
+
+/**** SECTION LAYERS
+*=======================================================================*/
+.layer {
+  @include bg-colors($ui-colors);
+}
