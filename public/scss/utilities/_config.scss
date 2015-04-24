@@ -41,8 +41,8 @@ $steel-blue               : #4682B4;
 $havelock-blue            : #5590D9;
 $fountain-blue            : #56B4BE;
 $emerald                  : #5ECE7F;
+$purple-heart             : #652DC1;
 $studio                   : #714AB2;
-$purple-majesty           : #9678B6;
 $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
 $sunglo                   : #E16865;
@@ -57,15 +57,15 @@ $color-shadow             : rgba($black, .2);
 
 /*===== User interface colors map =====*/
 $ui-colors: (
-  default                 : $pacific-blue,
+  default                 : $ebony-clay,
   success                 : $jungle-green,
   error                   : $sunglo,
   warning                 : $coral,
-  info                    : $meteorite,
-  background              : $ebony-clay,
+  info                    : $pacific-blue,
+
   zero                    : $meteorite,
   un                      : $prussian-blue,
-  deux                    : $purple-majesty,
+  deux                    : $purple-heart,
   trois                   : $java,
   quatre                  : $studio,
   cinq                    : $havelock-blue,
@@ -109,8 +109,12 @@ $letter-space             : 1px;
 $br--default              : .4em;
 $br--round                : 50%;
 
-/*===== Transitions =====*/
+/*===== Transition Duration =====*/
 $trns-x-quick               : .3s;
+$trns-quick                 : .5s;
+$trns-medium                : 1s;
+$trns-slow                  : 3s;
+$trns-x-slow                : 5s;
 
 /*===== Path to assets =====*/
 $path--rel                : "../images";

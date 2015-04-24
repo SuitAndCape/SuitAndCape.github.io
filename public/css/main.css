@@ -18,7 +18,7 @@
 /*===== Color palette modifiers map =====*/
 /*===== Text =====*/
 /*===== Border radius =====*/
-/*===== Transitions =====*/
+/*===== Transition Duration =====*/
 /*===== Path to assets =====*/
 /*===== Grid variables =====*/
 /*===== Media query breakpoints =====*/
@@ -462,7 +462,7 @@ blockquote {
 
 /*===== Links style =====*/
 a {
-  color: #656a6e;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: 500; }
 
@@ -617,7 +617,7 @@ footer {
 /**** BUTTONS
 *=======================================================================*/
 .btn--default {
-  background-color: #009DC4; }
+  background-color: #222F40; }
 .btn--success {
   background-color: #29AB87; }
 .btn--error {
@@ -625,15 +625,13 @@ footer {
 .btn--warning {
   background-color: #FF7F50; }
 .btn--info {
-  background-color: #3C1F76; }
-.btn--background {
-  background-color: #222F40; }
+  background-color: #009DC4; }
 .btn--zero {
   background-color: #3C1F76; }
 .btn--un {
   background-color: #003153; }
 .btn--deux {
-  background-color: #9678B6; }
+  background-color: #652DC1; }
 .btn--trois {
   background-color: #1FC2C2; }
 .btn--quatre {
@@ -652,7 +650,7 @@ footer {
   background-color: #3C1F76; }
 
 [class^="btn--"] {
-  margin-bottom: 1.42857rem;
+  margin-bottom: 0.71429rem;
   /*===== If the key exists in the map =====*/
   /*===== Prints a media query based on the value =====*/
   /*===== If the key exists in the map =====*/ }
@@ -665,6 +663,26 @@ footer {
       display: inline-block; }
       [class^="btn--"] + [class^="btn--"] {
         margin-left: 20px; } }
+
+/*===== Import case =====*/
+/*_case.scss*/
+/**** CASE
+*=======================================================================*/
+.case {
+  /*===== Banner image =====*/
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  width: 100%; }
+  .case #footer {
+    background-color: rgba(26, 32, 63, 0.9); }
 
 /*===== Import design tests =====*/
 /*design_tests.scss*/
@@ -716,7 +734,7 @@ footer {
 
 /*===== Headlines =====*/
 h1, .headline-primary, .headline-primary--grouped {
-  color: #525559;
+  color: #d8dadb;
   font-family: Garamond, Baskerville, Prata "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
   font-size: 3.25rem;
@@ -887,7 +905,7 @@ p, .para-primary, .para-primary--grouped {
 /**** SECTION LAYERS
 *=======================================================================*/
 .layer--default {
-  background-color: #009DC4; }
+  background-color: #222F40; }
 .layer--success {
   background-color: #29AB87; }
 .layer--error {
@@ -895,15 +913,13 @@ p, .para-primary, .para-primary--grouped {
 .layer--warning {
   background-color: #FF7F50; }
 .layer--info {
-  background-color: #3C1F76; }
-.layer--background {
-  background-color: #222F40; }
+  background-color: #009DC4; }
 .layer--zero {
   background-color: #3C1F76; }
 .layer--un {
   background-color: #003153; }
 .layer--deux {
-  background-color: #9678B6; }
+  background-color: #652DC1; }
 .layer--trois {
   background-color: #1FC2C2; }
 .layer--quatre {
@@ -938,7 +954,7 @@ p, .para-primary, .para-primary--grouped {
   margin-top: 1.25rem;
   margin-bottom: 1.875rem; }
   .nav__item a {
-    color: #797E83; }
+    color: #FFFFFF; }
 
 /*===== Import navigation bar =====*/
 /*_navbar.scss*/
