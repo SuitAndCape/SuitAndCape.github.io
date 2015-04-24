@@ -70,10 +70,10 @@ $ui-colors: (
   quatre                  : $studio,
   cinq                    : $havelock-blue,
   six                     : $meteorite,
-  sept                    : $java,
-  huit                    : $meteorite,
-  neuf                    : $java,
-  dix                     : $meteorite
+  sept                    : $tuna,
+  huit                    : $porcelain,
+  neuf                    : $heather,
+  dix                     : $steel-blue
 );
 
 /*===== Color palette modifiers map =====*/
@@ -110,11 +110,11 @@ $br--default              : .4em;
 $br--round                : 50%;
 
 /*===== Transition Duration =====*/
-$trns-x-quick               : .3s;
-$trns-quick                 : .5s;
-$trns-medium                : 1s;
-$trns-slow                  : 3s;
-$trns-x-slow                : 5s;
+$trns-x-quick             : .3s;
+$trns-quick               : .5s;
+$trns-medium              : 1s;
+$trns-slow                : 3s;
+$trns-x-slow              : 5s;
 
 /*===== Path to assets =====*/
 $path--rel                : "../images";

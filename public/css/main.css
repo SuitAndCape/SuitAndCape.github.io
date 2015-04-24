@@ -641,13 +641,13 @@ footer {
 .btn--six {
   background-color: #3C1F76; }
 .btn--sept {
-  background-color: #1FC2C2; }
+  background-color: #31353F; }
 .btn--huit {
-  background-color: #3C1F76; }
+  background-color: #EFF2F3; }
 .btn--neuf {
-  background-color: #1FC2C2; }
+  background-color: #B7C3D0; }
 .btn--dix {
-  background-color: #3C1F76; }
+  background-color: #4682B4; }
 
 [class^="btn--"] {
   margin-bottom: 0.71429rem;
@@ -670,11 +670,11 @@ footer {
 *=======================================================================*/
 .case {
   /*===== Banner image =====*/
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -734,7 +734,7 @@ footer {
 
 /*===== Headlines =====*/
 h1, .headline-primary, .headline-primary--grouped {
-  color: #d8dadb;
+  color: #FFFFFF;
   font-family: Garamond, Baskerville, Prata "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
   font-size: 3.25rem;
@@ -929,13 +929,13 @@ p, .para-primary, .para-primary--grouped {
 .layer--six {
   background-color: #3C1F76; }
 .layer--sept {
-  background-color: #1FC2C2; }
+  background-color: #31353F; }
 .layer--huit {
-  background-color: #3C1F76; }
+  background-color: #EFF2F3; }
 .layer--neuf {
-  background-color: #1FC2C2; }
+  background-color: #B7C3D0; }
 .layer--dix {
-  background-color: #3C1F76; }
+  background-color: #4682B4; }
 
 /*===== Import menu =====*/
 /*_menu.scss*/
