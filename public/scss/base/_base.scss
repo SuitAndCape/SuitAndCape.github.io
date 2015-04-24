@@ -28,7 +28,6 @@ h2 {
 
 h3 {
   @extend %hdln-ter;
-  font-family: $font-family--tertiary;
 }
 
 h4 {
@@ -36,9 +35,9 @@ h4 {
   margin-bottom: rem(32px, 14px);
   color: palette(grey, x-light);
   text-transform: uppercase;
-  letter-spacing: $letter-space;
-  font-weight: $font-weight--medium;
-  font-size: rem(14px);
+  letter-spacing: rem(1.2px);
+  font-weight: $font-weight--ultra-bold;
+  font-size: rem(20px);
 }
 
 p {

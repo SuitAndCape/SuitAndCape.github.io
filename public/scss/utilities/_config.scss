@@ -45,6 +45,7 @@ $purple-heart             : #652DC1;
 $studio                   : #714AB2;
 $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
+$milano-red               : #B81104;
 $sunglo                   : #E16865;
 $porcelain                : #EFF2F3;
 $coral                    : #FF7F50;
@@ -88,14 +89,16 @@ $color-palettes: (
     xx-dark               : darken($grey, 24%)
   ),
   black: (
+    xx-light              : lighten($black, 23%),
+    x-light               : lighten($black, 15%),
     light                 : lighten($black, 10%),
     base                  : $black,
     dark                  : darken($black, 10%)
   ),
   white: (
-    light                 : lighten($white, 5%),
+    light                 : lighten($white, 8%),
     base                  : $white,
-    dark                  : darken($white, 1%)
+    dark                  : darken($white, 8%)
   )
 );
 

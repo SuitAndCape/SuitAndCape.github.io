@@ -18,4 +18,14 @@
       @extend %panel-padding;
     }
   }
+
+  @include m(main) {
+    @extend %panel-main;
+
+    @include m(centered) {
+      @extend %center-align;
+      @extend %panel-main;
+    }
+  }
+
 }

@@ -63,7 +63,7 @@ $brkpoint-xl              : "(max-width: 1680px)";
   position: absolute; }
 
 /*===== Center alignment placeholder =====*/
-.panel--centered, .panel--padded--centered, [class^="btn--"] {
+.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"] {
   text-align: center; }
 
 /*===== Pseudo-elements placeholder =====*/
@@ -437,17 +437,14 @@ body {
   line-height: 1.5; }
 
 /*===== Text style =====*/
-h3 {
-  font-family: "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif; }
-
 h4 {
   margin-top: 1.57143rem;
   margin-bottom: 2.28571rem;
   color: #c0c3c5;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 0.875rem; }
+  letter-spacing: 0.075rem;
+  font-weight: 800;
+  font-size: 1.25rem; }
 
 blockquote {
   font-weight: 300;
@@ -522,6 +519,14 @@ footer {
     .panel--padded, .panel--padded--centered {
       padding-top: 5rem;
       padding-bottom: 2.125rem; } }
+
+.panel--main, .panel--main--centered {
+  padding-top: 2.5rem;
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 769px) {
+    .panel--main, .panel--main--centered {
+      padding-top: 5rem;
+      padding-bottom: 18.75rem; } }
 
 /*===== Import grid columns =====*/
 /*_grid-columns.scss*/
@@ -723,7 +728,7 @@ footer {
   border-radius: 0.4em;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 1.0625rem;
   font-weight: 500;
   transition: opacity 0.3s;
   display: block; }
@@ -746,7 +751,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
   letter-spacing: 1px;
   font-family: Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 100;
-  font-size: 1.75rem; }
+  font-size: 1.875rem; }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
@@ -791,7 +796,7 @@ p, .para-primary, .para-primary--grouped {
       padding-bottom: 0.77778rem; } }
 
 .nav__item a:hover, .nav__item--current a {
-  color: #0B0B0B;
+  color: #B81104;
   border-color: #009DC4; }
 
 /*===== Menu link =====*/

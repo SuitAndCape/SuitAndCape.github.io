@@ -16,3 +16,12 @@
     padding-bottom: rem(34px);
   }
 }
+
+%panel-main {
+  padding-top: rem(40px);
+  @include mq(medium) {
+    padding-top: rem(80px);
+    padding-bottom: rem(300px);
+    // margin-bottom: rem(34px);
+  }
+}

@@ -9,7 +9,7 @@
   border-radius: $br--default;
   color: palette(white, base);
   text-transform: uppercase;
-  font-size : rem(14px);
+  font-size : rem(17px);
   font-weight: $font-weight--medium;
   transition: opacity $trns-x-quick;
   display: block;
@@ -36,7 +36,7 @@
   letter-spacing: $letter-space;
   font-family: $font-family--secondary;
   font-weight: $font-weight--thin;
-  font-size: rem(28px);
+  font-size: rem(30px);
 }
 
 %hdln-ter {
@@ -84,7 +84,7 @@
 }
 
 %nav-item-on {
-  color: palette(black);
+  color: $milano-red;
   border-color: $color-primary;
 }
 
