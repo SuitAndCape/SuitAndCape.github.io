@@ -869,8 +869,8 @@ p, .para-primary, .para-primary--grouped {
   .icn--nav-toggle {
     width: 25px;
     height: 17px;
-    border-top: solid 3px #797E83;
-    border-bottom: solid 3px #797E83;
+    border-top: solid 3px #999da1;
+    border-bottom: solid 3px #999da1;
     position: relative; }
     .icn--nav-toggle:before {
       height: 3px;

@@ -13,9 +13,11 @@
   @include mq(small) {
     width: 100%;
   }
+
   @include mq(medium) {
     width: auto;
     display: inline-block;
     @include doubly(20px);
   }
+
 }
