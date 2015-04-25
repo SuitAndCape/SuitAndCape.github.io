@@ -4,72 +4,134 @@
 *=======================================================================*/
 /*===== BEM element selector mixin =====*/
 @mixin e($element) {
+
   &__#{$element} {
     @content;
   }
+
 }
 
 /*===== BEM modifier selector mixin =====*/
 @mixin m($modifier) {
+
   &--#{$modifier} {
     @content;
   }
+
 }
 
 /*===== Media queries =====*/
 /// Mixin to manage responsive breakpoints
 /// @author Hugo Giraudel
+/// @editor Ali Esmaili
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
 @mixin mq($break) {
+
 /*===== If the key exists in the map =====*/
-  @if $break == "small" {
+  @if $break == "u-small" {
     /*===== Prints a media query based on the value =====*/
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    @media ($spltpnt-sm) and (max-width: $brkpnt-us) {
       @content;
     }
+
   }
+
+  @else if $break == "x-small" {
+    @media (min-width: $brkpnt-us + 1) and (max-width: $brkpnt-xs) {
+      @content;
+    }
+
+  }
+
+  @else if $break == "small" {
+    @media (min-width: $brkpnt-xs + 1) and (max-width: $brkpnt-sm) {
+      @content;
+    }
+
+  }
+
   @else if $break == "medium" {
-    @media (min-width: $brkpoint-md + 1) {
+    @media (min-width: $brkpnt-sm + 1) and (max-width: $brkpnt-md) {
       @content;
     }
+
   }
+
   @else if $break == "large" {
-    @media (min-width: $brkpoint-lg) {
+    @media (min-width: $brkpnt-md + 1) and (max-width: $brkpnt-lg) {
       @content;
     }
+
   }
+
+  @else if $break == "x-large" {
+    @media (min-width: $brkpnt-lg) {
+      @content;
+    }
+
+  }
+
+  @else if $break == "split-sm" {
+    @media (min-width: $spltpnt-sm) and (max-width: $spltpnt-md) {
+      @content;
+    }
+
+  }
+
+  @else if $break == "split-md" {
+    @media (min-width: $spltpnt-md + 1) {
+      @content;
+    }
+
+  }
+
+  @else if $break == "split-lg" {
+    @media (min-width: $spltpnt-lg) {
+      @content;
+    }
+
+  }
+
   /*===== If the key doesn't exist in the map =====*/
    @else {
-    @error "Whoops! No value could be retrieved for `#{$break}`. "
+    @error "Whoops! No value could be retrieved for \`#{$break}\`."
   }
+
 }
 
 /*===== Generate modifier color classes =====*/
 @mixin bg-colors($map) {
+
   @each $theme, $color in $map {
+
     &--#{$theme} {
       background-color: $color;
     }
+
   }
+
 }
 
 /*===== Generate :before or :after pseudo-element shapes =====*/
 @mixin p-el(
-  $el,
-  $el-w: null,
-  $el-h: null) {
+  $el, $el-w: null, $el-h: null) {
+
   @if $el == "before" or $el == "after" {
+
     &:#{$el} {
       @extend %pseudos;
       height: $el-h;
       width: $el-w;
       @content;
     }
+
   }
+
   @else {
     @error "`#{$el}` is not a valid pseudo-element.";
   }
+
 }
 
 /*===== Background image replacement =====*/
@@ -83,20 +145,26 @@
 
 /*===== Adjacent sibling margins =====*/
 @mixin doubly($margin: 1rem) {
+
   & + & {
     margin-left: $margin;
     @content;
   }
+
 }
 
 /*===== Grid columns =====*/
 @mixin g-columns {
+
   @for $i from 1 through $g-col-count {
     $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;
     $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
     /*===== Generate column modifier classes =====*/
     &--#{$i} {
       width: percentage($target / $context);
     }
+
   }
+
 }

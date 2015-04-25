@@ -36,7 +36,7 @@ h4 {
   color: palette(grey, x-light);
   text-transform: uppercase;
   letter-spacing: rem(1.2px);
-  font-weight: $font-weight--ultra-bold;
+  // font-weight: $font-weight--ultra-bold;
   font-size: rem(20px);
 }
 
@@ -87,7 +87,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  transition: $trns-x-quick;
+  transition: $trnstn-x-quick;
 }
 
 /*===== Button style =====*/
@@ -98,8 +98,10 @@ button {
 /*===== Footer style =====*/
 footer {
   border-top: 1px solid palette(grey, xx-light);
+
   p {
     font-size: rem(16px);
     margin-top: rem(22px, 16px);
   }
+
 }

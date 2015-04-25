@@ -10,11 +10,11 @@
   @extend %center-align;
   @extend %btn;
   margin-bottom: rem(10px, 14px);
-  @include mq(small) {
+  @include mq(split-sm) {
     width: 100%;
   }
 
-  @include mq(medium) {
+  @include mq(split-md) {
     width: auto;
     display: inline-block;
     @include doubly(20px);

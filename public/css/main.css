@@ -22,20 +22,11 @@
 /*===== Path to assets =====*/
 /*===== Grid variables =====*/
 /*===== Media query breakpoints =====*/
-/*
-$brkpoint-xs              : "(max-width: 480px)";
-$brkpoint-sm              : "(max-width: 736px)";
-$brkpoint-md              : "(max-width: 980px)";
-$brkpoint-lg              : "(max-width: 1280px)";
-$brkpoint-xl              : "(max-width: 1680px)";
-*/
 /*===== Import functions =====*/
 /*_functions.scss*/
 /**** FUNCTIONS
 *=======================================================================*/
 /*===== Import if Google Fonts URL is defined =====*/
-@import url("http://fonts.googleapis.com/css?family=Prata");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 /*===== Converts pixels to rem values =====*/
 /*===== Call the color palette modifiers in color values =====*/
 /*===== Establish the base context width for fluid width of grid =====*/
@@ -433,7 +424,7 @@ td, th {
 body {
   color: #797E83;
   font-size: 16px;
-  font-family: Garamond, Baskerville, Prata "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   line-height: 1.5; }
 
 /*===== Text style =====*/
@@ -443,7 +434,6 @@ h4 {
   color: #c0c3c5;
   text-transform: uppercase;
   letter-spacing: 0.075rem;
-  font-weight: 800;
   font-size: 1.25rem; }
 
 blockquote {
@@ -577,7 +567,6 @@ footer {
 /*===== Column styles =====*/
 [class^="grid__col--"] {
   /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/
   /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     [class^="grid__col--"] {
@@ -657,7 +646,6 @@ footer {
 [class^="btn--"] {
   margin-bottom: 0.71429rem;
   /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/
   /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     [class^="btn--"] {
@@ -733,39 +721,159 @@ footer {
   transition: opacity 0.3s;
   display: block; }
   [class^="btn--"]:hover, .form__btn:hover {
-    opacity: .75; }
+    opacity: .73; }
   [class^="btn--"]:active, .form__btn:active {
     opacity: initial; }
 
 /*===== Headlines =====*/
 h1, .headline-primary, .headline-primary--grouped {
   color: #FFFFFF;
-  font-family: Garamond, Baskerville, Prata "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
-  font-size: 3.25rem;
   line-height: 1.09524;
-  margin-top: 0; }
+  margin-top: 0;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 3.75rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 3.375rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 3rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 2.625rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 2.25rem; } }
+  @media (1px) and (max-width: 281px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 1.5625rem; } }
 
 h2, .headline-secondary, .headline-secondary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 100;
-  font-size: 1.875rem; }
+  font-family: Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 400;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 2.0625rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 2rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.9375rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.875rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.8125rem; } }
+  @media (1px) and (max-width: 281px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.3125rem; } }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
+  font-family: "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 500;
-  font-size: 1.375rem; }
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.3125rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.25rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.1875rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.125rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.0625rem; } }
+  @media (1px) and (max-width: 281px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 0.8125rem; } }
+
+.headline-plaque {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-weight: 600;
+  font-size: 1.125rem; }
 
 /*===== Paragraphs =====*/
 p, .para-primary, .para-primary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5; }
+  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-weight: 100;
+  line-height: 1.5;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.0625rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.03125rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 0.96875rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 0.9375rem; } }
+  @media (1px) and (max-width: 281px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 0.625rem; } }
+
+/*===== Width resizer =====*/
+.headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/ }
+  @media (min-width: 1100px) {
+    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
+      width: 90%; } }
+  @media (min-width: 769px) {
+    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
+      width: 95%; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
+      width: 100%; } }
 
 /*===== Icons =====*/
 .icn--nav-toggle, .icn--close {
@@ -787,8 +895,7 @@ p, .para-primary, .para-primary--grouped {
   display: block;
   padding: 0.44444rem;
   border-bottom: 1px solid transparent;
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     .nav__item a, .nav__item--current a {
       border-bottom-color: #d8dadb;
@@ -847,8 +954,8 @@ p, .para-primary, .para-primary--grouped {
   .headline-tertiary--grouped {
     margin-top: 0.41667rem;
     margin-bottom: 2.25rem; }
-.headline-menu {
-  font-family: "Open Sans", Arial, sans-serif, serif; }
+.headline-plaque {
+  margin-bottom: 0; }
 
 /*===== Import icons =====*/
 /*_icons.scss*/
@@ -978,7 +1085,6 @@ p, .para-primary, .para-primary--grouped {
 /**** HEADLINES
 *=======================================================================*/
 .para-primary {
-  font-family: "Open Sans", Arial, sans-serif, serif;
   margin: 0 0 1.66667rem; }
 
 /*===== Import sad browser =====*/
@@ -1001,8 +1107,7 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 /*===== Import collapsed states =====*/
 .is-collapsed-mobile {
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
+  /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     .is-collapsed-mobile {
       visibility: collapse;
@@ -1018,7 +1123,6 @@ p, .para-primary, .para-primary--grouped {
 /*===== Mobile display =====*/
 .is-displayed-mobile {
   /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/
   /*===== If the key exists in the map =====*/ }
   @media (min-width: 1px) and (max-width: 768px) {
     .is-displayed-mobile {

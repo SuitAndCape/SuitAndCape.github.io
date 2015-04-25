@@ -19,9 +19,11 @@
   }
 
   @include m(hero) {
+
     @media (min-width: 769px) {
       margin-bottom: rem(42px);
     }
+
   }
 
 }

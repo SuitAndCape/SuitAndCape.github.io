@@ -3,13 +3,12 @@
 /**** GLOBAL CONFIGURATION
 *=======================================================================*/
 /*===== Font sources =====*/
-$font-url--prata          : "http://fonts.googleapis.com/css?family=Prata";
-$font-url--open-sans      : "http://fonts.googleapis.com/css?family=Open+Sans";
+$font-url--google         : "http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700";
 
 /*===== Font stacks =====*/
 $font-family--default     : "Open Sans", Arial, sans-serif, serif;
-$font-family--primary     : Garamond, Baskerville, Prata "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--secondary   : Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--primary     : Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--secondary   : Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 $font-family--tertiary    : "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
 /*===== Font weights =====*/
@@ -102,7 +101,6 @@ $color-palettes: (
   )
 );
 
-
 /*===== Text =====*/
 $base__font-size          : 16px;
 $base__line               : 24px;
@@ -113,11 +111,11 @@ $br--default              : .4em;
 $br--round                : 50%;
 
 /*===== Transition Duration =====*/
-$trns-x-quick             : .3s;
-$trns-quick               : .5s;
-$trns-medium              : 1s;
-$trns-slow                : 3s;
-$trns-x-slow              : 5s;
+$trnstn-x-quick           : .3s;
+$trnstn-quick             : .5s;
+$trnstn-medium            : 1s;
+$trnstn-slow              : 3s;
+$trnstn-x-slow            : 5s;
 
 /*===== Path to assets =====*/
 $path--rel                : "../images";
@@ -130,13 +128,13 @@ $g-cont-max-w             : 1600px;
 // $g-cont-max-w             : 1050px;
 
 /*===== Media query breakpoints =====*/
-$brkpoint-sm              : 1px;
-$brkpoint-md              : 768px;
-$brkpoint-lg              : 1100px;
-/*
-$brkpoint-xs              : "(max-width: 480px)";
-$brkpoint-sm              : "(max-width: 736px)";
-$brkpoint-md              : "(max-width: 980px)";
-$brkpoint-lg              : "(max-width: 1280px)";
-$brkpoint-xl              : "(max-width: 1680px)";
-*/
+$brkpnt-xl                : 1680px;
+$brkpnt-lg                : 1280px;
+$brkpnt-md                : 980px;
+$brkpnt-sm                : 736px;
+$brkpnt-xs                : 480px;
+$brkpnt-us                : 281px;
+
+$spltpnt-sm               : 1px;
+$spltpnt-md               : 768px;
+$spltpnt-lg               : 1100px;

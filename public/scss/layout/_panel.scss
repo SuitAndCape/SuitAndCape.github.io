@@ -17,6 +17,7 @@
       @extend %center-align;
       @extend %panel-padding;
     }
+
   }
 
   @include m(main) {
@@ -26,6 +27,7 @@
       @extend %center-align;
       @extend %panel-main;
     }
+
   }
 
 }

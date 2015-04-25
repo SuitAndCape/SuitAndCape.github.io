@@ -4,15 +4,21 @@
 *=======================================================================*/
 /*===== Mobile display =====*/
 .is-displayed-mobile {
-  @include mq(small) {
+
+  @include mq(split-sm) {
     display: block;
     @at-root (with: media) {
+
       .is-hidden-mobile {
         display: none;
       }
+
     }
+
   }
-  @include mq(medium) {
+
+  @include mq(split-md) {
     display: none;
   }
+
 }

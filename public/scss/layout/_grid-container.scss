@@ -13,7 +13,8 @@
   }
 
   /*===== Set a max-width for grid container =====*/
-  @include mq(large) {
+  @include mq(split-lg) {
     max-width: $g-cont-max-w;
   }
+
 }

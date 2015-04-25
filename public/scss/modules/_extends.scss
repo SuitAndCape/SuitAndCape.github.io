@@ -11,10 +11,10 @@
   text-transform: uppercase;
   font-size : rem(17px);
   font-weight: $font-weight--medium;
-  transition: opacity $trns-x-quick;
+  transition: opacity $trnstn-x-quick;
   display: block;
   &:hover {
-    opacity: .75;
+    opacity: .73;
   }
   &:active {
     opacity: initial;
@@ -26,33 +26,156 @@
   color: palette(white, base);
   font-family: $font-family--primary;
   font-weight: $font-weight--demi-bold;
-  font-size: rem(52px);
   line-height: (46px / 42px);
   margin-top: 0;
+
+  @include mq(x-large) {
+    font-size: rem(60px);
+  }
+
+  @include mq(large) {
+    font-size: rem(54px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(48px);
+  }
+
+  @include mq(small) {
+    font-size: rem(42px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(36px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(25px);
+  }
+
 }
 
 %hdln-sec {
   color: palette(white, base);
   letter-spacing: $letter-space;
   font-family: $font-family--secondary;
-  font-weight: $font-weight--thin;
-  font-size: rem(30px);
+  font-weight: $font-weight--normal;
+
+  @include mq(x-large) {
+    font-size: rem(33px);
+  }
+
+  @include mq(large) {
+    font-size: rem(32px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(31px);
+  }
+
+  @include mq(small) {
+    font-size: rem(30px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(29px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(21px);
+  }
+
 }
 
 %hdln-ter {
   color: palette(white, base);
   letter-spacing: $letter-space;
+  font-family: $font-family--tertiary;
   font-weight: $font-weight--medium;
-  font-size: rem(22px);
+
+  @include mq(x-large) {
+    font-size: rem(21px);
+  }
+
+  @include mq(large) {
+    font-size: rem(20px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(19px);
+  }
+
+  @include mq(small) {
+    font-size: rem(18px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(17px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(13px);
+  }
+
+}
+
+%hdln-pla {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--default;
+  font-weight: $font-weight--demi-bold;
+  font-size: rem(18px);
 }
 
 /*===== Paragraphs =====*/
 %prgrph-prim {
   color: palette(white, base);
   letter-spacing: $letter-space;
-  font-weight: $font-weight--normal;
-  font-size: rem(18px);
+  font-family: $font-family--default;
+  font-weight: $font-weight--thin;
   line-height: (27px / 18px);
+
+  @include mq(x-large) {
+    font-size: rem(17px);
+  }
+
+  @include mq(large) {
+    font-size: rem(16.5px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(16px);
+  }
+
+  @include mq(small) {
+    font-size: rem(15.5px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(15px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(10px);
+  }
+
+}
+
+/*===== Width resizer =====*/
+%wdth-rzr {
+
+  @include mq(split-lg) {
+    width: 90%;
+  }
+
+  @include mq(split-md) {
+    width: 95%;
+  }
+
+  @include mq(split-sm) {
+    width: 100%;
+  }
+
 }
 
 /*===== Icons =====*/
@@ -63,10 +186,12 @@
 
 /*===== Navigation items =====*/
 %nav-item-horz {
-  @include mq(medium) {
+
+  @include mq(split-md) {
     display: inline-block;
     margin: 0 rem(12px);
   }
+
 }
 
 %nav-item-link {
@@ -76,11 +201,13 @@
   display: block;
   padding: rem(8px, 18px);
   border-bottom: 1px solid transparent;
-  @include mq(small) {
+
+  @include mq(split-sm) {
     border-bottom-color: palette(grey, xx-light);
     padding-top: rem(14px, 18px);
     padding-bottom: rem(14px, 18px);
   }
+
 }
 
 %nav-item-on {
