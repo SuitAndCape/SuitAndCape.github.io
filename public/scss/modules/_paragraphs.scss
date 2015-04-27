@@ -5,13 +5,12 @@
 .para {
 
   &-primary {
-
     @extend %prgrph-prim;
-    @extend %wdth-rzr;
+    // @extend %wdth-rzr;
     margin: 0 0 rem(30px, 18px);
     @include m(grouped) {
       @extend %prgrph-prim;
-      @extend %wdth-rzr;
+      // @extend %wdth-rzr;
     }
 
   }

@@ -6,12 +6,10 @@
 
   &-primary {
     @extend %hdln-prim;
-    @extend %wdth-rzr;
     margin-bottom: rem(70px, 42px);
 
     @include m(grouped) {
       @extend %hdln-prim;
-      @extend %wdth-rzr;
       margin-bottom: 0;
     }
 
@@ -19,12 +17,10 @@
 
   &-secondary {
     @extend %hdln-sec;
-    @extend %wdth-rzr;
     margin-bottom: rem(22px, 24px);
 
     @include m(grouped) {
       @extend %hdln-sec;
-      @extend %wdth-rzr;
       margin-top: rem(10px, 24px);
       margin-bottom: rem(54px, 24px);
     }
@@ -33,12 +29,10 @@
 
   &-tertiary {
     @extend %hdln-ter;
-    @extend %wdth-rzr;
     margin-bottom: rem(22px, 24px);
 
     @include m(grouped) {
       @extend %hdln-ter;
-      @extend %wdth-rzr;
       margin-top: rem(10px, 24px);
       margin-bottom: rem(54px, 24px);
     }
@@ -47,7 +41,6 @@
 
   &-plaque {
     @extend %hdln-pla;
-    @extend %wdth-rzr;
     // margin-bottom: rem(22px, 24px);
     margin-bottom: 0;
   }

@@ -3,12 +3,12 @@
 /**** GLOBAL CONFIGURATION
 *=======================================================================*/
 /*===== Font sources =====*/
-$font-url--google         : "http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700";
+$font-url--google         : "http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700";
 
 /*===== Font stacks =====*/
 $font-family--default     : "Open Sans", Arial, sans-serif, serif;
 $font-family--primary     : Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--secondary   : Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--secondary   : "Open Sans Condensed", Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 $font-family--tertiary    : "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
 /*===== Font weights =====*/

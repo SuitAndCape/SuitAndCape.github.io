@@ -2,17 +2,18 @@
 
 /**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
-/*===== Buttons =====*/
+/*===== Button features =====*/
 %btn {
-  padding: 15px 30px;
+  padding: 12px 24px;
   border: 0;
   border-radius: $br--default;
   color: palette(white, base);
   text-transform: uppercase;
-  font-size : rem(17px);
+  font-size : rem(16px);
+  font-family: $font-family--default;
   font-weight: $font-weight--medium;
   transition: opacity $trnstn-x-quick;
-  display: block;
+  // display: block;
   &:hover {
     opacity: .73;
   }
@@ -21,7 +22,17 @@
   }
 }
 
-/*===== Headlines =====*/
+/*===== Case features =====*/
+%case-xtn {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  width: 100%;
+}
+
+/*===== Headline features =====*/
 %hdln-prim {
   color: palette(white, base);
   font-family: $font-family--primary;
@@ -59,26 +70,26 @@
   color: palette(white, base);
   letter-spacing: $letter-space;
   font-family: $font-family--secondary;
-  font-weight: $font-weight--normal;
+  font-weight: $font-weight--bold;
 
   @include mq(x-large) {
-    font-size: rem(33px);
-  }
-
-  @include mq(large) {
-    font-size: rem(32px);
-  }
-
-  @include mq(medium) {
     font-size: rem(31px);
   }
 
-  @include mq(small) {
+  @include mq(large) {
     font-size: rem(30px);
   }
 
-  @include mq(x-small) {
+  @include mq(medium) {
     font-size: rem(29px);
+  }
+
+  @include mq(small) {
+    font-size: rem(28px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(27px);
   }
 
   @include mq(u-small) {
@@ -127,7 +138,7 @@
   font-size: rem(18px);
 }
 
-/*===== Paragraphs =====*/
+/*===== Paragraph features =====*/
 %prgrph-prim {
   color: palette(white, base);
   letter-spacing: $letter-space;
@@ -161,30 +172,13 @@
 
 }
 
-/*===== Width resizer =====*/
-%wdth-rzr {
-
-  @include mq(split-lg) {
-    width: 90%;
-  }
-
-  @include mq(split-md) {
-    width: 95%;
-  }
-
-  @include mq(split-sm) {
-    width: 100%;
-  }
-
-}
-
-/*===== Icons =====*/
+/*===== Icon features =====*/
 %icn--ui {
   line-height: 0;
   cursor: pointer;
 }
 
-/*===== Navigation items =====*/
+/*===== Navigation item features =====*/
 %nav-item-horz {
 
   @include mq(split-md) {
@@ -211,11 +205,11 @@
 }
 
 %nav-item-on {
-  color: $milano-red;
+  color: palette(grey, x-light);
   border-color: $color-primary;
 }
 
-/*===== Menu link =====*/
+/*===== Menu link features =====*/
 %menu-link {
   display: block;
   padding-top: em(16px);

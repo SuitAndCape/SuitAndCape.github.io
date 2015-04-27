@@ -36,6 +36,7 @@ STORIES, MVP, & PSEUDOCODE
   - Don't go overboard
 8. Has effective SEO
   - If Single-Page Website...
+    - use the "Flyer" as a simple, searchable response?
     - use `google-ajax-crawler`?
     - use `grunt-compile-handlebars`?
     - use `grunt-static-handlebars`?

@@ -27,6 +27,7 @@
 /**** FUNCTIONS
 *=======================================================================*/
 /*===== Import if Google Fonts URL is defined =====*/
+@import url("http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700");
 /*===== Converts pixels to rem values =====*/
 /*===== Call the color palette modifiers in color values =====*/
 /*===== Establish the base context width for fluid width of grid =====*/
@@ -496,23 +497,20 @@ footer {
 /**** BASE LAYOUT EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
 .panel, .panel--centered {
-  padding-top: 1.875rem;
-  /*===== If the key exists in the map =====*/ }
+  padding-top: 1.875rem; }
   @media (min-width: 769px) {
     .panel, .panel--centered {
       padding-bottom: 1.25rem; } }
 
 .panel--padded, .panel--padded--centered {
-  padding-top: 2.125rem;
-  /*===== If the key exists in the map =====*/ }
+  padding-top: 2.125rem; }
   @media (min-width: 769px) {
     .panel--padded, .panel--padded--centered {
       padding-top: 5rem;
       padding-bottom: 2.125rem; } }
 
 .panel--main, .panel--main--centered {
-  padding-top: 2.5rem;
-  /*===== If the key exists in the map =====*/ }
+  padding-top: 2.5rem; }
   @media (min-width: 769px) {
     .panel--main, .panel--main--centered {
       padding-top: 5rem;
@@ -523,65 +521,60 @@ footer {
 /**** GRID COLUMNS
 *=======================================================================*/
 /*===== Calculate grid columns =====*/
-.grid__col {
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 769px) {
-    .grid__col {
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/
-      /*===== Generate column modifier classes =====*/ }
-      .grid__col--1 {
-        width: 6.5%; }
-      .grid__col--2 {
-        width: 15%; }
-      .grid__col--3 {
-        width: 23.5%; }
-      .grid__col--4 {
-        width: 32%; }
-      .grid__col--5 {
-        width: 40.5%; }
-      .grid__col--6 {
-        width: 49%; }
-      .grid__col--7 {
-        width: 57.5%; }
-      .grid__col--8 {
-        width: 66%; }
-      .grid__col--9 {
-        width: 74.5%; }
-      .grid__col--10 {
-        width: 83%; }
-      .grid__col--11 {
-        width: 91.5%; }
-      .grid__col--12 {
-        width: 100%; } }
+@media (min-width: 769px) {
+  .grid__col {
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/
+    /*===== Generate column modifier classes =====*/ }
+    .grid__col--1 {
+      width: 6.5%; }
+    .grid__col--2 {
+      width: 15%; }
+    .grid__col--3 {
+      width: 23.5%; }
+    .grid__col--4 {
+      width: 32%; }
+    .grid__col--5 {
+      width: 40.5%; }
+    .grid__col--6 {
+      width: 49%; }
+    .grid__col--7 {
+      width: 57.5%; }
+    .grid__col--8 {
+      width: 66%; }
+    .grid__col--9 {
+      width: 74.5%; }
+    .grid__col--10 {
+      width: 83%; }
+    .grid__col--11 {
+      width: 91.5%; }
+    .grid__col--12 {
+      width: 100%; } }
 
 /*===== Column styles =====*/
-[class^="grid__col--"] {
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 1px) and (max-width: 768px) {
-    [class^="grid__col--"] {
-      margin-top: 0.75rem;
-      margin-bottom: 0.75rem; } }
-  @media (min-width: 769px) {
-    [class^="grid__col--"] {
-      float: left;
-      min-height: 1px;
-      padding-right: 10px;
-      padding-left: 10px; }
-      [class^="grid__col--"] + [class^="grid__col--"] {
-        margin-left: 2%; }
-      [class^="grid__col--"]:last-of-type {
-        float: right; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="grid__col--"] {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem; } }
+@media (min-width: 769px) {
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px; }
+    [class^="grid__col--"] + [class^="grid__col--"] {
+      margin-left: 2%; }
+    [class^="grid__col--"]:last-of-type {
+      float: right; } }
 
 /*===== Import grid container =====*/
 /*_grid-container.scss*/
@@ -590,8 +583,7 @@ footer {
 .grid {
   width: 90%;
   /*===== Make nested grid 100% =====*/
-  /*===== Set a max-width for grid container =====*/
-  /*===== If the key exists in the map =====*/ }
+  /*===== Set a max-width for grid container =====*/ }
   [class*="grid__col--"] > .grid {
     width: 100%; }
   @media (min-width: 1100px) {
@@ -643,19 +635,20 @@ footer {
 .btn--dix {
   background-color: #4682B4; }
 
+.swtch {
+  width: auto;
+  display: inline-block; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .swtch {
+      width: 100%;
+      display: block; } }
+
 [class^="btn--"] {
-  margin-bottom: 0.71429rem;
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/ }
+  margin-bottom: 0.71429rem; }
   @media (min-width: 1px) and (max-width: 768px) {
     [class^="btn--"] {
-      width: 100%; } }
-  @media (min-width: 769px) {
-    [class^="btn--"] {
-      width: auto;
-      display: inline-block; }
-      [class^="btn--"] + [class^="btn--"] {
-        margin-left: 20px; } }
+      width: 100%;
+      display: block; } }
 
 /*===== Import case =====*/
 /*_case.scss*/
@@ -663,17 +656,11 @@ footer {
 *=======================================================================*/
 .case {
   /*===== Banner image =====*/
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  width: 100%; }
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg"); }
   .case #footer {
     background-color: rgba(26, 32, 63, 0.9); }
 
@@ -709,116 +696,50 @@ footer {
 /*_extends.scss*/
 /**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
-/*===== Buttons =====*/
-[class^="btn--"], .form__btn {
-  padding: 15px 30px;
+/*===== Button features =====*/
+.swtch, [class^="btn--"], .form__btn {
+  padding: 12px 24px;
   border: 0;
   border-radius: 0.4em;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 1.0625rem;
+  font-size: 1rem;
+  font-family: "Open Sans", Arial, sans-serif, serif;
   font-weight: 500;
-  transition: opacity 0.3s;
-  display: block; }
-  [class^="btn--"]:hover, .form__btn:hover {
+  transition: opacity 0.3s; }
+  .swtch:hover, [class^="btn--"]:hover, .form__btn:hover {
     opacity: .73; }
-  [class^="btn--"]:active, .form__btn:active {
+  .swtch:active, [class^="btn--"]:active, .form__btn:active {
     opacity: initial; }
 
-/*===== Headlines =====*/
+/*===== Case features =====*/
+.case {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  width: 100%; }
+
+/*===== Headline features =====*/
 h1, .headline-primary, .headline-primary--grouped {
   color: #FFFFFF;
   font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
   line-height: 1.09524;
-  margin-top: 0;
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
-  @media (min-width: 1280px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 3.75rem; } }
-  @media (min-width: 981px) and (max-width: 1280px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 3.375rem; } }
-  @media (min-width: 737px) and (max-width: 980px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 3rem; } }
-  @media (min-width: 481px) and (max-width: 736px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 2.625rem; } }
-  @media (min-width: 282px) and (max-width: 480px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 2.25rem; } }
-  @media (1px) and (max-width: 281px) {
-    h1, .headline-primary, .headline-primary--grouped {
-      font-size: 1.5625rem; } }
+  margin-top: 0; }
 
 h2, .headline-secondary, .headline-secondary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 400;
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
-  @media (min-width: 1280px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 2.0625rem; } }
-  @media (min-width: 981px) and (max-width: 1280px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 2rem; } }
-  @media (min-width: 737px) and (max-width: 980px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 1.9375rem; } }
-  @media (min-width: 481px) and (max-width: 736px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 1.875rem; } }
-  @media (min-width: 282px) and (max-width: 480px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 1.8125rem; } }
-  @media (1px) and (max-width: 281px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
-      font-size: 1.3125rem; } }
+  font-family: "Open Sans Condensed", Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 700; }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
   font-family: "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 500;
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
-  @media (min-width: 1280px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 1.3125rem; } }
-  @media (min-width: 981px) and (max-width: 1280px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 1.25rem; } }
-  @media (min-width: 737px) and (max-width: 980px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 1.1875rem; } }
-  @media (min-width: 481px) and (max-width: 736px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 1.125rem; } }
-  @media (min-width: 282px) and (max-width: 480px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 1.0625rem; } }
-  @media (1px) and (max-width: 281px) {
-    h3, .headline-tertiary, .headline-tertiary--grouped {
-      font-size: 0.8125rem; } }
+  font-weight: 500; }
 
 .headline-plaque {
   color: #FFFFFF;
@@ -827,66 +748,24 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
   font-weight: 600;
   font-size: 1.125rem; }
 
-/*===== Paragraphs =====*/
+/*===== Paragraph features =====*/
 p, .para-primary, .para-primary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
   font-family: "Open Sans", Arial, sans-serif, serif;
   font-weight: 100;
-  line-height: 1.5;
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== Prints a media query based on the value =====*/ }
-  @media (min-width: 1280px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 1.0625rem; } }
-  @media (min-width: 981px) and (max-width: 1280px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 1.03125rem; } }
-  @media (min-width: 737px) and (max-width: 980px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 1rem; } }
-  @media (min-width: 481px) and (max-width: 736px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 0.96875rem; } }
-  @media (min-width: 282px) and (max-width: 480px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 0.9375rem; } }
-  @media (1px) and (max-width: 281px) {
-    p, .para-primary, .para-primary--grouped {
-      font-size: 0.625rem; } }
+  line-height: 1.5; }
 
-/*===== Width resizer =====*/
-.headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 1100px) {
-    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
-      width: 90%; } }
-  @media (min-width: 769px) {
-    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
-      width: 95%; } }
-  @media (min-width: 1px) and (max-width: 768px) {
-    .headline-primary, .headline-primary--grouped, .headline-secondary, .headline-secondary--grouped, .headline-tertiary, .headline-tertiary--grouped, .headline-plaque, .para-primary, .para-primary--grouped {
-      width: 100%; } }
-
-/*===== Icons =====*/
+/*===== Icon features =====*/
 .icn--nav-toggle, .icn--close {
   line-height: 0;
   cursor: pointer; }
 
-/*===== Navigation items =====*/
-.nav__item, .nav__item--current {
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 769px) {
-    .nav__item, .nav__item--current {
-      display: inline-block;
-      margin: 0 0.75rem; } }
+/*===== Navigation item features =====*/
+@media (min-width: 769px) {
+  .nav__item, .nav__item--current {
+    display: inline-block;
+    margin: 0 0.75rem; } }
 
 .nav__item a, .nav__item--current a {
   font-weight: 300;
@@ -894,8 +773,7 @@ p, .para-primary, .para-primary--grouped {
   font-size: 1.125rem;
   display: block;
   padding: 0.44444rem;
-  border-bottom: 1px solid transparent;
-  /*===== If the key exists in the map =====*/ }
+  border-bottom: 1px solid transparent; }
   @media (min-width: 1px) and (max-width: 768px) {
     .nav__item a, .nav__item--current a {
       border-bottom-color: #d8dadb;
@@ -903,10 +781,10 @@ p, .para-primary, .para-primary--grouped {
       padding-bottom: 0.77778rem; } }
 
 .nav__item a:hover, .nav__item--current a {
-  color: #B81104;
+  color: #c0c3c5;
   border-color: #009DC4; }
 
-/*===== Menu link =====*/
+/*===== Menu link features =====*/
 .menu__link, .menu__link--end {
   display: block;
   padding-top: em(16px);
@@ -1073,11 +951,10 @@ p, .para-primary, .para-primary--grouped {
 /**** NAVIGATION BAR
 *=======================================================================*/
 .navbar {
-  position: relative;
-  /*===== If the key exists in the map =====*/ }
+  position: relative; }
   @media (min-width: 769px) {
     .navbar {
-      margin-top: 3.375rem;
+      margin-top: 3.3125rem;
       margin-bottom: 0; } }
 
 /*===== Import paragraphs =====*/
@@ -1106,32 +983,27 @@ p, .para-primary, .para-primary--grouped {
 /**** COLLAPSED STATES
 *=======================================================================*/
 /*===== Import collapsed states =====*/
-.is-collapsed-mobile {
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 1px) and (max-width: 768px) {
-    .is-collapsed-mobile {
-      visibility: collapse;
-      padding: 0;
-      height: 0;
-      margin: 0;
-      line-height: 0; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-collapsed-mobile {
+    visibility: collapse;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0; } }
 
 /*===== Import grid-display states =====*/
 /*_grid-display.scss*/
 /**** GRID DISPLAY STATES
 *=======================================================================*/
 /*===== Mobile display =====*/
-.is-displayed-mobile {
-  /*===== If the key exists in the map =====*/
-  /*===== If the key exists in the map =====*/ }
-  @media (min-width: 1px) and (max-width: 768px) {
-    .is-displayed-mobile {
-      display: block; }
-      .is-hidden-mobile {
-        display: none; } }
-  @media (min-width: 769px) {
-    .is-displayed-mobile {
+@media (min-width: 1px) and (max-width: 768px) {
+  .is-displayed-mobile {
+    display: block; }
+    .is-hidden-mobile {
       display: none; } }
+@media (min-width: 769px) {
+  .is-displayed-mobile {
+    display: none; } }
 
 /*===== Import design test button states =====*/
 /*design_tests.scss*/

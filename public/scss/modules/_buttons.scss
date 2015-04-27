@@ -6,18 +6,34 @@
   @include bg-colors($ui-colors);
 }
 
+.swtch {
+  // @extend %center-align;
+  @extend %btn;
+  width: auto;
+  display: inline-block;
+
+  // @include doubly(20px);
+    @include mq(split-sm) {
+    width: 100%;
+    display: block;
+  }
+
+}
+
 [class^="btn--"] {
   @extend %center-align;
   @extend %btn;
   margin-bottom: rem(10px, 14px);
+
   @include mq(split-sm) {
     width: 100%;
+    display: block;
   }
 
-  @include mq(split-md) {
-    width: auto;
-    display: inline-block;
-    @include doubly(20px);
-  }
+  // @include mq(split-md) {
+  //   width: auto;
+  //   display: inline-block;
+  //   @include doubly(20px);
+  // }
 
 }

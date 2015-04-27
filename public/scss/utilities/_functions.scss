@@ -3,8 +3,8 @@
 /**** FUNCTIONS
 *=======================================================================*/
 /*===== Import if Google Fonts URL is defined =====*/
-@if variable-exists(font-url--googlr) {
-  @import url($font-url--googlr);
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
 }
 
 /*===== Converts pixels to rem values =====*/
