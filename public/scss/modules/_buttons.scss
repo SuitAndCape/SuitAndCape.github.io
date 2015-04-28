@@ -6,34 +6,29 @@
   @include bg-colors($ui-colors);
 }
 
-.swtch {
-  // @extend %center-align;
+[class^="btn--"] {
+  @extend %center-align;
   @extend %btn;
+  @extend %btn-actn;
+
+  @include mq(split-md) {
+  margin: auto rem(15px);
+  //   width: auto;
+  //   display: inline-block;
+  //   @include doubly(20px);
+  }
+
+  padding: rem(15px) rem(30px);
+  margin-bottom: rem(10px, 14px);
   width: auto;
   display: inline-block;
 
-  // @include doubly(20px);
     @include mq(split-sm) {
     width: 100%;
     display: block;
   }
-
 }
 
-[class^="btn--"] {
-  @extend %center-align;
-  @extend %btn;
-  margin-bottom: rem(10px, 14px);
-
-  @include mq(split-sm) {
-    width: 100%;
-    display: block;
-  }
-
-  // @include mq(split-md) {
-  //   width: auto;
-  //   display: inline-block;
-  //   @include doubly(20px);
-  // }
-
+.dim {
+  @extend %btn-actn;
 }

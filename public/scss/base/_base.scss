@@ -10,11 +10,12 @@
 }
 
 /*===== Body style =====*/
-body {
+html, body {
   color: palette(grey);
   font-size: $base__font-size;
   font-family: $font-family--primary;
   line-height: ($base__line / $base__font-size);
+  overflow-x: hidden;
 }
 
 /*===== Text style =====*/

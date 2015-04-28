@@ -2,9 +2,28 @@
 
 /**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
 *=======================================================================*/
+/*===== Arrow (slideshow) features =====*/
+%arrw {
+  position: absolute;
+  padding: rem(10.3px);
+  margin: rem(2.5px);
+  box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, light);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, x-light);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+  }
+
+}
+
 /*===== Button features =====*/
 %btn {
-  padding: 12px 24px;
+  padding: rem(12px) rem(24px);
   border: 0;
   border-radius: $br--default;
   color: palette(white, base);
@@ -13,13 +32,18 @@
   font-family: $font-family--default;
   font-weight: $font-weight--medium;
   transition: opacity $trnstn-x-quick;
-  // display: block;
+}
+
+%btn-actn {
+
   &:hover {
-    opacity: .73;
+    opacity: .67;
   }
+
   &:active {
     opacity: initial;
   }
+
 }
 
 /*===== Case features =====*/
@@ -138,40 +162,6 @@
   font-size: rem(18px);
 }
 
-/*===== Paragraph features =====*/
-%prgrph-prim {
-  color: palette(white, base);
-  letter-spacing: $letter-space;
-  font-family: $font-family--default;
-  font-weight: $font-weight--thin;
-  line-height: (27px / 18px);
-
-  @include mq(x-large) {
-    font-size: rem(17px);
-  }
-
-  @include mq(large) {
-    font-size: rem(16.5px);
-  }
-
-  @include mq(medium) {
-    font-size: rem(16px);
-  }
-
-  @include mq(small) {
-    font-size: rem(15.5px);
-  }
-
-  @include mq(x-small) {
-    font-size: rem(15px);
-  }
-
-  @include mq(u-small) {
-    font-size: rem(10px);
-  }
-
-}
-
 /*===== Icon features =====*/
 %icn--ui {
   line-height: 0;
@@ -212,10 +202,63 @@
 /*===== Menu link features =====*/
 %menu-link {
   display: block;
-  padding-top: em(16px);
+  padding-top: rem(16px);
   padding-bottom: rem(16px);
-  color: $white;
+  color: palette(white, base);
   text-align: center;
-  text-shadow: 0 1px $color-shadow;
+  text-shadow: 0 rem(1px) $color-shadow;
   font-size: rem(18px);
+}
+
+/*===== Paragraph features =====*/
+%prgrph-prim {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--default;
+  font-weight: $font-weight--thin;
+  line-height: (27px / 18px);
+
+  @include mq(x-large) {
+    font-size: rem(17px);
+  }
+
+  @include mq(large) {
+    font-size: rem(16.5px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(16px);
+  }
+
+  @include mq(small) {
+    font-size: rem(15.5px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(15px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(10px);
+  }
+
+}
+
+/*===== Side-scroller features =====*/
+%scrllr {
+  padding: 0 rem(1px);
+  position: absolute;
+  top: -6.5%;
+  width: 100%;
+  z-index: 100;
+}
+
+/*===== Slideshow scroller features =====*/
+%sld-scrllr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  vertical-align: top;
+  white-space: normal;
 }

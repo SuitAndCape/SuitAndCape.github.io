@@ -81,7 +81,7 @@ $color-palettes: (
   grey: (
     xx-light              : lighten($grey, 36%),
     x-light               : lighten($grey, 27%),
-    light                 : lighten($grey, 12%),
+    light                 : lighten($grey, 8%),
     base                  : $grey,
     dark                  : darken($grey, 8%),
     x-dark                : darken($grey, 16%),
@@ -111,11 +111,14 @@ $br--default              : .4em;
 $br--round                : 50%;
 
 /*===== Transition Duration =====*/
+$trnstn-xx-quick          : .15s;
 $trnstn-x-quick           : .3s;
 $trnstn-quick             : .5s;
 $trnstn-medium            : 1s;
 $trnstn-slow              : 3s;
 $trnstn-x-slow            : 5s;
+
+$trnstn-show-box          : cubic-bezier(.4, 1.3, .65, 1);
 
 /*===== Path to assets =====*/
 $path--rel                : "../images";

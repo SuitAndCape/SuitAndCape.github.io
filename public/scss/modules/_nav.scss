@@ -12,7 +12,7 @@
 
     a {
       @extend %nav-item-link;
-      color: palette(white);
+      color: palette(white, base);
 
       &:hover {
         @extend %nav-item-on;

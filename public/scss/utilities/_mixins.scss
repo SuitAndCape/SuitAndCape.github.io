@@ -132,7 +132,7 @@
   }
 
   @else {
-    @error "`#{$el}` is not a valid pseudo-element.";
+    @error "\`#{$el}\` is not a valid pseudo-element.";
   }
 
 }
