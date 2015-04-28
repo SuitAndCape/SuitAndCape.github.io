@@ -9,7 +9,7 @@ $("#toggle").click(function () {
   $(this).next(".nav").toggleClass("is-collapsed-mobile");
 });
 
-/*===== Navigation bar collapser =====*/
+/*===== X =====*/
 // $(function () {
 
 //   var data = {

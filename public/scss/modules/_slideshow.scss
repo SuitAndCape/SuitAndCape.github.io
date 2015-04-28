@@ -76,12 +76,15 @@
     height: rem(500px);
     line-height: 0;
     background-color: $meteorite;
-    // border: rem(3px) solid $purple-heart;
     border-radius: $br--default;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
+
+    @include mq(split-sm) {
+      border: rem(1px) solid palette(black, base);
+    }
 
   }
 
