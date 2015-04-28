@@ -168,6 +168,15 @@
   cursor: pointer;
 }
 
+/*===== Image features =====*/
+%img-hlpr {
+  display: block;
+  // margin-top: rem(24px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 /*===== Navigation item features =====*/
 %nav-item-horz {
 

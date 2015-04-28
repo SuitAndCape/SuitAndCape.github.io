@@ -4,7 +4,7 @@
 *=======================================================================*/
 /*===== Logo =====*/
 .site-logo {
-  @include img-replace("logo.svg", 115px, 45px, inline-block);
+  @include img-replace("logo.svg", rem(115px), rem(45px), inline-block);
 }
 
 /*===== User interface =====*/

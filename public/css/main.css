@@ -570,9 +570,9 @@ footer {
 @media (min-width: 769px) {
   [class^="grid__col--"] {
     float: left;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px; }
+    min-height: 0.0625rem;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
     [class^="grid__col--"] + [class^="grid__col--"] {
       margin-left: 2%; }
     [class^="grid__col--"]:last-of-type {
@@ -790,6 +790,12 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
   line-height: 0;
   cursor: pointer; }
 
+/*===== Image features =====*/
+.img--avatar, .img--project-mnr {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
 /*===== Navigation item features =====*/
 @media (min-width: 769px) {
   .nav__item, .nav__item--current {
@@ -897,8 +903,8 @@ p, .para-primary, .para-primary--grouped {
 .site-logo {
   background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
-  height: 45px;
-  width: 115px;
+  height: 2.8125rem;
+  width: 7.1875rem;
   display: inline-block; }
 
 /*===== User interface =====*/
@@ -931,15 +937,16 @@ p, .para-primary, .para-primary--grouped {
 /**** IMAGES
 *=======================================================================*/
 .img--wrap {
-  border: 1px solid #797E83;
+  border: 0.09375rem solid #797E83;
   background-color: #8e9297;
   padding: 0.125rem; }
 .img--avatar {
-  display: block;
-  border-radius: 50%;
-  margin-top: 1.5rem;
-  margin-right: auto;
-  margin-left: auto; }
+  border-radius: 50%; }
+.img--project-mnr {
+  border-radius: 0.4em;
+  max-width: 18.75rem;
+  max-height: 18.75rem;
+  background-color: transparent; }
 
 /*===== Import layers =====*/
 /*_layers.scss*/

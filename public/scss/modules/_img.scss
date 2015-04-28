@@ -5,17 +5,22 @@
 .img {
 
   @include m(wrap) {
-    border: 1px solid palette(grey, base);
+    border: rem(1.5px) solid palette(grey, base);
     background-color: palette(grey, light);
     padding: rem(2px);
   }
 
   @include m(avatar) {
-    display: block;
+    @extend %img-hlpr;
     border-radius: $br--round;
-    margin-top: rem(24px);
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  @include m(project-mnr) {
+    @extend %img-hlpr;
+    border-radius: $br--default;
+    max-width: rem(300px);
+    max-height: rem(300px);
+    background-color: transparent;
   }
 
   // @include m(hero) {
