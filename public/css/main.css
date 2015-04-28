@@ -22,6 +22,7 @@
 /*===== Path to assets =====*/
 /*===== Grid variables =====*/
 /*===== Media query breakpoints =====*/
+/*===== Media query "splitpoints" =====*/
 /*===== Import functions =====*/
 /*_functions.scss*/
 /**** FUNCTIONS
@@ -601,7 +602,7 @@ footer {
 *=======================================================================*/
 /*===== Scrollbar features =====*/
 ::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.15625rem;
   background: rgba(11, 11, 11, 0.1); }
 
 ::-webkit-scrollbar-thumb {
@@ -939,9 +940,6 @@ p, .para-primary, .para-primary--grouped {
   margin-top: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
-@media (min-width: 769px) {
-  .img--hero {
-    margin-bottom: 2.625rem; } }
 
 /*===== Import layers =====*/
 /*_layers.scss*/
@@ -1031,25 +1029,39 @@ p, .para-primary, .para-primary--grouped {
 /*_slideshow.scss*/
 /**** SLIDESHOW
 *=======================================================================*/
-#slideshow {
+.slideshow {
   display: inline-block;
   position: relative;
   margin-bottom: 0.9375rem; }
-  #slideshow > input {
+  .slideshow > input {
     display: none; }
-    #slideshow > input:nth-of-type(1):checked ~ ul li:first-of-type {
-      margin-left: 0%; }
-    #slideshow > input:nth-of-type(2):checked ~ ul li:first-of-type {
-      margin-left: -100.7%; }
-    #slideshow > input:nth-of-type(3):checked ~ ul li:first-of-type {
-      margin-left: -200.7%; }
-    #slideshow > input:nth-of-type(4):checked ~ ul li:first-of-type {
-      margin-left: -300.7%; }
-    #slideshow > input:nth-of-type(5):checked ~ ul li:first-of-type {
-      margin-left: -400.7%; }
-    #slideshow > input:nth-of-type(6):checked ~ ul li:first-of-type {
-      margin-left: -500.7%; }
-  #slideshow ul {
+    @media (min-width: 769px) {
+      .slideshow > input:nth-of-type(1):checked ~ ul li:first-of-type {
+        margin-left: 0%; }
+      .slideshow > input:nth-of-type(2):checked ~ ul li:first-of-type {
+        margin-left: -100.7%; }
+      .slideshow > input:nth-of-type(3):checked ~ ul li:first-of-type {
+        margin-left: -200.7%; }
+      .slideshow > input:nth-of-type(4):checked ~ ul li:first-of-type {
+        margin-left: -301%; }
+      .slideshow > input:nth-of-type(5):checked ~ ul li:first-of-type {
+        margin-left: -401%; }
+      .slideshow > input:nth-of-type(6):checked ~ ul li:first-of-type {
+        margin-left: -501%; } }
+    @media (min-width: 1px) and (max-width: 768px) {
+      .slideshow > input:nth-of-type(1):checked ~ ul li:first-of-type {
+        margin-left: -1%; }
+      .slideshow > input:nth-of-type(2):checked ~ ul li:first-of-type {
+        margin-left: -101.7%; }
+      .slideshow > input:nth-of-type(3):checked ~ ul li:first-of-type {
+        margin-left: -203%; }
+      .slideshow > input:nth-of-type(4):checked ~ ul li:first-of-type {
+        margin-left: -303.5%; }
+      .slideshow > input:nth-of-type(5):checked ~ ul li:first-of-type {
+        margin-left: -405%; }
+      .slideshow > input:nth-of-type(6):checked ~ ul li:first-of-type {
+        margin-left: -506%; } }
+  .slideshow ul {
     position: relative;
     height: 31.25rem;
     line-height: 0;
@@ -1059,7 +1071,7 @@ p, .para-primary, .para-primary--grouped {
     padding: 0;
     overflow: hidden;
     white-space: nowrap; }
-  #slideshow.looper > input:first-of-type:checked ~ .side-scroller label.jump-end, #slideshow.looper input:nth-of-type(1):checked ~ .side-scroller > label:nth-of-type(0), #slideshow.looper input:nth-of-type(2):checked ~ .side-scroller > label:nth-of-type(1), #slideshow.looper input:nth-of-type(3):checked ~ .side-scroller > label:nth-of-type(2), #slideshow.looper input:nth-of-type(4):checked ~ .side-scroller > label:nth-of-type(3), #slideshow.looper input:nth-of-type(5):checked ~ .side-scroller > label:nth-of-type(4), #slideshow.looper input:nth-of-type(6):checked ~ .side-scroller > label:nth-of-type(5), #slideshow.looper input:nth-of-type(7):checked ~ .side-scroller > label:nth-of-type(6) {
+  .slideshow.looper > input:first-of-type:checked ~ .side-scroller label.jump-end, .slideshow.looper input:nth-of-type(1):checked ~ .side-scroller > label:nth-of-type(0), .slideshow.looper input:nth-of-type(2):checked ~ .side-scroller > label:nth-of-type(1), .slideshow.looper input:nth-of-type(3):checked ~ .side-scroller > label:nth-of-type(2), .slideshow.looper input:nth-of-type(4):checked ~ .side-scroller > label:nth-of-type(3), .slideshow.looper input:nth-of-type(5):checked ~ .side-scroller > label:nth-of-type(4), .slideshow.looper input:nth-of-type(6):checked ~ .side-scroller > label:nth-of-type(5), .slideshow.looper input:nth-of-type(7):checked ~ .side-scroller > label:nth-of-type(6) {
     display: block;
     right: auto;
     left: 2.5%;
@@ -1068,7 +1080,7 @@ p, .para-primary, .para-primary--grouped {
     -ms-transform: rotate(225deg);
     -o-transform: rotate(225deg);
     transform: rotate(225deg); }
-  #slideshow.looper > input:last-of-type:checked ~ .side-scroller label.jump-start, #slideshow.looper input:nth-of-type(1):checked ~ .side-scroller > label:nth-of-type(2), #slideshow.looper input:nth-of-type(2):checked ~ .side-scroller > label:nth-of-type(3), #slideshow.looper input:nth-of-type(3):checked ~ .side-scroller > label:nth-of-type(4), #slideshow.looper input:nth-of-type(4):checked ~ .side-scroller > label:nth-of-type(5), #slideshow.looper input:nth-of-type(5):checked ~ .side-scroller > label:nth-of-type(6), #slideshow.looper input:nth-of-type(6):checked ~ .side-scroller > label:nth-of-type(7) {
+  .slideshow.looper > input:last-of-type:checked ~ .side-scroller label.jump-start, .slideshow.looper input:nth-of-type(1):checked ~ .side-scroller > label:nth-of-type(2), .slideshow.looper input:nth-of-type(2):checked ~ .side-scroller > label:nth-of-type(3), .slideshow.looper input:nth-of-type(3):checked ~ .side-scroller > label:nth-of-type(4), .slideshow.looper input:nth-of-type(4):checked ~ .side-scroller > label:nth-of-type(5), .slideshow.looper input:nth-of-type(5):checked ~ .side-scroller > label:nth-of-type(6), .slideshow.looper input:nth-of-type(6):checked ~ .side-scroller > label:nth-of-type(7) {
     display: block;
     right: 2.5%;
     left: auto;

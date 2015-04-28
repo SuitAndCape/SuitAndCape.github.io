@@ -18,12 +18,12 @@
     margin-left: auto;
   }
 
-  @include m(hero) {
+  // @include m(hero) {
 
-    @media (min-width: 769px) {
-      margin-bottom: rem(42px);
-    }
+  //   @media (min-width: 769px) {
+  //     margin-bottom: rem(42px);
+  //   }
 
-  }
+  // }
 
 }
