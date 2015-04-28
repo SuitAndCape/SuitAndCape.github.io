@@ -715,6 +715,22 @@ footer {
   background-color: #4F4F4F;
   color: #31157A; }
 
+/*===== Import Elevator.js style =====*/
+/*_elevator.scss*/
+/**** ELEVATOR.JS STYLE
+*=======================================================================*/
+.elevator {
+  cursor: pointer;
+  width: 8.75rem;
+  margin: auto;
+  transition: opacity 0.3s; }
+  .elevator svg {
+    width: 6.25rem;
+    height: 6.25rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.3125rem; }
+
 /*===== Import placeholder selectors =====*/
 /*_extends.scss*/
 /**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
@@ -744,9 +760,9 @@ footer {
   font-weight: 500;
   transition: opacity 0.3s; }
 
-[class^="btn--"]:hover, .dim:hover {
+[class^="btn--"]:hover, .dim:hover, .elevator:hover {
   opacity: .67; }
-[class^="btn--"]:active, .dim:active {
+[class^="btn--"]:active, .dim:active, .elevator:active {
   opacity: initial; }
 
 /*===== Case features =====*/
