@@ -34,6 +34,7 @@
 /*===== Establish the base context width for fluid width of grid =====*/
 /*===== String replacer =====*/
 /*===== Deep get in maps =====*/
+/*===== Linear gradient converter =====*/
 /*===== Import helpers =====*/
 /*_helpers.scss*/
 /**** HELPERS
@@ -79,6 +80,7 @@
 /*===== BEM modifier selector mixin =====*/
 /*===== Media queries =====*/
 /*===== Generate modifier color classes =====*/
+/*===== Generate modifier color-gradient classes =====*/
 /*===== Generate :before or :after pseudo-element shapes =====*/
 /*===== Background image replacement =====*/
 /*===== Adjacent sibling margins =====*/
@@ -1007,6 +1009,28 @@ p, .para-primary, .para-primary--grouped {
   background-color: #B7C3D0; }
 .layer--dix {
   background-color: #4682B4; }
+
+.layer-gradient--tr {
+  background: #F37A28;
+  background: -webkit-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -moz-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Opera 11.1 to 12.0 */
+  background: linear-gradient(to top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* Standard syntax */ }
+
+.layer-gradient--bl {
+  background: #F37A28;
+  background: -webkit-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -moz-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* For Opera 11.1 to 12.0 */
+  background: linear-gradient(to bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  /* Standard syntax */ }
 
 /*===== Import menu =====*/
 /*_menu.scss*/

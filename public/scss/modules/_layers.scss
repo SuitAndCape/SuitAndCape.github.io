@@ -5,3 +5,12 @@
 .layer {
   @include bg-colors($ui-colors);
 }
+
+.layer-gradient--tr {
+  @include linear-gradient(to top right, $tango 0%, $sun-glow 25%, $monza 100%);
+}
+
+.layer-gradient--bl {
+  @include linear-gradient(to bottom left, $tango 0%, $sun-glow 25%, $monza 100%);
+}
+
