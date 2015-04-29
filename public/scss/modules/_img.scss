@@ -15,12 +15,20 @@
     border-radius: $br--round;
   }
 
-  @include m(project-mnr) {
+  @include m(project-preview) {
+    @extend %dim-actn;
     @extend %img-hlpr;
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: $br--default;
-    max-width: rem(300px);
-    max-height: rem(300px);
-    background-color: transparent;
+    width: rem(320px);
+    margin-top: rem(20px);
+    // min-width: rem(250px);
+    transition: opacity $trnstn-quick;
+
+    @include mq(split-md) {
+      margin-bottom: rem(70px);
+    }
+
   }
 
   // @include m(hero) {

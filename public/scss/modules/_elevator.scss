@@ -7,7 +7,7 @@
   cursor: pointer;
   width: rem(140px);
   margin: auto;
-  transition: opacity $trnstn-x-quick;
+  transition: opacity $trnstn-quick;
 
   svg {
     width: rem(100px);
@@ -17,7 +17,7 @@
     margin-bottom: rem(5px);
   }
 
-  @extend %btn-actn;
+  @extend %dim-actn;
   // &:hover {
   //   opacity: 0.7;
   // }

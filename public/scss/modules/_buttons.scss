@@ -9,7 +9,7 @@
 [class^="btn--"] {
   @extend %center-align;
   @extend %btn;
-  @extend %btn-actn;
+  @extend %dim-actn;
 
   @include mq(split-md) {
   margin: auto rem(15px);
@@ -27,8 +27,4 @@
     width: 100%;
     display: block;
   }
-}
-
-.dim {
-  @extend %btn-actn;
 }

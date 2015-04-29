@@ -1,0 +1,26 @@
+/*_projects.scss*/
+
+/**** PROJECTS SECTION
+*=======================================================================*/
+#projects-page {
+
+  .project-display {
+
+    .project-summary {
+
+      @include mq(split-sm) {
+        margin-bottom: rem(70px);
+      }
+
+    }
+
+  }
+
+}
+      // @include mq(split-sm) {
+    // .nth-piece {
+          // margin-top: rem(35px);
+          // @extend %nav-item-link;
+          // margin-bottom: rem(35px);
+        // }
+    // }

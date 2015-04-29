@@ -4,11 +4,12 @@
 *=======================================================================*/
 /*===== Arrow (slideshow) features =====*/
 %arrw {
-  position: absolute;
-  padding: rem(10.3px);
-  margin: rem(2.5px);
   box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, light);
   cursor: pointer;
+  margin: rem(2.5px);
+  padding: rem(10.3px);
+  position: absolute;
+  transition: opacity $trnstn-quick;
 
   &:hover {
     box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, x-light);
@@ -31,19 +32,7 @@
   font-size : rem(16px);
   font-family: $font-family--default;
   font-weight: $font-weight--medium;
-  transition: opacity $trnstn-x-quick;
-}
-
-%btn-actn {
-
-  &:hover {
-    opacity: .67;
-  }
-
-  &:active {
-    opacity: initial;
-  }
-
+  transition: opacity $trnstn-quick;
 }
 
 /*===== Case features =====*/
@@ -54,6 +43,19 @@
   background-size: cover;
   padding-top: 0;
   width: 100%;
+}
+
+/*===== Dimmer action features =====*/
+%dim-actn {
+
+  &:hover {
+    opacity: .67;
+  }
+
+  &:active {
+    opacity: initial;
+  }
+
 }
 
 /*===== Headline features =====*/
@@ -133,19 +135,19 @@
   }
 
   @include mq(large) {
-    font-size: rem(20px);
+    font-size: rem(21px);
   }
 
   @include mq(medium) {
-    font-size: rem(19px);
+    font-size: rem(20px);
   }
 
   @include mq(small) {
-    font-size: rem(18px);
+    font-size: rem(19px);
   }
 
   @include mq(x-small) {
-    font-size: rem(17px);
+    font-size: rem(18px);
   }
 
   @include mq(u-small) {
@@ -188,12 +190,13 @@
 }
 
 %nav-item-link {
-  font-weight: $font-weight--light;
-  text-align: center;
-  font-size: rem(18px);
+  border-bottom: rem(1px) solid transparent;
   display: block;
+  font-size: rem(18px);
+  font-weight: $font-weight--light;
   padding: rem(8px, 18px);
-  border-bottom: 1px solid transparent;
+  text-align: center;
+  transition: opacity $trnstn-quick;
 
   @include mq(split-sm) {
     border-bottom-color: palette(grey, xx-light);

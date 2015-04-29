@@ -723,7 +723,7 @@ footer {
   cursor: pointer;
   width: 8.75rem;
   margin: auto;
-  transition: opacity 0.3s; }
+  transition: opacity 0.5s; }
   .elevator svg {
     width: 6.25rem;
     height: 6.25rem;
@@ -737,11 +737,12 @@ footer {
 *=======================================================================*/
 /*===== Arrow (slideshow) features =====*/
 .side-scroller .arrow {
-  position: absolute;
-  padding: 0.64375rem;
-  margin: 0.15625rem;
   box-shadow: 0.125rem -0.125rem 0 0.0625rem #8e9297;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0.15625rem;
+  padding: 0.64375rem;
+  position: absolute;
+  transition: opacity 0.5s; }
   .side-scroller .arrow:hover {
     box-shadow: 0.125rem -0.125rem 0 0.0625rem #c0c3c5; }
   .side-scroller .arrow:before {
@@ -758,12 +759,7 @@ footer {
   font-size: 1rem;
   font-family: "Open Sans", Arial, sans-serif, serif;
   font-weight: 500;
-  transition: opacity 0.3s; }
-
-[class^="btn--"]:hover, .dim:hover, .elevator:hover {
-  opacity: .67; }
-[class^="btn--"]:active, .dim:active, .elevator:active {
-  opacity: initial; }
+  transition: opacity 0.5s; }
 
 /*===== Case features =====*/
 .case {
@@ -773,6 +769,12 @@ footer {
   background-size: cover;
   padding-top: 0;
   width: 100%; }
+
+/*===== Dimmer action features =====*/
+[class^="btn--"]:hover, .elevator:hover, .img--project-preview:hover {
+  opacity: .67; }
+[class^="btn--"]:active, .elevator:active, .img--project-preview:active {
+  opacity: initial; }
 
 /*===== Headline features =====*/
 h1, .headline-primary, .headline-primary--grouped {
@@ -807,7 +809,7 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
   cursor: pointer; }
 
 /*===== Image features =====*/
-.img--avatar, .img--project-mnr {
+.img--avatar, .img--project-preview {
   display: block;
   margin-right: auto;
   margin-left: auto; }
@@ -819,12 +821,13 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
     margin: 0 0.75rem; } }
 
 .nav__item a, .nav__item--current a {
-  font-weight: 300;
-  text-align: center;
-  font-size: 1.125rem;
+  border-bottom: 0.0625rem solid transparent;
   display: block;
+  font-size: 1.125rem;
+  font-weight: 300;
   padding: 0.44444rem;
-  border-bottom: 1px solid transparent; }
+  text-align: center;
+  transition: opacity 0.5s; }
   @media (min-width: 1px) and (max-width: 768px) {
     .nav__item a, .nav__item--current a {
       border-bottom-color: #d8dadb;
@@ -958,11 +961,15 @@ p, .para-primary, .para-primary--grouped {
   padding: 0.125rem; }
 .img--avatar {
   border-radius: 50%; }
-.img--project-mnr {
+.img--project-preview {
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.4em;
-  max-width: 18.75rem;
-  max-height: 18.75rem;
-  background-color: transparent; }
+  width: 20rem;
+  margin-top: 1.25rem;
+  transition: opacity 0.5s; }
+  @media (min-width: 769px) {
+    .img--project-preview {
+      margin-bottom: 4.375rem; } }
 
 /*===== Import layers =====*/
 /*_layers.scss*/
@@ -1037,6 +1044,14 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 .para-primary {
   margin: 0 0 1.66667rem; }
+
+/*===== Import projects =====*/
+/*_projects.scss*/
+/**** PROJECTS SECTION
+*=======================================================================*/
+@media (min-width: 1px) and (max-width: 768px) {
+  #projects-page .project-display .project-summary {
+    margin-bottom: 4.375rem; } }
 
 /*===== Import sad browser =====*/
 /*sad_browser.scss*/

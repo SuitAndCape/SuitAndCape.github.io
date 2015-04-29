@@ -18,6 +18,7 @@
     border-top: solid 3px palette(grey, light);
     border-bottom: solid 3px palette(grey, light);
     position: relative;
+
     @include p-el(before, 25px, 3px) {
       background: palette(grey, light);
       top: 4px;
