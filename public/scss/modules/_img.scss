@@ -20,13 +20,18 @@
     @extend %img-hlpr;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: $br--default;
-    width: rem(320px);
+    // width: rem(320px);
     margin-top: rem(20px);
     // min-width: rem(250px);
     transition: opacity $trnstn-quick;
 
+    @include medq(split-lg) {
+      width: rem(320px);
+    }
+
     @include medq(split-md) {
       margin-bottom: rem(70px);
+      width: 100%;
     }
 
   }

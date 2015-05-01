@@ -4,6 +4,7 @@
 *=======================================================================*/
 .case {
 /*===== Banner image =====*/
+  height: 100vh;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");

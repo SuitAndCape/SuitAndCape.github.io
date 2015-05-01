@@ -63,31 +63,67 @@
   color: palette(white, base);
   font-family: $font-family--primary;
   font-weight: $font-weight--demi-bold;
-  line-height: (46px / 42px);
-  margin-top: 0;
+  line-height: rem(80px);
+  // line-height: (46px / 42px);
+  // margin-top: 0;
+  margin-top: rem(300px);
+  margin-bottom: rem(40px);
+//   text-align: center;
+  width: 100%;
+}
+
+%hdln-prim-mjr {
 
   @include mq(x-large) {
     font-size: rem(80px);
   }
 
   @include mq(large) {
-    font-size: rem(78px);
+    font-size: rem(72px);
   }
 
   @include mq(medium) {
-    font-size: rem(76px);
+    font-size: rem(64px);
   }
 
   @include mq(small) {
-    font-size: rem(74px);
+    font-size: rem(56px);
   }
 
   @include mq(x-small) {
-    font-size: rem(72px);
+    font-size: rem(48px);
   }
 
   @include mq(u-small) {
     font-size: rem(40px);
+  }
+
+}
+
+%hdln-prim-mnr {
+
+  @include mq(x-large) {
+    font-size: rem(33px);
+  }
+
+  @include mq(large) {
+    font-size: rem(31.75px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(30.5px);
+  }
+
+  @include mq(small) {
+    font-size: rem(29.25px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(28px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(15px);
   }
 
 }
@@ -103,23 +139,23 @@
   }
 
   @include mq(large) {
-    font-size: rem(30px);
+    font-size: rem(29.85px);
   }
 
   @include mq(medium) {
-    font-size: rem(29px);
+    font-size: rem(28.7px);
   }
 
   @include mq(small) {
-    font-size: rem(28px);
+    font-size: rem(27.55px);
   }
 
   @include mq(x-small) {
-    font-size: rem(27px);
+    font-size: rem(26.4px);
   }
 
   @include mq(u-small) {
-    font-size: rem(21px);
+    font-size: rem(16px);
   }
 
 }
@@ -128,26 +164,26 @@
   color: palette(white, base);
   letter-spacing: $letter-space;
   font-family: $font-family--tertiary;
-  font-weight: $font-weight--medium;
+  font-weight: $font-weight--normal;
 
   @include mq(x-large) {
-    font-size: rem(24px);
+    font-size: rem(25px);
   }
 
   @include mq(large) {
-    font-size: rem(23px);
+    font-size: rem(24.375px);
   }
 
   @include mq(medium) {
-    font-size: rem(22px);
+    font-size: rem(23.75px);
   }
 
   @include mq(small) {
-    font-size: rem(21px);
+    font-size: rem(23.125px);
   }
 
   @include mq(x-small) {
-    font-size: rem(19px);
+    font-size: rem(22.5px);
   }
 
   @include mq(u-small) {
@@ -173,9 +209,8 @@
 /*===== Image features =====*/
 %img-hlpr {
   display: block;
-  // margin-top: rem(24px);
-  margin-right: auto;
-  margin-left: auto;
+  //// margin-top: rem(24px);
+  margin: 0 auto;
 }
 
 
@@ -219,7 +254,7 @@
   color: palette(white, base);
   text-align: center;
   text-shadow: 0 rem(1px) $color-shadow;
-  font-size: rem(18px);
+  font-size: rem(17px);
 }
 
 /*===== Paragraph features =====*/
