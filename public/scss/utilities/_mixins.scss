@@ -79,7 +79,7 @@
 
 }
 
-@mixin mq($split) {
+@mixin medq($split) {
   @if $split == "split-sm" {
     @media (min-width: $spltpnt-sm) and (max-width: $spltpnt-md) {
       @content;

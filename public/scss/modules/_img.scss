@@ -25,7 +25,7 @@
     // min-width: rem(250px);
     transition: opacity $trnstn-quick;
 
-    @include mq(split-md) {
+    @include medq(split-md) {
       margin-bottom: rem(70px);
     }
 

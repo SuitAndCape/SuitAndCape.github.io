@@ -5,7 +5,7 @@
 /*===== Mobile display =====*/
 .is-displayed-mobile {
 
-  @include mq(split-sm) {
+  @include medq(split-sm) {
     display: block;
     @at-root (with: media) {
 
@@ -17,7 +17,7 @@
 
   }
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     display: none;
   }
 

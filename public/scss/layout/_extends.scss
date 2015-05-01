@@ -5,7 +5,7 @@
 %panel-default {
   padding-top: rem(30px);
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     padding-bottom: rem(20px);
   }
 
@@ -14,7 +14,7 @@
 %panel-padding {
   padding-top: rem(34px);
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     padding-top: rem(80px);
     padding-bottom: rem(34px);
   }
@@ -24,7 +24,7 @@
 %panel-main {
   padding-top: rem(40px);
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     padding-top: rem(80px);
     padding-bottom: rem(300px);
     // margin-bottom: rem(34px);

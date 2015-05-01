@@ -4,7 +4,7 @@
 *=======================================================================*/
 /*===== Import collapsed states =====*/
 .is-collapsed-mobile {
-  @include mq(split-sm) {
+  @include medq(split-sm) {
     visibility: collapse;
     padding: 0;
     height: 0;

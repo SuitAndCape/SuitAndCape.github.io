@@ -67,27 +67,27 @@
   margin-top: 0;
 
   @include mq(x-large) {
-    font-size: rem(60px);
+    font-size: rem(80px);
   }
 
   @include mq(large) {
-    font-size: rem(54px);
+    font-size: rem(78px);
   }
 
   @include mq(medium) {
-    font-size: rem(48px);
+    font-size: rem(76px);
   }
 
   @include mq(small) {
-    font-size: rem(42px);
+    font-size: rem(74px);
   }
 
   @include mq(x-small) {
-    font-size: rem(36px);
+    font-size: rem(72px);
   }
 
   @include mq(u-small) {
-    font-size: rem(25px);
+    font-size: rem(40px);
   }
 
 }
@@ -131,23 +131,23 @@
   font-weight: $font-weight--medium;
 
   @include mq(x-large) {
-    font-size: rem(21px);
+    font-size: rem(24px);
   }
 
   @include mq(large) {
-    font-size: rem(21px);
+    font-size: rem(23px);
   }
 
   @include mq(medium) {
-    font-size: rem(20px);
+    font-size: rem(22px);
   }
 
   @include mq(small) {
-    font-size: rem(19px);
+    font-size: rem(21px);
   }
 
   @include mq(x-small) {
-    font-size: rem(18px);
+    font-size: rem(19px);
   }
 
   @include mq(u-small) {
@@ -182,7 +182,7 @@
 /*===== Navigation item features =====*/
 %nav-item-horz {
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     display: inline-block;
     margin: 0 rem(12px);
   }
@@ -198,7 +198,7 @@
   text-align: center;
   transition: opacity $trnstn-quick;
 
-  @include mq(split-sm) {
+  @include medq(split-sm) {
     border-bottom-color: palette(grey, xx-light);
     padding-top: rem(14px, 18px);
     padding-bottom: rem(14px, 18px);
@@ -231,27 +231,27 @@
   line-height: (27px / 18px);
 
   @include mq(x-large) {
-    font-size: rem(17px);
+    font-size: rem(20px);
   }
 
   @include mq(large) {
-    font-size: rem(16.5px);
+    font-size: rem(19px);
   }
 
   @include mq(medium) {
-    font-size: rem(16px);
+    font-size: rem(18px);
   }
 
   @include mq(small) {
-    font-size: rem(15.5px);
+    font-size: rem(17px);
   }
 
   @include mq(x-small) {
-    font-size: rem(15px);
+    font-size: rem(16px);
   }
 
   @include mq(u-small) {
-    font-size: rem(10px);
+    font-size: rem(13px);
   }
 
 }

@@ -11,7 +11,7 @@
   @extend %btn;
   @extend %dim-actn;
 
-  @include mq(split-md) {
+  @include medq(split-md) {
   margin: auto rem(15px);
   //   width: auto;
   //   display: inline-block;
@@ -23,7 +23,7 @@
   width: auto;
   display: inline-block;
 
-    @include mq(split-sm) {
+    @include medq(split-sm) {
     width: 100%;
     display: block;
   }

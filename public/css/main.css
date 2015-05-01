@@ -1,93 +1,9 @@
 /*main.scss*/
 /**** MAIN MANIFEST
 *=======================================================================*/
-/*===== Import utilities =====*/
+/*===== Import reset styles =====*/
 /*_index.scss*/
-/**** UTILITIES MANIFEST
-*=======================================================================*/
-/*===== Import global configuration =====*/
-/*_config.scss*/
-/**** GLOBAL CONFIGURATION
-*=======================================================================*/
-/*===== Font sources =====*/
-/*===== Font stacks =====*/
-/*===== Font weights =====*/
-/*===== Descriptive base colors =====*/
-/*===== Color usage =====*/
-/*===== User interface colors map =====*/
-/*===== Color palette modifiers map =====*/
-/*===== Text =====*/
-/*===== Border radius =====*/
-/*===== Transition Duration =====*/
-/*===== Path to assets =====*/
-/*===== Grid variables =====*/
-/*===== Media query breakpoints =====*/
-/*===== Media query "splitpoints" =====*/
-/*===== Import functions =====*/
-/*_functions.scss*/
-/**** FUNCTIONS
-*=======================================================================*/
-/*===== Import if Google Fonts URL is defined =====*/
-@import url("http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700");
-/*===== Converts pixels to rem values =====*/
-/*===== Call the color palette modifiers in color values =====*/
-/*===== Establish the base context width for fluid width of grid =====*/
-/*===== String replacer =====*/
-/*===== Deep get in maps =====*/
-/*===== Linear gradient converter =====*/
-/*===== Import helpers =====*/
-/*_helpers.scss*/
-/**** HELPERS
-*=======================================================================*/
-/*===== Clearfix placeholder =====*/
-.grid:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/*===== Screen reader text placeholder =====*/
-.srt, .form__label--hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  position: absolute; }
-
-/*===== Center alignment placeholder =====*/
-.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"] {
-  text-align: center; }
-
-/*===== Pseudo-elements placeholder =====*/
-.icn--nav-toggle:before {
-  display: block;
-  content: "";
-  position: absolute; }
-
-/*===== Center elements helper =====*/
-.centered, .grid {
-  float: none;
-  margin-right: auto;
-  margin-left: auto; }
-
-/*===== Import mixins =====*/
-/*_mixins.scss*/
-/**** MIXINS
-*=======================================================================*/
-/*===== BEM element selector mixin =====*/
-/*===== BEM modifier selector mixin =====*/
-/*===== Media queries =====*/
-/*===== Generate modifier color classes =====*/
-/*===== Generate modifier color-gradient classes =====*/
-/*===== Generate :before or :after pseudo-element shapes =====*/
-/*===== Background image replacement =====*/
-/*===== Adjacent sibling margins =====*/
-/*===== Grid columns =====*/
-/*===== Import base styles =====*/
-/*_index.scss*/
-/**** BASE MANIFEST
+/**** RESET MANIFEST
 *=======================================================================*/
 /*===== Import normalize reset =====*/
 /*_normalize.scss*/
@@ -414,6 +330,188 @@ table {
 td, th {
   padding: 0; }
 
+/*===== Import utilities =====*/
+/*_index.scss*/
+/**** UTILITIES MANIFEST
+*=======================================================================*/
+/*===== Import font mixins =====*/
+/*_font_mixins.scss*/
+/**** FONT MIXINS
+*=======================================================================*/
+/*===== Font-face webfonts mixins =====*/
+@font-face {
+  font-family: 'aleo-bold';
+  src: url("../fonts/Aleo-Bold-webfont.eot");
+  src: url("../fonts/Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Bold-webfont.woff") format("woff"), url("../fonts/Aleo-Bold-webfont.ttf") format("truetype"), url("../fonts/Aleo-Bold-webfont.svg#aleobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aleo-light';
+  src: url("../fonts/Aleo-Light-webfont.eot");
+  src: url("../fonts/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Light-webfont.woff") format("woff"), url("../fonts/Aleo-Light-webfont.ttf") format("truetype"), url("../fonts/Aleo-Light-webfont.svg#aleolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aleo-regular';
+  src: url("../fonts/Aleo-Regular-webfont.eot");
+  src: url("../fonts/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Regular-webfont.woff") format("woff"), url("../fonts/Aleo-Regular-webfont.ttf") format("truetype"), url("../fonts/Aleo-Regular-webfont.svg#aleoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-bold';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-extrabold';
+  src: url("../fonts/opensans-extrabold-webfont.eot");
+  src: url("../fonts/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabold-webfont.woff") format("woff"), url("../fonts/opensans-extrabold-webfont.ttf") format("truetype"), url("../fonts/opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-light';
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-regular';
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-semibold';
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'prata-regular';
+  src: url("../fonts/prata-regular-webfont.eot");
+  src: url("../fonts/prata-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/prata-regular-webfont.woff2") format("woff2"), url("../fonts/prata-regular-webfont.woff") format("woff"), url("../fonts/prata-regular-webfont.ttf") format("truetype"), url("../fonts/prata-regular-webfont.svg#prataregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-black';
+  src: url("../fonts/sourcesanspro-black-webfont.eot");
+  src: url("../fonts/sourcesanspro-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-black-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-black-webfont.woff") format("woff"), url("../fonts/sourcesanspro-black-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-black-webfont.svg#source_sans_problack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-bold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-extralight';
+  src: url("../fonts/sourcesanspro-extralight-webfont.eot");
+  src: url("../fonts/sourcesanspro-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-extralight-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-extralight-webfont.woff") format("woff"), url("../fonts/sourcesanspro-extralight-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-extralight-webfont.svg#source_sans_proextralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-light';
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-regular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-semibold';
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot");
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-semibold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*===== Import global configuration =====*/
+/*_config.scss*/
+/**** GLOBAL CONFIGURATION
+*=======================================================================*/
+/*===== Font sources =====*/
+/*===== Font stacks =====*/
+/*===== Font weights =====*/
+/*===== Descriptive base colors =====*/
+/*===== Color usage =====*/
+/*===== User interface colors map =====*/
+/*===== Color palette modifiers map =====*/
+/*===== Text =====*/
+/*===== Border radius =====*/
+/*===== Transition Duration =====*/
+/*===== Path to assets =====*/
+/*===== Grid variables =====*/
+/*===== Media query breakpoints =====*/
+/*===== Media query "splitpoints" =====*/
+/*===== Import functions =====*/
+/*_functions.scss*/
+/**** FUNCTIONS
+*=======================================================================*/
+/*===== Import if Google Fonts URL is defined =====*/
+/*===== Converts pixels to rem values =====*/
+/*===== Call the color palette modifiers in color values =====*/
+/*===== Establish the base context width for fluid width of grid =====*/
+/*===== String replacer =====*/
+/*===== Deep get in maps =====*/
+/*===== Linear gradient converter =====*/
+/*===== Import helpers =====*/
+/*_helpers.scss*/
+/**** HELPERS
+*=======================================================================*/
+/*===== Clearfix placeholder =====*/
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*===== Screen reader text placeholder =====*/
+.srt, .form__label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute; }
+
+/*===== Center alignment placeholder =====*/
+.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"] {
+  text-align: center; }
+
+/*===== Pseudo-elements placeholder =====*/
+.icn--nav-toggle:before {
+  display: block;
+  content: "";
+  position: absolute; }
+
+/*===== Center elements helper =====*/
+.centered, .grid {
+  float: none;
+  margin-right: auto;
+  margin-left: auto; }
+
+/*===== Import mixins =====*/
+/*_mixins.scss*/
+/**** MIXINS
+*=======================================================================*/
+/*===== BEM element selector mixin =====*/
+/*===== BEM modifier selector mixin =====*/
+/*===== Media queries =====*/
+/*===== Generate modifier color classes =====*/
+/*===== Generate modifier color-gradient classes =====*/
+/*===== Generate :before or :after pseudo-element shapes =====*/
+/*===== Background image replacement =====*/
+/*===== Adjacent sibling margins =====*/
+/*===== Grid columns =====*/
+/*===== Import base styles =====*/
+/*_index.scss*/
+/**** BASE MANIFEST
+*=======================================================================*/
 /*===== Import base =====*/
 /*_base.scss*/
 /**** BASE STYLES
@@ -428,7 +526,7 @@ td, th {
 html, body {
   color: #797E83;
   font-size: 16px;
-  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   line-height: 1.5;
   overflow-x: hidden; }
 
@@ -759,7 +857,7 @@ footer {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 1rem;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 500;
   transition: opacity 0.5s; }
 
@@ -781,27 +879,102 @@ footer {
 /*===== Headline features =====*/
 h1, .headline-primary, .headline-primary--grouped {
   color: #FFFFFF;
-  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
   line-height: 1.09524;
-  margin-top: 0; }
+  margin-top: 0;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 5rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 4.875rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 4.75rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 4.625rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 4.5rem; } }
+  @media (1px) and (max-width: 281px) {
+    h1, .headline-primary, .headline-primary--grouped {
+      font-size: 2.5rem; } }
 
 h2, .headline-secondary, .headline-secondary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans Condensed", Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 700; }
+  font-family: "aleo-light", "prata-regular", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 700;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.9375rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.875rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.8125rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.75rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.6875rem; } }
+  @media (1px) and (max-width: 281px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.3125rem; } }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 500; }
+  font-family: "Hoefler Text", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 500;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.5rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.4375rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.375rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.3125rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.1875rem; } }
+  @media (1px) and (max-width: 281px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 0.8125rem; } }
 
 .headline-plaque {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 600;
   font-size: 1.125rem; }
 
@@ -854,9 +1027,34 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
 p, .para-primary, .para-primary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 100;
-  line-height: 1.5; }
+  line-height: 1.5;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.25rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.1875rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.125rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.0625rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1rem; } }
+  @media (1px) and (max-width: 281px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 0.8125rem; } }
 
 /*===== Side-scroller features =====*/
 .side-scroller {
