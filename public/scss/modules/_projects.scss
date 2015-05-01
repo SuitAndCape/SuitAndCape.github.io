@@ -8,7 +8,7 @@
 
     .project-summary {
 
-      @include mq(split-sm) {
+      @include medq(split-sm) {
         margin-bottom: rem(70px);
       }
 
@@ -17,7 +17,7 @@
   }
 
 }
-      // @include mq(split-sm) {
+      // @include medq(split-sm) {
     // .nth-piece {
           // margin-top: rem(35px);
           // @extend %nav-item-link;

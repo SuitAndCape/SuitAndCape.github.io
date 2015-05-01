@@ -3,13 +3,14 @@
 /**** GLOBAL CONFIGURATION
 *=======================================================================*/
 /*===== Font sources =====*/
-$font-url--google         : "http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700";
+// $font-url--google         : "http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700";
 
 /*===== Font stacks =====*/
-$font-family--default     : "Open Sans", Arial, sans-serif, serif;
-$font-family--primary     : Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--secondary   : "Open Sans Condensed", Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--tertiary    : "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--default     : "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
+$font-family--default-em  : "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif;
+$font-family--primary     : Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--secondary   : "aleo-regular", "prata-regular", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--tertiary    : "aleo-light", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 
 /*===== Font weights =====*/
 $font-weight--thin        : 100;
@@ -29,8 +30,11 @@ $white                    : #FFFFFF;
 
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
+$blue-charcoal            : #010D1A;
+$cod-gray_ish             : #1C1C1C;
 $java                     : #1FC2C2;
 $ebony-clay               : #222F40;
+$mine-shaft_ish           : #252525;
 $jungle-green             : #29AB87;
 $st-tropaz                : #2D569B;
 $scooter                  : #2EBFD4;
@@ -46,11 +50,11 @@ $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
 $milano-red               : #B81104;
 $guardsman-red            : #BA0101;
-$monza                    : #D70502;
+$monza                    : #C7031E;
 $sunglo                   : #E16865;
+$tango                    : #ED7A1C;
 $porcelain                : #EFF2F3;
 $sun-glow                 : #FFCC33;
-$tango                    : #F37A28;
 $coral                    : #FF7F50;
 
 /*===== Color usage =====*/
@@ -69,11 +73,11 @@ $ui-colors: (
   warning                 : $coral,
   info                    : $pacific-blue,
 
-  zero                    : $meteorite,
-  un                      : $prussian-blue,
-  deux                    : $purple-heart,
-  trois                   : $java,
-  quatre                  : $studio,
+  zero                    : $mine-shaft_ish,
+  un                      : $blue-charcoal,
+  deux                    : $cod-gray_ish,
+  trois                   : $prussian-blue,
+  quatre                  : $monza,
   cinq                    : $havelock-blue,
   six                     : $meteorite,
   sept                    : $tuna,
@@ -145,6 +149,6 @@ $brkpnt-xs                : 480px;
 $brkpnt-us                : 281px;
 
 /*===== Media query "splitpoints" =====*/
-$spltpnt-sm               : 1px;
-$spltpnt-md               : 768px;
 $spltpnt-lg               : 1100px;
+$spltpnt-md               : 768px;
+$spltpnt-sm               : 1px;

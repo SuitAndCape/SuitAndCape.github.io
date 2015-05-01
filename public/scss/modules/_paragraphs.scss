@@ -8,6 +8,10 @@
     @extend %prgrph-prim;
     margin: 0 0 rem(30px, 18px);
 
+    strong {
+      font-family: $font-family--default-em;
+    }
+
     @include m(grouped) {
       @extend %prgrph-prim;
     }

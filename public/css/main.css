@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*main.scss*/
 /**** MAIN MANIFEST
 *=======================================================================*/
@@ -5,6 +6,101 @@
 /*_index.scss*/
 /**** UTILITIES MANIFEST
 *=======================================================================*/
+/*===== Import font mixins =====*/
+/*_font_mixins.scss*/
+/**** FONT MIXINS
+*=======================================================================*/
+/*===== Font-face webfonts mixins =====*/
+@font-face {
+  font-family: 'aleo-bold';
+  src: url("../fonts/Aleo-Bold-webfont.eot");
+  src: url("../fonts/Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Bold-webfont.woff") format("woff"), url("../fonts/Aleo-Bold-webfont.ttf") format("truetype"), url("../fonts/Aleo-Bold-webfont.svg#aleobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aleo-light';
+  src: url("../fonts/Aleo-Light-webfont.eot");
+  src: url("../fonts/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Light-webfont.woff") format("woff"), url("../fonts/Aleo-Light-webfont.ttf") format("truetype"), url("../fonts/Aleo-Light-webfont.svg#aleolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aleo-regular';
+  src: url("../fonts/Aleo-Regular-webfont.eot");
+  src: url("../fonts/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Regular-webfont.woff") format("woff"), url("../fonts/Aleo-Regular-webfont.ttf") format("truetype"), url("../fonts/Aleo-Regular-webfont.svg#aleoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-bold';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-extrabold';
+  src: url("../fonts/opensans-extrabold-webfont.eot");
+  src: url("../fonts/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabold-webfont.woff") format("woff"), url("../fonts/opensans-extrabold-webfont.ttf") format("truetype"), url("../fonts/opensans-extrabold-webfont.svg#open_sansextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-light';
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-regular';
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans-semibold';
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'prata-regular';
+  src: url("../fonts/prata-regular-webfont.eot");
+  src: url("../fonts/prata-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/prata-regular-webfont.woff2") format("woff2"), url("../fonts/prata-regular-webfont.woff") format("woff"), url("../fonts/prata-regular-webfont.ttf") format("truetype"), url("../fonts/prata-regular-webfont.svg#prataregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-black';
+  src: url("../fonts/sourcesanspro-black-webfont.eot");
+  src: url("../fonts/sourcesanspro-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-black-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-black-webfont.woff") format("woff"), url("../fonts/sourcesanspro-black-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-black-webfont.svg#source_sans_problack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-bold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-extralight';
+  src: url("../fonts/sourcesanspro-extralight-webfont.eot");
+  src: url("../fonts/sourcesanspro-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-extralight-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-extralight-webfont.woff") format("woff"), url("../fonts/sourcesanspro-extralight-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-extralight-webfont.svg#source_sans_proextralight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-light';
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-regular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source_sans_pro-semibold';
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot");
+  src: url("../fonts/sourcesanspro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-semibold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*===== Import global configuration =====*/
 /*_config.scss*/
 /**** GLOBAL CONFIGURATION
@@ -28,7 +124,6 @@
 /**** FUNCTIONS
 *=======================================================================*/
 /*===== Import if Google Fonts URL is defined =====*/
-@import url("http://fonts.googleapis.com/css?family=Prata|Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700");
 /*===== Converts pixels to rem values =====*/
 /*===== Call the color palette modifiers in color values =====*/
 /*===== Establish the base context width for fluid width of grid =====*/
@@ -428,8 +523,6 @@ td, th {
 html, body {
   color: #797E83;
   font-size: 16px;
-  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  line-height: 1.5;
   overflow-x: hidden; }
 
 /*===== Text style =====*/
@@ -604,7 +697,7 @@ footer {
 *=======================================================================*/
 /*===== Scrollbar features =====*/
 ::-webkit-scrollbar {
-  width: 0.15625rem;
+  width: 0.09375rem;
   background: rgba(11, 11, 11, 0.1); }
 
 ::-webkit-scrollbar-thumb {
@@ -639,15 +732,15 @@ footer {
 .btn--info {
   background-color: #009DC4; }
 .btn--zero {
-  background-color: #3C1F76; }
+  background-color: #252525; }
 .btn--un {
-  background-color: #003153; }
+  background-color: #010D1A; }
 .btn--deux {
-  background-color: #652DC1; }
+  background-color: #1C1C1C; }
 .btn--trois {
-  background-color: #1FC2C2; }
+  background-color: #003153; }
 .btn--quatre {
-  background-color: #714AB2; }
+  background-color: #C7031E; }
 .btn--cinq {
   background-color: #5590D9; }
 .btn--six {
@@ -759,7 +852,7 @@ footer {
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 1rem;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 500;
   transition: opacity 0.5s; }
 
@@ -779,29 +872,135 @@ footer {
   opacity: initial; }
 
 /*===== Headline features =====*/
-h1, .headline-primary, .headline-primary--grouped {
+h1, .headline-primary, .headline-primary--grouped, .headline-primary--minor {
   color: #FFFFFF;
-  font-family: Garamond, Baskerville, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-family: Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
-  line-height: 1.09524;
-  margin-top: 0; }
+    line-height: 5rem;
+    margin-top: 18.75rem;
+  margin-bottom: 2.5rem;
+    width: 100%; }
+
+.headline-primary, .headline-primary--grouped {
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 5rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 4.5rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 4rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 3.5rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 3rem; } }
+  @media (1px) and (max-width: 281px) {
+    .headline-primary, .headline-primary--grouped {
+      font-size: 2.5rem; } }
+
+.headline-primary--minor {
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    .headline-primary--minor {
+      font-size: 2.0625rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    .headline-primary--minor {
+      font-size: 1.98438rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    .headline-primary--minor {
+      font-size: 1.90625rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    .headline-primary--minor {
+      font-size: 1.82813rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    .headline-primary--minor {
+      font-size: 1.75rem; } }
+  @media (1px) and (max-width: 281px) {
+    .headline-primary--minor {
+      font-size: 0.9375rem; } }
 
 h2, .headline-secondary, .headline-secondary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans Condensed", Prata, Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 700; }
+  font-family: "aleo-regular", "prata-regular", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 700;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.9375rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.86563rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.79375rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.72188rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1.65rem; } }
+  @media (1px) and (max-width: 281px) {
+    h2, .headline-secondary, .headline-secondary--grouped {
+      font-size: 1rem; } }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Hoefler Text", Baskerville, Garamond, Prata, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 500; }
+  font-family: "aleo-light", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 400;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.5625rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.52344rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.48438rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.44531rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 1.40625rem; } }
+  @media (1px) and (max-width: 281px) {
+    h3, .headline-tertiary, .headline-tertiary--grouped {
+      font-size: 0.8125rem; } }
 
 .headline-plaque {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 600;
   font-size: 1.125rem; }
 
@@ -813,8 +1012,7 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
 /*===== Image features =====*/
 .img--avatar, .img--project-preview {
   display: block;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: 0 auto; }
 
 /*===== Navigation item features =====*/
 @media (min-width: 769px) {
@@ -848,15 +1046,40 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 0 0.0625rem rgba(11, 11, 11, 0.2);
-  font-size: 1.125rem; }
+  font-size: 1.0625rem; }
 
 /*===== Paragraph features =====*/
 p, .para-primary, .para-primary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "Open Sans", Arial, sans-serif, serif;
+  font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 100;
-  line-height: 1.5; }
+  line-height: 1.5;
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== If the key exists in the map =====*/
+  /*===== Prints a media query based on the value =====*/ }
+  @media (min-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.25rem; } }
+  @media (min-width: 981px) and (max-width: 1280px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.1875rem; } }
+  @media (min-width: 737px) and (max-width: 980px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.125rem; } }
+  @media (min-width: 481px) and (max-width: 736px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1.0625rem; } }
+  @media (min-width: 282px) and (max-width: 480px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 1rem; } }
+  @media (1px) and (max-width: 281px) {
+    p, .para-primary, .para-primary--grouped {
+      font-size: 0.8125rem; } }
 
 /*===== Side-scroller features =====*/
 .side-scroller {
@@ -901,8 +1124,6 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 .headline-primary {
   margin-bottom: 1.66667rem; }
-  .headline-primary--grouped {
-    margin-bottom: 0; }
 .headline-secondary {
   margin-bottom: 0.91667rem; }
   .headline-secondary--grouped {
@@ -966,12 +1187,15 @@ p, .para-primary, .para-primary--grouped {
 .img--project-preview {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.4em;
-  width: 20rem;
   margin-top: 1.25rem;
   transition: opacity 0.5s; }
+  @media (min-width: 1100px) {
+    .img--project-preview {
+      width: 20rem; } }
   @media (min-width: 769px) {
     .img--project-preview {
-      margin-bottom: 4.375rem; } }
+      margin-bottom: 4.375rem;
+      width: 100%; } }
 
 /*===== Import layers =====*/
 /*_layers.scss*/
@@ -988,15 +1212,15 @@ p, .para-primary, .para-primary--grouped {
 .layer--info {
   background-color: #009DC4; }
 .layer--zero {
-  background-color: #3C1F76; }
+  background-color: #252525; }
 .layer--un {
-  background-color: #003153; }
+  background-color: #010D1A; }
 .layer--deux {
-  background-color: #652DC1; }
+  background-color: #1C1C1C; }
 .layer--trois {
-  background-color: #1FC2C2; }
+  background-color: #003153; }
 .layer--quatre {
-  background-color: #714AB2; }
+  background-color: #C7031E; }
 .layer--cinq {
   background-color: #5590D9; }
 .layer--six {
@@ -1011,25 +1235,25 @@ p, .para-primary, .para-primary--grouped {
   background-color: #4682B4; }
 
 .layer-gradient--tr {
-  background: #F37A28;
-  background: -webkit-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: #ED7A1C;
+  background: -webkit-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: -moz-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: -o-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: linear-gradient(to top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* Standard syntax */ }
 
 .layer-gradient--bl {
-  background: #F37A28;
-  background: -webkit-linear-gradient(top right, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: #ED7A1C;
+  background: -webkit-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: -moz-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: -o-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to bottom left, #F37A28 0%, #FFCC33 25%, #D70502 100%);
+  background: linear-gradient(to bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
   /* Standard syntax */ }
 
 /*===== Import menu =====*/
@@ -1068,6 +1292,8 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 .para-primary {
   margin: 0 0 1.66667rem; }
+  .para-primary strong {
+    font-family: "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif; }
 
 /*===== Import projects =====*/
 /*_projects.scss*/

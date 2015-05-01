@@ -5,7 +5,7 @@
 /*===== Calculate grid columns =====*/
 .grid__col {
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     @include g-columns;
   }
 
@@ -14,12 +14,12 @@
 /*===== Column styles =====*/
 [class^="grid__col--"] {
 
-  @include mq(split-sm)  {
+  @include medq(split-sm)  {
     margin-top: rem(12px);
     margin-bottom: rem(12px);
   }
 
-  @include mq(split-md) {
+  @include medq(split-md) {
     @include doubly(percentage($g-gutter-width / $context));
     float: left;
     min-height: rem(1px);

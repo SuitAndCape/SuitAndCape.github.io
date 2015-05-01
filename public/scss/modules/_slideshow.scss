@@ -10,7 +10,7 @@
   > input {
     display: none;
 
-      @include mq(split-md) {
+      @include medq(split-md) {
 
         &:nth-of-type(1):checked ~ ul li:first-of-type {
           margin-left: 0%;
@@ -38,7 +38,7 @@
 
       }
 
-      @include mq(split-sm) {
+      @include medq(split-sm) {
 
         &:nth-of-type(1):checked ~ ul li:first-of-type {
           margin-left: -1%;
@@ -82,7 +82,7 @@
     overflow: hidden;
     white-space: nowrap;
 
-    @include mq(split-sm) {
+    @include medq(split-sm) {
       border: rem(1px) solid palette(black, base);
     }
 
