@@ -3,7 +3,7 @@
 STORIES, MVP, & PSEUDOCODE
 ==========================================================================
 
-###User Stories
+### User Stories
 1. Has a "Flyer" page
   - Is "Flyer" the landing page?
 2. Has an intuitive layout
@@ -46,7 +46,7 @@ STORIES, MVP, & PSEUDOCODE
 
 
 
-###MVP
+### MVP
 - Pages
   - Home
   - Flyer
@@ -64,8 +64,8 @@ STORIES, MVP, & PSEUDOCODE
 
 
 
-###Pseudocode
-######TECHNOLOGIES:
+### Pseudocode
+###### TECHNOLOGIES:
 - Structure
   - HTML5
 - Styling, Animations, and Transitions
@@ -82,7 +82,7 @@ STORIES, MVP, & PSEUDOCODE
 - Semantic Web Template System
   - Handlebars.js
 
-######PROCESS:
+###### PROCESS:
 - Whiteboard goals
   - Turn into User Stories
   - Decide on MVP

@@ -29,8 +29,11 @@ $white                    : #FFFFFF;
 
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
+$blue-charcoal            : #010D1A;
+$cod-gray_ish             : #1C1C1C;
 $java                     : #1FC2C2;
 $ebony-clay               : #222F40;
+$mine-shaft_ish           : #252525;
 $jungle-green             : #29AB87;
 $st-tropaz                : #2D569B;
 $scooter                  : #2EBFD4;
@@ -46,11 +49,11 @@ $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
 $milano-red               : #B81104;
 $guardsman-red            : #BA0101;
-$monza                    : #D70502;
+$monza                    : #C7031E;
 $sunglo                   : #E16865;
+$tango                    : #ED7A1C;
 $porcelain                : #EFF2F3;
 $sun-glow                 : #FFCC33;
-$tango                    : #F37A28;
 $coral                    : #FF7F50;
 
 /*===== Color usage =====*/
@@ -69,11 +72,11 @@ $ui-colors: (
   warning                 : $coral,
   info                    : $pacific-blue,
 
-  zero                    : $meteorite,
-  un                      : $prussian-blue,
-  deux                    : $purple-heart,
-  trois                   : $java,
-  quatre                  : $studio,
+  zero                    : $mine-shaft_ish,
+  un                      : $blue-charcoal,
+  deux                    : $cod-gray_ish,
+  trois                   : $prussian-blue,
+  quatre                  : $monza,
   cinq                    : $havelock-blue,
   six                     : $meteorite,
   sept                    : $tuna,
