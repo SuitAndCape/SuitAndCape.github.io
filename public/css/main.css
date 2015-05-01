@@ -1297,6 +1297,8 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 .para-primary {
   margin: 0 0 1.66667rem; }
+  .para-primary strong {
+    font-family: "source_sans_pro-semibold", "open_sans-semibold", Arial, sans-serif, serif; }
 
 /*===== Import projects =====*/
 /*_projects.scss*/
