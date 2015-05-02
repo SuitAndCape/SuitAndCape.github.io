@@ -7,8 +7,6 @@
 //   @import url($font-url--google);
 // }
 
-
-
 /*===== Converts pixels to rem values =====*/
 @function rem($target, $context: $base__font-size) {
   @return ($target / $context) * 1rem;

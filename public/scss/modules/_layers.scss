@@ -6,11 +6,8 @@
   @include bg-colors($ui-colors);
 }
 
-.layer-gradient--tr {
-  @include linear-gradient(to top right, $tango 0%, $sun-glow 25%, $monza 100%);
+.layer-gradient--to-b {
+  // @include linear-gradient(to bottom, #003053 0%, #00446B 25%, #005685 50%, #00679E 75%, #007BB8 100%);
+  // @include linear-gradient(to bottom, #003053 0%, #005685 100%);
+  @include linear-gradient(to bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
 }
-
-.layer-gradient--bl {
-  @include linear-gradient(to bottom left, $tango 0%, $sun-glow 25%, $monza 100%);
-}
-

@@ -732,7 +732,7 @@ footer {
 .btn--info {
   background-color: #009DC4; }
 .btn--zero {
-  background-color: #252525; }
+  background-color: #003153; }
 .btn--un {
   background-color: #010D1A; }
 .btn--deux {
@@ -740,7 +740,7 @@ footer {
 .btn--trois {
   background-color: #003153; }
 .btn--quatre {
-  background-color: #C7031E; }
+  background-color: #252525; }
 .btn--cinq {
   background-color: #5590D9; }
 .btn--six {
@@ -1179,11 +1179,9 @@ p, .para-primary, .para-primary--grouped {
 /**** IMAGES
 *=======================================================================*/
 .img--wrap {
-  border: 0.09375rem solid #797E83;
-  background-color: #8e9297;
-  padding: 0.125rem; }
+  border: 0.0625rem solid #0B0B0B; }
 .img--avatar {
-  border-radius: 50%; }
+  border-radius: 100%; }
 .img--project-preview {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.4em;
@@ -1212,7 +1210,7 @@ p, .para-primary, .para-primary--grouped {
 .layer--info {
   background-color: #009DC4; }
 .layer--zero {
-  background-color: #252525; }
+  background-color: #003153; }
 .layer--un {
   background-color: #010D1A; }
 .layer--deux {
@@ -1220,7 +1218,7 @@ p, .para-primary, .para-primary--grouped {
 .layer--trois {
   background-color: #003153; }
 .layer--quatre {
-  background-color: #C7031E; }
+  background-color: #252525; }
 .layer--cinq {
   background-color: #5590D9; }
 .layer--six {
@@ -1234,26 +1232,15 @@ p, .para-primary, .para-primary--grouped {
 .layer--dix {
   background-color: #4682B4; }
 
-.layer-gradient--tr {
-  background: #ED7A1C;
-  background: -webkit-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+.layer-gradient--to-b {
+  background: #001929;
+  background: -webkit-linear-gradient(top, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: -moz-linear-gradient(bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: -o-linear-gradient(bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* Standard syntax */ }
-
-.layer-gradient--bl {
-  background: #ED7A1C;
-  background: -webkit-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: linear-gradient(to bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* Standard syntax */ }
 
 /*===== Import menu =====*/
@@ -1353,7 +1340,7 @@ p, .para-primary, .para-primary--grouped {
     position: relative;
     height: 31.25rem;
     line-height: 0;
-    background-color: #3C1F76;
+    background-color: transparent;
     border-radius: 0.4em;
     margin: 0 auto;
     padding: 0;

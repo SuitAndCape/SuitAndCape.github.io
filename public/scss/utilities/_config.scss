@@ -63,8 +63,6 @@ $color-secondary          : $prussian-blue;
 $color-accent             : $emerald;
 $color-shadow             : rgba($black, .2);
 
-
-
 /*===== User interface colors map =====*/
 $ui-colors: (
   default                 : $ebony-clay,
@@ -73,11 +71,11 @@ $ui-colors: (
   warning                 : $coral,
   info                    : $pacific-blue,
 
-  zero                    : $mine-shaft_ish,
+  zero                    : $prussian-blue,
   un                      : $blue-charcoal,
   deux                    : $cod-gray_ish,
   trois                   : $prussian-blue,
-  quatre                  : $monza,
+  quatre                  : $mine-shaft_ish,
   cinq                    : $havelock-blue,
   six                     : $meteorite,
   sept                    : $tuna,
@@ -119,6 +117,7 @@ $letter-space             : 1px;
 /*===== Border radius =====*/
 $br--default              : .4em;
 $br--round                : 50%;
+$br--circle               : 100%;
 
 /*===== Transition Duration =====*/
 $trnstn-xx-quick          : .15s;

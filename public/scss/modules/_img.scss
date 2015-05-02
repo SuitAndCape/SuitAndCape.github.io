@@ -5,14 +5,12 @@
 .img {
 
   @include m(wrap) {
-    border: rem(1.5px) solid palette(grey, base);
-    background-color: palette(grey, light);
-    padding: rem(2px);
+    border: rem(1px) solid palette(black, base);
   }
 
   @include m(avatar) {
     @extend %img-hlpr;
-    border-radius: $br--round;
+    border-radius: $br--circle;
   }
 
   @include m(project-preview) {
