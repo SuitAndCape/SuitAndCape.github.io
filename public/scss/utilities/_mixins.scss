@@ -128,7 +128,6 @@
 /// @param {Arglist} $color-stops - List of color-stops composing the gradient
 @mixin linear-gradient($direction, $color-stops...) {
 
-
   @if is-direction($direction) == false {
     $color-stops: ($direction, $color-stops);
     $direction: 180deg;

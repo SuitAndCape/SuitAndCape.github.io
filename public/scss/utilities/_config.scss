@@ -23,18 +23,14 @@ $font-weight--bold        : 700;
 $font-weight--ultra-bold  : 800;
 $font-weight--heavy       : 900;
 
-/*===== Descriptive base colors =====*/
-$black                    : #0B0B0B;
-$grey                     : #797E83;
-$white                    : #FFFFFF;
-
+/*===== Descriptive true-base colors =====*/
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
 $blue-charcoal            : #010D1A;
-$cod-gray_ish             : #1C1C1C;
+$midnight                 : #011635;
+$black                    : #0B0B0B;
 $java                     : #1FC2C2;
 $ebony-clay               : #222F40;
-$mine-shaft_ish           : #252525;
 $jungle-green             : #29AB87;
 $st-tropaz                : #2D569B;
 $scooter                  : #2EBFD4;
@@ -46,6 +42,7 @@ $fountain-blue            : #56B4BE;
 $emerald                  : #5ECE7F;
 $purple-heart             : #652DC1;
 $studio                   : #714AB2;
+$grey                     : #797E83;
 $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
 $milano-red               : #B81104;
@@ -56,6 +53,18 @@ $tango                    : #ED7A1C;
 $porcelain                : #EFF2F3;
 $sun-glow                 : #FFCC33;
 $coral                    : #FF7F50;
+$white                    : #FFFFFF;
+
+/*===== Descriptive approximate-base colors =====*/
+$sorta_midnight             : #001929;
+$sorta_prussian-blue        : #002E4D;
+$sorta_regal-blue           : #004570;
+$sorta_bahama-blue          : #005B94;
+$sorta_green-vogue          : #022557;
+$sorta_catalina-blue        : #04357A;
+$sorta_congress-blue        : #06459E;
+$sorta_cod-gray             : #1C1C1C;
+$sorta_mine-shaft           : #252525;
 
 /*===== Color usage =====*/
 $color-primary            : $pacific-blue;
@@ -68,20 +77,8 @@ $ui-colors: (
   default                 : $ebony-clay,
   success                 : $jungle-green,
   error                   : $sunglo,
-  warning                 : $coral,
+  warning                 : $monza,
   info                    : $pacific-blue,
-
-  zero                    : $prussian-blue,
-  un                      : $blue-charcoal,
-  deux                    : $cod-gray_ish,
-  trois                   : $prussian-blue,
-  quatre                  : $mine-shaft_ish,
-  cinq                    : $havelock-blue,
-  six                     : $meteorite,
-  sept                    : $tuna,
-  huit                    : $porcelain,
-  neuf                    : $heather,
-  dix                     : $steel-blue
 );
 
 /*===== Color palette modifiers map =====*/

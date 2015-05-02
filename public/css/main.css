@@ -108,7 +108,8 @@
 /*===== Font sources =====*/
 /*===== Font stacks =====*/
 /*===== Font weights =====*/
-/*===== Descriptive base colors =====*/
+/*===== Descriptive true-base colors =====*/
+/*===== Descriptive approximate-base colors =====*/
 /*===== Color usage =====*/
 /*===== User interface colors map =====*/
 /*===== Color palette modifiers map =====*/
@@ -728,31 +729,9 @@ footer {
 .btn--error {
   background-color: #E16865; }
 .btn--warning {
-  background-color: #FF7F50; }
+  background-color: #C7031E; }
 .btn--info {
   background-color: #009DC4; }
-.btn--zero {
-  background-color: #003153; }
-.btn--un {
-  background-color: #010D1A; }
-.btn--deux {
-  background-color: #1C1C1C; }
-.btn--trois {
-  background-color: #003153; }
-.btn--quatre {
-  background-color: #252525; }
-.btn--cinq {
-  background-color: #5590D9; }
-.btn--six {
-  background-color: #3C1F76; }
-.btn--sept {
-  background-color: #31353F; }
-.btn--huit {
-  background-color: #EFF2F3; }
-.btn--neuf {
-  background-color: #B7C3D0; }
-.btn--dix {
-  background-color: #4682B4; }
 
 [class^="btn--"] {
   padding: 0.9375rem 1.875rem;
@@ -1206,31 +1185,9 @@ p, .para-primary, .para-primary--grouped {
 .layer--error {
   background-color: #E16865; }
 .layer--warning {
-  background-color: #FF7F50; }
+  background-color: #C7031E; }
 .layer--info {
   background-color: #009DC4; }
-.layer--zero {
-  background-color: #003153; }
-.layer--un {
-  background-color: #010D1A; }
-.layer--deux {
-  background-color: #1C1C1C; }
-.layer--trois {
-  background-color: #003153; }
-.layer--quatre {
-  background-color: #252525; }
-.layer--cinq {
-  background-color: #5590D9; }
-.layer--six {
-  background-color: #3C1F76; }
-.layer--sept {
-  background-color: #31353F; }
-.layer--huit {
-  background-color: #EFF2F3; }
-.layer--neuf {
-  background-color: #B7C3D0; }
-.layer--dix {
-  background-color: #4682B4; }
 
 .layer-gradient--to-b {
   background: #001929;
