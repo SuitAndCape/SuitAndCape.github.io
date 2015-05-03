@@ -23,18 +23,15 @@ $font-weight--bold        : 700;
 $font-weight--ultra-bold  : 800;
 $font-weight--heavy       : 900;
 
-/*===== Descriptive base colors =====*/
-$black                    : #0B0B0B;
-$grey                     : #797E83;
-$white                    : #FFFFFF;
-
+/*===== Descriptive true-base colors =====*/
+$transparent              : transparent;
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
 $blue-charcoal            : #010D1A;
-$cod-gray_ish             : #1C1C1C;
+$midnight                 : #011635;
+$black                    : #0B0B0B;
 $java                     : #1FC2C2;
 $ebony-clay               : #222F40;
-$mine-shaft_ish           : #252525;
 $jungle-green             : #29AB87;
 $st-tropaz                : #2D569B;
 $scooter                  : #2EBFD4;
@@ -46,6 +43,7 @@ $fountain-blue            : #56B4BE;
 $emerald                  : #5ECE7F;
 $purple-heart             : #652DC1;
 $studio                   : #714AB2;
+$grey                     : #797E83;
 $stiletto                 : #9C3336;
 $heather                  : #B7C3D0;
 $milano-red               : #B81104;
@@ -56,6 +54,19 @@ $tango                    : #ED7A1C;
 $porcelain                : #EFF2F3;
 $sun-glow                 : #FFCC33;
 $coral                    : #FF7F50;
+$white                    : #FFFFFF;
+
+/*===== Descriptive approximate-base colors =====*/
+$sorta_midnight           : #001929;
+$sorta_prussian-blue      : #002E4D;
+$sorta_regal-blue         : #004570;
+$sorta_bahama-blue        : #005B94;
+$sorta_green-vogue        : #022557;
+$sorta_catalina-blue      : #04357A;
+$sorta_congress-blue      : #06459E;
+$sorta_cod-gray           : #1C1C1C;
+$sorta_mine-shaft         : #252525;
+$sorta_dark-burgundy      : #7D0C0D;
 
 /*===== Color usage =====*/
 $color-primary            : $pacific-blue;
@@ -63,27 +74,14 @@ $color-secondary          : $prussian-blue;
 $color-accent             : $emerald;
 $color-shadow             : rgba($black, .2);
 
-
-
 /*===== User interface colors map =====*/
 $ui-colors: (
   default                 : $ebony-clay,
   success                 : $jungle-green,
   error                   : $sunglo,
-  warning                 : $coral,
-  info                    : $pacific-blue,
-
-  zero                    : $mine-shaft_ish,
-  un                      : $blue-charcoal,
-  deux                    : $cod-gray_ish,
-  trois                   : $prussian-blue,
-  quatre                  : $monza,
-  cinq                    : $havelock-blue,
-  six                     : $meteorite,
-  sept                    : $tuna,
-  huit                    : $porcelain,
-  neuf                    : $heather,
-  dix                     : $steel-blue
+  warning                 : $guardsman-red,
+  info                    : $sorta_dark-burgundy,
+  clear                   : $transparent
 );
 
 /*===== Color palette modifiers map =====*/
@@ -117,10 +115,11 @@ $base__line               : 24px;
 $letter-space             : 1px;
 
 /*===== Border radius =====*/
-$br--default              : .4em;
+$br--default              : .2em;
 $br--round                : 50%;
+$br--circle               : 100%;
 
-/*===== Transition Duration =====*/
+/*===== Transition duration =====*/
 $trnstn-xx-quick          : .15s;
 $trnstn-x-quick           : .3s;
 $trnstn-quick             : .5s;
@@ -128,6 +127,7 @@ $trnstn-medium            : 1s;
 $trnstn-slow              : 3s;
 $trnstn-x-slow            : 5s;
 
+/*===== Cubic-Benzier duration =====*/
 $trnstn-show-box          : cubic-bezier(.4, 1.3, .65, 1);
 
 /*===== Path to assets =====*/

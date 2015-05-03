@@ -24,15 +24,102 @@
 
 /*===== Button features =====*/
 %btn {
-  padding: rem(12px) rem(24px);
-  border: 0;
   border-radius: $br--default;
   color: palette(white, base);
   text-transform: uppercase;
   font-size : rem(16px);
   font-family: $font-family--default;
   font-weight: $font-weight--medium;
-  transition: opacity $trnstn-quick;
+  padding: rem(12px) rem(24px);
+}
+
+/*===== Bump background features =====*/
+%bmp-bckgrnd {
+/*===== Bump keyframes =====*/
+@-webkit-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-moz-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-ms-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-o-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 rem(1px) rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: middle;
+}
+
+/*===== Bump transition info =====*/
+%bmp-actn {
+
+  &:hover {
+    -webkit-animation: bump $trnstn-quick linear 1;
+    -moz-animation: bump $trnstn-quick linear 1;
+    -o-animation: bump $trnstn-quick linear 1;
+    animation: bump $trnstn-quick linear 1;
+  }
+
 }
 
 /*===== Case features =====*/
@@ -54,6 +141,15 @@
 
   &:active {
     opacity: initial;
+  }
+
+}
+
+/*===== Filler action features =====*/
+%fil-actn {
+
+  &:hover {
+    background-color: $guardsman-red;
   }
 
 }
@@ -289,6 +385,14 @@
     font-size: rem(13px);
   }
 
+}
+
+/*===== Radio-button transition info =====*/
+%rdo-bckgrnd {
+  -webkit-transition: background-color $trnstn-x-quick linear;
+  -moz-transition: background-color $trnstn-x-quick linear;
+  -o-transition: background-color $trnstn-x-quick linear;
+  transition: background-color $trnstn-x-quick linear;
 }
 
 /*===== Side-scroller features =====*/

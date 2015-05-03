@@ -108,13 +108,15 @@
 /*===== Font sources =====*/
 /*===== Font stacks =====*/
 /*===== Font weights =====*/
-/*===== Descriptive base colors =====*/
+/*===== Descriptive true-base colors =====*/
+/*===== Descriptive approximate-base colors =====*/
 /*===== Color usage =====*/
 /*===== User interface colors map =====*/
 /*===== Color palette modifiers map =====*/
 /*===== Text =====*/
 /*===== Border radius =====*/
-/*===== Transition Duration =====*/
+/*===== Transition duration =====*/
+/*===== Cubic-Benzier duration =====*/
 /*===== Path to assets =====*/
 /*===== Grid variables =====*/
 /*===== Media query breakpoints =====*/
@@ -152,7 +154,7 @@
   position: absolute; }
 
 /*===== Center alignment placeholder =====*/
-.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"] {
+.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"], [class^="rdo--"] {
   text-align: center; }
 
 /*===== Pseudo-elements placeholder =====*/
@@ -174,7 +176,8 @@
 /*===== BEM element selector mixin =====*/
 /*===== BEM modifier selector mixin =====*/
 /*===== Media queries =====*/
-/*===== Generate modifier color classes =====*/
+/*===== Generate background modifier color classes =====*/
+/*===== Generate background modifier color classes =====*/
 /*===== Generate modifier color-gradient classes =====*/
 /*===== Generate :before or :after pseudo-element shapes =====*/
 /*===== Background image replacement =====*/
@@ -728,42 +731,35 @@ footer {
 .btn--error {
   background-color: #E16865; }
 .btn--warning {
-  background-color: #FF7F50; }
+  background-color: #BA0101; }
 .btn--info {
-  background-color: #009DC4; }
-.btn--zero {
-  background-color: #252525; }
-.btn--un {
-  background-color: #010D1A; }
-.btn--deux {
-  background-color: #1C1C1C; }
-.btn--trois {
-  background-color: #003153; }
-.btn--quatre {
-  background-color: #C7031E; }
-.btn--cinq {
-  background-color: #5590D9; }
-.btn--six {
-  background-color: #3C1F76; }
-.btn--sept {
-  background-color: #31353F; }
-.btn--huit {
-  background-color: #EFF2F3; }
-.btn--neuf {
-  background-color: #B7C3D0; }
-.btn--dix {
-  background-color: #4682B4; }
+  background-color: #7D0C0D; }
+.btn--clear {
+  background-color: transparent; }
 
-[class^="btn--"] {
+.rdo--default {
+  border: 0.125rem solid #222F40; }
+.rdo--success {
+  border: 0.125rem solid #29AB87; }
+.rdo--error {
+  border: 0.125rem solid #E16865; }
+.rdo--warning {
+  border: 0.125rem solid #BA0101; }
+.rdo--info {
+  border: 0.125rem solid #7D0C0D; }
+.rdo--clear {
+  border: 0.125rem solid transparent; }
+
+[class^="btn--"], [class^="rdo--"] {
   padding: 0.9375rem 1.875rem;
   margin-bottom: 0.71429rem;
   width: auto;
   display: inline-block; }
   @media (min-width: 769px) {
-    [class^="btn--"] {
+    [class^="btn--"], [class^="rdo--"] {
       margin: auto 0.9375rem; } }
   @media (min-width: 1px) and (max-width: 768px) {
-    [class^="btn--"] {
+    [class^="btn--"], [class^="rdo--"] {
       width: 100%;
       display: block; } }
 
@@ -845,16 +841,71 @@ footer {
     position: absolute; }
 
 /*===== Button features =====*/
-[class^="btn--"], .form__btn {
-  padding: 0.75rem 1.5rem;
-  border: 0;
-  border-radius: 0.4em;
+[class^="btn--"], [class^="rdo--"], .form__btn {
+  border-radius: 0.2em;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 500;
-  transition: opacity 0.5s; }
+  padding: 0.75rem 1.5rem; }
+
+/*===== Bump background features =====*/
+[class^="btn--"] {
+  /*===== Bump keyframes =====*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 0.0625rem transparent;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: middle; }
+@-webkit-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-moz-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-ms-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-o-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+/*===== Bump transition info =====*/
+[class^="btn--"]:hover {
+  -webkit-animation: bump 0.5s linear 1;
+  -moz-animation: bump 0.5s linear 1;
+  -o-animation: bump 0.5s linear 1;
+  animation: bump 0.5s linear 1; }
 
 /*===== Case features =====*/
 .case {
@@ -866,10 +917,14 @@ footer {
   width: 100%; }
 
 /*===== Dimmer action features =====*/
-[class^="btn--"]:hover, .elevator:hover, .img--project-preview:hover {
+.elevator:hover, .img--project-preview:hover {
   opacity: .67; }
-[class^="btn--"]:active, .elevator:active, .img--project-preview:active {
+.elevator:active, .img--project-preview:active {
   opacity: initial; }
+
+/*===== Filler action features =====*/
+[class^="rdo--"]:hover {
+  background-color: #BA0101; }
 
 /*===== Headline features =====*/
 h1, .headline-primary, .headline-primary--grouped, .headline-primary--minor {
@@ -1081,6 +1136,13 @@ p, .para-primary, .para-primary--grouped {
     p, .para-primary, .para-primary--grouped {
       font-size: 0.8125rem; } }
 
+/*===== Radio-button transition info =====*/
+[class^="rdo--"] {
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear; }
+
 /*===== Side-scroller features =====*/
 .side-scroller {
   padding: 0 0.0625rem;
@@ -1109,7 +1171,7 @@ p, .para-primary, .para-primary--grouped {
   font-size: 1.125rem;
   margin-bottom: 1.11111rem;
   border-bottom: 6px solid #c0c3c5;
-  border-radius: 0.4em;
+  border-radius: 0.2em;
   background: #d8dadb;
   color: black;
   font-weight: 300; }
@@ -1179,14 +1241,12 @@ p, .para-primary, .para-primary--grouped {
 /**** IMAGES
 *=======================================================================*/
 .img--wrap {
-  border: 0.09375rem solid #797E83;
-  background-color: #8e9297;
-  padding: 0.125rem; }
+  border: 0.0625rem solid #0B0B0B; }
 .img--avatar {
-  border-radius: 50%; }
+  border-radius: 100%; }
 .img--project-preview {
   background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 0.4em;
+  border-radius: 0.2em;
   margin-top: 1.25rem;
   transition: opacity 0.5s; }
   @media (min-width: 1100px) {
@@ -1208,52 +1268,21 @@ p, .para-primary, .para-primary--grouped {
 .layer--error {
   background-color: #E16865; }
 .layer--warning {
-  background-color: #FF7F50; }
+  background-color: #BA0101; }
 .layer--info {
-  background-color: #009DC4; }
-.layer--zero {
-  background-color: #252525; }
-.layer--un {
-  background-color: #010D1A; }
-.layer--deux {
-  background-color: #1C1C1C; }
-.layer--trois {
-  background-color: #003153; }
-.layer--quatre {
-  background-color: #C7031E; }
-.layer--cinq {
-  background-color: #5590D9; }
-.layer--six {
-  background-color: #3C1F76; }
-.layer--sept {
-  background-color: #31353F; }
-.layer--huit {
-  background-color: #EFF2F3; }
-.layer--neuf {
-  background-color: #B7C3D0; }
-.layer--dix {
-  background-color: #4682B4; }
+  background-color: #7D0C0D; }
+.layer--clear {
+  background-color: transparent; }
 
-.layer-gradient--tr {
-  background: #ED7A1C;
-  background: -webkit-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+.layer-gradient--to-b {
+  background: #001929;
+  background: -webkit-linear-gradient(top, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: -moz-linear-gradient(bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: -o-linear-gradient(bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* Standard syntax */ }
-
-.layer-gradient--bl {
-  background: #ED7A1C;
-  background: -webkit-linear-gradient(top right, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
-  /* For Opera 11.1 to 12.0 */
-  background: linear-gradient(to bottom left, #ED7A1C 0%, #FFCC33 25%, #C7031E 100%);
+  background: linear-gradient(to bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* Standard syntax */ }
 
 /*===== Import menu =====*/
@@ -1353,8 +1382,8 @@ p, .para-primary, .para-primary--grouped {
     position: relative;
     height: 31.25rem;
     line-height: 0;
-    background-color: #3C1F76;
-    border-radius: 0.4em;
+    background-color: transparent;
+    border-radius: 0.2em;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;

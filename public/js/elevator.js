@@ -42,7 +42,7 @@ var Elevator = (function() {
       }
     }
     return target;
-  };
+  }
 
   // Thanks Mr Penner - http://robertpenner.com/easing/
   function easeInOutQuad( t, b, c, d ) {
@@ -50,7 +50,7 @@ var Elevator = (function() {
     if (t < 1) return c/2*t*t + b;
     t--;
     return -c/2 * (t*(t-2) - 1) + b;
-  };
+  }
 
   function extendParameters(options, defaults){
     for(var option in defaults){
@@ -82,7 +82,7 @@ var Elevator = (function() {
     } else {
       animationFinished();
     }
-  };
+  }
 
 //            ELEVATE!
 //              /

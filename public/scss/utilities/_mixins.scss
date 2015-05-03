@@ -103,7 +103,7 @@
 
 }
 
-/*===== Generate modifier color classes =====*/
+/*===== Generate background modifier color classes =====*/
 @mixin bg-colors($map) {
 
   @each $theme, $color in $map {
@@ -116,6 +116,18 @@
 
 }
 
+/*===== Generate background modifier color classes =====*/
+@mixin bdr-colors($map) {
+
+  @each $theme, $color in $map {
+
+    &--#{$theme} {
+      border: rem(2px) solid $color;
+    }
+
+  }
+
+}
 
 /*===== Generate modifier color-gradient classes =====*/
 /// Mixin printing a linear-gradient
@@ -128,6 +140,13 @@
 /// @param {Arglist} $color-stops - List of color-stops composing the gradient
 @mixin linear-gradient($direction, $color-stops...) {
 
+  // @each $theme, $color-percent in $color-stops {
+
+  //   &--#{$theme} {
+  //     background-color: $color-percent;
+  //   }
+
+  // }
 
   @if is-direction($direction) == false {
     $color-stops: ($direction, $color-stops);
