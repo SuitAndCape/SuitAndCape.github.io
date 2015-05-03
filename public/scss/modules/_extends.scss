@@ -22,9 +22,17 @@
 
 }
 
+/*===== Bump action features =====*/
+%bmp-actn {
+
+  &:hover {
+    background-color: $guardsman-red;
+  }
+
+}
+
 /*===== Button features =====*/
 %btn {
-  background-color: transparent;
   border-radius: $br--default;
   color: palette(white, base);
   text-transform: uppercase;
@@ -32,10 +40,27 @@
   font-family: $font-family--default;
   font-weight: $font-weight--medium;
   padding: rem(12px) rem(24px);
-  -webkit-transition: background-color $trnstn-x-quick linear;
-  -moz-transition: background-color $trnstn-x-quick linear;
-  -o-transition: background-color $trnstn-x-quick linear;
-  transition: background-color $trnstn-x-quick linear;
+}
+
+/*===== Button transition info =====*/
+%bmp-actn {
+
+  &:hover {
+    -webkit-animation: bump background-color $trnstn-x-quick linear 1;
+    -moz-animation: bump background-color $trnstn-x-quick linear 1;
+    -o-animation: bump background-color $trnstn-x-quick linear 1;
+    animation: bump background-color $trnstn-x-quick linear 1;
+    // -webkit-animation-duration: 0.3s;
+    // -moz-animation-duration: 0.3s;
+    // -ms-animation-duration: 0.3s;
+    // -o-animation-duration: 0.3s;
+    // animation-duration: 0.3s;
+    // -webkit-animation-timing-function: linear;
+    // animation-timing-function: linear;
+    // -webkit-animation-iteration-count: 1;
+    // animation-iteration-count: 1;
+  }
+
 }
 
 /*===== Case features =====*/
@@ -66,7 +91,6 @@
 
   &:hover {
     background-color: $guardsman-red;
-    // @include bg-colors($ui-colors)
   }
 
 }
@@ -302,6 +326,14 @@
     font-size: rem(13px);
   }
 
+}
+
+/*===== Radio-button transition info =====*/
+%rdo-bckgrnd {
+  -webkit-transition: background-color $trnstn-x-quick linear;
+  -moz-transition: background-color $trnstn-x-quick linear;
+  -o-transition: background-color $trnstn-x-quick linear;
+  transition: background-color $trnstn-x-quick linear;
 }
 
 /*===== Side-scroller features =====*/

@@ -154,7 +154,7 @@
   position: absolute; }
 
 /*===== Center alignment placeholder =====*/
-.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"] {
+.panel--centered, .panel--padded--centered, .panel--main--centered, [class^="btn--"], [class^="rdo--"] {
   text-align: center; }
 
 /*===== Pseudo-elements placeholder =====*/
@@ -725,28 +725,41 @@ footer {
 /**** BUTTONS
 *=======================================================================*/
 .btn--default {
-  border: 0.125rem solid #222F40; }
+  background-color: #222F40; }
 .btn--success {
-  border: 0.125rem solid #29AB87; }
+  background-color: #29AB87; }
 .btn--error {
-  border: 0.125rem solid #E16865; }
+  background-color: #E16865; }
 .btn--warning {
-  border: 0.125rem solid #BA0101; }
+  background-color: #BA0101; }
 .btn--info {
-  border: 0.125rem solid #009DC4; }
+  background-color: #009DC4; }
 .btn--clear {
+  background-color: transparent; }
+
+.rdo--default {
+  border: 0.125rem solid #222F40; }
+.rdo--success {
+  border: 0.125rem solid #29AB87; }
+.rdo--error {
+  border: 0.125rem solid #E16865; }
+.rdo--warning {
+  border: 0.125rem solid #BA0101; }
+.rdo--info {
+  border: 0.125rem solid #009DC4; }
+.rdo--clear {
   border: 0.125rem solid transparent; }
 
-[class^="btn--"] {
+[class^="btn--"], [class^="rdo--"] {
   padding: 0.9375rem 1.875rem;
   margin-bottom: 0.71429rem;
   width: auto;
   display: inline-block; }
   @media (min-width: 769px) {
-    [class^="btn--"] {
+    [class^="btn--"], [class^="rdo--"] {
       margin: auto 0.9375rem; } }
   @media (min-width: 1px) and (max-width: 768px) {
-    [class^="btn--"] {
+    [class^="btn--"], [class^="rdo--"] {
       width: 100%;
       display: block; } }
 
@@ -827,20 +840,26 @@ footer {
     content: '';
     position: absolute; }
 
+/*===== Bump action features =====*/
+[class^="btn--"]:hover {
+  background-color: #BA0101; }
+
 /*===== Button features =====*/
-[class^="btn--"], .form__btn {
-  background-color: transparent;
+[class^="btn--"], [class^="rdo--"], .form__btn {
   border-radius: 0.2em;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  -webkit-transition: background-color 0.3s linear;
-  -moz-transition: background-color 0.3s linear;
-  -o-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear; }
+  padding: 0.75rem 1.5rem; }
+
+/*===== Button transition info =====*/
+[class^="btn--"]:hover {
+  -webkit-animation: bump background-color 0.3s linear 1;
+  -moz-animation: bump background-color 0.3s linear 1;
+  -o-animation: bump background-color 0.3s linear 1;
+  animation: bump background-color 0.3s linear 1; }
 
 /*===== Case features =====*/
 .case {
@@ -858,7 +877,7 @@ footer {
   opacity: initial; }
 
 /*===== Filler action features =====*/
-[class^="btn--"]:hover {
+[class^="rdo--"]:hover {
   background-color: #BA0101; }
 
 /*===== Headline features =====*/
@@ -1070,6 +1089,13 @@ p, .para-primary, .para-primary--grouped {
   @media (1px) and (max-width: 281px) {
     p, .para-primary, .para-primary--grouped {
       font-size: 0.8125rem; } }
+
+/*===== Radio-button transition info =====*/
+[class^="rdo--"] {
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear; }
 
 /*===== Side-scroller features =====*/
 .side-scroller {

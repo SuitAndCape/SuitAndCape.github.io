@@ -3,14 +3,16 @@
 /**** BUTTONS
 *=======================================================================*/
 .btn {
-  // @include bg-colors($ui-colors)
+  @include bg-colors($ui-colors)
+}
+
+.rdo {
   @include bdr-colors($ui-colors)
 }
 
-[class^="btn--"] {
+[class^="btn--"], [class^="rdo--"] {
   @extend %center-align;
   @extend %btn;
-  @extend %fil-actn;
 
   @include medq(split-md) {
     margin: auto rem(15px);
@@ -29,6 +31,14 @@
     display: block;
   }
 
+}
 
+[class^="rdo--"] {
+  @extend %rdo-bckgrnd;
+  @extend %fil-actn;
+}
 
+[class^="btn--"] {
+  // @extend %btn-bckgrnd;
+  @extend %bmp-actn;
 }

@@ -56,7 +56,7 @@ STORIES, MVP, & PSEUDOCODE
   - Project Showcase
   - Contact
   - Links
-  - Résumé (Resume)
+  - Résumé
   - Sidebar
 - Design layout HTML
 - Design sections using Handlebars
@@ -78,6 +78,7 @@ STORIES, MVP, & PSEUDOCODE
   - AJAX
   - requireJS
   - (?!) underscore.js (!?)
+  - (?!) hammer.js (!?)
   - (?!) Modernizr (!?)
 - Semantic Web Template System
   - Handlebars.js
