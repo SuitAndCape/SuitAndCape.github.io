@@ -24,6 +24,7 @@ $font-weight--ultra-bold  : 800;
 $font-weight--heavy       : 900;
 
 /*===== Descriptive true-base colors =====*/
+$transparent              : transparent;
 $prussian-blue            : #003153;
 $pacific-blue             : #009DC4;
 $blue-charcoal            : #010D1A;
@@ -56,15 +57,15 @@ $coral                    : #FF7F50;
 $white                    : #FFFFFF;
 
 /*===== Descriptive approximate-base colors =====*/
-$sorta_midnight             : #001929;
-$sorta_prussian-blue        : #002E4D;
-$sorta_regal-blue           : #004570;
-$sorta_bahama-blue          : #005B94;
-$sorta_green-vogue          : #022557;
-$sorta_catalina-blue        : #04357A;
-$sorta_congress-blue        : #06459E;
-$sorta_cod-gray             : #1C1C1C;
-$sorta_mine-shaft           : #252525;
+$sorta_midnight           : #001929;
+$sorta_prussian-blue      : #002E4D;
+$sorta_regal-blue         : #004570;
+$sorta_bahama-blue        : #005B94;
+$sorta_green-vogue        : #022557;
+$sorta_catalina-blue      : #04357A;
+$sorta_congress-blue      : #06459E;
+$sorta_cod-gray           : #1C1C1C;
+$sorta_mine-shaft         : #252525;
 
 /*===== Color usage =====*/
 $color-primary            : $pacific-blue;
@@ -77,8 +78,9 @@ $ui-colors: (
   default                 : $ebony-clay,
   success                 : $jungle-green,
   error                   : $sunglo,
-  warning                 : $monza,
+  warning                 : $guardsman-red,
   info                    : $pacific-blue,
+  clear                   : $transparent
 );
 
 /*===== Color palette modifiers map =====*/
@@ -112,11 +114,11 @@ $base__line               : 24px;
 $letter-space             : 1px;
 
 /*===== Border radius =====*/
-$br--default              : .4em;
+$br--default              : .2em;
 $br--round                : 50%;
 $br--circle               : 100%;
 
-/*===== Transition Duration =====*/
+/*===== Transition duration =====*/
 $trnstn-xx-quick          : .15s;
 $trnstn-x-quick           : .3s;
 $trnstn-quick             : .5s;
@@ -124,6 +126,7 @@ $trnstn-medium            : 1s;
 $trnstn-slow              : 3s;
 $trnstn-x-slow            : 5s;
 
+/*===== Cubic-Benzier duration =====*/
 $trnstn-show-box          : cubic-bezier(.4, 1.3, .65, 1);
 
 /*===== Path to assets =====*/

@@ -3,16 +3,17 @@
 /**** BUTTONS
 *=======================================================================*/
 .btn {
-  @include bg-colors($ui-colors);
+  // @include bg-colors($ui-colors)
+  @include bdr-colors($ui-colors)
 }
 
 [class^="btn--"] {
   @extend %center-align;
   @extend %btn;
-  @extend %dim-actn;
+  @extend %fil-actn;
 
   @include medq(split-md) {
-  margin: auto rem(15px);
+    margin: auto rem(15px);
   //   width: auto;
   //   display: inline-block;
   //   @include doubly(20px);
@@ -27,4 +28,7 @@
     width: 100%;
     display: block;
   }
+
+
+
 }
