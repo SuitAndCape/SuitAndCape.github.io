@@ -39,6 +39,6 @@
 }
 
 [class^="btn--"] {
-  // @extend %btn-bckgrnd;
+  @extend %bmp-bckgrnd;
   @extend %bmp-actn;
 }

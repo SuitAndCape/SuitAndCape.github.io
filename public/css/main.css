@@ -733,7 +733,7 @@ footer {
 .btn--warning {
   background-color: #BA0101; }
 .btn--info {
-  background-color: #009DC4; }
+  background-color: #7D0C0D; }
 .btn--clear {
   background-color: transparent; }
 
@@ -746,7 +746,7 @@ footer {
 .rdo--warning {
   border: 0.125rem solid #BA0101; }
 .rdo--info {
-  border: 0.125rem solid #009DC4; }
+  border: 0.125rem solid #7D0C0D; }
 .rdo--clear {
   border: 0.125rem solid transparent; }
 
@@ -840,10 +840,6 @@ footer {
     content: '';
     position: absolute; }
 
-/*===== Bump action features =====*/
-[class^="btn--"]:hover {
-  background-color: #BA0101; }
-
 /*===== Button features =====*/
 [class^="btn--"], [class^="rdo--"], .form__btn {
   border-radius: 0.2em;
@@ -854,12 +850,62 @@ footer {
   font-weight: 500;
   padding: 0.75rem 1.5rem; }
 
-/*===== Button transition info =====*/
+/*===== Bump background features =====*/
+[class^="btn--"] {
+  /*===== Bump keyframes =====*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 0.0625rem transparent;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: middle; }
+@-webkit-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-moz-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-ms-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@-o-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes bump {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); } }
+/*===== Bump transition info =====*/
 [class^="btn--"]:hover {
-  -webkit-animation: bump background-color 0.3s linear 1;
-  -moz-animation: bump background-color 0.3s linear 1;
-  -o-animation: bump background-color 0.3s linear 1;
-  animation: bump background-color 0.3s linear 1; }
+  -webkit-animation: bump 0.5s linear 1;
+  -moz-animation: bump 0.5s linear 1;
+  -o-animation: bump 0.5s linear 1;
+  animation: bump 0.5s linear 1; }
 
 /*===== Case features =====*/
 .case {
@@ -1224,7 +1270,7 @@ p, .para-primary, .para-primary--grouped {
 .layer--warning {
   background-color: #BA0101; }
 .layer--info {
-  background-color: #009DC4; }
+  background-color: #7D0C0D; }
 .layer--clear {
   background-color: transparent; }
 

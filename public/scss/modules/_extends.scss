@@ -22,15 +22,6 @@
 
 }
 
-/*===== Bump action features =====*/
-%bmp-actn {
-
-  &:hover {
-    background-color: $guardsman-red;
-  }
-
-}
-
 /*===== Button features =====*/
 %btn {
   border-radius: $br--default;
@@ -42,23 +33,91 @@
   padding: rem(12px) rem(24px);
 }
 
-/*===== Button transition info =====*/
+/*===== Bump background features =====*/
+%bmp-bckgrnd {
+/*===== Bump keyframes =====*/
+@-webkit-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-moz-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-ms-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-o-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 rem(1px) rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: middle;
+}
+
+/*===== Bump transition info =====*/
 %bmp-actn {
 
   &:hover {
-    -webkit-animation: bump background-color $trnstn-x-quick linear 1;
-    -moz-animation: bump background-color $trnstn-x-quick linear 1;
-    -o-animation: bump background-color $trnstn-x-quick linear 1;
-    animation: bump background-color $trnstn-x-quick linear 1;
-    // -webkit-animation-duration: 0.3s;
-    // -moz-animation-duration: 0.3s;
-    // -ms-animation-duration: 0.3s;
-    // -o-animation-duration: 0.3s;
-    // animation-duration: 0.3s;
-    // -webkit-animation-timing-function: linear;
-    // animation-timing-function: linear;
-    // -webkit-animation-iteration-count: 1;
-    // animation-iteration-count: 1;
+    -webkit-animation: bump $trnstn-quick linear 1;
+    -moz-animation: bump $trnstn-quick linear 1;
+    -o-animation: bump $trnstn-quick linear 1;
+    animation: bump $trnstn-quick linear 1;
   }
 
 }

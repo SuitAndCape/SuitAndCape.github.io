@@ -66,6 +66,7 @@ $sorta_catalina-blue      : #04357A;
 $sorta_congress-blue      : #06459E;
 $sorta_cod-gray           : #1C1C1C;
 $sorta_mine-shaft         : #252525;
+$sorta_dark-burgundy      : #7D0C0D;
 
 /*===== Color usage =====*/
 $color-primary            : $pacific-blue;
@@ -79,7 +80,7 @@ $ui-colors: (
   success                 : $jungle-green,
   error                   : $sunglo,
   warning                 : $guardsman-red,
-  info                    : $pacific-blue,
+  info                    : $sorta_dark-burgundy,
   clear                   : $transparent
 );
 

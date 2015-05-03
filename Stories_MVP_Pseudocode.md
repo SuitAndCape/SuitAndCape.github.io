@@ -5,7 +5,6 @@ STORIES, MVP, & PSEUDOCODE
 
 ### User Stories
 1. Has a "Flyer" page
-  - Is "Flyer" the landing page?
 2. Has an intuitive layout
   - Pages of importance must be easy to get to from anywhere
 3. Has a responsive design
@@ -93,5 +92,5 @@ STORIES, MVP, & PSEUDOCODE
   - Ensure that any tech used is necessary
 - Mobile-first design
 - Create a test-suite in parallel
-  - Include design tests
+  - Due to the nature of the project, the test-suite is replaced by design tests
 - Keep solid Git workflow
