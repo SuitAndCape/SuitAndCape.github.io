@@ -140,6 +140,15 @@
 
 }
 
+/*===== Faker-button action features =====*/
+%fil-fkr-actn {
+
+  &:hover {
+    background-color: $blue-charcoal;
+  }
+
+}
+
 /*===== Filler action features =====*/
 %fil-actn {
 
@@ -147,6 +156,15 @@
     background-color: $guardsman-red;
   }
 
+}
+
+/*===== Fill transition info =====*/
+%fil-bckgrnd {
+  background-color: transparent;
+  -webkit-transition: background-color $trnstn-x-quick linear;
+  -moz-transition: background-color $trnstn-x-quick linear;
+  -o-transition: background-color $trnstn-x-quick linear;
+  transition: background-color $trnstn-x-quick linear;
 }
 
 /*===== Headline features =====*/
@@ -293,10 +311,25 @@
   cursor: pointer;
 }
 
+/*===== Item-on features =====*/
+%item-on-hghlght {
+  color: palette(grey, x-light);
+}
+
+%item-on-undrln {
+  border-color: $color-primary;
+}
+
+%item-trnstn {
+  border-bottom: rem(1px) solid transparent;
+  transition: opacity $trnstn-quick;
+}
+
 /*===== Image features =====*/
 %img-hlpr {
   display: block;
-  // margin: auto 0;
+  //// margin: auto 0;
+  // margin: 0 auto;
   margin: auto auto;
 }
 
@@ -316,13 +349,11 @@
 }
 
 %nav-item-link {
-  border-bottom: rem(1px) solid transparent;
   display: block;
   font-size: rem(18px);
   font-weight: $font-weight--light;
   padding: rem(8px, 18px);
   text-align: center;
-  transition: opacity $trnstn-quick;
 
   @include medq(split-sm) {
     border-bottom-color: palette(grey, xx-light);
@@ -330,11 +361,6 @@
     padding-bottom: rem(14px, 18px);
   }
 
-}
-
-%nav-item-on {
-  color: palette(grey, x-light);
-  border-color: $color-primary;
 }
 
 /*===== Menu link features =====*/
@@ -382,12 +408,13 @@
 
 }
 
-/*===== Radio-button transition info =====*/
-%rdo-bckgrnd {
-  -webkit-transition: background-color $trnstn-x-quick linear;
-  -moz-transition: background-color $trnstn-x-quick linear;
-  -o-transition: background-color $trnstn-x-quick linear;
-  transition: background-color $trnstn-x-quick linear;
+/*===== Project image freatures =====*/
+%prjct-img {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: $br--default;
+  margin-top: rem(20px);
+  min-width: rem(260px);
+  transition: opacity $trnstn-quick;
 }
 
 /*===== Side-scroller features =====*/

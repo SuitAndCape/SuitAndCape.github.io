@@ -1,0 +1,33 @@
+/*_image-overlay.scss*/
+
+/**** IMAGE OVERLAY
+*=======================================================================*/
+.image-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+
+  > img {
+    margin-top: 2%;
+    // max-width: 90%;
+    // max-height: 80%;
+
+    width: rem(550px);
+  }
+
+  @include medq(split-md) {
+
+    &:target {
+      outline: none;
+      display: block;
+    }
+
+  }
+
+}

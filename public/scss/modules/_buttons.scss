@@ -2,15 +2,15 @@
 
 /**** BUTTONS
 *=======================================================================*/
-.btn {
+.swtch {
   @include bg-colors($ui-colors)
 }
 
-.rdo {
+.btn, .fkr, .rdo {
   @include bdr-colors($ui-colors)
 }
 
-[class^="btn--"], [class^="rdo--"] {
+[class^="btn--"], [class^="fkr--"], [class^="rdo--"], [class^="swtch--"] {
   @extend %center-align;
   @extend %btn;
 
@@ -33,12 +33,19 @@
 
 }
 
-[class^="rdo--"] {
-  @extend %rdo-bckgrnd;
+[class^="btn--"], [class^="fkr--"], [class^="rdo--"] {
+  @extend %fil-bckgrnd;
+}
+
+[class^="btn--"], [class^="rdo--"] {
   @extend %fil-actn;
 }
 
-[class^="btn--"] {
+[class^="fkr--"] {
+  @extend %fil-fkr-actn;
+}
+
+[class^="swtch--"] {
   @extend %bmp-bckgrnd;
   @extend %bmp-actn;
 }

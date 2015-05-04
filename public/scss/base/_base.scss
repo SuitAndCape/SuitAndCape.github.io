@@ -46,12 +46,14 @@ p {
 }
 
 blockquote {
+
   @media (min-width: 769px) {
     margin: rem(32px, 24px) 0;
     padding: 0 0 0 5%;
     border-left: rem(8px, 24px) solid palette(grey, xx-light);
     font-size: rem(24px);
   }
+
   font-weight: $font-weight--light;
   font-style: italic;
   font-size: rem(20px);
@@ -59,7 +61,8 @@ blockquote {
 
 /*===== Links style =====*/
 a {
-  color: palette(white, base);
+  color: transparent;
+  // color: palette(white, base);
   text-decoration: none;
   font-weight: $font-weight--medium;
 }
@@ -81,14 +84,14 @@ img {
 /*===== Form elements style =====*/
 input, textarea {
   display: block;
-  padding: 15px;
+  padding: rem(15px);
   width: 100%;
   outline: 0;
   border: 0;
 }
 
 input:focus, textarea:focus {
-  transition: $trnstn-x-quick;
+  transition: $trnstn-quick;
 }
 
 /*===== Button style =====*/
