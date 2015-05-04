@@ -413,9 +413,19 @@
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: $br--default;
   margin-top: rem(20px);
-  min-width: rem(260px);
+  // min-width: rem(260px);
   transition: opacity $trnstn-quick;
 }
+
+
+%prjct-prvw-img {
+  min-width: rem(260px);
+}
+
+%prjct-prcs-img {
+  min-width: rem(232.5px);
+}
+
 
 /*===== Side-scroller features =====*/
 %scrllr {

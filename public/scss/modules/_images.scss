@@ -17,6 +17,7 @@
     @extend %dim-actn;
     @extend %img-hlpr;
     @extend %prjct-img;
+    @extend %prjct-prvw-img;
 
     @include medq(split-md) {
       width: 340px;
@@ -36,6 +37,7 @@
     cursor: pointer;
     @extend %img-hlpr;
     @extend %prjct-img;
+    @extend %prjct-prcs-img;
 
     @include medq(split-md) {
       // margin: rem(160px) auto;
@@ -48,7 +50,7 @@
       display: block;
       width: 450px;
       margin: 0 auto;
-      // max-width: 100vw;
+      // width: 100vw;
     }
 
   }

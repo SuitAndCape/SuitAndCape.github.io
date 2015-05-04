@@ -1186,8 +1186,13 @@ p, .para-primary, .para-primary--grouped {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.2em;
   margin-top: 1.25rem;
-  min-width: 16.25rem;
   transition: opacity 0.5s; }
+
+.img--project-preview {
+  min-width: 16.25rem; }
+
+.img--project-process {
+  min-width: 14.53125rem; }
 
 /*===== Side-scroller features =====*/
 .side-scroller {
@@ -1207,7 +1212,7 @@ p, .para-primary, .para-primary--grouped {
   white-space: normal; }
 
 /*===== Underlay features =====*/
-.case__about, .case__flyer, .case__home, .case__projects, .case__ourhouse, .case__suitandcape, .layer-pic__uno, .layer-pic__dos {
+.case__about, .case__flyer, .case__home, .case__projects, .case__ourhouse, .case__suitandcape, .layer-pic__un, .layer-pic__deux, .layer-pic__trois {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1330,10 +1335,10 @@ p, .para-primary, .para-primary--grouped {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 999; }
+  z-index: 1000; }
   .image-overlay > img {
     margin-top: 2%;
-    width: 34.375rem; }
+    width: 35rem; }
   @media (min-width: 769px) {
     .image-overlay:target {
       outline: none;
@@ -1372,18 +1377,24 @@ p, .para-primary, .para-primary--grouped {
   /* Standard syntax */ }
 
 /*===== Picture layers =====*/
-.layer-pic__uno {
+.layer-pic__un {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png"); }
-.layer-pic__dos {
+.layer-pic__deux {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png"); }
+.layer-pic__trois {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png"); }
 
 /*===== Import menu =====*/
 /*_menu.scss*/
