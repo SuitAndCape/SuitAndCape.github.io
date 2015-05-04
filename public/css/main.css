@@ -583,6 +583,7 @@ button {
 
 /*===== Footer style =====*/
 footer {
+  background-color: rgba(26, 32, 63, 0.9);
   border-top: 1px solid #d8dadb; }
   footer p {
     font-size: 1rem;
@@ -602,10 +603,10 @@ footer {
     .panel, .panel--centered {
       padding-bottom: 1.25rem; } }
 
-.panel--padded, .panel--padded--centered {
+.panel--padded {
   padding-top: 2.125rem; }
   @media (min-width: 769px) {
-    .panel--padded, .panel--padded--centered {
+    .panel--padded {
       padding-top: 5rem;
       padding-bottom: 2.125rem; } }
 
@@ -768,15 +769,43 @@ footer {
 /**** CASE
 *=======================================================================*/
 .case {
-  /*===== Banner image =====*/
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/ali/banner-home.jpg");
-  /*===== Banner footer screen =====*/ }
-  .case #footer {
-    background-color: rgba(26, 32, 63, 0.9); }
+  /*===== Banner image =====*/ }
+  .case__about {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-about.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-about.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-about.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-about.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-about.jpg"); }
+  .case__flyer {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-flyer.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-flyer.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-flyer.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-flyer.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-flyer.jpg"); }
+  .case__home {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-home.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-home.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-home.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-home.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-home.jpg"); }
+  .case__projects {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-projects.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-projects.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-projects.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-projects.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-projects.jpg"); }
+  .case__ourhouse {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-ourhouse.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-ourhouse.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-ourhouse.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-ourhouse.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-ourhouse.jpg"); }
+  .case__suitandcape {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-suitandcape.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-suitandcape.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-suitandcape.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-suitandcape.jpg");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/banner/banner-suitandcape.jpg"); }
 
 /*===== Import design tests =====*/
 /*design_tests.scss*/
@@ -908,13 +937,8 @@ footer {
   animation: bump 0.5s linear 1; }
 
 /*===== Case features =====*/
-.case {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  width: 100%; }
+.case__about, .case__flyer, .case__home, .case__projects, .case__ourhouse, .case__suitandcape {
+  background-attachment: fixed; }
 
 /*===== Dimmer action features =====*/
 .elevator:hover, .img--project-preview:hover {
@@ -927,16 +951,15 @@ footer {
   background-color: #BA0101; }
 
 /*===== Headline features =====*/
-h1, .headline-primary, .headline-primary--grouped, .headline-primary--minor {
+h1, .headline-primary, .headline-primary--major, .headline-primary--minor {
   color: #FFFFFF;
   font-family: Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
   font-weight: 600;
     line-height: 5rem;
     margin-top: 18.75rem;
-  margin-bottom: 2.5rem;
     width: 100%; }
 
-.headline-primary, .headline-primary--grouped {
+.headline-primary, .headline-primary--major {
   /*===== If the key exists in the map =====*/
   /*===== If the key exists in the map =====*/
   /*===== If the key exists in the map =====*/
@@ -945,22 +968,22 @@ h1, .headline-primary, .headline-primary--grouped, .headline-primary--minor {
   /*===== If the key exists in the map =====*/
   /*===== Prints a media query based on the value =====*/ }
   @media (min-width: 1280px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 5rem; } }
   @media (min-width: 981px) and (max-width: 1280px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 4.5rem; } }
   @media (min-width: 737px) and (max-width: 980px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 4rem; } }
   @media (min-width: 481px) and (max-width: 736px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 3.5rem; } }
   @media (min-width: 282px) and (max-width: 480px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 3rem; } }
   @media (1px) and (max-width: 281px) {
-    .headline-primary, .headline-primary--grouped {
+    .headline-primary, .headline-primary--major {
       font-size: 2.5rem; } }
 
 .headline-primary--minor {
@@ -990,7 +1013,7 @@ h1, .headline-primary, .headline-primary--grouped, .headline-primary--minor {
     .headline-primary--minor {
       font-size: 0.9375rem; } }
 
-h2, .headline-secondary, .headline-secondary--grouped {
+h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
   color: #FFFFFF;
   letter-spacing: 1px;
   font-family: "aleo-regular", "prata-regular", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
@@ -1003,29 +1026,29 @@ h2, .headline-secondary, .headline-secondary--grouped {
   /*===== If the key exists in the map =====*/
   /*===== Prints a media query based on the value =====*/ }
   @media (min-width: 1280px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1.9375rem; } }
   @media (min-width: 981px) and (max-width: 1280px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1.86563rem; } }
   @media (min-width: 737px) and (max-width: 980px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1.79375rem; } }
   @media (min-width: 481px) and (max-width: 736px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1.72188rem; } }
   @media (min-width: 282px) and (max-width: 480px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1.65rem; } }
   @media (1px) and (max-width: 281px) {
-    h2, .headline-secondary, .headline-secondary--grouped {
+    h2, .headline-secondary, .headline-secondary--grouped, .headline-secondary--liner {
       font-size: 1rem; } }
 
 h3, .headline-tertiary, .headline-tertiary--grouped {
   color: #FFFFFF;
   letter-spacing: 1px;
-  font-family: "aleo-light", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-  font-weight: 400;
+  font-family: "aleo-light", "prata-regular", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+  font-weight: 600;
   /*===== If the key exists in the map =====*/
   /*===== If the key exists in the map =====*/
   /*===== If the key exists in the map =====*/
@@ -1067,8 +1090,9 @@ h3, .headline-tertiary, .headline-tertiary--grouped {
 /*===== Image features =====*/
 .img--avatar, .img--project-preview {
   display: block;
-  margin: 0 auto; }
+  margin: auto auto; }
 
+/*===== Layer features =====*/
 /*===== Navigation item features =====*/
 @media (min-width: 769px) {
   .nav__item, .nav__item--current {
@@ -1160,6 +1184,13 @@ p, .para-primary, .para-primary--grouped {
   vertical-align: top;
   white-space: normal; }
 
+/*===== Underlay features =====*/
+.case__about, .case__flyer, .case__home, .case__projects, .case__ourhouse, .case__suitandcape, .layer-pic__uno, .layer-pic__dos {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
+
 /*===== Import form elements =====*/
 /*_forms.scss*/
 /**** FORM ELEMENTS
@@ -1184,20 +1215,19 @@ p, .para-primary, .para-primary--grouped {
 /*_headlines.scss*/
 /**** HEADLINES
 *=======================================================================*/
-.headline-primary {
+.headline-primary--major {
   margin-bottom: 1.66667rem; }
-.headline-secondary {
-  margin-bottom: 0.91667rem; }
-  .headline-secondary--grouped {
-    margin-top: 0.41667rem;
-    margin-bottom: 2.25rem; }
+.headline-secondary--grouped {
+  margin-top: 0.41667rem;
+  margin-bottom: 2.25rem; }
+.headline-secondary--liner {
+  text-align: center;
+  vertical-align: middle; }
 .headline-tertiary {
   margin-bottom: 0.91667rem; }
   .headline-tertiary--grouped {
     margin-top: 0.41667rem;
     margin-bottom: 2.25rem; }
-.headline-plaque {
-  margin-bottom: 0; }
 
 /*===== Import icons =====*/
 /*_icons.scss*/
@@ -1237,7 +1267,7 @@ p, .para-primary, .para-primary--grouped {
     top: 4%; }
 
 /*===== Import images =====*/
-/*_img.scss*/
+/*_images.scss*/
 /**** IMAGES
 *=======================================================================*/
 .img--wrap {
@@ -1248,19 +1278,22 @@ p, .para-primary, .para-primary--grouped {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.2em;
   margin-top: 1.25rem;
+  min-width: 16.25rem;
   transition: opacity 0.5s; }
-  @media (min-width: 1100px) {
-    .img--project-preview {
-      width: 20rem; } }
   @media (min-width: 769px) {
     .img--project-preview {
-      margin-bottom: 4.375rem;
-      width: 100%; } }
+      max-width: 340px;
+      margin-bottom: 5rem; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .img--project-preview {
+      display: block;
+      margin: 0 auto; } }
 
 /*===== Import layers =====*/
 /*_layers.scss*/
 /**** SECTION LAYERS
 *=======================================================================*/
+/*===== Color layer =====*/
 .layer--default {
   background-color: #222F40; }
 .layer--success {
@@ -1274,6 +1307,7 @@ p, .para-primary, .para-primary--grouped {
 .layer--clear {
   background-color: transparent; }
 
+/*===== Gradient layer =====*/
 .layer-gradient--to-b {
   background: #001929;
   background: -webkit-linear-gradient(top, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
@@ -1284,6 +1318,20 @@ p, .para-primary, .para-primary--grouped {
   /* For Opera 11.1 to 12.0 */
   background: linear-gradient(to bottom, #001929 0%, #002E4D 48%, #004570 68%, #005B94 100%);
   /* Standard syntax */ }
+
+/*===== Picture layers =====*/
+.layer-pic__uno {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png"); }
+.layer-pic__dos {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png"); }
 
 /*===== Import menu =====*/
 /*_menu.scss*/
@@ -1322,7 +1370,7 @@ p, .para-primary, .para-primary--grouped {
 .para-primary {
   margin: 0 0 1.66667rem; }
   .para-primary strong {
-    font-family: "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif; }
+    font-family: "Hoefler Text", "aleo-light", "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif; }
 
 /*===== Import projects =====*/
 /*_projects.scss*/
@@ -1330,7 +1378,7 @@ p, .para-primary, .para-primary--grouped {
 *=======================================================================*/
 @media (min-width: 1px) and (max-width: 768px) {
   #projects-page .project-display .project-summary {
-    margin-bottom: 4.375rem; } }
+    margin-bottom: 5rem; } }
 
 /*===== Import sad browser =====*/
 /*sad_browser.scss*/
@@ -1430,6 +1478,26 @@ p, .para-primary, .para-primary--grouped {
   transition: all 1s cubic-bezier(0.4, 1.3, 0.65, 1); }
   .overscroll p {
     padding: 0.9375rem; }
+
+/*===== Import videos =====*/
+/*_videos.scss*/
+/**** VIDEOS
+*=======================================================================*/
+.vid {
+  width: 17.8125rem;
+  height: 31.1875rem; }
+  @media (min-width: 1100px) {
+    .vid {
+      margin-bottom: 3.125rem; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .vid {
+      margin-bottom: 3.125rem; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .vid {
+      display: block;
+      margin: 0 auto;
+      max-width: 100vw;
+      margin-bottom: 3.125rem; } }
 
 /*===== Import states =====*/
 /*_index.scss*/

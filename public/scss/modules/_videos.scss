@@ -1,0 +1,27 @@
+/*_videos.scss*/
+
+/**** VIDEOS
+*=======================================================================*/
+
+.vid {
+  //// width: rem(320px);
+  //// height: rem(560px);
+  width: rem(285px);
+  height: rem(499px);
+
+  @include medq(split-lg) {
+    margin-bottom: rem(50px);
+  }
+
+  @include medq(split-sm) {
+    margin-bottom: rem(50px);
+  }
+
+  @include medq(split-sm) {
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    margin-bottom: rem(50px);
+  }
+
+}

@@ -125,11 +125,6 @@
 /*===== Case features =====*/
 %case-xtn {
   background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  width: 100%;
 }
 
 /*===== Dimmer action features =====*/
@@ -160,11 +155,7 @@
   font-family: $font-family--primary;
   font-weight: $font-weight--demi-bold;
   line-height: rem(80px);
-  // line-height: (46px / 42px);
-  // margin-top: 0;
   margin-top: rem(300px);
-  margin-bottom: rem(40px);
-//   text-align: center;
   width: 100%;
 }
 
@@ -260,7 +251,7 @@
   color: palette(white, base);
   letter-spacing: $letter-space;
   font-family: $font-family--tertiary;
-  font-weight: $font-weight--normal;
+  font-weight: $font-weight--demi-bold;
 
   @include mq(x-large) {
     font-size: rem(25px);
@@ -305,10 +296,14 @@
 /*===== Image features =====*/
 %img-hlpr {
   display: block;
-  //// margin-top: rem(24px);
-  margin: 0 auto;
+  // margin: auto 0;
+  margin: auto auto;
 }
 
+/*===== Layer features =====*/
+%lyr-xtn {
+
+}
 
 /*===== Navigation item features =====*/
 %nav-item-horz {
@@ -412,4 +407,12 @@
   line-height: normal;
   vertical-align: top;
   white-space: normal;
+}
+
+/*===== Underlay features =====*/
+%undrly-xtn {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }

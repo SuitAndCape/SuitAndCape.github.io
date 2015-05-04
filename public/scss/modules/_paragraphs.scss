@@ -9,7 +9,7 @@
     margin: 0 0 rem(30px, 18px);
 
     strong {
-      font-family: $font-family--default-em;
+      font-family: $font-family--emphasized;
     }
 
     @include m(grouped) {
