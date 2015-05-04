@@ -1,0 +1,56 @@
+/*_images.scss*/
+
+/**** IMAGES
+*=======================================================================*/
+.img {
+
+  @include m(wrap) {
+    border: rem(1px) solid palette(black, base);
+  }
+
+  @include m(avatar) {
+    @extend %img-hlpr;
+    border-radius: $br--circle;
+  }
+
+  @include m(project-preview) {
+    @extend %dim-actn;
+    @extend %img-hlpr;
+    @extend %prjct-img;
+
+    @include medq(split-md) {
+      width: 340px;
+      // margin: rem(160px) auto;
+      margin-bottom: rem(80px);
+    }
+
+    @include medq(split-sm) {
+      display: block;
+      margin: 0 auto;
+      // max-width: 100vw;
+    }
+
+  }
+
+  @include m(project-process) {
+    cursor: pointer;
+    @extend %img-hlpr;
+    @extend %prjct-img;
+
+    @include medq(split-md) {
+      // margin: rem(160px) auto;
+      vertical-align: middle;
+      width: 340px;
+      margin-bottom: rem(80px);
+    }
+
+    @include medq(split-sm) {
+      display: block;
+      width: 450px;
+      margin: 0 auto;
+      // max-width: 100vw;
+    }
+
+  }
+
+}

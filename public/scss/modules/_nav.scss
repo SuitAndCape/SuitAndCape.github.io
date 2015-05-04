@@ -11,11 +11,13 @@
     @extend %nav-item-horz;
 
     a {
+      @extend %item-trnstn;
       @extend %nav-item-link;
       color: palette(white, base);
 
       &:hover {
-        @extend %nav-item-on;
+        @extend %item-on-hghlght;
+        @extend %item-on-undrln;
       }
 
     }
@@ -25,7 +27,8 @@
 
       a {
         @extend %nav-item-link;
-        @extend %nav-item-on;
+        @extend %item-on-hghlght;
+        @extend %item-on-undrln;
       }
 
     }

@@ -7,10 +7,10 @@
 
 /*===== Font stacks =====*/
 $font-family--default     : "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
-$font-family--default-em  : "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif;
 $font-family--primary     : Garamond, Baskerville, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
 $font-family--secondary   : "aleo-regular", "prata-regular", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
-$font-family--tertiary    : "aleo-light", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--tertiary    : "aleo-light", "prata-regular", Baskerville, Garamond, "prata-regular", "Baskerville Old Face", "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif, serif;
+$font-family--important  :  "Hoefler Text", "aleo-light", "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif;
 
 /*===== Font weights =====*/
 $font-weight--thin        : 100;
@@ -77,11 +77,12 @@ $color-shadow             : rgba($black, .2);
 /*===== User interface colors map =====*/
 $ui-colors: (
   default                 : $ebony-clay,
-  success                 : $jungle-green,
+  clear                   : $transparent,
   error                   : $sunglo,
-  warning                 : $guardsman-red,
   info                    : $sorta_dark-burgundy,
-  clear                   : $transparent
+  missing                 : $blue-charcoal,
+  success                 : $jungle-green,
+  warning                 : $guardsman-red
 );
 
 /*===== Color palette modifiers map =====*/

@@ -2,11 +2,37 @@
 
 /**** SECTION LAYERS
 *=======================================================================*/
+/*===== Color layer =====*/
 .layer {
   @include bg-colors($ui-colors);
 }
 
+/*===== Gradient layer =====*/
 .layer-gradient--to-b {
   @include linear-gradient(to bottom, $sorta_midnight 0%, $sorta_prussian-blue 48%, $sorta_regal-blue 68%, $sorta_bahama-blue 100%);
   // @include linear-gradient(to bottom, $midnight 0%, $sorta_green-vogue 48%, $sorta_catalina-blue 68%, $sorta_congress-blue 100%);
+}
+
+/*===== Picture layers =====*/
+.layer-pic {
+
+  @include e(uno) {
+    @extend %undrly-xtn;
+    @extend %undrly-xtn;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
+  }
+
+  @include e(dos) {
+    @extend %undrly-xtn;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  }
+
 }

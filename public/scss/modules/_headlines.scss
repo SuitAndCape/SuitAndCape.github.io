@@ -7,11 +7,11 @@
   &-primary {
     @extend %hdln-prim;
     @extend %hdln-prim-mjr;
-    margin-bottom: rem(70px, 42px);
 
-    @include m(grouped) {
+    @include m(major) {
       @extend %hdln-prim;
       @extend %hdln-prim-mjr;
+      margin-bottom: rem(70px, 42px);
     }
 
     @include m(minor) {
@@ -23,12 +23,20 @@
 
   &-secondary {
     @extend %hdln-sec;
-    margin-bottom: rem(22px, 24px);
+    // margin-bottom: rem(22px, 24px);
 
     @include m(grouped) {
       @extend %hdln-sec;
       margin-top: rem(10px, 24px);
       margin-bottom: rem(54px, 24px);
+    }
+
+    @include m(liner) {
+      @extend %hdln-sec;
+      // margin-top: rem(10px, 24px);
+      // margin-bottom: rem(54px, 24px);
+      text-align: center;
+      vertical-align: middle;
     }
 
   }
@@ -47,8 +55,6 @@
 
   &-plaque {
     @extend %hdln-pla;
-    // margin-bottom: rem(22px, 24px);
-    margin-bottom: 0;
   }
 
 }

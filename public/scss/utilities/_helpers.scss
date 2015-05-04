@@ -4,11 +4,13 @@
 *=======================================================================*/
 /*===== Clearfix placeholder =====*/
 %clearfix {
+
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+
 }
 
 /*===== Screen reader text placeholder =====*/

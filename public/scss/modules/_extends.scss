@@ -125,11 +125,6 @@
 /*===== Case features =====*/
 %case-xtn {
   background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0;
-  width: 100%;
 }
 
 /*===== Dimmer action features =====*/
@@ -145,6 +140,15 @@
 
 }
 
+/*===== Faker-button action features =====*/
+%fil-fkr-actn {
+
+  &:hover {
+    background-color: $blue-charcoal;
+  }
+
+}
+
 /*===== Filler action features =====*/
 %fil-actn {
 
@@ -154,17 +158,22 @@
 
 }
 
+/*===== Fill transition info =====*/
+%fil-bckgrnd {
+  background-color: transparent;
+  -webkit-transition: background-color $trnstn-x-quick linear;
+  -moz-transition: background-color $trnstn-x-quick linear;
+  -o-transition: background-color $trnstn-x-quick linear;
+  transition: background-color $trnstn-x-quick linear;
+}
+
 /*===== Headline features =====*/
 %hdln-prim {
   color: palette(white, base);
   font-family: $font-family--primary;
   font-weight: $font-weight--demi-bold;
   line-height: rem(80px);
-  // line-height: (46px / 42px);
-  // margin-top: 0;
   margin-top: rem(300px);
-  margin-bottom: rem(40px);
-//   text-align: center;
   width: 100%;
 }
 
@@ -260,7 +269,7 @@
   color: palette(white, base);
   letter-spacing: $letter-space;
   font-family: $font-family--tertiary;
-  font-weight: $font-weight--normal;
+  font-weight: $font-weight--demi-bold;
 
   @include mq(x-large) {
     font-size: rem(25px);
@@ -302,13 +311,32 @@
   cursor: pointer;
 }
 
+/*===== Item-on features =====*/
+%item-on-hghlght {
+  color: palette(grey, x-light);
+}
+
+%item-on-undrln {
+  border-color: $color-primary;
+}
+
+%item-trnstn {
+  border-bottom: rem(1px) solid transparent;
+  transition: opacity $trnstn-quick;
+}
+
 /*===== Image features =====*/
 %img-hlpr {
   display: block;
-  //// margin-top: rem(24px);
-  margin: 0 auto;
+  //// margin: auto 0;
+  // margin: 0 auto;
+  margin: auto auto;
 }
 
+/*===== Layer features =====*/
+%lyr-xtn {
+
+}
 
 /*===== Navigation item features =====*/
 %nav-item-horz {
@@ -321,13 +349,11 @@
 }
 
 %nav-item-link {
-  border-bottom: rem(1px) solid transparent;
   display: block;
   font-size: rem(18px);
   font-weight: $font-weight--light;
   padding: rem(8px, 18px);
   text-align: center;
-  transition: opacity $trnstn-quick;
 
   @include medq(split-sm) {
     border-bottom-color: palette(grey, xx-light);
@@ -335,11 +361,6 @@
     padding-bottom: rem(14px, 18px);
   }
 
-}
-
-%nav-item-on {
-  color: palette(grey, x-light);
-  border-color: $color-primary;
 }
 
 /*===== Menu link features =====*/
@@ -387,12 +408,13 @@
 
 }
 
-/*===== Radio-button transition info =====*/
-%rdo-bckgrnd {
-  -webkit-transition: background-color $trnstn-x-quick linear;
-  -moz-transition: background-color $trnstn-x-quick linear;
-  -o-transition: background-color $trnstn-x-quick linear;
-  transition: background-color $trnstn-x-quick linear;
+/*===== Project image freatures =====*/
+%prjct-img {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: $br--default;
+  margin-top: rem(20px);
+  min-width: rem(260px);
+  transition: opacity $trnstn-quick;
 }
 
 /*===== Side-scroller features =====*/
@@ -412,4 +434,12 @@
   line-height: normal;
   vertical-align: top;
   white-space: normal;
+}
+
+/*===== Underlay features =====*/
+%undrly-xtn {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }

@@ -1,4 +1,4 @@
-<!-- about.html -->
+<!-- showcase-ourhouse.html -->
 
 <!DOCTYPE html>
 <!--= IE BROWSER TARGETING
@@ -87,16 +87,16 @@
 
 <!--= PRIMARY PAGE LAYOUT
 =======================================================================-->
-  <body class="case__about">
+  <body class="case__ourhouse">
     <!--[if lt IE 8]>
       <p class="sad_browser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/">upgrade your browser</a>, you'll have a good time.</p> <![endif]-->
 
     <!-- Banner -->
     <header role="banner" id="banner" class="grid panel--main--centered">
-      <div class="grid__col--12">
+      <div class="grid__col--12 centered">
         <a href="index.html">
-          <h1 class="headline-primary--major">About</h1>
-          <!-- <h1 class="headline-primary--minor">I'm a full-stack developer, with a penchant for creating & tinkering.</h1> -->
+          <h1 class="headline-primary--major">OurHouse</h1>
+          <!-- <h1 class="headline-primary--minor">Housemates doing house things.</h1> -->
         </a>
       </div>
     </header>
@@ -143,91 +143,112 @@
     <!-- Main -->
     <main class="layer-gradient--to-b">
 
-      <!-- About -->
-      <section id="about">
+      <!-- OurHouse Showcase -->
+      <section id="showcase-ourhouse">
+        <article class="grid">
+          <header class="grid__col--12 panel--centered">
+            <h2 class="headline-secondary--grouped">Housemates doing house things.</h2>
 
-        <!-- About navigation -->
-        <article class="grid about-nav">
-          <div class="grid__col--12 panel--centered">
-            <!-- <form class="rdo--warning is-collapsed-mobile">
-              <label for="slides_1">Blurb</label>
-            </form>
-            <form class="rdo--warning is-collapsed-mobile">
-              <label for="slides_2">Personal</label>
-            </form>
-            <form class="rdo--warning is-collapsed-mobile">
-              <label for="slides_3">Experience</label>
-            </form>
-            <form class="rdo--warning is-collapsed-mobile">
-              <label for="slides_4">Tools</label>
-            </form> -->
-            <label for="slides_1" class="rdo--warning is-collapsed-mobile">Blurb</label>
-            <label for="slides_2" class="rdo--warning is-collapsed-mobile">Personal</label>
-            <label for="slides_3" class="rdo--warning is-collapsed-mobile">Experience</label>
-            <label for="slides_4" class="rdo--warning is-collapsed-mobile">Tools</label>
-            <!-- <label for="slides_5"  class="rdo--warning is-collapsed-mobile">Gallery</label> -->
+              <a href="https://github.com/AESM/OurHouse_Central_Repo" target="_blank" class="btn--warning">Source Link</a>
+              <!-- <a href="#" class="button">Source Link</a> -->
+
+              <!-- <a target="_blank" class="fkr--missing">Project Link (Unavailable)</a> -->
+              <!-- <a href="#" class="button">Project Link</a> -->
+          </header>
+
+          <div class="grid__col--4 vid">
+            <video autoplay loop class="vid">
+              <source src="public/videos/OurHouse.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="grid__col--7">
+            <p class="para-primary"><strong>OurHouse</strong> is a mobile and web app for housemates, allowing users to coordinate social events, household chores, and payments among their fellow housemates.<br>
+            The functionality of the app is contained within a sleek and intuitive interface, divided into four main sections.<br><br>
+            <strong>Home</strong>: Respond to and delete tasks, notifications, and activity invitations from other housemates, with support for filtering by message type.<br><br>
+            <strong>Message</strong>: Send any type of message to the other members of the house.<br><br>
+            <strong>Payments</strong>: Connect to Venmo and send money to any of the house members.<br><br>
+            <strong>Housemates</strong>: Add new housemates and view the profiles and message history of existing housemates.</p>
           </div>
         </article>
+      </section>
 
-        <article class="grid looper slideshow">
-          <input type="radio" name="slides" checked="checked" id="slides_1">
-          <input type="radio" name="slides" id="slides_2">
-          <input type="radio" name="slides" id="slides_3">
-          <input type="radio" name="slides" id="slides_4">
+      <!-- Info Spacer -->
+      <section class="layer-pic__uno" id="info-spacer">
+        <article class="grid">
+          <header class="grid__col--12">
+            <h2 class="panel--centered headline-secondary--liner">Info</h2>
+          </header>
+        </article>
+      </section>
 
-          <ul class="grid__col--12">
-            <li class="overscroll">
-              <header class="panel--centered">
-                <h2 class="headline-secondary--grouped">This is a short blurb about myself<br>will end up going</h2>
-                <p class="para-primary">You've got an ugly butt, and it's stupid, butt!  Oh!<br>
-                Oh girl you got an ugly butt!  Oh girl you got an stupid butt!  Oh girl you got an ugly butt!  Oh girl you got an stupid butt!<br>
-                Oh girl, ugly butt!  Stupid butt!  Oh girl you got an ugly butt!  Oh girl you got an stupid butt!  Uh!</p>
-              </header>
-            </li>
+      <!-- Info -->
+      <section id="info">
+        <article class="grid">
+          <header class="panel--centered">
+            <span class="grid__col--12">
+              <p class="para-primary"><strong>Front-End</strong>:<br>AngularJS, Ionic Mobile Framework, JavaScript, jQuery, HTML5, CSS3<br><br>
+              <strong>Back-End</strong>:<br>Ruby on Rails, ActiveRecord, Rails API<br><br>
+              <strong>Additional</strong>:<br>Decoupled Architechture, Auth0, Google+ API, Venmo API<br><br>
+              <strong>Team</strong>:<br>Brian Vogelgesang, Joseph Won, Ali Esmaili, Charles Kim, & Anthony Ng</p>
+            </span>
+          </header>
+        </article>
+      </section>
 
-            <li class="overscroll">
-              <header class="panel--centered">
-                <h2 class="headline-secondary--grouped">About me as a person</h2>
-                <p class="para-primary">I said come on Fhqwhgads, I said come on Fhqwhgads, everybody to the limit, everybody to the limit, everybody come on fhqwhgads!<br>
-                I said come on fhqwhgads, I said come on fhqwhgads, everybody to the limit - who's that?  He's to the limit, everybody come on fhqwhgads!<br>
-                Come on fhqwhgads.  I see you jockin me, try'n'a play like, you-know-me!<br>
-                I'm like come on fhqwhgads, I said come on fhqwhgads, everybody to the limit, the Cheat is to the limit, everybody come on fhqwhgads!<br>
-                I said ooh ah Fhqwhgads, I said ooh ah Fhqwhgads, who's that fh-huh-hoo-huga-wha, I said who is that Fhqwhgads!<br>
-                I don't know who it is, but it probably is Fhqwhgads, I asked my friend Joe, I asked my friend Jake, they said it was Fhqwhgads!</p>
-              </header>
-            </li>
+      <!-- Notes Spacer -->
+      <section class="layer-pic__dos" id="notes-spacer">
+        <article class="grid">
+          <header class="grid__col--12">
+            <h2 class="panel--centered headline-secondary--liner">Notes</h2>
+          </header>
+        </article>
+      </section>
 
-            <li class="overscroll">
-              <header class="panel--centered">
-                <h2 class="headline-secondary--grouped">I have Experience in life</h2>
-                <p class="para-primary">Kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty kitty.<br>
-                Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!  Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!  Nana nana nana nana nana nana nana nana Batmaaaaaaan, Batmaaaaaaan!<br>
-                Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Mushroom Mushroom!  Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger Badger - SNAAAKE SNAAAKE OUUUUH IT'S A SNAAAAAKE!<br>
-                LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL LOLOLOLOLOLOLOL!</p>
-              </header>
-            </li>
+      <!-- Notes -->
+      <section id="notes">
+        <article class="grid">
+          <header class="panel">
+            <div class="grid__col--12">
+              <p class="para-primary">My teammates and I have all experienced living with housemates.  We wanted to solve the issue of prioritizing communication: activities, scheduling, expenses, and discussing household needs.  This is what inspired us to create OurHouse.<br><br>
+              OurHouse was built using a decoupled architecture: the front-end with Angular, Ionic, JavaScript, jQuery, HTML5, and CSS3; and the back-end using Rails, ActiveRecord, and Rails API with features from Auth0, the Google+ API, and the Venmo API.</p>
+            </div>
+          </header>
+        </article>
 
-            <li class="overscroll">
-              <header class="panel--centered">
-                <h2 class="headline-secondary--grouped">Tools I appreciate working with</h2>
-                <h3 class="headline-tertiary">Digital</h3>
-                <p class="para-primary">Code, framework, code, framework, code, framework, code, framework, code, framework, code, framework</p>
-                <h3 class="headline-tertiary">Physical</h3>
-                <p class="para-primary">Manual, powered, manual, powered, manual, powered, manual, powered, manual, powered</p>
-                <h3 class="headline-tertiary">Other</h3>
-                <p class="para-primary">Thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff, thing, stuff</p>
-              </header>
-            </li>
-          </ul>
+        <article class="grid">
+          <header class="panel">
+            <div class="grid__col--4">
+              <span>
+                <a href="#pic-1">
+                  <img class="img--project-process img--wrap" src="public/images/projects/ourhouse/OurHouse_wireframe_explanation.jpg" alt="Our House Wireframe">
+                </a>
+                <a href="#_" class="image-overlay" id="pic-1">
+                  <img class="img--project-process img--wrap" src="public/images/projects/ourhouse/OurHouse_wireframe_explanation.jpg" alt="Our House Wireframe">
+                </a>
+              </span>
+            </div>
 
-          <div class="side-scroller is-displayed-mobile">
-            <label for="slides_1" class="arrow"></label>
-            <label for="slides_2" class="arrow"></label>
-            <label for="slides_3" class="arrow"></label>
-            <label for="slides_4" class="arrow"></label>
-            <label for="slides_1" class="jump-start arrow"></label>
-            <label for="slides_4" class="jump-end arrow"></label>
-          </div>
+            <div class="grid__col--4">
+              <a href="#pic-2">
+                <img class="img--project-process img--wrap cent" src="public/images/projects/ourhouse/OurHouse_schema.jpg" alt="Our House Schema">
+              </a>
+              <a href="#_" class="image-overlay" id="pic-2">
+                <img src="public/images/projects/ourhouse/OurHouse_schema.jpg" alt="Our House Schema">
+              </a>
+            </div>
+
+            <div class="grid__col--4">
+              <span>
+                <a href="#pic-3">
+                  <img class="img--project-process img--wrap" src="public/images/projects/ourhouse/OurHouse_phone.png" alt="Our House Phone Image">
+                </a>
+                <a href="#_" class="image-overlay" id="pic-3">
+                  <img class="img--project-process img--wrap" src="public/images/projects/ourhouse/OurHouse_phone.png" alt="Our House Phone Image">
+                </a>
+              </span>
+            </div>
+          </header>
         </article>
       </section>
     </main>
