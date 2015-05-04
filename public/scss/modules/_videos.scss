@@ -4,24 +4,17 @@
 *=======================================================================*/
 
 .vid {
-  //// width: rem(320px);
-  //// height: rem(560px);
-  width: rem(285px);
-  height: rem(499px);
+  height: auto;
 
-  @include medq(split-lg) {
-    margin-bottom: rem(50px);
-  }
-
-  @include medq(split-sm) {
+  @include medq(split-md) {
+    width: rem(266px);
     margin-bottom: rem(50px);
   }
 
   @include medq(split-sm) {
     display: block;
-    margin: 0 auto;
+    margin: rem(50px) auto;
     max-width: 100vw;
-    margin-bottom: rem(50px);
   }
 
 }
