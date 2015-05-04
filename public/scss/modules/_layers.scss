@@ -16,7 +16,7 @@
 /*===== Picture layers =====*/
 .layer-pic {
 
-  @include e(uno) {
+  @include e(un) {
     @extend %undrly-xtn;
     @extend %undrly-xtn;
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
@@ -26,13 +26,22 @@
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer1.png");
   }
 
-  @include e(dos) {
+  @include e(deux) {
     @extend %undrly-xtn;
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer2.png");
+  }
+
+  @include e(trois) {
+    @extend %undrly-xtn;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/images/layer/layer3.png");
   }
 
 }

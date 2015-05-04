@@ -11,14 +11,11 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 999;
+  z-index: 1000;
 
   > img {
     margin-top: 2%;
-    // max-width: 90%;
-    // max-height: 80%;
-
-    width: rem(550px);
+    width: rem(560px);
   }
 
   @include medq(split-md) {
