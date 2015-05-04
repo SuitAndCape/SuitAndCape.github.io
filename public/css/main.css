@@ -737,7 +737,7 @@ footer {
   background-color: #010D1A; }
 .swtch--success {
   background-color: #29AB87; }
-.swtch--warning {
+.swtch--warm {
   background-color: #BA0101; }
 
 .btn--default, .fkr--default, .rdo--default {
@@ -752,7 +752,7 @@ footer {
   border: 0.125rem solid #010D1A; }
 .btn--success, .fkr--success, .rdo--success {
   border: 0.125rem solid #29AB87; }
-.btn--warning, .fkr--warning, .rdo--warning {
+.btn--warm, .fkr--warm, .rdo--warm {
   border: 0.125rem solid #BA0101; }
 
 [class^="btn--"], [class^="fkr--"], [class^="rdo--"], [class^="swtch--"] {
@@ -1303,23 +1303,24 @@ p, .para-primary, .para-primary--grouped {
   border-radius: 100%; }
 @media (min-width: 769px) {
   .img--project-preview {
-    width: 340px;
+    width: 24.375rem;
     margin-bottom: 5rem; } }
 @media (min-width: 1px) and (max-width: 768px) {
   .img--project-preview {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 31.25rem; } }
 .img--project-process {
   cursor: pointer; }
   @media (min-width: 769px) {
     .img--project-process {
       vertical-align: middle;
-      width: 340px;
+      width: 23.125rem;
       margin-bottom: 5rem; } }
   @media (min-width: 1px) and (max-width: 768px) {
     .img--project-process {
       display: block;
-      width: 450px;
+      width: 29.6875rem;
       margin: 0 auto; } }
 
 /*===== Import image overlay =====*/
@@ -1361,7 +1362,7 @@ p, .para-primary, .para-primary--grouped {
   background-color: #010D1A; }
 .layer--success {
   background-color: #29AB87; }
-.layer--warning {
+.layer--warm {
   background-color: #BA0101; }
 
 /*===== Gradient layer =====*/
