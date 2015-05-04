@@ -89,8 +89,8 @@ STORIES, MVP, & PSEUDOCODE
 - UX workflow
 - Wireframe
 - Deep dive into technologies
-  - Ensure that any tech used is necessary
+  - Ensure that any tech used is necessary, or just does something neat
 - Mobile-first design
 - Create a test-suite in parallel
   - Due to the nature of the project, the test-suite is replaced by design tests
-- Keep solid Git workflow
+- Commit often
