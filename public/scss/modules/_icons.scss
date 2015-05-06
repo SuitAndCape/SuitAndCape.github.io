@@ -13,15 +13,15 @@
   /*===== Navigation toggle =====*/
   @include m(nav-toggle) {
     @extend %icn--ui;
-    width: 25px;
-    height: 17px;
-    border-top: solid 3px palette(grey, light);
-    border-bottom: solid 3px palette(grey, light);
+    width: rem(25px);
+    height: rem(17px);
+    border-top: solid rem(3px) palette(grey, light);
+    border-bottom: solid rem(3px) palette(grey, light);
     position: relative;
 
     @include p-el(before, 25px, 3px) {
       background: palette(grey, light);
-      top: 4px;
+      top: rem(4px);
     }
 
   }
@@ -75,7 +75,7 @@ ul {
 
     li {
       display: inline-block;
-      padding: rem(8px);
+      padding: rem(6px);
 
       .icn {
         @include m(fntawsm) {
@@ -100,7 +100,7 @@ ul {
             width: rem(141px);
             height: rem(141px);
             line-height: rem(141px);
-            font-size: rem(115.5px);
+            font-size: rem(105.75px);
           }
 
           @include medq(split-sm) {
