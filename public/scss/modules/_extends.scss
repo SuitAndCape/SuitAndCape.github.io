@@ -27,10 +27,20 @@
   border-radius: $br--default;
   color: palette(white, base);
   text-transform: uppercase;
-  font-size : rem(16px);
+  // font-size : rem(16px);
   font-family: $font-family--default;
   font-weight: $font-weight--medium;
   padding: rem(12px) rem(24px);
+}
+
+/*===== Button-standard size features =====*/
+%btn-stndrd {
+  font-size : rem(16px);
+}
+
+/*===== Button-flyer size features =====*/
+%btn-flyr {
+  font-size : rem(34px);
 }
 
 /*===== Bump background features =====*/

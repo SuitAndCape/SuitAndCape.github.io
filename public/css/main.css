@@ -177,6 +177,7 @@
 /*===== BEM element selector mixin =====*/
 /*===== BEM modifier selector mixin =====*/
 /*===== Media queries =====*/
+/*===== Generate modifier color classes =====*/
 /*===== Generate background modifier color classes =====*/
 /*===== Generate background modifier color classes =====*/
 /*===== Generate modifier color-gradient classes =====*/
@@ -740,6 +741,18 @@ footer {
   background-color: #29AB87; }
 .swtch--warm {
   background-color: #BA0101; }
+.swtch--un {
+  background-color: #B81104; }
+.swtch--deux {
+  background-color: #FFCC33; }
+.swtch--trois {
+  background-color: #5590D9; }
+.swtch--quatre {
+  background-color: #652DC1; }
+.swtch--cinq {
+  background-color: #29AB87; }
+.swtch--six {
+  background-color: #ED7A1C; }
 
 .btn--default, .fkr--default, .rdo--default {
   border: 0.125rem solid #222F40; }
@@ -755,6 +768,18 @@ footer {
   border: 0.125rem solid #29AB87; }
 .btn--warm, .fkr--warm, .rdo--warm {
   border: 0.125rem solid #BA0101; }
+.btn--un, .fkr--un, .rdo--un {
+  border: 0.125rem solid #B81104; }
+.btn--deux, .fkr--deux, .rdo--deux {
+  border: 0.125rem solid #FFCC33; }
+.btn--trois, .fkr--trois, .rdo--trois {
+  border: 0.125rem solid #5590D9; }
+.btn--quatre, .fkr--quatre, .rdo--quatre {
+  border: 0.125rem solid #652DC1; }
+.btn--cinq, .fkr--cinq, .rdo--cinq {
+  border: 0.125rem solid #29AB87; }
+.btn--six, .fkr--six, .rdo--six {
+  border: 0.125rem solid #ED7A1C; }
 
 [class^="btn--"], [class^="fkr--"], [class^="rdo--"], [class^="swtch--"] {
   padding: 0.9375rem 1.875rem;
@@ -768,6 +793,13 @@ footer {
     [class^="btn--"], [class^="fkr--"], [class^="rdo--"], [class^="swtch--"] {
       width: 100%;
       display: block; } }
+
+@media (min-width: 769px) {
+  [class^="swtch--"] {
+    margin-bottom: 0.9375rem; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="swtch--"] {
+    margin-bottom: 2.5rem; } }
 
 /*===== Import case =====*/
 /*_case.scss*/
@@ -879,10 +911,17 @@ footer {
   border-radius: 0.2em;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 1rem;
   font-family: "source_sans_pro-light", "open_sans-light", Arial, sans-serif, serif;
   font-weight: 500;
   padding: 0.75rem 1.5rem; }
+
+/*===== Button-standard size features =====*/
+[class^="btn--"], [class^="fkr--"], [class^="rdo--"] {
+  font-size: 1rem; }
+
+/*===== Button-flyer size features =====*/
+[class^="swtch--"] {
+  font-size: 2.125rem; }
 
 /*===== Bump background features =====*/
 [class^="swtch--"] {
@@ -1299,53 +1338,77 @@ p, .para-primary, .para-primary--grouped {
     position: relative;
     text-decoration: none; }
     .icn--fntawsm.advrt {
-      color: #500;
       cursor: default;
-      display: inline-block;
-      margin: 0 0 1.5em 0;
+      margin: 0 0 1.5rem 0;
       text-decoration: none; }
       .icn--fntawsm.advrt:before {
-        font-family: FontAwesome;
-        line-height: 1em; }
+        line-height: 1rem; }
 
 /*===== Icon list =====*/
 ul.icon-party {
   list-style: none;
   padding-left: 0;
-  text-align: center; }
+  text-align: center;
+  display: block; }
   @media (min-width: 769px) {
     ul.icon-party {
-      margin: 0 0 2em 0; } }
+      margin: 0 0 1.5rem 0; } }
   @media (min-width: 1px) and (max-width: 768px) {
     ul.icon-party {
       margin: 0 auto; } }
   ul.icon-party li {
     display: inline-block;
-    padding: .5rem; }
+    padding: 0.5rem; }
     ul.icon-party li .icn--fntawsm {
-      border-radius: 4px;
-      border: solid 1px #953;
-      display: inline-block;
+      border-radius: 0.25rem;
+      border: solid 0.0625rem #31353F;
+      display: block;
       margin: 0;
       text-align: center; }
+      ul.icon-party li .icn--fntawsm.advrt--default {
+        color: #222F40; }
+      ul.icon-party li .icn--fntawsm.advrt--clear {
+        color: transparent; }
+      ul.icon-party li .icn--fntawsm.advrt--error {
+        color: #E16865; }
+      ul.icon-party li .icn--fntawsm.advrt--info {
+        color: #7D0C0D; }
+      ul.icon-party li .icn--fntawsm.advrt--missing {
+        color: #010D1A; }
+      ul.icon-party li .icn--fntawsm.advrt--success {
+        color: #29AB87; }
+      ul.icon-party li .icn--fntawsm.advrt--warm {
+        color: #BA0101; }
+      ul.icon-party li .icn--fntawsm.advrt--un {
+        color: #B81104; }
+      ul.icon-party li .icn--fntawsm.advrt--deux {
+        color: #FFCC33; }
+      ul.icon-party li .icn--fntawsm.advrt--trois {
+        color: #5590D9; }
+      ul.icon-party li .icn--fntawsm.advrt--quatre {
+        color: #652DC1; }
+      ul.icon-party li .icn--fntawsm.advrt--cinq {
+        color: #29AB87; }
+      ul.icon-party li .icn--fntawsm.advrt--six {
+        color: #ED7A1C; }
       @media (min-width: 1100px) {
         ul.icon-party li .icn--fntawsm {
-          width: 17.5rem;
-          height: 17.5rem;
-          line-height: 17.5rem;
-          font-size: 8.75rem; } }
+          width: 9.625rem;
+          height: 9.625rem;
+          line-height: 9.625rem;
+          font-size: 7.21875rem; } }
       @media (min-width: 769px) {
         ul.icon-party li .icn--fntawsm {
-          width: 11.875rem;
-          height: 11.875rem;
-          line-height: 11.875rem;
-          font-size: 5.9375rem; } }
+          width: 8.8125rem;
+          height: 8.8125rem;
+          line-height: 8.8125rem;
+          font-size: 7.21875rem; } }
       @media (min-width: 1px) and (max-width: 768px) {
         ul.icon-party li .icn--fntawsm {
-          width: 8rem;
-          height: 8rem;
-          line-height: 8rem;
-          font-size: 4rem; } }
+          width: 7.5rem;
+          height: 7.5rem;
+          line-height: 7.5rem;
+          font-size: 5.625rem; } }
       ul.icon-party li .icn--fntawsm:before {
         display: inline-block;
         line-height: inherit; }
@@ -1421,6 +1484,18 @@ ul.icon-party {
   background-color: #29AB87; }
 .layer--warm {
   background-color: #BA0101; }
+.layer--un {
+  background-color: #B81104; }
+.layer--deux {
+  background-color: #FFCC33; }
+.layer--trois {
+  background-color: #5590D9; }
+.layer--quatre {
+  background-color: #652DC1; }
+.layer--cinq {
+  background-color: #29AB87; }
+.layer--six {
+  background-color: #ED7A1C; }
 
 /*===== Gradient layer =====*/
 .layer-gradient--to-b {
@@ -1492,6 +1567,10 @@ ul.icon-party {
   margin: 0 0 1.66667rem; }
   .para-primary strong {
     font-family: "Hoefler Text", "aleo-light", "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif; }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .flyer-main .para-primary {
+    text-align: center; } }
 
 /*===== Import projects =====*/
 /*_projects.scss*/
