@@ -23,6 +23,9 @@ $font-weight--bold        : 700;
 $font-weight--ultra-bold  : 800;
 $font-weight--heavy       : 900;
 
+/*===== Awesome Font icons =====*/
+// $fa-font-path             : "../images/icons/font-awesome/scss/_variables.scss";
+
 /*===== Descriptive true-base colors =====*/
 $transparent              : transparent;
 $prussian-blue            : #003153;
@@ -82,7 +85,14 @@ $ui-colors: (
   info                    : $sorta_dark-burgundy,
   missing                 : $blue-charcoal,
   success                 : $jungle-green,
-  warm                    : $guardsman-red
+  warm                    : $guardsman-red,
+
+  un                      : $milano-red,
+  deux                    : $sun-glow,
+  trois                   : $havelock-blue,
+  quatre                  : $purple-heart,
+  cinq                    : $jungle-green,
+  six                     : $tango
 );
 
 /*===== Color palette modifiers map =====*/

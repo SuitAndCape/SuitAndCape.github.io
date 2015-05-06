@@ -35,6 +35,7 @@
 
 [class^="btn--"], [class^="fkr--"], [class^="rdo--"] {
   @extend %fil-bckgrnd;
+  @extend %btn-stndrd;
 }
 
 [class^="btn--"], [class^="rdo--"] {
@@ -48,4 +49,14 @@
 [class^="swtch--"] {
   @extend %bmp-bckgrnd;
   @extend %bmp-actn;
+  @extend %btn-flyr;
+
+  @include medq(split-md) {
+    margin-bottom: rem(15px);
+  }
+
+  @include medq(split-sm) {
+    margin-bottom: rem(40px);
+  }
+
 }

@@ -13,15 +13,15 @@
   /*===== Navigation toggle =====*/
   @include m(nav-toggle) {
     @extend %icn--ui;
-    width: 25px;
-    height: 17px;
-    border-top: solid 3px palette(grey, light);
-    border-bottom: solid 3px palette(grey, light);
+    width: rem(25px);
+    height: rem(17px);
+    border-top: solid rem(3px) palette(grey, light);
+    border-bottom: solid rem(3px) palette(grey, light);
     position: relative;
 
     @include p-el(before, 25px, 3px) {
       background: palette(grey, light);
-      top: 4px;
+      top: rem(4px);
     }
 
   }
@@ -33,6 +33,94 @@
     position: absolute;
     right: 4%;
     top: 4%;
+  }
+
+/*===== Font-Awesome icons =====*/
+  @include m(fntawsm) {
+    border-bottom: none;
+    position: relative;
+    text-decoration: none;
+
+    &.advrt {
+      cursor: default;
+      margin: 0 0 rem(24px) 0;
+      text-decoration: none;
+
+      &:before {
+        line-height: rem(16px);
+      }
+
+    }
+
+  }
+
+}
+
+/*===== Icon list =====*/
+ul {
+
+  &.icon-party {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    display: block;
+
+  @include medq(split-md) {
+    margin: 0 0 rem(24px) 0;
+  }
+
+  @include medq(split-sm) {
+    margin: 0 auto;
+  }
+
+    li {
+      display: inline-block;
+      padding: rem(6px);
+
+      .icn {
+        @include m(fntawsm) {
+          border-radius: rem(4px);
+          border: solid rem(1px) $tuna;
+          display: block;
+          margin: 0;
+          text-align: center;
+
+          &.advrt {
+            @include item-colors($ui-colors)
+          }
+
+          @include medq(split-lg) {
+            width: rem(154px);
+            height: rem(154px);
+            line-height: rem(154px);
+            font-size: rem(115.5px);
+          }
+
+          @include medq(split-md) {
+            width: rem(141px);
+            height: rem(141px);
+            line-height: rem(141px);
+            font-size: rem(105.75px);
+          }
+
+          @include medq(split-sm) {
+            width: rem(120px);
+            height: rem(120px);
+            line-height: rem(120px);
+            font-size: rem(90px);
+          }
+
+          &:before {
+            display: inline-block;
+            line-height: inherit;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
 }

@@ -103,6 +103,19 @@
 
 }
 
+/*===== Generate modifier color classes =====*/
+@mixin item-colors($map) {
+
+  @each $theme, $color in $map {
+
+    &--#{$theme} {
+      color: $color;
+    }
+
+  }
+
+}
+
 /*===== Generate background modifier color classes =====*/
 @mixin bg-colors($map) {
 
