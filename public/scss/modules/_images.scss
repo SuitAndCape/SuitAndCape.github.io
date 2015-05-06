@@ -20,7 +20,7 @@
     @extend %prjct-prvw-img;
 
     @include medq(split-md) {
-      width: rem(390px);
+      width: rem(340px);
       // margin: rem(160px) auto;
       margin-bottom: rem(80px);
     }
@@ -43,7 +43,7 @@
     @include medq(split-md) {
       // margin: rem(160px) auto;
       vertical-align: middle;
-      width: rem(370px);
+      width: rem(380px);
       margin-bottom: rem(80px);
     }
 

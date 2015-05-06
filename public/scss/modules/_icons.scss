@@ -35,4 +35,118 @@
     top: 4%;
   }
 
+/*===== Font-Awesome icons =====*/
+  @include m(fntawsm) {
+    border-bottom: none;
+    position: relative;
+    text-decoration: none;
+
+    // // text-transform: none !important;
+    // font-size: 40em;
+    // position: relative;
+    // color: #555;
+    // // height: 8em;
+    // // line-height: 8em;
+    // margin: 0;
+    // // text-align: center;
+    // // width: 8em;
+
+    // &:before {
+    //   line-height: inherit;
+    // }
+
+    // &.advrt {
+    //   margin: 0 0 (2em * 0.75) 0;
+
+    //   &:before {
+    //     font-size: 4em;
+    //     line-height: 1em;
+    //   }
+
+    // }
+
+    &.advrt {
+      color: #500;
+      cursor: default;
+      display: inline-block;
+      margin: 0 0 1.5em 0; //
+      text-decoration: none;
+
+      &:before {
+        font-family: FontAwesome;
+        // font-size: rem(64px);
+        line-height: 1em;
+      }
+
+    }
+
+  }
+
+}
+
+/*===== Icon list =====*/
+ul {
+
+  &.icon-party {
+    // list-style: disc;
+    // padding-left: 1em;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+
+  @include medq(split-md) {
+    // display: block;
+    margin: 0 0 2em 0; //
+    // margin: 0 auto;
+  }
+
+  @include medq(split-sm) {
+    // display: block;
+    margin: 0 auto;
+  }
+
+    li {
+      display: inline-block;
+      padding: .5rem;
+
+      .icn {
+        @include m(fntawsm) {
+          border-radius: 4px; //
+          border: solid 1px #953; //
+          display: inline-block;
+          margin: 0;
+          text-align: center;
+
+          @include medq(split-lg) {
+            width: rem(280px);
+            height: rem(280px);
+            line-height: rem(280px);
+            font-size: rem(140px);
+          }
+
+          @include medq(split-md) {
+            width: rem(190px);
+            height: rem(190px);
+            line-height: rem(190px);
+            font-size: rem(95px);
+          }
+
+          @include medq(split-sm) {
+            width: rem(128px);
+            height: rem(128px);
+            line-height: rem(128px);
+            font-size: rem(64px);
+          }
+
+          &:before {
+            display: inline-block;
+            line-height: inherit;
+          }
+        }
+      }
+
+    }
+
+  }
+
 }
