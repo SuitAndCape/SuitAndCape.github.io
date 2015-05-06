@@ -1,0 +1,25 @@
+/*_elevator.scss*/
+
+/**** ELEVATOR.JS STYLE
+*=======================================================================*/
+.elevator {
+  // text-align: center;
+  cursor: pointer;
+  width: rem(140px);
+  margin: auto;
+  transition: opacity $trnstn-quick;
+
+  svg {
+    width: rem(100px);
+    height: rem(100px);
+    display: block;
+    margin: auto;
+    margin-bottom: rem(5px);
+  }
+
+  @extend %dim-actn;
+  // &:hover {
+  //   opacity: 0.7;
+  // }
+
+}

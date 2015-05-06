@@ -1,0 +1,112 @@
+/*_base.scss*/
+
+/**** BASE STYLES
+*=======================================================================*/
+/*===== Box-sizing style =====*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*===== Body style =====*/
+html, body {
+  color: palette(grey);
+  font-size: $base__font-size;
+  // font-family: $font-family--primary;
+  // line-height: ($base__line / $base__font-size);
+  overflow-x: hidden;
+}
+
+/*===== Text style =====*/
+h1 {
+  @extend %hdln-prim;
+}
+
+h2 {
+  @extend %hdln-sec;
+}
+
+h3 {
+  @extend %hdln-ter;
+}
+
+h4 {
+  margin-top: rem(22px, 14px);
+  margin-bottom: rem(32px, 14px);
+  color: palette(grey, x-light);
+  text-transform: uppercase;
+  letter-spacing: rem(1.2px);
+  // font-weight: $font-weight--ultra-bold;
+  font-size: rem(20px);
+}
+
+p {
+  @extend %prgrph-prim;
+}
+
+blockquote {
+
+  @media (min-width: 769px) {
+    margin: rem(32px, 24px) 0;
+    padding: 0 0 0 5%;
+    border-left: rem(8px, 24px) solid palette(grey, xx-light);
+    font-size: rem(24px);
+  }
+
+  font-weight: $font-weight--light;
+  font-style: italic;
+  font-size: rem(20px);
+}
+
+/*===== Links style =====*/
+a {
+  color: transparent;
+  // color: palette(white, base);
+  text-decoration: none;
+  font-weight: $font-weight--medium;
+}
+
+/*===== Lists style =====*/
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*===== Images style =====*/
+img {
+  margin-bottom: rem(24px);
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== Form elements style =====*/
+input, textarea {
+  display: block;
+  padding: rem(15px);
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+
+input:focus, textarea:focus {
+  transition: $trnstn-quick;
+}
+
+/*===== Button style =====*/
+button {
+  outline: 0;
+}
+
+/*===== Footer style =====*/
+footer {
+  background-color: rgba(26, 32, 63, 0.9);
+  border-top: 1px solid palette(grey, xx-light);
+
+  p {
+    font-size: rem(16px);
+    margin-top: rem(22px, 16px);
+  }
+
+}

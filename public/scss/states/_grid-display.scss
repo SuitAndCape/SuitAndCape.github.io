@@ -1,0 +1,24 @@
+/*_grid-display.scss*/
+
+/**** GRID DISPLAY STATES
+*=======================================================================*/
+/*===== Mobile display =====*/
+.is-displayed-mobile {
+
+  @include medq(split-sm) {
+    display: block;
+    @at-root (with: media) {
+
+      .is-hidden-mobile {
+        display: none;
+      }
+
+    }
+
+  }
+
+  @include medq(split-md) {
+    display: none;
+  }
+
+}

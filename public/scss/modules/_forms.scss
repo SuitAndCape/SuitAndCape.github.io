@@ -1,0 +1,36 @@
+/*_forms.scss*/
+
+/**** FORM ELEMENTS
+*=======================================================================*/
+.form {
+  @include e(label) {
+
+    @include m(hidden) {
+      @extend .srt;
+    }
+
+    display: block;
+    margin-bottom: rem(10px);
+  }
+
+  @include e(input) {
+    font-size : rem(18px);
+    margin-bottom: rem(20px, 18px);
+    border-bottom: 6px solid palette(grey, x-light);
+    border-radius: $br--default;
+    background: palette(grey, xx-light);
+    color: palette(black, dark);
+    font-weight: $font-weight--light;
+
+    &:focus {
+      border-color: $color-primary;
+    }
+
+  }
+
+  @include e(btn) {
+    @extend %btn;
+    background: $color-primary;
+  }
+
+}

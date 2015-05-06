@@ -1,177 +1,216 @@
+<!-- index.html -->
 
 <!DOCTYPE html>
 <!--= IE BROWSER TARGETING
-============================================================-->
-<!--[if lt IE 7]>
-  <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7">
-<![endif]-->
-<!--[if IE 7]>
-  <html lang="en" class="no-js lt-ie9 lt-ie8">
-<![endif]-->
-<!--[if IE 8]>
-  <html lang="en" class="no-js lt-ie9">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
+=======================================================================-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
   <head>
-<!--= BASIC PAGE NEEDS
-============================================================-->
+<!--= BASIC PAGE INFO
+=======================================================================-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Ali Esmaili | Web Developer | v1.0</title>
+    <title>Ali Esmaili | Web Developer | SuitAndCape</title>
     <meta name="author" content="Ali Esmaili">
     <link rel="author" type="text/plain" href="humans.txt">
-    <meta name="keywords" content="Ruby, JavaScript, Rails, HTML, CSS, Sass, Haml, AJAX, jQuery, Angular, SQL, PostgreSQL, Ionic, React, Web, Developer, Development, Design, Responsive, Mobile First, User Experience, UX, User Interface, UI, Test-Driven, Behavior-Driven, CCNA, Networking, SuitAndCape, AESM, Al E, Ali Esmaili, Full-Stack, Front-End, Back-End, California, CA, Bay Area, San Jose, SJ, San Francisco, SF">
+    <meta name="keywords" content="Ruby, JavaScript, Rails, HTML, CSS, Sass, Haml, Handlebars, AJAX, jQuery, Angular, SQL, PostgreSQL, Ionic, React, Web, Developer, Development, Design, Responsive, Mobile First, User Experience, UX, User Interface, UI, Test-Driven, Behavior-Driven, CCNA, Networking, SuitAndCape, AESM, Al E, Ali Esmaili, Full-Stack, Front-End, Back-End, California, CA, Bay Area, San Jose, SJ, San Francisco, SF, portfolio">
     <meta name="description" content="Ali Esmaili is a web
-    developer, UI designer, and Ruby and JavaScript enthusiast,
+    developer, UI designer, Ruby and JavaScript enthusiast,
     with a passion for dancing like an robot possessed.">
     <meta name="theme-color" content="#FFFFFF">
 
+<!--= OPEN GRAPH DATA
+=======================================================================-->
+    <meta property="og:title" content="Ali Esmaili | Web Developer | SuitAndCape">
+    <meta property="og:type" content="portfolio">
+    <meta property="og:url" content="http://SuitAndCape.github.io/">
+    <meta property="og:image" content="http://suitandcape.github.io/public/images/ogi/open_graph_image.jpg">
+    <meta property="og:description" content="Ali Esmaili is a web
+    developer, UI designer, Ruby and JavaScript enthusiast,
+    with a passion for dancing like an robot possessed.">
+    <meta property="og:site_name" content="Ali Esmaili | Web Developer | SuitAndCape">
+
 <!--= MOBILE SPECIFIC METAS
-============================================================-->
+=======================================================================-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!--= FONTS
-============================================================-->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prata">
-
 <!--= STYLE RESOURCES
-============================================================-->
+=======================================================================-->
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
-    <script type="text/javascript" src="public/js/modernizr.custom.overlay.js"></script>
 
 <!--= TOOLBAR FAVICON
-============================================================-->
+=======================================================================-->
     <link rel="icon" type="image/png" href="public/images/favicons/toolbar-16x16.png">
   </head>
 
+<!--= DESIGN TESTS
+=======================================================================-->
+    <!--===== Only uncomment for design testing =====-->
+    <!-- <div class="design_test">
+      <a class="test_button" href="javascript: (function() {
+        document.body.setAttribute('style',
+          'filter: url(data: image/svg+xml;
+          base64, PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxmaWx0ZXIgaWQ9J2JsdXInPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249JzEwJyAvPjwvZmlsdGVyPjwvc3ZnPg%3D%3D#blur);
+          -webkit-filter:blur(10px);
+          filter: blur(10px);'
+        );
+      }) ();">Blur Test</a>
+      <a class="test_button" href="javascript: (function() {
+        document.body.setAttribute('style',
+          'filter: url(data: image/svg+xml;
+          base64, PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxmaWx0ZXIgaWQ9J2dyYXlzY2FsZSc%2BPGZlQ29sb3JNYXRyaXggdHlwZT0nbWF0cml4JyB2YWx1ZXM9JzAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAgMCAwIDEgMCcvPjwvZmlsdGVyPjwvc3ZnPg%3D%3D#grayscale);
+          -webkit-transform: translateZ(0);
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1);'
+        );
+      }) ();">Desaturation Test</a>
+      <a class="test_button" href="javascript: (function () {
+        document.body.setAttribute('style',
+          '-webkit-transform:rotate(180deg);
+          -moz-transform:rotate(180deg);
+          transform:rotate(180deg);'
+        );
+      }) ();">Flip Test</a>
+      <a class="test_button" href="javascript: (function () {
+        document.body.setAttribute('style','');
+      }) ();">Restore Layout</a>
+    </div> -->
+
 <!--= PRIMARY PAGE LAYOUT
-============================================================-->
-  <body>
-    <!--[if lt IE 7]>
-      <p id="sadbrowser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/">upgrade your browser</a>, you'll have a good time.</p>
-    <![endif]-->
+=======================================================================-->
+  <body class="case__home">
+    <!--[if lt IE 8]>
+      <p class="sad_browser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/">upgrade your browser</a>, you'll have a good time.</p> <![endif]-->
 
-    <div class="container">
-      <header role="banner" class="margin-top_medium text-align_center">
-        <div class="row wrapper">
-          <a href="index.html" id="home_trigger">
-            <img src="public/images/SuitAndCape_Headshot.jpg" alt="Photograph of Ali Esmaili" class="index profile_photo" >
-
-            <h1 class="column extent_12 header_one main_font text-size_large">Ali Esmaili</h1>
-          </a>
-
-          <span class="display_block main_font rift row text-color_cool text-size_small">
-            <span class="column extent_04 index">Developer.</span>
-            <span class="column extent_04 index">Builder.</span>
-            <span class="column extent_04 index">Action Verber.</span>
-          </span>
-        </div>
-      </header>
-
-      <main role="main">
-        <article class="column extent_12">
-          <section class="row wrapper">
-            <h2 class="index main_font margin-top_medium text-align_center text-size_medium">More Things:</h2>
-
-            <ul class="content_list list-bullets_none rift row text-align_center">
-              <li class="column extent_03">
-                <a id="gel_trigger" class="main_font text-color_cool text-size_small">about</a>
-              </li>
-              <li class="column extent_03">
-                <!-- <a id="projects_trigger" class="main_font text-color_cool text-size_small">projects</a> -->
-                <a href="projects.html" class="main_font text-color_cool text-size_small">projects</a>
-              </li>
-              <li class="column extent_03">
-                <a href="public/resume/Ali_Esmaili-Resume.pdf"  target="_blank" class="main_font text-color_cool text-size_small">résumé</a>
-              </li>
-              <li class="column extent_03">
-                <a href="mailto:AESM85@gmail.com" class="main_font text-color_cool text-size_small">email</a>
-              </li>
-            </ul>
-
-            <ul class="list-bullets_none row text-align_center">
-              <li class="column extent_12">
-                <a href="http://www.linkedin.com/in/SuitAndCape" target="_blank" class="main_font text-color_cool text-size_small">
-                  <img src="public/images/icons/linkedin_plain-256x256.png" alt="linkedin" class="icons">
-                </a>
-  <!--             </li>
-              <li class="column extent_04"> -->
-                <a href="http://www.github.com/AESM" target="_blank" class="main_font text-color_cool text-size_small">
-                  <img src="public/images/icons/github_plain-256x256.png" alt="github" class="icons">
-                </a>
-  <!--             </li>
-              <li class="column extent_04"> -->
-                <a href="http://www.twitter.com/SuitAndCape" target="_blank" class="main_font text-color_cool text-size_small">
-                  <img src="public/images/icons/twitter_plain-256x256.png" alt="twitter" class="icons">
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-<!--         <aside role="complementary" class="column extent_04">
-          Secondary Content
-        </aside> -->
-      </main>
-
-<!--       <footer role="contentinfo">
-        <div class="row wrapper">
-          <small id="copyright">
-            <a href="URL">&copy; Ali-Bo-Bally</a>
-          </small>
-        </div>
-      </footer> -->
-    </div> <!-- /container -->
-
-<!--= PROJECTS (WIP)
-============================================================-->
-<!--         <span class="column extent_12 main_font projects text-align_center">
-          <h1>Projects</h1>
-          <span>
-            <h1>Sup?</h1>
-          </span>
-        </span> -->
-
-<!--= ABOUT OVERLAY
-============================================================-->
-    <div class="gel gel_screen">
-      <div class="gel_box">
-        <h1 class="gel_title main_font">About</h1>
-        <div class="gel_content">
-          <p class="main_font">I'm a full-stack web developer who loves to make beautiful, thoughtful, and meaningful things; both digital and physical.
-          <br><br>
-          I have always been driven by playful curiosity.  I build, I tinker, I research, I embrace confusion challenges present, allowing me to solve problems I have never encountered before and to understand the underlying "why."
-          <br><br>
-          My current favorite technologies and frameworks are Ruby, Rails, JavaScript, Angular, jQuery, and Ionic.</p>
-          <button type="button" class="gel_screen_close"></button>
-        </div>
+    <!-- Banner -->
+    <header role="banner" id="banner" class="grid panel--main--centered">
+      <div class="grid__col--12">
+        <a href="index.html">
+          <h1 class="headline-primary--major">Hi, my name is Ali Esmaili.</h1>
+          <h1 class="headline-primary--minor">I'm a full-stack developer, with a penchant for creating & tinkering.</h1>
+        </a>
       </div>
-    </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside role="navigation" id="sidebar" class="grid panel--centered">
+      <!-- <h4 class="headline-plaque">
+        <a href="index.html">SuitAndCape</a>
+      </h4> -->
+      <nav class="navbar">
+        <!-- <ul>
+          <li> -->
+            <!-- <a href="#" class="menu-toggle"> -->
+              <!-- <span>Menu</span> -->
+              <span id="toggle" class="icn--nav-toggle is-displayed-mobile"><b class="srt">Menu</b></span>
+            <!-- </a> -->
+            <!-- <div id="menu"> -->
+              <ul class="nav is-collapsed-mobile">
+                <li class="nav__item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li class="nav__item">
+                  <a href="public/resume/Ali_Esmaili-Resume.pdf" target="_blank">Résumé</a>
+                </li>
+                <!-- <li class="nav__item">
+                  <a href="links.html">Links</a>
+                </li> -->
+                <li class="nav__item">
+                  <a href="flyer.html">Flyer</a>
+                </li>
+              </ul>
+            <!-- </div> -->
+          <!-- </li>
+        </ul> -->
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main role="main" class="layer-gradient--to-b">
+      <section>
+        <article class="grid">
+          <header class="grid__col--12 panel--centered">
+            <h2 class="headline-secondary--grouped">Allow me to introduce myself...</h2>
+            <p class="para-primary">I aim to create intuitive and minimalistic software.
+            <br>I build, I fiddle, and I embrace my playful curiosity – all of which help me to solve problems I have never encountered before.  There will always be a better alternative to boredom, and I endorse creativity and the pursuit of knowledge as reliable substitutes.
+            <br>I love having the freedom to choose the right tool for the job and the opportunity to expand my knowledge.</p>
+          </header>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" id="footer">
+      <article class="grid">
+        <header class="panel--centered">
+          <h2 class="headline-secondary--grouped">Say Hi!</h2>
+        </header>
+
+        <nav class="grid__col--12 panel--centered">
+          <ul class="icons">
+            <li class="nav__item">
+              <a href="mailto:AESM85@gmail.com" class="icon fav--email">
+                <span class="label">Email</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="http://www.linkedin.com/in/SuitAndCape" target="_blank" class="icon fav--linkedin">
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="http://www.github.com/AESM" target="_blank" class="icon fav--github">
+                <span class="label">Github</span>
+              </a>
+            </li>
+            <!-- <li class="nav__item">
+              <a href="https://dribbble.com/SuitAndCape" target="_blank" class="icon fav--dribbble">
+                <span class="label">Dribbble</span>
+              </a>
+            </li> -->
+            <li class="nav__item">
+              <a href="http://www.twitter.com/SuitAndCape" target="_blank" class="icon fav--twitter">
+                <span class="label">Twitter</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="copyright panel">
+            <li>&copy; Ali Esmaili</li>
+          </ul>
+        </nav>
+      </article>
+    </footer>
 
 <!--= SCRIPTS
-============================================================-->
-    <script type="text/javascript" src="public/js/classie.js"></script>
-    <script type="text/javascript" src="public/js/gel_script.js"></script>
-    <script type="text/javascript" src="public/js/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="public/js/nav_script.js"></script>
+=======================================================================-->
+    <script type="text/javascript" src="public/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="public/js/handlebars-v3.0.1.js"></script>
     <script type="text/javascript" src="public/js/main.js"></script>
+    <!-- <script type="text/javascript" src="public/js/main.min.js"></script> -->
 
 <!--= GOOGLE ANALYTICS
-============================================================-->
+=======================================================================-->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-61163251-1', 'auto');
-      ga('send', 'pageview');
+    //   ga('create', 'UA-61163251-1', 'auto');
+    //   ga('send', 'pageview');
     </script>
 
 <!--= END OF DOCUMENT
-============================================================-->
+=======================================================================-->
   </body>
 </html>

@@ -1,0 +1,19 @@
+/*_projects.scss*/
+
+/**** PROJECTS SECTION
+*=======================================================================*/
+#projects-page {
+
+  .project-display {
+
+    .project-summary {
+
+      @include medq(split-sm) {
+        margin-bottom: rem(80px);
+      }
+
+    }
+
+  }
+
+}

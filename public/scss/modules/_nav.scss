@@ -1,0 +1,38 @@
+/*_nav.scss*/
+
+/**** NAVIGATION
+*=======================================================================*/
+.nav {
+  margin-top: rem(20px);
+  margin-bottom: rem(30px);
+
+  @include e(item) {
+
+    @extend %nav-item-horz;
+
+    a {
+      @extend %item-trnstn;
+      @extend %nav-item-link;
+      color: palette(white, base);
+
+      &:hover {
+        @extend %item-on-hghlght;
+        @extend %item-on-undrln;
+      }
+
+    }
+
+    @include m(current) {
+      @extend %nav-item-horz;
+
+      a {
+        @extend %nav-item-link;
+        @extend %item-on-hghlght;
+        @extend %item-on-undrln;
+      }
+
+    }
+
+  }
+
+}
