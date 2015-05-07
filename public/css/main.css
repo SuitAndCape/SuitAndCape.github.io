@@ -1560,17 +1560,13 @@ ul.icon-party {
       margin-bottom: 0; } }
 
 /*===== Import paragraphs =====*/
-/*_headlines.scss*/
-/**** HEADLINES
+/*_paragraphs.scss*/
+/**** PARAGRAPHS
 *=======================================================================*/
 .para-primary {
   margin: 0 0 1.66667rem; }
   .para-primary strong {
     font-family: "Hoefler Text", "aleo-light", "source_sans_pro-regular", "open_sans-regular", Arial, sans-serif, serif; }
-
-@media (min-width: 1px) and (max-width: 768px) {
-  .flyer-main .para-primary {
-    text-align: center; } }
 
 /*===== Import projects =====*/
 /*_projects.scss*/
