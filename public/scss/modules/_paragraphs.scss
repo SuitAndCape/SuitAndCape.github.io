@@ -1,6 +1,6 @@
-/*_headlines.scss*/
+/*_paragraphs.scss*/
 
-/**** HEADLINES
+/**** PARAGRAPHS
 *=======================================================================*/
 .para {
 
@@ -20,18 +20,18 @@
 
 }
 
-.flyer-main {
+// .flyer-main {
 
-  .para {
+//   .para {
 
-    &-primary {
+//     &-primary {
 
-      @include medq(split-sm) {
-        text-align: center;
-      }
+//       @include medq(split-sm) {
+//         text-align: center;
+//       }
 
-    }
+//     }
 
-  }
+//   }
 
-}
+// }
