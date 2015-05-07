@@ -1675,6 +1675,9 @@ ul.icon-party {
   .overscroll p {
     padding: 0.9375rem; }
 
+li .overscroll {
+  margin-bottom: 12.5rem; }
+
 /*===== Import videos =====*/
 /*_videos.scss*/
 /**** VIDEOS
