@@ -1,0 +1,33 @@
+/*_extends.scss*/
+
+/**** BASE LAYOUT EXTENSTION PLACEHOLDER SELECTORS
+*=======================================================================*/
+%panel-default {
+  padding-top: rem(30px);
+
+  @include medq(split-md) {
+    padding-bottom: rem(20px);
+  }
+
+}
+
+%panel-padding {
+  padding-top: rem(34px);
+
+  @include medq(split-md) {
+    padding-top: rem(80px);
+    padding-bottom: rem(34px);
+  }
+
+}
+
+%panel-main {
+  padding-top: rem(40px);
+
+  @include medq(split-md) {
+    padding-top: rem(80px);
+    padding-bottom: rem(300px);
+    // margin-bottom: rem(34px);
+  }
+
+}

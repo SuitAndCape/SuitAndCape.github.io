@@ -1,0 +1,464 @@
+/*_extends.scss*/
+
+/**** BASE STYLE EXTENSTION PLACEHOLDER SELECTORS
+*=======================================================================*/
+/*===== Arrow (slideshow) features =====*/
+%arrw {
+  box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, light);
+  cursor: pointer;
+  margin: rem(2.5px);
+  padding: rem(10.3px);
+  position: absolute;
+  transition: opacity $trnstn-quick;
+
+  &:hover {
+    box-shadow: rem(2px) rem(-2px) 0 rem(1px) palette(grey, x-light);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+  }
+
+}
+
+/*===== Button features =====*/
+%btn {
+  border-radius: $br--default;
+  color: palette(white, base);
+  text-transform: uppercase;
+  // font-size : rem(16px);
+  font-family: $font-family--default;
+  font-weight: $font-weight--medium;
+  padding: rem(12px) rem(24px);
+}
+
+/*===== Button-standard size features =====*/
+%btn-stndrd {
+  font-size : rem(16px);
+}
+
+/*===== Button-flyer size features =====*/
+%btn-flyr {
+  font-size : rem(34px);
+}
+
+/*===== Bump background features =====*/
+%bmp-bckgrnd {
+/*===== Bump keyframes =====*/
+@-webkit-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-moz-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-ms-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@-o-keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+@keyframes bump {
+
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 rem(1px) rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: middle;
+}
+
+/*===== Bump transition info =====*/
+%bmp-actn {
+
+  &:hover {
+    -webkit-animation: bump $trnstn-quick linear 1;
+    -moz-animation: bump $trnstn-quick linear 1;
+    -o-animation: bump $trnstn-quick linear 1;
+    animation: bump $trnstn-quick linear 1;
+  }
+
+}
+
+/*===== Case features =====*/
+%case-xtn {
+  background-attachment: fixed;
+}
+
+/*===== Dimmer action features =====*/
+%dim-actn {
+
+  &:hover {
+    opacity: .67;
+  }
+
+  &:active {
+    opacity: initial;
+  }
+
+}
+
+/*===== Faker-button action features =====*/
+%fil-fkr-actn {
+
+  &:hover {
+    background-color: $blue-charcoal;
+  }
+
+}
+
+/*===== Filler action features =====*/
+%fil-actn {
+
+  &:hover {
+    background-color: $guardsman-red;
+  }
+
+}
+
+/*===== Fill transition info =====*/
+%fil-bckgrnd {
+  background-color: transparent;
+  -webkit-transition: background-color $trnstn-x-quick linear;
+  -moz-transition: background-color $trnstn-x-quick linear;
+  -o-transition: background-color $trnstn-x-quick linear;
+  transition: background-color $trnstn-x-quick linear;
+}
+
+/*===== Headline features =====*/
+%hdln-prim {
+  color: palette(white, base);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--demi-bold;
+  line-height: rem(80px);
+  margin-top: rem(300px);
+  width: 100%;
+}
+
+%hdln-prim-mjr {
+
+  @include mq(x-large) {
+    font-size: rem(80px);
+  }
+
+  @include mq(large) {
+    font-size: rem(72px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(64px);
+  }
+
+  @include mq(small) {
+    font-size: rem(56px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(48px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(40px);
+  }
+
+}
+
+%hdln-prim-mnr {
+
+  @include mq(x-large) {
+    font-size: rem(33px);
+  }
+
+  @include mq(large) {
+    font-size: rem(31.75px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(30.5px);
+  }
+
+  @include mq(small) {
+    font-size: rem(29.25px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(28px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(15px);
+  }
+
+}
+
+%hdln-sec {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--bold;
+
+  @include mq(x-large) {
+    font-size: rem(31px);
+  }
+
+  @include mq(large) {
+    font-size: rem(29.85px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(28.7px);
+  }
+
+  @include mq(small) {
+    font-size: rem(27.55px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(26.4px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(16px);
+  }
+
+}
+
+%hdln-ter {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--tertiary;
+  font-weight: $font-weight--demi-bold;
+
+  @include mq(x-large) {
+    font-size: rem(25px);
+  }
+
+  @include mq(large) {
+    font-size: rem(24.375px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(23.75px);
+  }
+
+  @include mq(small) {
+    font-size: rem(23.125px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(22.5px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(13px);
+  }
+
+}
+
+%hdln-pla {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--default;
+  font-weight: $font-weight--demi-bold;
+  font-size: rem(18px);
+}
+
+/*===== Icon features =====*/
+%icn--ui {
+  line-height: 0;
+  cursor: pointer;
+}
+
+/*===== Item-on features =====*/
+%item-on-hghlght {
+  color: palette(grey, xx-light);
+}
+
+%item-on-undrln {
+  border-color: $color-primary;
+}
+
+%item-trnstn {
+  border-bottom: rem(1px) solid transparent;
+  transition: opacity $trnstn-quick;
+}
+
+/*===== Image features =====*/
+%img-hlpr {
+  display: block;
+  //// margin: auto 0;
+  // margin: 0 auto;
+  margin: auto auto;
+}
+
+/*===== Layer features =====*/
+%lyr-xtn {
+
+}
+
+/*===== Navigation item features =====*/
+%nav-item-horz {
+
+  @include medq(split-md) {
+    display: inline-block;
+    margin: 0 rem(12px);
+  }
+
+}
+
+%nav-item-link {
+  display: block;
+  font-size: rem(18px);
+  font-weight: $font-weight--light;
+  padding: rem(8px, 18px);
+  text-align: center;
+
+  @include medq(split-sm) {
+    border-bottom-color: palette(grey, xx-light);
+    padding-top: rem(14px, 18px);
+    padding-bottom: rem(14px, 18px);
+  }
+
+}
+
+/*===== Menu link features =====*/
+%menu-link {
+  display: block;
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  color: palette(white, base);
+  text-align: center;
+  text-shadow: 0 rem(1px) $color-shadow;
+  font-size: rem(17px);
+}
+
+/*===== Paragraph features =====*/
+%prgrph-prim {
+  color: palette(white, base);
+  letter-spacing: $letter-space;
+  font-family: $font-family--default;
+  font-weight: $font-weight--thin;
+  line-height: (27px / 18px);
+
+  @include mq(x-large) {
+    font-size: rem(20px);
+  }
+
+  @include mq(large) {
+    font-size: rem(19px);
+  }
+
+  @include mq(medium) {
+    font-size: rem(18px);
+  }
+
+  @include mq(small) {
+    font-size: rem(17px);
+  }
+
+  @include mq(x-small) {
+    font-size: rem(16px);
+  }
+
+  @include mq(u-small) {
+    font-size: rem(13px);
+  }
+
+}
+
+/*===== Project image freatures =====*/
+%prjct-img {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: $br--default;
+  margin-top: rem(20px);
+  // min-width: rem(260px);
+  transition: opacity $trnstn-quick;
+}
+
+%prjct-prvw-img {
+  min-width: rem(260px);
+}
+
+%prjct-prcs-img {
+  min-width: rem(232.5px);
+}
+
+
+/*===== Side-scroller features =====*/
+%scrllr {
+  padding: 0 rem(1px);
+  position: absolute;
+  top: -6.5%;
+  width: 100%;
+  z-index: 100;
+}
+
+/*===== Slideshow scroller features =====*/
+%sld-scrllr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  vertical-align: top;
+  white-space: normal;
+}
+
+/*===== Underlay features =====*/
+%undrly-xtn {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+/*_scroll.scss*/
+/**** SCROLLBAR
+*=======================================================================*/
+/*===== Scrollbar features =====*/
+::-webkit-scrollbar {
+  width: rem(1.5px);
+  background: rgba(11, 11, 11, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 32, 63, 0.9);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+

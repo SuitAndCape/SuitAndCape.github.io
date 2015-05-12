@@ -1,0 +1,35 @@
+/*_grid-columns.scss*/
+
+/**** GRID COLUMNS
+*=======================================================================*/
+/*===== Calculate grid columns =====*/
+.grid__col {
+
+  @include medq(split-md) {
+    @include g-columns;
+  }
+
+}
+
+/*===== Column styles =====*/
+[class^="grid__col--"] {
+
+  @include medq(split-sm)  {
+    margin-top: rem(12px);
+    margin-bottom: rem(12px);
+  }
+
+  @include medq(split-md) {
+    @include doubly(percentage($g-gutter-width / $context));
+    float: left;
+    min-height: rem(1px);
+    padding-right: rem(10px);
+    padding-left: rem(10px);
+
+    &:last-of-type {
+      float: right;
+    }
+
+  }
+
+}

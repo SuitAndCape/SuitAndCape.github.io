@@ -1,21 +1,42 @@
+humans.txt
 
-/**** AUTHOR
-*============================================================*/
-  Developer & Designer: Ali Esmaili
-  Email: AESM85@gmail.com
-  GitHub: https://github.com/AESM
-  Twitter: @SuitAndCape
-  Website: http://SuitAndCape.github.io/
-  Location: Bay Area
+!++++ AUTHOR
++=======================================================================+!
+    Developer & Designer: Ali Esmaili
+    Email: AESM85@gmail.com
+    LinkedIn: https://www.linkedin.com/in/SuitAndCape
+    GitHub: https://github.com/AESM
+    Website: http://SuitAndCape.github.io/
+    Twitter: @SuitAndCape
+    Location: Bay Area
 
-/**** THANKS
-*============================================================*/
+!++++ THANKS
++=======================================================================+!
 
-  /**/
+  !+===== PHOTO TEAM =====+!
+    Photographer, Director: Bekka Björke
+    Email: bjorkephoto@gmail.com
+    LinkedIn: https://www.linkedin.com/in/bekka
+    Model Mayhem: http://www.modelmayhem.com/bjorke
+    Facebook: https://www.facebook.com/bjorkephoto
+    Twitter: @bekka
+    Location: Bay Area
 
-/**** SITE
-*============================================================*/
-  Last update: 2015/04/13
-  Language: English
-  Doctype: HTML5
-  IDE: Sublime Text, Illustrator, Photoshop
+    Photographer: Lam Nguyen
+    Email: lam@thevacantroom.com
+    LinkedIn: https://www.linkedin.com/pub/lam-nguyen/69/b57/386
+    Website: http://thevacantroom.weebly.com/
+    Twitter: @thevacantroom
+    Location: Bay Area
+
+    Assitant Director: Alexandria Murry
+    Email: admurry@gmail.com
+    LinkedIn: https://www.linkedin.com/pub/alexandria-murry/9b/459/3ba
+    Location: Bay Area
+
+!++++ SITE
++=======================================================================+!
+    Last update: 2015/04/19
+    Language: English
+    Doctype: HTML5
+    IDE: Sublime Text, Illustrator, Photoshop
