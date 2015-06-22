@@ -1,6 +1,6 @@
 <!-- Stories_MVP_Pseudocode.md -->
 
-STORIES, MVP, & PSEUDOCODE
+USER STORIES, MVP, & PSEUDOCODE
 ==========================================================================
 
 ### User Stories
