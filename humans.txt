@@ -1,42 +1,44 @@
-humans.txt
+/* humanstxt.org */
 
-!++++ AUTHOR
-+=======================================================================+!
-    Developer & Designer: Ali Esmaili
-    Email: AESM85@gmail.com
-    LinkedIn: https://www.linkedin.com/in/SuitAndCape
-    GitHub: https://github.com/AESM
-    Website: http://SuitAndCape.github.io/
-    Twitter: @SuitAndCape
-    Location: Bay Area
+/***= Humans Text File
+========================================================================*/
 
-!++++ THANKS
-+=======================================================================+!
+  Some information about the people who contributed
 
-  !+===== PHOTO TEAM =====+!
+/*== Author ============================================================*/
+
+  Developer & Designer: Ali Esmaili
+  Email: AESM85@gmail.com
+  SuitAndCape GitHub: https://github.com/SuitAndCape
+  Personal GitHub: https://github.com/AESM
+  Website: https://SuitAndCape.github.io/
+  LinkedIn: https://www.linkedin.com/in/SuitAndCape
+  Dribbble: https://dribbble.com/SuitAndCape
+  Twitter: https://twitter.com/SuitAndCape
+  Location: Southern Bay Area
+
+/*== Thanks ============================================================*/
+
+  /*===== Photo Team =====*/
     Photographer, Director: Bekka Björke
     Email: bjorkephoto@gmail.com
     LinkedIn: https://www.linkedin.com/in/bekka
     Model Mayhem: http://www.modelmayhem.com/bjorke
     Facebook: https://www.facebook.com/bjorkephoto
     Twitter: @bekka
-    Location: Bay Area
+
+    Assitant Director: Alexandria Murry
+    LinkedIn: https://www.linkedin.com/pub/alexandria-murry/9b/459/3ba
 
     Photographer: Lam Nguyen
     Email: lam@thevacantroom.com
-    LinkedIn: https://www.linkedin.com/pub/lam-nguyen/69/b57/386
     Website: http://thevacantroom.weebly.com/
+    LinkedIn: https://www.linkedin.com/pub/lam-nguyen/69/b57/386
     Twitter: @thevacantroom
-    Location: Bay Area
 
-    Assitant Director: Alexandria Murry
-    Email: admurry@gmail.com
-    LinkedIn: https://www.linkedin.com/pub/alexandria-murry/9b/459/3ba
-    Location: Bay Area
+/*== Site Info =========================================================*/
 
-!++++ SITE
-+=======================================================================+!
-    Last update: 2015/04/19
-    Language: English
-    Doctype: HTML5
-    IDE: Sublime Text, Illustrator, Photoshop
+  Last update: 2015/04/19
+  Language: English
+  Components: HTML5, CSS3, Sass, JavaScript, jQuery, Elevator.js
+  IDE: Sublime Text 3, iTerm2, Illustrator, Photoshop
