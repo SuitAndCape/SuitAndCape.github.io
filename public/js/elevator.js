@@ -157,7 +157,7 @@ var Elevator = (function() {
     }
   }
 
-  //@TODO: Does this need tap bindings too?
+  //@ToDo: Does this need tap bindings too?
   function bindElevateToElement( element ) {
     element.addEventListener('click', elevate, false);
   }

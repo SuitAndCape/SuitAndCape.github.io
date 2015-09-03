@@ -1,51 +1,41 @@
 <!-- README.md -->
 
-SUITANDCAPE - ALI ESMAILI'S PORTFOLIO
+SuitAndCape - Ali Esmaili's Portfolio
 ==========================================================================
 
-## Contact
+The website for my online presence.
 
-- **_Developer & Designer_**
-  - Ali Esmaili
-- **_Email_**
-  - AESM85@gmail.com
-- **_LinkedIn_**
-  - https://www.linkedin.com/in/SuitAndCape
-- **_GitHub_**
-  - https://github.com/AESM
-- **_Twitter_**
-  - @SuitAndCape
-- **_Location_**
-  - Bay Area
+## Contents
 
-## SuitAndCape Links
+- [Title](#suitandcape---ali-esmailis-portfolio)
+- [Connect](#connect)
+- [User Stories, MVP, Specifications, & Pseudocode](#user-stories-mvp-specifications--pseudocode)
+- [humans.txt](#humanstxt)
+- [License](#license)
 
-- **_Website_**
-  - http://SuitAndCape.github.io/
-- **_Forked Repo_**
-  - https://github.com/AESM/SuitAndCape.github.io
-- **_User Stories, MVP, & Pseudocode_**
-  - https://github.com/SuitAndCape/SuitAndCape.github.io/blob/master/Stories_MVP_Pseudocode.md
-- **_Humans.txt_**
-  - https://github.com/SuitAndCape/SuitAndCape.github.io/blob/master/humans.txt
+--------------------------------------------------------------------------
 
-## Resources
+## Connect
 
-- **_Eloquent JavaScript_**
-  - http://eloquentjavascript.net/
-- **_JSHint_**
-  - http://jshint.com/
-- **_jQuery CheatSheet_**
-  - http://oscarotero.com/jquery/
-- **_Handlebars.js Documentation_**
-  - http://handlebarsjs.com/
-- **_CSS-Tricks_**
-  - https://css-tricks.com/
-- **_A List Apart_**
-  - http://alistapart.com/
-- **_Google Fonts_**
-  - http://www.google.com/fonts
-- **_Design Aesthetics Tests_**
-  - http://blog.teamtreehouse.com/3-simple-design-tests-to-improve-your-aesthetics
-- **_Any Hugo Giraudel Sass Article_**
-  - http://www.sitepoint.com/author/hgiraudel/
+|              :tophat:             |              :rocket:             |
+| --------------------------------- | --------------------------------- |
+**_SuitAndCape GitHub_** | https://github.com/SuitAndCape
+**_Personal GitHub_**    | https://github.com/AESM
+**_Website_**            | https://SuitAndCape.github.io/
+**_LinkedIn_**           | https://www.linkedin.com/in/SuitAndCape
+**_Dribbble_**           | https://dribbble.com/SuitAndCape
+**_Twitter_**            | https://twitter.com/SuitAndCape
+
+## User Stories, MVP, Specifications, & Pseudocode
+
+The [User Stories, MVP, Specifications, & Pseudocode](https://github.com/SuitAndCape/SuitAndCape.github.io/blob/master//Stories_MVP_Specs_Pseudocode.md) I have documented for this project.
+
+## humans.txt
+
+The [humans.txt](https://github.com/SuitAndCape/SuitAndCape.github.io/blob/master/humans.txt) movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
+
+## License
+
+This [project](#suitandcape---ali-esmailis-portfolio) is copyright © 2013-2015 Ali Esmaili | SuitAndCape.  It is free software that may be redistributed under the terms specified in the [LICENSE](https://github.com/SuitAndCape/SuitAndCape.github.io/blob/master/LICENSE).
+
+This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  For more information, visit the [Open Source Initiative](http://opensource.org/) website.
