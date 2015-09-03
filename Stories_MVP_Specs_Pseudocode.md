@@ -86,14 +86,14 @@ User Stories, MVP, Specifications, & Pseudocode
   + Handlebars.js
 
 ### Process:
-- Whiteboard goals
-  + Turn into User Stories
-  + Decide on MVP
-- UX workflow
-- Wireframe
-- Deep dive into technologies
-  + Ensure that any tech used is necessary, or just does something neat
-- Mobile-first design
-- Create a test-suite in parallel
-  + Due to the nature of the project, the test-suite is replaced by design tests
-- Commit often
+1. Whiteboard goals
+  - Turn into User Stories
+  - Decide on MVP
+2. UX workflow
+3. Wireframe
+4. Deep dive into technologies
+  - Ensure that any tech used is necessary, or just does something neat
+5. Mobile-first design
+6. Create a test-suite in parallel
+  - Due to the nature of the project, the test-suite is replaced by design tests
+7. Commit often
