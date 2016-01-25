@@ -1,0 +1,37 @@
+/*_paragraphs.scss*/
+
+/**** PARAGRAPHS
+*=======================================================================*/
+.para {
+
+  &-primary {
+    @extend %prgrph-prim;
+    margin: 0 0 rem(30px, 18px);
+
+    strong {
+      font-family: $font-family--important;
+    }
+
+    @include m(grouped) {
+      @extend %prgrph-prim;
+    }
+
+  }
+
+}
+
+// .flyer-main {
+
+//   .para {
+
+//     &-primary {
+
+//       @include medq(split-sm) {
+//         text-align: center;
+//       }
+
+//     }
+
+//   }
+
+// }
