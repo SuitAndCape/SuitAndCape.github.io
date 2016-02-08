@@ -1,44 +1,27 @@
-/* humanstxt.org */
+# humanstxt.org
 
-/***= Humans Text File
-========================================================================*/
+####= RAPTORFrame Humans Text File
+##===========================================================================##
 
-  Some information about the people who contributed
+## The humans responsible & technology colophon
 
-/*== Author ============================================================*/
+##== Team ====================================================================#
 
-  Developer & Designer: Ali Esmaili
+  Name: Ali Esmaili
+  Role: Developer & Designer
   Email: AESM85@gmail.com
   SuitAndCape GitHub: https://github.com/SuitAndCape
   Personal GitHub: https://github.com/AESM
   Website: https://SuitAndCape.github.io/
   LinkedIn: https://www.linkedin.com/in/SuitAndCape
-  Dribbble: https://dribbble.com/SuitAndCape
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
-/*== Thanks ============================================================*/
+##== Info ====================================================================#
 
-  /*===== Photo Team =====*/
-    Photographer, Director: Bekka Björke
-    Email: bjorkephoto@gmail.com
-    LinkedIn: https://www.linkedin.com/in/bekka
-    Model Mayhem: http://www.modelmayhem.com/bjorke
-    Facebook: https://www.facebook.com/bjorkephoto
-    Twitter: @bekka
-
-    Assitant Director: Alexandria Murry
-    LinkedIn: https://www.linkedin.com/pub/alexandria-murry/9b/459/3ba
-
-    Photographer: Lam Nguyen
-    Email: lam@thevacantroom.com
-    Website: http://thevacantroom.weebly.com/
-    LinkedIn: https://www.linkedin.com/pub/lam-nguyen/69/b57/386
-    Twitter: @thevacantroom
-
-/*== Site Info =========================================================*/
-
-  Last update: 2015/04/19
-  Language: English
-  Components: HTML5, CSS3, Sass, JavaScript, jQuery, Elevator.js
-  IDE: Sublime Text 3, iTerm2, Illustrator, Photoshop
+  Last update: 2016/02/08
+  Languages: JavaScript, CSS3, HTML5
+  Components: jQuery, Sass (SCSS), Gulp.js, jshint, scss-lint, tidy-html5,
+    RAPTORFrame, RAPTORSMACSS
+  Development tools: Sublime Text 3, iTerm2, NPM, Illustrator, Photoshop,
+    SublimeLinter, Google Chrome

@@ -1,205 +1,270 @@
 <!-- index.html -->
 
 <!DOCTYPE html>
+<html lang="en" class="home">
 
-<!-- IE Browser Targeting =============================================-->
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-
-<!-- Basic Page Needs =================================================-->
+<!-- Page Setup ============================================================-->
 
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Ali Esmaili | Software Engineer &amp; Web Developer | SuitAndCape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Ali Esmaili | Software Engineer | SuitAndCape</title>
     <meta name="author" content="Ali Esmaili" />
-    <link rel="author" type="text/plain" href="humans.txt" />
-    <meta name="keywords" content="Ruby, JavaScript, Rails, HTML, CSS, Sass, Haml, Handlebars, AJAX, jQuery, Angular, SQL, PostgreSQL, Ionic, React, Software, Engineer, Web, Developer, Development, Design, Responsive, Mobile First, User Experience, UX, User Interface, UI, Test-Driven, Behavior-Driven, CCNA, Networking, SuitAndCape, AESM, Al E, Ali Esmaili, Full-Stack, Front-End, Back-End, California, CA, Bay Area, San Jose, SJ, San Francisco, SF, portfolio, OurHouse, Doppl, UpAhead" />
-    <meta name="description" content="Ali Esmaili is a web
-    developer, UI designer, Ruby and JavaScript enthusiast,
-    with a passion for dancing like an robot possessed." />
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="description" content="Ali Esmaili is full-stack software engineer and web developer, based in the Southern Bay Area." />
+    <meta name="keywords" content="CSS, CSS3, HTML, HTML5, JavaScript, SCSS, Sass, jQuery, RAPTORFrame, RAPTORSMACSS, SMACSS, SuitAndCape, AESM, Ali Esmaili" />
+    <meta property="og:image" content="http://suitandcape.github.io/images/wallpapers/suitandcape-1600x1600.jpg" />
+    <link rel="apple-touch-icon" href="" />
+    <meta name="theme-color" content="#660000" />
+    <link rel="icon" type="image/png" href="images/fabicon-16x16.png" />
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="images/fabicon-16x16.ico"><![endif]-->
 
-<!-- Open Graph Data ==================================================-->
+<!-- Style Resources =======================================================-->
 
-    <meta property="og:title" content="Ali Esmaili | Software Engineer &amp; Web Developer | SuitAndCape" />
-    <meta property="og:type" content="portfolio" />
-    <meta property="og:url" content="https://SuitAndCape.github.io/" />
-    <meta property="og:image" content="https://suitandcape.github.io/public/images/ogi/open_graph_image.jpg" />
-    <meta property="og:description" content="Ali Esmaili is a web
-    developer, UI designer, Ruby and JavaScript enthusiast,
-    with a passion for dancing like an robot possessed." />
-    <meta property="og:site_name" content="Ali Esmaili | Software Engineer &amp; Web Developer | SuitAndCape" />
-
-<!-- Mobile Specific Metas ============================================-->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-<!-- Style Resources ==================================================-->
-
-    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
-
-<!-- Favicons =========================================================-->
-
-    <link rel="icon" type="image/png" href="public/images/favicons/fabicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/raptor.css" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
 
-<!-- Design Tests =====================================================-->
+<!-- Page Layout ===========================================================-->
 
-    <!--===== Only uncomment for design testing =====-->
-    <!-- <div class="design_test">
-      <a class="test_button" href="javascript: (function() {
-        document.body.setAttribute('style',
-          'filter: url(data: image/svg+xml;
-          base64, PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxmaWx0ZXIgaWQ9J2JsdXInPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249JzEwJyAvPjwvZmlsdGVyPjwvc3ZnPg%3D%3D#blur);
-          -webkit-filter:blur(10px);
-          filter: blur(10px);'
-        );
-      }) ();">Blur Test</a>
-      <a class="test_button" href="javascript: (function() {
-        document.body.setAttribute('style',
-          'filter: url(data: image/svg+xml;
-          base64, PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxmaWx0ZXIgaWQ9J2dyYXlzY2FsZSc%2BPGZlQ29sb3JNYXRyaXggdHlwZT0nbWF0cml4JyB2YWx1ZXM9JzAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAgMCAwIDEgMCcvPjwvZmlsdGVyPjwvc3ZnPg%3D%3D#grayscale);
-          -webkit-transform: translateZ(0);
-          -webkit-filter: grayscale(1);
-          filter: grayscale(1);'
-        );
-      }) ();">Desaturation Test</a>
-      <a class="test_button" href="javascript: (function () {
-        document.body.setAttribute('style',
-          '-webkit-transform:rotate(180deg);
-          -moz-transform:rotate(180deg);
-          transform:rotate(180deg);'
-        );
-      }) ();">Flip Test</a>
-      <a class="test_button" href="javascript: (function () {
-        document.body.setAttribute('style','');
-      }) ();">Restore Layout</a>
-    </div> -->
+  <body>
+    <!--[if lt IE 8]>
+      <p class="tired-browser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a>, you'll have a good time.</p>
+    <![endif]-->
 
-<!-- Primary Page Layout ==============================================-->
-
-  <body class="case__home">
-  <!--[if lt IE 8]>
-    <p class="sad-browser">Your browser is <strong>outdated</strong>.  If you <a href="http://browsehappy.com/">upgrade your browser</a>, you'll have a good time.</p>
-  <![endif]-->
-
-    <!-- Banner -->
-    <header role="banner" id="banner" class="grid panel--main--centered">
-      <div class="grid__col--12">
-        <h1 class="headline-primary--major">Hi, my name is Ali Esmaili.</h1>
-        <h1 class="headline-primary--minor">I'm a full-stack developer, with a penchant for creating &amp; tinkering.</h1>
-      </div>
+    <!--[if gt IE 7]><!-->
+    <nav class="navigation">
+      <a href="/resume.pdf" class="icon-doc" aria-label="My R&eacute;sum&eacute;"></a>
+      <a href="https://www.linkedin.com/in/SuitAndCape" class="icon-social-linkedin" target="_blank" aria-label="My LinkedIn Profile"></a>
+      <a href="https://www.github.com/AESM" class="icon-social-github" target="_blank" aria-label="My GitHub Account"></a>
+      <!-- <a href="https://dribbble.com/SuitAndCape" class="icon-social-dribbble" target="_blank" aria-label="My Dribbble account"></a> -->
+      <a href="https://www.twitter.com/SuitAndCape" class="icon-social-twitter" target="_blank" aria-label="My Twitter Profile"></a>
+    </nav>
+    <header class="banner" role="banner">
+      <h1>Hi, my name is Ali Esmaili.</h1>
+      <h3>I'm a full-stack developer, with a penchant for creating &amp; tinkering.</h3>
     </header>
 
-    <!-- Sidebar -->
-    <aside role="navigation" id="sidebar" class="grid panel--centered">
-      <!-- <h4 class="headline-plaque">
-        <a href="index.html">SuitAndCape</a>
-      </h4> -->
-      <nav class="navbar">
-        <!-- <ul>
-          <li> -->
-            <!-- <a href="#" class="menu-toggle"> -->
-              <!-- <span>Menu</span> -->
-              <span id="toggle" class="icn--nav-toggle is-displayed-mobile"><b class="srt">Menu</b></span>
-            <!-- </a> -->
-            <!-- <div id="menu"> -->
-              <ul class="nav is-collapsed-mobile">
-                <li class="nav__item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="nav__item">
-                  <a href="about.html">About</a>
-                </li>
-                <li class="nav__item">
-                  <a href="projects.html">Projects</a>
-                </li>
-                <li class="nav__item">
-                  <a href="public/resume/Ali_Esmaili-Resume.pdf" target="_blank">Résumé</a>
-                </li>
-                <!-- <li class="nav__item">
-                  <a href="links.html">Links</a>
-                </li> -->
-              </ul>
-            <!-- </div> -->
-          <!-- </li>
-        </ul> -->
-      </nav>
-    </aside>
+    <main class="principal">
+      <section class="blurb">
+        <p>I aim to create intuitive &amp; minimalistic software.  I'm a full-stack web developer who graduated from Dev Bootcamp SF, &amp; loves to learn new skills quickly &amp; implement them efficiently.  Prior to my training at Dev Bootcamp, I spent five years at eBay Inc. (StubHub), as a Senior Content Analyst &amp; Product Support Specialist, a role which allowed me many opportunities to expand my leadership &amp; technical skills.</p>
+      </section>
 
-    <!-- Main -->
-    <main role="main" class="layer-gradient--to-b"></main>
+      <section class="skillset">
+        <h4>Skillset</h4>
+        <ul>
+          <li data-skill-level="7">
+            <span class="skill">Git</span>
+          </li>
+          <li data-skill-level="2">
+            <span class="skill">LaTeX</span>
+          </li>
+          <li data-skill-level="10">
+            <span class="skill">Markdown</span>
+          </li>
+          <li data-skill-level="4">
+            <span class="skill">Shell (Bash)</span>
+          </li>
+          <!-- <li data-skill-level="8">
+            <span class="skill">Bootstrap</span>
+          </li> -->
+          <li data-skill-level="9">
+            <span class="skill">Foundation</span>
+          </li>
+          <!-- <li data-skill-level="4">
+            <span class="skill">Ionic Framework</span>
+          </li> -->
+          <li data-skill-level="7">
+            <span class="skill">Ruby on Rails</span>
+          </li>
+          <li data-skill-level="8">
+            <span class="skill">AngularJS</span>
+          </li>
+          <li data-skill-level="6">
+            <span class="skill">Node.js</span>
+          </li>
+          <li data-skill-level="9">
+            <span class="skill">Gulp.js</span>
+          </li>
+          <li data-skill-level="10">
+            <span class="skill">Sass (SCSS)</span>
+          </li>
+          <li data-skill-level="5">
+            <span class="skill">AJAX</span>
+          </li>
+          <li data-skill-level="6">
+            <span class="skill">jQuery</span>
+          </li>
+          <li data-skill-level="7">
+            <span class="skill">SQL</span>
+          </li>
+          <li data-skill-level="0">
+            <span class="skill">Java</span>
+          </li>
+          <li data-skill-level="3">
+            <span class="skill">Python</span>
+          </li>
+          <li data-skill-level="10">
+            <span class="skill">Ruby</span>
+          </li>
+          <li data-skill-level="1">
+            <span class="skill">PHP</span>
+          </li>
+          <!-- <li data-skill-level="2">
+            <span class="skill">XML</span>
+          </li> -->
+          <li data-skill-level="8">
+            <span class="skill">HTML5</span>
+          </li>
+          <li data-skill-level="9">
+            <span class="skill">CSS3</span>
+          </li>
+          <li data-skill-level="7">
+            <span class="skill">JavaScript</span>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Footer -->
-    <footer role="contentinfo" id="footer">
-      <article class="grid">
-        <header class="panel--centered">
-          <h2 class="headline-secondary--grouped">Say Hi!</h2>
-        </header>
+      <section class="work project-list">
+        <h4>Projects</h4>
+        <ul>
+          <li class="proj">
+            <div>
+              <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="project-front">
+                <h6>RAPTORFrame</h6>
+                <p>A light, modular framework for rapid development of modern frontend projects.  Compiles and minifies SCSS and JavaScript files; lints code; creates sourcemaps; provides a Gulp workflow and NPM devtools with custom scripts.</p>
+              </a>
+              <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="project-back">
+                <h6>RAPTORFrame</h6>
+                <p>A light, modular framework for rapid development of modern frontend projects.  Compiles and minifies SCSS and JavaScript files; lints code; creates sourcemaps; provides a Gulp workflow and NPM devtools with custom scripts.</p>
+              </a>
+            </div>
+          </li>
+          <li class="proj">
+            <div>
+              <a href="https://github.com/AESM/dotfiles" data-work="project-front">
+                <h6>BusinessMumu</h6>
+                <p>My personal OS X configuration.  Contains custom zsh and bash preferences, aliases, Sublime Text settings, automated environment setup, and an installation file.</p>
+              </a>
+              <a href="https://github.com/AESM/dotfiles" data-work="project-back">
+                <h6>BusinessMumu</h6>
+                <p>My personal OS X configuration.  Contains custom zsh and bash preferences, aliases, Sublime Text settings, automated environment setup, and an installation file.</p>
+              </a>
+            </div>
+          </li>
+          <li class="proj">
+            <div>
+              <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="project-front">
+                <h6>RAPTORSMACSS</h6>
+                <p>A highly modular and organized Sass (SCSS) boilerplate. It is loosely inspired by the SMACSS architecture pattern, with some layout liberties taken.</p>
+              </a>
+              <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="project-back">
+                <h6>RAPTORSMACSS</h6>
+                <p>A highly modular and organized Sass (SCSS) boilerplate. It is loosely inspired by the SMACSS architecture pattern, with some layout liberties taken.</p>
+              </a>
+            </div>
+          </li>
+          <!-- <li class="proj">
+            <div>
+              <a href="#" data-work="project-front">
+                <h6>Another Project</h6>
+                <p>Come on, Fhqwhgads.  I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, everybody to the limit, everybody come on Fhqwhgads!</p>
+              </a>
+              <a href="#" data-work="project-back">
+                <h6>Another Project</h6>
+                <p>Come on, Fhqwhgads.  I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, everybody to the limit, everybody come on Fhqwhgads!</p>
+              </a>
+            </div>
+          </li> -->
+          <!-- <li class="proj">
+            <div>
+              <a href="#" data-work="project-front">
+                <h6>A Different Project</h6>
+                <p>Come on, Fhqwhgads.  I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, everybody to the limit, everybody come on Fhqwhgads!</p>
+              </a>
+              <a href="#" data-work="project-back">
+                <h6>A Different Project</h6>
+                <p>Come on, Fhqwhgads.  I said come on Fhqwhgads, I said come on Fhqwhgads &ndash; everybody to the limit, everybody to the limit, everybody come on Fhqwhgads!</p>
+              </a>
+            </div>
+          </li> -->
+        </ul>
+      </section>
 
-        <nav class="grid__col--12 panel--centered">
-          <ul class="icons">
-            <li class="nav__item">
-              <a href="mailto:AESM85@gmail.com" class="icon fav--email">
-                <span class="label">Email</span>
+      <section class="work application-list">
+        <h4>Apps</h4>
+        <ul>
+          <li class="app">
+            <div>
+              <a href="https://github.com/AESM/KittyParty" data-work="application-front">
+                <h6>KittyParty</h6>
+                <p>A team chat app where the user's message is tokenized and translated into a GIF through the Giphy API, then sent to the chatroom.  Build using JavaScript (ES6), Angular, Node, Express, Socket.io, jQuery, Sass (SCSS), RAPTORFrame, Gulp, and the Giphy API.</p>
               </a>
-            </li>
-            <li class="nav__item">
-              <a href="http://www.linkedin.com/in/SuitAndCape" target="_blank" class="icon fav--linkedin">
-                <span class="label">LinkedIn</span>
+              <a href="https://github.com/AESM/KittyParty" data-work="application-back">
+                <h6>KittyParty</h6>
+                <p>A team chat app where the user's message is tokenized and translated into a GIF through the Giphy API, then sent to the chatroom.  Build using JavaScript (ES6), Angular, Node, Express, Socket.io, jQuery, Sass (SCSS), RAPTORFrame, Gulp, and the Giphy API.</p>
               </a>
-            </li>
-            <li class="nav__item">
-              <a href="http://www.github.com/AESM" target="_blank" class="icon fav--github">
-                <span class="label">Github</span>
+            </div>
+          </li>
+          <li class="app">
+            <div>
+              <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="application-front">
+                <h6>OurHouse</h6>
+                <p>An iOS and Android mobile app for coordinating housemates' social events, chores, and payments.  Build using Angular, Ionic, Rails, OAuth, the Google+ API, and the Venmo API.</p>
               </a>
-            </li>
-            <!-- <li class="nav__item">
-              <a href="https://dribbble.com/SuitAndCape" target="_blank" class="icon fav--dribbble">
-                <span class="label">Dribbble</span>
+              <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="application-back">
+                <h6>OurHouse</h6>
+                <p>An iOS and Android mobile app for coordinating housemates' social events, chores, and payments.  Build using Angular, Ionic, Rails, OAuth, the Google+ API, and the Venmo API.</p>
               </a>
-            </li> -->
-            <li class="nav__item">
-              <a href="http://www.twitter.com/SuitAndCape" target="_blank" class="icon fav--twitter">
-                <span class="label">Twitter</span>
+            </div>
+          </li>
+          <!-- <li class="app">
+            <div>
+              <a href="#" data-work="application-front">
+                <h6>Another App</h6>
+                <p>And the ones are alllways cooold!  And the parties laaast all niiight!  And there's probably looots of chocolate!  And Populaaation Tire!  Population &ndash; Tiiiiiiiiiire.</p>
               </a>
-            </li>
-            <li class="nav__item">
-              <a href="flyer.html" class="icon fav--flyer">
-                <span class="label">Flyer</span>
+              <a href="#" data-work="application-back">
+                <h6>Another App</h6>
+                <p>And the ones are alllways cooold!  And the parties laaast all niiight!  And there's probably looots of chocolate!  And Populaaation Tire!  Population &ndash; Tiiiiiiiiiire.</p>
               </a>
-            </li>
-          </ul>
+            </div>
+          </li> -->
+        </ul>
+      </section>
 
-          <ul class="copyright panel">
-            <li>&copy; Ali Esmaili | SuitAndCape</li>
-          </ul>
-        </nav>
-      </article>
+      <section class="work website-list">
+        <h4>Websites</h4>
+        <ul>
+          <li class="site">
+            <a href="http://SuitAndCape.github.io/" data-work="website">
+              <h6>SuitAndCape</h6>
+              <p>This very website: my personal portfolio.  Built using JavaScript, CSS3, HTML5, jQuery, Sass (SCSS), RAPTORFrame, and Gulp.</p>
+            </a>
+          </li>
+          <li class="site">
+            <a href="http://e-dapp.github.io/" data-work="website">
+              <h6>e-dapp</h6>
+              <p>A minimalistic portfolio for Eric Lawrence Dapp.  Built using JavaScript, CSS3, HTML5, jQuery, Sass (SCSS), RAPTORFrame, and Gulp.</p>
+            </a>
+          </li>
+          <!-- <li class="site">
+            <a href="#" data-work="website">
+              <h6>Another Website</h6>
+              <p>The Cheat is not dead!  I'm so glad The Cheat is not dead &ndash; The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not dead!  The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not &ndash; Just the claps!  Just the claps!  Uh!  Uh!  All right guys, keep it rollin' for me.  Keep it rollin!  Come on!</p>
+            </a>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+
+    <footer class="root" role="contentinfo">
+      <small class="copyright">&copy; Ali Esmaili | SuitAndCape</small>
     </footer>
 
-<!-- Scripts ==========================================================-->
+<!-- Script Resources ======================================================-->
 
-    <script type="text/javascript" src="public/js/jquery-2.1.3.js"></script>
-    <script type="text/javascript" src="public/js/handlebars-v3.0.1.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
-    <!-- <script type="text/javascript" src="public/js/main.min.js"></script> -->
-
-<!-- Google Analytics =================================================-->
-
-    <script>
-    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    //   ga('create', 'UA-61163251-1', 'auto');
-    //   ga('send', 'pageview');
-    </script>
+    <script type="text/javascript" src="javascripts/raptor.js"></script>
+    <!--<![endif]-->
   </body>
 </html>
