@@ -1,0 +1,27 @@
+# humanstxt.org
+
+####= RAPTORFrame Humans Text File
+##===========================================================================##
+
+## The humans responsible & technology colophon
+
+##== Team ====================================================================#
+
+  Name: Ali Esmaili
+  Role: Developer & Designer
+  Email: AESM85@gmail.com
+  SuitAndCape GitHub: https://github.com/SuitAndCape
+  Personal GitHub: https://github.com/AESM
+  Website: https://SuitAndCape.github.io/
+  LinkedIn: https://www.linkedin.com/in/SuitAndCape
+  Twitter: https://twitter.com/SuitAndCape
+  Location: Southern Bay Area
+
+##== Info ====================================================================#
+
+  Last update: 2016/02/08
+  Languages: JavaScript, CSS3, HTML5
+  Components: jQuery, Sass (SCSS), Gulp.js, jshint, scss-lint, tidy-html5,
+    RAPTORFrame, RAPTORSMACSS
+  Development tools: Sublime Text 3, iTerm2, NPM, Illustrator, Photoshop,
+    SublimeLinter, Google Chrome

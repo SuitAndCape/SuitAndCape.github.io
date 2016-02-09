@@ -1,0 +1,73 @@
+// _home-page.scss
+
+////= Home Page Styling
+//===========================================================================//
+
+.home {
+  background-image: -webkit-linear-gradient(top left, $torch-red, $java);
+  background-image: linear-gradient(to bottom right, $torch-red, $java);
+
+  @include respond-to('md') {
+    background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  body {
+    @extend .center-align;
+
+    h1,
+    h2,
+    h3 {
+      font-family: $main-heading-font;
+      line-height: 1.6;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-family: $sub-heading-font;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 2.618em;
+
+      @include respond-to('xs') {
+        font-size: 4.236em;
+      }
+
+      @include respond-to('md') {
+        font-size: 6.854em;
+      }
+    }
+
+    h2 {
+      font-size: 4.236em;
+    }
+
+    h3 {
+      font-size: 2.618em;
+    }
+
+    h4 {
+      font-size: 1.618em;
+      margin-bottom: 50px;
+    }
+
+    h5 {
+      font-size: 1.309em;
+    }
+
+    h6 {
+      font-size: 1.1545em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}

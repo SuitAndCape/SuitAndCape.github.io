@@ -1,0 +1,140 @@
+// _skillset.scss
+
+////= Skillset Module
+//===========================================================================//
+
+/// Skillset gradient
+$skill-color-one: rgb(255, 0, 51);
+$h-skill-color-one: #FF0033;
+$skill-color-two: rgb(255, 0, 102);
+$h-skill-color-two: #FF0066;
+$skill-color-three: rgb(255, 0, 153);
+$h-skill-color-three: #FF0099;
+$skill-color-four: rgb(255, 0, 204);
+$h-skill-color-four: #FF00CC;
+$skill-color-six: rgb(204, 0, 255);
+$h-skill-color-six: #CC00FF;
+$skill-color-seven: rgb(153, 0, 255);
+$h-skill-color-seven: #9900FF;
+$skill-color-eight: rgb(102, 0, 255);
+$h-skill-color-eight: #6600FF;
+$skill-color-nine: rgb(51, 0, 255);
+$h-skill-color-nine: #3300FF;
+
+.skillset {
+  background-color: $primary-bg-color;
+  overflow: hidden;
+  padding: pxem(60px) pxem(40px) pxem(40px);
+
+    @include respond-to('sm') {
+      padding: pxem(60px) pxem(40px) pxem(150px);
+    }
+
+    @include respond-to('xl') {
+      padding: pxem(60px) pxem(40px) pxem(230px);
+    }
+
+  ul {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    @include respond-to('sm') {
+      margin: 20% 10% 8% 10%;
+      -ms-transform: rotate(-140deg);
+      -webkit-transform: rotate(-140deg);
+      transform: rotate(-140deg);
+    }
+
+    li {
+      border-radius: pxem($secondary-radius);
+      display: block;
+      // font-family: $code-font;
+      font-size: pxem(13px);
+      margin: pxem(3px) 0 0;
+      overflow: hidden;
+      padding: pxem(14px);
+
+      @include respond-to('sm') {
+        padding: pxem(12px);
+      }
+    }
+
+    .skill {
+      color: $wild-sand;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      float: right;
+      ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2)';
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+
+    [data-skill-level='0'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($red, 0), $h-red);
+      background-image: linear-gradient(90deg, rgba($red, 0), $h-red);
+      width: 9.0909%;
+    }
+
+    [data-skill-level='1'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-one, 0), $h-skill-color-one);
+      background-image: linear-gradient(90deg, rgba($skill-color-one, 0), $h-skill-color-one);
+      width: 18.1818%;
+    }
+
+    [data-skill-level='2'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-two, 0), $h-skill-color-two);
+      background-image: linear-gradient(90deg, rgba($skill-color-two, 0), $h-skill-color-two);
+      width: 27.2727%;
+    }
+
+    [data-skill-level='3'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-three, 0), $h-skill-color-three);
+      background-image: linear-gradient(90deg, rgba($skill-color-three, 0), $h-skill-color-three);
+      width: 36.3636%;
+    }
+
+    [data-skill-level='4'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-four, 0), $h-skill-color-four);
+      background-image: linear-gradient(90deg, rgba($skill-color-four, 0), $h-skill-color-four);
+      width: 45.4545%;
+    }
+
+    [data-skill-level='5'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($fuchsia, 0), $h-fuchsia);
+      background-image: linear-gradient(90deg, rgba($fuchsia, 0), $h-fuchsia);
+      width: 54.5454%;
+    }
+
+    [data-skill-level='6'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-six, 0), $h-skill-color-six);
+      background-image: linear-gradient(90deg, rgba($skill-color-six, 0), $h-skill-color-six);
+      width: 63.6363%;
+    }
+
+    [data-skill-level='7'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-seven, 0), $h-skill-color-seven);
+      background-image: linear-gradient(90deg, rgba($skill-color-seven, 0), $h-skill-color-seven);
+      width: 72.7272%;
+    }
+
+    [data-skill-level='8'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-eight, 0), $h-skill-color-eight);
+      background-image: linear-gradient(90deg, rgba($skill-color-eight, 0), $h-skill-color-eight);
+      width: 81.8181%;
+    }
+
+    [data-skill-level='9'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-nine, 0), $h-skill-color-nine);
+      background-image: linear-gradient(90deg, rgba($skill-color-nine, 0), $h-skill-color-nine);
+      width: 90.909%;
+    }
+
+    [data-skill-level='10'] {
+      background-image: -webkit-linear-gradient(0deg, rgba($blue, 0), $h-blue);
+      background-image: linear-gradient(90deg, rgba($blue, 0), $h-blue);
+      width: 100%;
+    }
+  }
+}

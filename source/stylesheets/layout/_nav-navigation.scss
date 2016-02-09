@@ -1,0 +1,44 @@
+// _nav-navigation.scss
+
+////= Nav/Navigation Styling
+//===========================================================================//
+
+.navigation {
+
+  a {
+    background-color: $primary-bg-color;
+    -webkit-background-size: 100% 200%;
+    background-size: 100% 200%;
+    border-radius: $primary-radius;
+    margin: pxem(1px) pxem(2px);
+    padding: pxem(12px);
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all $primary-duration;
+    transition: all $primary-duration;
+
+    &:focus,
+    &:hover {
+      background-image: -webkit-linear-gradient(top left, $emerald, $electric-violet);
+      background-image: linear-gradient(to bottom right, $emerald, $electric-violet);
+      background-position: 0 -102%;
+      color: $quinary-color;
+    }
+  }
+
+  .icon-doc {
+    color: $lime;
+  }
+
+  .icon-social-linkedin {
+    color: $blaze-orange;
+  }
+
+  .icon-social-github {
+    color: $fuchsia;
+  }
+
+  .icon-social-twitter {
+    color: $java;
+  }
+}
