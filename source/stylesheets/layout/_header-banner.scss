@@ -1,0 +1,19 @@
+// _header-banner.scss
+
+////= Header/Banner Styling
+//===========================================================================//
+
+.banner {
+  @extend .clearfix;
+  color: $secondary-color;
+  margin: pxem(80px) pxem(15px) pxem(120px);
+  z-index: z('floor');
+
+  h1 {
+    margin: 0 0 pxem(10px);
+
+    @include respond-to('xxl') {
+      margin: 0 0 pxem(20px);
+    }
+  }
+}

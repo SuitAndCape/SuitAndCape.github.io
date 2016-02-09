@@ -1,0 +1,249 @@
+// _config.scss
+
+////= Global Configuration
+//===========================================================================//
+
+//== Path Assignments ========================================================/
+
+$path-glyph: '../glyphs';
+$path-img: '../images';
+$path-js: '../javascripts';
+$path-media: '../media';
+$path-avatar: $path-img + '/avatars';
+$path-wall: $path-img + '/wallpapers';
+
+//== Glyph Stack Assignments =================================================/
+
+/// Font stacks
+$font-stack-open-sans: ('Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif);
+$font-stack-futura: (Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif);
+$font-stack-garamond: (Garamond, Constantia, 'Times New Roman', Times, serif);
+$font-stack-consolas: ('Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace);
+
+/// Variant and custom font stacks
+$font-stack-aleo: ('Aleo-regular', serif);
+$font-stack-roboto: ('Roboto-regular', sans-serif);
+
+/// Icon stacks
+$icon-stack-simple-line-icons: 'Simple-line-icons';
+
+//== Descriptive Color Assignments ===========================================/
+
+/// Standard colors
+$clear: transparent;
+$white: rgb(255, 255, 255);
+$h-white: #FFFFFF;
+$silver: rgb(192, 192, 192);
+$h-silver: #C0C0C0;
+$grey: rgb(128, 128, 128);
+$h-grey: #808080;
+$black: rgb(0, 0, 0);
+$h-black: #000000;
+$red: rgb(255, 0, 0);
+$h-red: #FF0000;
+$maroon: rgb(128, 0, 0);
+$h-maroon: #800000;
+$brown: rgb(165, 42, 42);
+$h-brown: #A52A2A;
+$yellow: rgb(255, 255, 0);
+$h-yellow: #FFFF00;
+$gold: rgb(255, 215, 0);
+$h-gold: #FFD700;
+$orange: rgb(255, 165, 0);
+$h-orange: #FFA500;
+$lime: rgb(0, 255, 0);
+$h-lime: #00FF00;
+$green: rgb(0, 128, 0);
+$h-green: #008000;
+$olive: rgb(128, 128, 0);
+$h-olive: #808000;
+$aqua: rgb(0, 255, 255);
+$h-aqua: #00FFFF;
+$teal: rgb(0, 128, 128);
+$h-teal: #008080;
+$blue: rgb(0, 0, 255);
+$h-blue: #0000FF;
+$navy: rgb(0, 0, 128);
+$h-navy: #000080;
+$fuchsia: rgb(255, 0, 255);
+$h-fuchsia: #FF00FF;
+$purple: rgb(128, 0, 128);
+$h-purple: #800080;
+$indigo: rgb(75, 0, 130);
+$h-indigo: #4B0082;
+
+/// Variant and custom colors
+$alabaster: rgb(250, 250, 250);
+$h-alabaster: #FAFAFA;
+$wild-sand: rgb(244, 244, 244);
+$h-wild-sand: #F4F4F4;
+$gallery: rgb(239, 239, 239);
+$h-gallery: #EFEFEF;
+$alto: rgb(219, 219, 219);
+$h-alto: #DBDBDB;
+$ebony: rgb(12, 11, 29);
+$h-ebony: #0C0B1D;
+$cod-gray: rgb(11, 11, 11);
+$h-cod-gray: #0B0B0B;
+$guardsman-red: rgb(186, 1, 1);
+$h-guardsman-red: #BA0101;
+$monza: rgb(199, 3, 30);
+$h-monza: #C7031E;
+$crimson: rgb(220, 20, 60);
+$h-crimson: #DC143C;
+$torch-red: rgb(235, 14, 53);
+$h-torch-red: #FD0E35;
+$sun-glow: rgb(255, 204, 51);
+$h-sun-glow: #FFCC33;
+$blaze-orange: rgb(255, 102, 0);
+$h-blaze-orange: #FF6600;
+$tango: rgb(237, 122, 28);
+$h-tango: #ED7A1C;
+$coral: rgb(255, 127, 80);
+$h-coral: #FF7F50;
+$jungle-green: rgb(41, 171, 135);
+$h-jungle-green: #29AB87;
+$emerald: rgb(94, 206, 127);
+$h-emerald: #5ECE7F;
+$java: rgb(31, 194, 194);
+$h-java: #1FC2C2;
+$pacific-blue: rgb(0, 157, 196);
+$h-pacific-blue: #009DC4;
+$lochmara: rgb(0, 126, 199);
+$h-lochmara: #007EC7;
+$prussian-blue: rgb(0, 49, 83);
+$h-prussian-blue: #003153;
+$cloud-burst: rgb(32, 46, 84);
+$h-cloud-burst: #202E54;
+$shark: rgb(37, 39, 44);
+$h-shark: #25272C;
+$fresh-eggplant: rgb(153, 0, 102);
+$h-fresh-eggplant: #990066;
+$electric-violet: rgb(139, 0, 255);
+$h-electric-violet: #8B00FF;
+$studio: rgb(113, 74, 178);
+$h-studio: #714AB2;
+$purple-heart: rgb(101, 45, 193);
+$h-purple-heart: #652DC1;
+$meteorite: rgb(60, 31, 118);
+$h-meteorite: #3C1F76;
+
+//== Reusable Variables ======================================================/
+
+/// Font stack usage
+$body-font: $font-stack-roboto;
+$code-font: $font-stack-consolas;
+$main-heading-font: $font-stack-garamond;
+$sub-heading-font: $font-stack-futura;
+
+/// Icon stack usage
+$sli-icon: $icon-stack-simple-line-icons;
+
+/// Color usage
+$primary-color: $shark;
+$secondary-color: $wild-sand;
+$tertiary-color: $maroon;
+$quaternary-color: $ebony;
+$quinary-color: $silver;
+$primary-bg-color: $alabaster;
+$secondary-bg-color: $alto;
+$tertiary-bg-color: $gallery;
+$shadow-color: rgba($black, 1);
+
+/// Body font-size
+/// Used with @pxem function
+$body-font-size: 20px;
+
+/// Font size usage
+$lg-font-size: 110%;
+$md-font-size: 90%;
+$sm-font-size: 70%;
+
+/// Border radii
+$primary-radius: 4px;
+$secondary-radius: 10px;
+$round-radius: 50%;
+$curve-radius: 25%;
+$bend-radius: 5%;
+
+/// Durations
+$primary-duration: 0.3s;
+$secondary-duration: 1s;
+
+//== Configuration Maps ======================================================/
+
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxs': (min-width: 320px),
+  'xxs': (min-width: 480px),
+  'xs': (min-width: 640px),
+  'sm': (min-width: 768px),
+  'md': (min-width: 992px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1440px),
+  'xxxl': (min-width: 1920px),
+);
+
+/// Transition Cubic Bézier function map
+/// Used with @ease function
+$eases: (
+  /// Standard
+  'ease': cubic-bezier(0.250, 0.100, 0.250, 1),
+  'in': cubic-bezier(0.420, 0, 1, 1),
+  'out': cubic-bezier(0, 0, 0.580, 1),
+  'in-out': cubic-bezier(0.420, 0, 0.580, 1),
+  'linear': cubic-bezier(0, 0, 1, 1),
+  /// Cubic
+  'in-cubic': cubic-bezier(0.550, 0.055, 0.675, 0.190),
+  'out-cubic': cubic-bezier(0.215, 0.610, 0.355, 1),
+  'in-out-cubic': cubic-bezier(0.645, 0.045, 0.355, 1),
+  /// Quad
+  'in-quad': cubic-bezier(0.550, 0.085, 0.680, 0.530),
+  'out-quad': cubic-bezier(0.250, 0.460, 0.450, 0.940),
+  'in-out-quad': cubic-bezier(0.455, 0.030, 0.515, 0.955),
+  /// Quart
+  'in-quart': cubic-bezier(0.895, 0.030, 0.685, 0.220),
+  'out-quart': cubic-bezier(0.165, 0.840, 0.440, 1),
+  'in-out-quart': cubic-bezier(0.770, 0, 0.175, 1),
+  /// Quint
+  'in-quint': cubic-bezier(0.755, 0.050, 0.855, 0.060),
+  'out-quint': cubic-bezier(0.230, 1, 0.320, 1),
+  'in-out-quint': cubic-bezier(0.860, 0, 0.070, 1),
+  /// Sine
+  'in-sine': cubic-bezier(0.470, 0, 0.745, 0.715),
+  'out-sine': cubic-bezier(0.390, 0.575, 0.565, 1),
+  'in-out-sine': cubic-bezier(0.445, 0.050, 0.550, 0.950),
+  /// Expo
+  'in-expo': cubic-bezier(0.950, 0.050, 0.795, 0.035),
+  'out-expo': cubic-bezier(0.190, 1, 0.220, 1),
+  'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  /// Circ
+  'in-circ': cubic-bezier(0.600, 0.040, 0.980, 0.335),
+  'out-circ': cubic-bezier(0.075, 0.820, 0.165, 1),
+  'in-out-circ': cubic-bezier(0.785, 0.135, 0.150, 0.860),
+  /// Back
+  'in-back': cubic-bezier(0.600, -0.280, 0.735, 0.045),
+  'out-back': cubic-bezier(0.175, 0.885, 0.320, 1.275),
+  'in-out-back': cubic-bezier(0.680, -0.550, 0.265, 1.550),
+);
+
+/// Z-indexing map
+/// Used with @z function
+$zindices: (
+  'beyond': 9999,
+  'over': 9001,
+  'roof': 9000,
+  'major': 8000,
+  'high': 7000,
+  'mid-high': 6000,
+  'mid': 5000,
+  'mid-low': 4000,
+  'low': 3000,
+  'very-low': 2000,
+  'minor': 1000,
+  'floor': 1,
+  'below': -1,
+  'abyss': -9000,
+);
