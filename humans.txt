@@ -19,9 +19,9 @@
 
 ##== Info ====================================================================#
 
-  Last update: 2016/02/08
+  Last update: 2016/02/18
   Languages: JavaScript, CSS3, HTML5
   Components: jQuery, Sass (SCSS), Gulp.js, jshint, scss-lint, tidy-html5,
-    RAPTORFrame, RAPTORSMACSS
+    RAPTORFrame, RAPTORSMACSS, imagemin
   Development tools: Sublime Text 3, iTerm2, NPM, Illustrator, Photoshop,
     SublimeLinter, Google Chrome
