@@ -71,7 +71,23 @@
       background-image: -webkit-linear-gradient(top left, $fuchsia, $electric-violet);
       background-image: linear-gradient(to bottom right, $fuchsia, $electric-violet);
     }
+  }
 
+  .raptorframe {
+    [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
+    }
+  }
+
+  .businessmuumuu {
+    [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
+    }
+  }
+
+  .raptorsmacss {
     [data-work="work-back"] {
       background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
       background-image: linear-gradient(to top right, $emerald, $lochmara);
@@ -83,8 +99,19 @@
       background-image: -webkit-linear-gradient(top right, $fuchsia, $electric-violet);
       background-image: linear-gradient(to bottom left, $fuchsia, $electric-violet);
     }
+  }
 
+  .kittyparty {
     [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
+    }
+  }
+
+  .ourhouse {
+    [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
     }
   }
 
@@ -93,8 +120,19 @@
       background-image: -webkit-linear-gradient(bottom right, $electric-violet, $fuchsia);
       background-image: linear-gradient(to top left, $electric-violet, $fuchsia);
     }
+  }
 
+  .suitandcape {
     [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
+    }
+  }
+
+  .e-dapp {
+    [data-work="work-back"] {
+      background-image: -webkit-linear-gradient(bottom left, $emerald, $lochmara);
+      background-image: linear-gradient(to top right, $emerald, $lochmara);
     }
   }
 
