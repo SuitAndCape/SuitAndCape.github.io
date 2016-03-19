@@ -1,20 +1,16 @@
 // _home-page.scss
 
 ////= Home Page Styling
-//===========================================================================//
+//============================================================================//
 
 .home {
-  background-image: -webkit-linear-gradient(top left, $torch-red, $java);
-  background-image: linear-gradient(to bottom right, $torch-red, $java);
-
-  @include respond-to('md') {
-    background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
-    background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
+  background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
 
   body {
     @extend .center-align;
@@ -34,19 +30,51 @@
     }
 
     h1 {
-      font-size: 2.618em;
+      font-size: 4.236em;
+      margin: 0 0 pxem(10px);
 
-      @include respond-to('xs') {
-        font-size: 4.236em;
+      @include respond-to('sm') {
+        font-size: 5.236em;
       }
 
       @include respond-to('md') {
-        font-size: 6.854em;
+        font-size: 6.236em;
+      }
+
+      @include respond-to('xxl') {
+        margin: 0 0 pxem(20px);
       }
     }
 
     h2 {
-      font-size: 4.236em;
+      font-size: 3.236em;
+      // font-size: 2.618em;
+      margin-bottom: pxem(-25px);
+      position: relative;
+      text-transform: uppercase;
+      top: -85px;
+
+      @include respond-to('sm') {
+        font-size: 4.236em;
+        // font-size: 4.236em;
+        margin-bottom: pxem(-11px);
+        top: -91px;
+      }
+
+      @include respond-to('md') {
+        font-size: 5.236em;
+        // font-size: 6.854em;
+        margin-bottom: pxem(-5px);
+        top: -100px;
+      }
+
+      &.primary-header {
+        color: $secondary-bg-color;
+      }
+
+      &.secondary-header {
+        color: $primary-bg-color;
+      }
     }
 
     h3 {
@@ -55,7 +83,6 @@
 
     h4 {
       font-size: 1.618em;
-      margin-bottom: 50px;
     }
 
     h5 {
@@ -67,7 +94,8 @@
     }
 
     p {
-      font-size: 1em;
+      font-size: 0.800em;
+      // font-size: 1em;
     }
   }
 }

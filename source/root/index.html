@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en" class="home">
 
-<!-- Page Setup ============================================================-->
+<!-- Page Setup =============================================================-->
 
   <head>
     <meta charset="UTF-8" />
@@ -19,13 +19,13 @@
     <link rel="icon" type="image/png" href="frame/images/fabicon-16x16.png" />
     <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="frame/images/fabicon-16x16.ico"><![endif]-->
 
-<!-- Style Resources =======================================================-->
+<!-- Style Resources ========================================================-->
 
     <link rel="stylesheet" type="text/css" href="frame/stylesheets/raptor.css" />
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
 
-<!-- Page Layout ===========================================================-->
+<!-- Page Layout ============================================================-->
 
   <body>
     <!--[if lt IE 8]>
@@ -46,23 +46,23 @@
 
     <main class="principal">
       <section class="blurb">
-        <p>I'm a full-stack web developer who aims to create intuitive &amp; minimalistic software.  I spent five years at eBay Inc. (StubHub) as a Senior Content Analyst &amp; Product Support Specialist, graduated from Dev Bootcamp SF, &amp; live in Santa Clara.  Mobile-first responsive web design, modular backend code, &amp; designing interactions &amp; workflows are a few of my favorite things.</p>
+        <ul>
+          <li>Full-Stack Developer</li>
+          <li>Minimalistic &amp; Intuitive Software</li>
+          <li>Device-Agnostic Web Development</li>
+          <li>Responsive &amp; Mobile-First Design</li>
+          <!-- <li>Santa Clara, CA</li> -->
+        </ul>
       </section>
 
       <section class="skillset">
-        <h4>Skillset</h4>
+        <h2 class="primary-header">Skillset</h2>
         <ul>
-          <li data-skill-level="7">
+          <!-- <li data-skill-level="7">
             <span class="skill">Git</span>
-          </li>
-          <li data-skill-level="2">
-            <span class="skill">LaTeX</span>
-          </li>
-          <li data-skill-level="10">
-            <span class="skill">Markdown</span>
-          </li>
-          <li data-skill-level="4">
-            <span class="skill">Shell (Bash)</span>
+          </li> -->
+          <li data-skill-level="8">
+            <span class="skill">Ruby on Rails</span>
           </li>
           <!-- <li data-skill-level="8">
             <span class="skill">Bootstrap</span>
@@ -73,195 +73,192 @@
           <!-- <li data-skill-level="4">
             <span class="skill">Ionic Framework</span>
           </li> -->
-          <li data-skill-level="7">
-            <span class="skill">Ruby on Rails</span>
-          </li>
-          <li data-skill-level="8">
-            <span class="skill">AngularJS</span>
-          </li>
-          <li data-skill-level="6">
-            <span class="skill">Node.js</span>
-          </li>
-          <li data-skill-level="9">
-            <span class="skill">Gulp.js</span>
-          </li>
-          <li data-skill-level="10">
-            <span class="skill">Sass (SCSS)</span>
-          </li>
-          <li data-skill-level="5">
-            <span class="skill">AJAX</span>
+          <li data-skill-level="1">
+            <span class="skill">LaTeX</span>
           </li>
           <li data-skill-level="6">
             <span class="skill">jQuery</span>
           </li>
+          <!-- <li data-skill-level="6">
+            <span class="skill">Node.js</span>
+          </li> -->
+          <!-- <li data-skill-level="10">
+            <span class="skill">Markdown</span>
+          </li> -->
+          <li data-skill-level="10">
+            <span class="skill">Sass (SCSS)</span>
+          </li>
+          <li data-skill-level="3">
+            <span class="skill">XML</span>
+          </li>
           <li data-skill-level="7">
             <span class="skill">SQL</span>
           </li>
-          <li data-skill-level="0">
-            <span class="skill">Java</span>
+          <li data-skill-level="8">
+            <span class="skill">HTML5</span>
           </li>
-          <li data-skill-level="3">
+          <!-- <li data-skill-level="0">
+            <span class="skill">Java</span>
+          </li> -->
+          <li data-skill-level="9">
+            <span class="skill">Gulp.js</span>
+          </li>
+          <li data-skill-level="4">
+            <span class="skill">AngularJS</span>
+          </li>
+          <!-- <li data-skill-level="1">
+            <span class="skill">PHP</span>
+          </li> -->
+          <li data-skill-level="7">
+            <span class="skill">Shell Script</span>
+          </li>
+          <li data-skill-level="5">
+            <span class="skill">AJAX</span>
+          </li>
+          <li data-skill-level="9">
+            <span class="skill">CSS3</span>
+          </li>
+          <li data-skill-level="8">
+            <span class="skill">JavaScript</span>
+          </li>
+          <li data-skill-level="7">
             <span class="skill">Python</span>
           </li>
           <li data-skill-level="10">
             <span class="skill">Ruby</span>
           </li>
-          <li data-skill-level="1">
-            <span class="skill">PHP</span>
-          </li>
-          <!-- <li data-skill-level="2">
-            <span class="skill">XML</span>
-          </li> -->
-          <li data-skill-level="8">
-            <span class="skill">HTML5</span>
-          </li>
-          <li data-skill-level="9">
-            <span class="skill">CSS3</span>
-          </li>
-          <li data-skill-level="7">
-            <span class="skill">JavaScript</span>
-          </li>
         </ul>
       </section>
 
-      <section class="work project-list">
-        <h4>Projects</h4>
+      <section class="work-list project-list">
+        <h2 class="secondary-header">Projects</h2>
         <ul>
-          <li class="proj">
-            <div>
-              <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="project-front">
+          <li class="work">
+            <div class="project raptorframe">
+              <aside data-work="work-front">
                 <h6>RAPTORFrame</h6>
-                <p>A light, modular framework for rapid development of modern frontend projects.  Compiles and minifies SCSS and JavaScript files; lints code; creates sourcemaps; provides a Gulp workflow and NPM devtools with custom scripts.</p>
-              </a>
-              <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="project-back">
+                <p>A light, modular framework for rapid development of modern frontend projects.  Compiles, minifies, lints, and builds a distribution of your work.</p>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
                 <h6>RAPTORFrame</h6>
-                <p>A light, modular framework for rapid development of modern frontend projects.  Compiles and minifies SCSS and JavaScript files; lints code; creates sourcemaps; provides a Gulp workflow and NPM devtools with custom scripts.</p>
-              </a>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/RAPTORFrame" data-work="work-back">
+              </a> -->
             </div>
           </li>
-          <li class="proj">
-            <div>
-              <a href="https://github.com/AESM/dotfiles" data-work="project-front">
+          <li class="work">
+            <div class="project businessmuumuu">
+              <aside data-work="work-front">
                 <h6>BusinessMuumuu</h6>
-                <p>My personal OS X configuration.  Contains custom zsh and bash preferences, aliases, Sublime Text settings, automated environment setup, and an installation file.</p>
-              </a>
-              <a href="https://github.com/AESM/dotfiles" data-work="project-back">
+                <p>An open source OS X installer and environment.  System configuration, dotfiles (Zsh and Bash), application and program settings, themes, and more.</p>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/BusinessMuumuu" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
                 <h6>BusinessMuumuu</h6>
-                <p>My personal OS X configuration.  Contains custom zsh and bash preferences, aliases, Sublime Text settings, automated environment setup, and an installation file.</p>
-              </a>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/BusinessMuumuu" data-work="work-back">
+              </a> -->
             </div>
           </li>
-          <li class="proj">
-            <div>
-              <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="project-front">
+          <li class="work">
+            <div class="project raptorsmacss">
+              <aside data-work="work-front">
                 <h6>RAPTORSMACSS</h6>
-                <p>A highly modular and organized Sass (SCSS) boilerplate. It is loosely inspired by the SMACSS architecture pattern, with some layout liberties taken.</p>
-              </a>
-              <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="project-back">
+                <p>A highly modular and organized Sass (SCSS) boilerplate, loosely inspired by the SMACSS architecture pattern, with some layout liberties taken.</p>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
                 <h6>RAPTORSMACSS</h6>
-                <p>A highly modular and organized Sass (SCSS) boilerplate. It is loosely inspired by the SMACSS architecture pattern, with some layout liberties taken.</p>
-              </a>
+              </aside>
+              <!-- <a href="https://github.com/SuitAndCape/RAPTORSMACSS" data-work="work-back">
+              </a> -->
             </div>
           </li>
-          <!-- <li class="proj">
-            <div>
-              <a href="https://github.com/SuitAndCape/GlitterAndRetribution" data-work="project-front">
-                <h6>GlitterAndRetribution</h6>
-                <p>A Sublime Text color schemes and a theme package.</p>
-              </a>
-              <a href="https://github.com/SuitAndCape/GlitterAndRetribution" data-work="project-back">
-                <h6>GlitterAndRetribution</h6>
-                <p>A Sublime Text color schemes and a theme package.</p>
-              </a>
-            </div>
-          </li> -->
-          <!-- <li class="proj">
-            <div>
-              <a href="https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen" data-work="project-front">
-                <h6>FunkyAnimatronicMixologyHenchmen</h6>
-                <p>A Sass (SCSS) function, animation/transition, mixin, and helper library.</p>
-              </a>
-              <a href="https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen" data-work="project-back">
-                <h6>FunkyAnimatronicMixologyHenchmen</h6>
-                <p>A Sass (SCSS) function, animation/transition, mixin, and helper library.</p>
-              </a>
-            </div>
-          </li> -->
         </ul>
       </section>
 
-      <section class="work application-list">
-        <h4>Apps</h4>
+      <section class="work-list application-list">
+        <h2 class="primary-header">Apps</h2>
         <ul>
-          <li class="app">
-            <div>
-              <a href="https://github.com/AESM/KittyParty" data-work="application-front">
+          <li class="work">
+            <div class="application kittyparty">
+              <aside data-work="work-front">
                 <h6>KittyParty</h6>
-                <p>A team chat app where the user's message is tokenized and translated into a GIF through the Giphy API, then sent to the chatroom.  Built using JavaScript (ES6), Angular, Node, Express, Socket.io, jQuery, Sass (SCSS), RAPTORFrame, Gulp, and the Giphy API.</p>
-              </a>
-              <a href="https://github.com/AESM/KittyParty" data-work="application-back">
+                <p>A chat app where the user's message is tokenized and translated into a GIF through the Giphy API, then both are sent to the chatroom.  So productive.</p>
+              </aside>
+              <!-- <a href="https://github.com/AESM/KittyParty" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
                 <h6>KittyParty</h6>
-                <p>A team chat app where the user's message is tokenized and translated into a GIF through the Giphy API, then sent to the chatroom.  Built using JavaScript (ES6), Angular, Node, Express, Socket.io, jQuery, Sass (SCSS), RAPTORFrame, Gulp, and the Giphy API.</p>
-              </a>
+              </aside>
+              <!-- <a href="https://github.com/AESM/KittyParty" data-work="work-back">
+              </a> -->
             </div>
           </li>
-          <li class="app">
-            <div>
-              <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="application-front">
+          <li class="work">
+            <div class="application ourhouse">
+              <aside data-work="work-front">
                 <h6>OurHouse</h6>
-                <p>An iOS and Android mobile app for coordinating housemates' social events, chores, and payments.  Built using Angular, Ionic, Rails, OAuth, the Google+ API, and the Venmo API.</p>
-              </a>
-              <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="application-back">
+                <p>An iOS and Android mobile app for coordinating housemates' social events, chores, and payments.  Angular!  Rails!  APIs!  Google Plus!  Venmo!</p>
+              </aside>
+              <!-- <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
                 <h6>OurHouse</h6>
-                <p>An iOS and Android mobile app for coordinating housemates' social events, chores, and payments.  Built using Angular, Ionic, Rails, OAuth, the Google+ API, and the Venmo API.</p>
-              </a>
+              </aside>
+              <!-- <a href="https://github.com/AESM/OurHouse_Central_Repo" data-work="work-back">
+              </a> -->
             </div>
           </li>
-          <!-- <li class="app">
-            <div>
-              <a href="https://github.com/AESM/CommandersParamour" data-work="application-front">
-                <h6>Commander's Paramour</h6>
-                <p>A Connect Four clone, playable in a web browser.  Players may share a screen or play in two separate browsers.</p>
-              </a>
-              <a href="https://github.com/AESM/CommandersParamour" data-work="application-back">
-                <h6>Commander's Paramour</h6>
-                <p>A Connect Four clone, playable in a web browser.  Players may share a screen or play in two separate browsers.</p>
-              </a>
-            </div>
-          </li> -->
         </ul>
       </section>
 
-      <section class="work website-list">
-        <h4>Websites</h4>
+      <section class="work-list website-list">
+        <h2 class="secondary-header">Websites</h2>
         <ul>
-          <li class="site">
-            <a href="http://SuitAndCape.github.io/" data-work="website">
-              <h6>SuitAndCape</h6>
-              <p>This very website: my personal portfolio.  Built using JavaScript, CSS3, HTML5, jQuery, Sass (SCSS), RAPTORFrame, and Gulp.</p>
-            </a>
+          <li class="work">
+            <div class="website suitandcape">
+              <aside data-work="work-front">
+                <h6>SuitAndCape</h6>
+                <p>This very website.  Built using JavaScript, CSS3, HTML5, jQuery, Sass, RAPTORFrame, Gulp, and occasionally other technologies I'm trying out.</p>
+              </aside>
+              <!-- <a href="http://SuitAndCape.github.io/" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
+                <h6>SuitAndCape</h6>
+              </aside>
+              <!-- <a href="http://SuitAndCape.github.io/" data-work="work-back">
+              </a> -->
+            </div>
           </li>
-          <li class="site">
-            <a href="http://e-dapp.github.io/" data-work="website">
-              <h6>e-dapp</h6>
-              <p>A minimalistic portfolio for Eric Lawrence Dapp.  Built using JavaScript, CSS3, HTML5, jQuery, Sass (SCSS), RAPTORFrame, and Gulp.</p>
-            </a>
+          <li class="work">
+            <div class="website e-dapp">
+              <aside data-work="work-front">
+                <h6>e-dapp</h6>
+                <p>The minimalistic portfolio of Eric Lawrence Dapp, where beautiful music and thoughtful blog posts about data analysis live together in harmony.</p>
+              </aside>
+              <!-- <a href="http://e-dapp.github.io/" data-work="work-front">
+              </a> -->
+              <aside data-work="work-back">
+                <h6>e-dapp</h6>
+              </aside>
+              <!-- <a href="http://e-dapp.github.io/" data-work="work-back">
+              </a> -->
+            </div>
           </li>
-          <!-- <li class="site">
-            <a href="#" data-work="website">
-              <h6>Another Website</h6>
-              <p>The Cheat is not dead!  I'm so glad The Cheat is not dead &ndash; The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not dead!  The Cheat is not dead &ndash; Dead! &ndash; I'm so glad The Cheat is not &ndash; Just the claps!  Just the claps!  Uh!  Uh!  All right guys, keep it rollin' for me.  Keep it rollin!  Come on!</p>
-            </a>
-          </li> -->
         </ul>
       </section>
     </main>
 
     <footer class="root" role="contentinfo">
-      <small class="copyright">&copy; Ali Esmaili | SuitAndCape</small>
+      <small class="copyright">&copy; Ali Esmaili | SuitAndCape | Santa Clara, CA</small>
     </footer>
 
-<!-- Script Resources ======================================================-->
+<!-- Script Resources =======================================================-->
 
     <script type="text/javascript" src="frame/javascripts/raptor.js"></script>
     <!--<![endif]-->

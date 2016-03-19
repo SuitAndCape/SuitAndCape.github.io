@@ -1,13 +1,16 @@
 // _blurb.scss
 
 ////= Blurb Module
-//===========================================================================//
+//============================================================================//
 
 .blurb {
   background: $secondary-bg-color;
-  padding: pxem(50px) pxem(25px);
 
-  p {
+  li {
     line-height: 1.8;
+  }
+
+  ul {
+    padding: pxem(25px);
   }
 }

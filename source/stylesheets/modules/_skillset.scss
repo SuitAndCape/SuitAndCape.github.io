@@ -1,7 +1,7 @@
 // _skillset.scss
 
 ////= Skillset Module
-//===========================================================================//
+//============================================================================//
 
 /// Skillset gradient
 $skill-color-one: rgb(255, 0, 51);
@@ -24,40 +24,42 @@ $h-skill-color-nine: #3300FF;
 .skillset {
   background-color: $primary-bg-color;
   overflow: hidden;
-  padding: pxem(60px) pxem(40px) pxem(40px);
+  padding: pxem(60px) 0 pxem(40px) pxem(40px);
 
-    @include respond-to('sm') {
-      padding: pxem(60px) pxem(40px) pxem(150px);
-    }
+  @include respond-to('sm') {
+    padding: pxem(60px) 0 pxem(150px) pxem(40px);
+  }
 
-    @include respond-to('xl') {
-      padding: pxem(60px) pxem(40px) pxem(230px);
-    }
+  @include respond-to('xl') {
+    padding: pxem(60px) 0 pxem(230px) pxem(40px);
+  }
+
+  h2 {
+    margin-top: -5px;
+  }
 
   ul {
+    margin: pxem(30px) pxem(-16px) 0 0;
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
 
     @include respond-to('sm') {
-      margin: 20% 10% 8% 10%;
-      -ms-transform: rotate(-140deg);
-      -webkit-transform: rotate(-140deg);
-      transform: rotate(-140deg);
+      margin: 16% -28% 1% 4.5%;
+      // margin: 20% 10% 8% 10%;
+      -ms-transform: rotate(-160deg);
+      -webkit-transform: rotate(-160deg);
+      transform: rotate(-160deg);
     }
 
     li {
       border-radius: pxem($secondary-radius);
       display: block;
       // font-family: $code-font;
-      font-size: pxem(13px);
+      font-size: pxem(17px);
       margin: pxem(3px) 0 0;
       overflow: hidden;
-      padding: pxem(14px);
-
-      @include respond-to('sm') {
-        padding: pxem(12px);
-      }
+      padding: pxem(17px);
     }
 
     .skill {

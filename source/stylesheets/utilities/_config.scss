@@ -1,9 +1,9 @@
 // _config.scss
 
 ////= Global Configuration
-//===========================================================================//
+//============================================================================//
 
-//== Path Assignments ========================================================/
+//== Path Assignments =========================================================/
 
 $path-glyph: '../glyphs';
 $path-img: '../images';
@@ -11,8 +11,9 @@ $path-js: '../javascripts';
 $path-media: '../media';
 $path-avatar: $path-img + '/avatars';
 $path-wall: $path-img + '/wallpapers';
+$path-work: $path-img + '/work';
 
-//== Glyph Stack Assignments =================================================/
+//== Glyph Stack Assignments ==================================================/
 
 /// Font stacks
 $font-stack-open-sans: ('Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif);
@@ -27,7 +28,7 @@ $font-stack-roboto: ('Roboto-regular', sans-serif);
 /// Icon stacks
 $icon-stack-simple-line-icons: 'Simple-line-icons';
 
-//== Descriptive Color Assignments ===========================================/
+//== Descriptive Color Assignments ============================================/
 
 /// Standard colors
 $clear: transparent;
@@ -128,12 +129,12 @@ $h-purple-heart: #652DC1;
 $meteorite: rgb(60, 31, 118);
 $h-meteorite: #3C1F76;
 
-//== Reusable Variables ======================================================/
+//== Reusable Variables =======================================================/
 
 /// Font stack usage
 $body-font: $font-stack-roboto;
 $code-font: $font-stack-consolas;
-$main-heading-font: $font-stack-garamond;
+$main-heading-font: $font-stack-futura;
 $sub-heading-font: $font-stack-futura;
 
 /// Icon stack usage
@@ -170,7 +171,7 @@ $bend-radius: 5%;
 $primary-duration: 0.3s;
 $secondary-duration: 1s;
 
-//== Configuration Maps ======================================================/
+//== Configuration Maps =======================================================/
 
 /// Breakpoints map
 /// Used with @respond-to mixin
