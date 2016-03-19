@@ -1,7 +1,7 @@
 // _nav-navigation.scss
 
 ////= Nav/Navigation Styling
-//===========================================================================//
+//============================================================================//
 
 .navigation {
 
@@ -11,7 +11,7 @@
     background-size: 100% 200%;
     border-radius: $primary-radius;
     margin: pxem(1px) pxem(2px);
-    padding: pxem(12px);
+    padding: pxem(10px);
     position: relative;
     text-decoration: none;
     -webkit-transition: all $primary-duration;

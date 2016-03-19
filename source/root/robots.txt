@@ -1,7 +1,7 @@
 # http://www.robotstxt.org/
 
 ####= RAPTORFrame Web Robot Instructions
-##===========================================================================##
+##============================================================================##
 
 ## To allow all robots complete site access, uncomment the next two lines:
 User-agent: *

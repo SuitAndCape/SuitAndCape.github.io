@@ -1,19 +1,14 @@
 // _footer-root.scss
 
 ////= Footer/Root Styling
-//===========================================================================//
+//============================================================================//
 
 .root {
+  background: $primary-bg-color;
   font-size: $md-font-size;
-  padding: pxem(80px) 0;
-
-  @include respond-to('md') {
-    background-color: rgba($cloud-burst, 0.7);
-    padding: pxem(200px) 0 pxem(50px);
-  }
+  padding: pxem(65px) 0;
 
   small {
-    color: $secondary-color;
     float: none;
     margin: pxem(10px) 0 0;
   }
