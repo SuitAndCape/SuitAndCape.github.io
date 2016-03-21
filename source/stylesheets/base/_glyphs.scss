@@ -18,6 +18,22 @@
   font-style: normal;
 }
 
+/// Loads Inconsolata Regular font
+@font-face {
+  font-family: 'Inconsolata';
+  src: url($path-glyph + '/Inconsolata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/// Loads Inconsolata Bold font
+@font-face {
+  font-family: 'Inconsolata';
+  src: url($path-glyph + '/Inconsolata-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /// Loads Roboto Regular font
 @font-face {
   font-family: 'Roboto-regular';

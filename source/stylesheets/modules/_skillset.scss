@@ -24,29 +24,16 @@ $h-skill-color-nine: #3300FF;
 .skillset {
   background-color: $primary-bg-color;
   overflow: hidden;
-  padding: pxem(60px) 0 pxem(40px) pxem(40px);
-
-  @include respond-to('sm') {
-    padding: pxem(60px) 0 pxem(150px) pxem(40px);
-  }
-
-  @include respond-to('xl') {
-    padding: pxem(60px) 0 pxem(230px) pxem(40px);
-  }
-
-  h2 {
-    margin-top: -5px;
-  }
+  padding: pxem(55px) 0;
 
   ul {
-    margin: pxem(30px) pxem(-16px) 0 0;
+    margin: pxem(9px) pxem(-20px) pxem(10px) pxem(40px);
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
 
     @include respond-to('sm') {
-      margin: 16% -28% 1% 4.5%;
-      // margin: 20% 10% 8% 10%;
+      margin: 16% -23% 5% 11%;
       -ms-transform: rotate(-160deg);
       -webkit-transform: rotate(-160deg);
       transform: rotate(-160deg);
@@ -56,10 +43,16 @@ $h-skill-color-nine: #3300FF;
       border-radius: pxem($secondary-radius);
       display: block;
       // font-family: $code-font;
-      font-size: pxem(17px);
+      font-size: pxem(14px);
+      // font-weight: bold;
       margin: pxem(3px) 0 0;
       overflow: hidden;
-      padding: pxem(17px);
+      padding: pxem(16px);
+
+      @include respond-to('xs') {
+        font-size: pxem(16px);
+        padding: pxem(18px);
+      }
     }
 
     .skill {
@@ -74,68 +67,68 @@ $h-skill-color-nine: #3300FF;
     }
 
     [data-skill-level='0'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($red, 0), $h-red);
-      background-image: linear-gradient(90deg, rgba($red, 0), $h-red);
+      background-image: -webkit-linear-gradient(0deg, rgba($red, 0.2), $h-red);
+      background-image: linear-gradient(90deg, rgba($red, 0.2), $h-red);
       width: 9.0909%;
     }
 
     [data-skill-level='1'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-one, 0), $h-skill-color-one);
-      background-image: linear-gradient(90deg, rgba($skill-color-one, 0), $h-skill-color-one);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-one, 0.2), $h-skill-color-one);
+      background-image: linear-gradient(90deg, rgba($skill-color-one, 0.2), $h-skill-color-one);
       width: 18.1818%;
     }
 
     [data-skill-level='2'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-two, 0), $h-skill-color-two);
-      background-image: linear-gradient(90deg, rgba($skill-color-two, 0), $h-skill-color-two);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-two, 0.2), $h-skill-color-two);
+      background-image: linear-gradient(90deg, rgba($skill-color-two, 0.2), $h-skill-color-two);
       width: 27.2727%;
     }
 
     [data-skill-level='3'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-three, 0), $h-skill-color-three);
-      background-image: linear-gradient(90deg, rgba($skill-color-three, 0), $h-skill-color-three);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-three, 0.2), $h-skill-color-three);
+      background-image: linear-gradient(90deg, rgba($skill-color-three, 0.2), $h-skill-color-three);
       width: 36.3636%;
     }
 
     [data-skill-level='4'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-four, 0), $h-skill-color-four);
-      background-image: linear-gradient(90deg, rgba($skill-color-four, 0), $h-skill-color-four);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-four, 0.2), $h-skill-color-four);
+      background-image: linear-gradient(90deg, rgba($skill-color-four, 0.2), $h-skill-color-four);
       width: 45.4545%;
     }
 
     [data-skill-level='5'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($fuchsia, 0), $h-fuchsia);
-      background-image: linear-gradient(90deg, rgba($fuchsia, 0), $h-fuchsia);
+      background-image: -webkit-linear-gradient(0deg, rgba($fuchsia, 0.2), $h-fuchsia);
+      background-image: linear-gradient(90deg, rgba($fuchsia, 0.2), $h-fuchsia);
       width: 54.5454%;
     }
 
     [data-skill-level='6'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-six, 0), $h-skill-color-six);
-      background-image: linear-gradient(90deg, rgba($skill-color-six, 0), $h-skill-color-six);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-six, 0.2), $h-skill-color-six);
+      background-image: linear-gradient(90deg, rgba($skill-color-six, 0.2), $h-skill-color-six);
       width: 63.6363%;
     }
 
     [data-skill-level='7'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-seven, 0), $h-skill-color-seven);
-      background-image: linear-gradient(90deg, rgba($skill-color-seven, 0), $h-skill-color-seven);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-seven, 0.2), $h-skill-color-seven);
+      background-image: linear-gradient(90deg, rgba($skill-color-seven, 0.2), $h-skill-color-seven);
       width: 72.7272%;
     }
 
     [data-skill-level='8'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-eight, 0), $h-skill-color-eight);
-      background-image: linear-gradient(90deg, rgba($skill-color-eight, 0), $h-skill-color-eight);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-eight, 0.2), $h-skill-color-eight);
+      background-image: linear-gradient(90deg, rgba($skill-color-eight, 0.2), $h-skill-color-eight);
       width: 81.8181%;
     }
 
     [data-skill-level='9'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-nine, 0), $h-skill-color-nine);
-      background-image: linear-gradient(90deg, rgba($skill-color-nine, 0), $h-skill-color-nine);
+      background-image: -webkit-linear-gradient(0deg, rgba($skill-color-nine, 0.2), $h-skill-color-nine);
+      background-image: linear-gradient(90deg, rgba($skill-color-nine, 0.2), $h-skill-color-nine);
       width: 90.909%;
     }
 
     [data-skill-level='10'] {
-      background-image: -webkit-linear-gradient(0deg, rgba($blue, 0), $h-blue);
-      background-image: linear-gradient(90deg, rgba($blue, 0), $h-blue);
+      background-image: -webkit-linear-gradient(0deg, rgba($blue, 0.2), $h-blue);
+      background-image: linear-gradient(90deg, rgba($blue, 0.2), $h-blue);
       width: 100%;
     }
   }

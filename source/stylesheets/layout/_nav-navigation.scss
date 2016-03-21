@@ -4,18 +4,21 @@
 //============================================================================//
 
 .navigation {
-
   a {
     background-color: $primary-bg-color;
     -webkit-background-size: 100% 200%;
     background-size: 100% 200%;
     border-radius: $primary-radius;
     margin: pxem(1px) pxem(2px);
-    padding: pxem(10px);
+    padding: pxem(7px);
     position: relative;
     text-decoration: none;
     -webkit-transition: all $primary-duration;
     transition: all $primary-duration;
+
+    @include respond-to('xxs') {
+      padding: pxem(10px);
+    }
 
     &:focus,
     &:hover {

@@ -48,8 +48,12 @@
 
   li {
     display: inline-block;
-    margin: pxem(10px) 30%;
+    margin: pxem(10px) auto;
     vertical-align: middle;
+
+    @include respond-to('xs') {
+      margin: pxem(10px) pxem(100px);
+    }
 
     @include respond-to('sm') {
       margin: 0 pxem(8.5px);
@@ -73,39 +77,6 @@
     }
   }
 
-  .raptorframe {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
-  .businessmuumuu {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
-  .raptorsmacss {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORSMACSS-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/RAPTORSMACSS-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
   .application {
     [data-work="work-front"] {
       background-image: -webkit-linear-gradient(top right, $fuchsia, $electric-violet);
@@ -113,54 +84,10 @@
     }
   }
 
-  .kittyparty {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/KittyParty-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/KittyParty-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
-  .ourhouse {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/OurHouse-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/OurHouse-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
   .website {
     [data-work="work-front"] {
-      background-image: -webkit-linear-gradient(bottom right, $electric-violet, $fuchsia);
-      background-image: linear-gradient(to top left, $electric-violet, $fuchsia);
-    }
-  }
-
-  .suitandcape {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/SuitAndCape-700x700.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/SuitAndCape-700x700.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
-    }
-  }
-
-  .e-dapp {
-    [data-work="work-back"] {
-      background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/e-dapp-500x500.png') no-repeat;
-      background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-work + '/e-dapp-500x500.png') no-repeat;
-      -moz-background-size: 100% 100%;
-      -o-background-size: 100% 100%;
-      -webkit-background-size: 100% 100%;
-      background-size: 100% 100%;
+      background-image: -webkit-linear-gradient(top right, $electric-violet, $fuchsia);
+      background-image: linear-gradient(to bottom left, $electric-violet, $fuchsia);
     }
   }
 
@@ -175,7 +102,7 @@
   }
 
   [data-work="work-front"] {
-    z-index: 2;
+    z-index: z('floor')
   }
 
   [data-work="work-back"] {

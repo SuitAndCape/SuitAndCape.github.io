@@ -22,7 +22,7 @@ $font-stack-garamond: (Garamond, Constantia, 'Times New Roman', Times, serif);
 $font-stack-consolas: ('Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace);
 
 /// Variant and custom font stacks
-$font-stack-aleo: ('Aleo-regular', serif);
+$font-stack-inconsolata: ('Inconsolata', monospace);
 $font-stack-roboto: ('Roboto-regular', sans-serif);
 
 /// Icon stacks
@@ -133,7 +133,7 @@ $h-meteorite: #3C1F76;
 
 /// Font stack usage
 $body-font: $font-stack-roboto;
-$code-font: $font-stack-consolas;
+$code-font: $font-stack-inconsolata;
 $main-heading-font: $font-stack-futura;
 $sub-heading-font: $font-stack-futura;
 
@@ -149,6 +149,7 @@ $quinary-color: $silver;
 $primary-bg-color: $alabaster;
 $secondary-bg-color: $alto;
 $tertiary-bg-color: $gallery;
+$tint-bg-color: rgba(51, 0, 255, 0.475), rgba($black, 0.5);
 $shadow-color: rgba($black, 1);
 
 /// Body font-size
