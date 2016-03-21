@@ -6,6 +6,10 @@
 .banner {
   @extend .clearfix;
   color: $secondary-color;
-  margin: pxem(80px) pxem(15px);
+  margin: pxem(60px) pxem(15px);
   z-index: z('floor');
+
+  @include respond-to('xxs') {
+    margin: pxem(80px) pxem(15px);
+  }
 }

@@ -6,3 +6,105 @@
 .image {
   //
 }
+
+.bg-image {
+  background: -webkit-linear-gradient($tint-bg-color), url($path-wall + '/SuitAndCape-bg-1600x1600.jpg') no-repeat center center;
+  background: linear-gradient($tint-bg-color), url($path-wall + '/SuitAndCape-bg-1600x1600.jpg') no-repeat center center;
+  -moz-background-position: top;
+  -o-background-position: top;
+  -webkit-background-position: top;
+  background-position: top;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  overflow-x: hidden;
+
+  @include respond-to('sm') {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-wall + '/SuitAndCape-bg-1600x1600.jpg') no-repeat center center fixed;
+    background: linear-gradient($tint-bg-color), url($path-wall + '/SuitAndCape-bg-1600x1600.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+.raptorframe {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/RAPTORFrame-700x700.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.businessmuumuu {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/BusinessMuumuu-500x500.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/BusinessMuumuu-500x500.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.raptorsmacss {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/RAPTORSMACSS-700x700.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/RAPTORSMACSS-700x700.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.kittyparty {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/KittyParty-700x700.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/KittyParty-700x700.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.ourhouse {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/OurHouse-700x700.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/OurHouse-700x700.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.suitandcape {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/SuitAndCape-700x700.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/SuitAndCape-700x700.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.e-dapp {
+  [data-work="work-back"] {
+    background: -webkit-linear-gradient($tint-bg-color), url($path-work + '/e-dapp-500x500.png') no-repeat;
+    background: linear-gradient($tint-bg-color), url($path-work + '/e-dapp-500x500.png') no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+

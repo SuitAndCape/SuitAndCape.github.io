@@ -4,14 +4,6 @@
 //============================================================================//
 
 .home {
-  background: -webkit-linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
-  background: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)), url($path-wall + '/suitandcape-1600x1600.jpg') no-repeat center center fixed;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  min-height: 100vh;
-
   body {
     @extend .center-align;
 
@@ -30,8 +22,16 @@
     }
 
     h1 {
-      font-size: 4.236em;
+      font-size: 2.600em;
       margin: 0 0 pxem(10px);
+
+      @include respond-to('xxs') {
+        font-size: 3.236em;
+      }
+
+      @include respond-to('xs') {
+        font-size: 4.236em;
+      }
 
       @include respond-to('sm') {
         font-size: 5.236em;
@@ -47,12 +47,16 @@
     }
 
     h2 {
-      font-size: 3.236em;
-      // font-size: 2.618em;
-      margin-bottom: pxem(-25px);
+      font-size: 2.236em;
+      margin-bottom: pxem(-24.55px);
       position: relative;
       text-transform: uppercase;
-      top: -85px;
+      top: -74px;
+
+      @include respond-to('xs') {
+        font-size: 3.236em;
+        top: -85px;
+      }
 
       @include respond-to('sm') {
         font-size: 4.236em;
