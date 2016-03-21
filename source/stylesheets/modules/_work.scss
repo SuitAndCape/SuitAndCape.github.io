@@ -91,6 +91,14 @@
     }
   }
 
+  .icon-link,
+  .icon-social-github {
+    background-color: $clear;
+    color: $secondary-color;
+    font-size: pxem(25px);
+    z-index: z('over');
+  }
+
   [data-work="work-front"],
   [data-work="work-back"] {
     -moz-backface-visibility: hidden;
@@ -102,7 +110,12 @@
   }
 
   [data-work="work-front"] {
-    z-index: z('floor')
+    z-index: z('floor');
+
+    .icon-link,
+    .icon-social-github {
+      margin: pxem(-5px) pxem(20px) 0;
+    }
   }
 
   [data-work="work-back"] {
@@ -111,6 +124,11 @@
     -o-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+
+    .icon-link,
+    .icon-social-github {
+      margin: pxem(110px) pxem(20px) 0;
+    }
   }
 }
 
