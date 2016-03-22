@@ -21,7 +21,7 @@
     }
   }
 
-  aside {
+  nav {
     border: 1px solid rgba($black, 0.4);
     border-radius: $secondary-radius;
     color: $wild-sand;
@@ -110,8 +110,6 @@
   }
 
   [data-work="work-front"] {
-    z-index: z('floor');
-
     .icon-link,
     .icon-social-github {
       margin: pxem(-5px) pxem(20px) 0;
