@@ -26,8 +26,8 @@
     border-radius: $secondary-radius;
     color: $wild-sand;
     display: block;
-    height: pxrem(215px);
-    width: pxrem(215px);
+    height: pxrem(230px);
+    width: pxrem(230px);
   }
 
   div {
@@ -56,7 +56,7 @@
     }
 
     @include respond-to('sm') {
-      margin: 0 pxem(8.5px);
+      margin: 0 pxem(7.5px);
     }
 
     @include respond-to('md') {
