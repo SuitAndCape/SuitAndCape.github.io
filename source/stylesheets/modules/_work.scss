@@ -21,7 +21,7 @@
     }
   }
 
-  nav {
+  section {
     border: 1px solid rgba($black, 0.4);
     border-radius: $secondary-radius;
     color: $wild-sand;
@@ -51,7 +51,7 @@
     margin: pxem(10px) auto;
     vertical-align: middle;
 
-    @include respond-to('xs') {
+    @include respond-to('xxs') {
       margin: pxem(10px) pxem(100px);
     }
 
