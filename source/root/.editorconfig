@@ -1,7 +1,9 @@
-# http://editorconfig.org
+# .editorconfig
 
 ####= RAPTORFrame Editor Configuration
 ##============================================================================##
+
+## @source http://EditorConfig.org/
 
 root = true
 
@@ -15,11 +17,14 @@ trim_trailing_whitespace = true
 [*.{bat,txt}]
 end_of_line = crlf
 
-[*.{c,cc,cpp,cs,h,hh,java,m,mm,php,py}]
+[*.{c,cc,cpp,cs,go,h,hh,java,m,mm,php,py,rst}]
 indent_size = 4
 
-[*.{css,haml,handlebars,hbs,html,js,json,rb,scss,sls,xml,yaml,yml}]
+[*.{css,haml,handlebars,hbs,hs,html,js,json,markdown,md,mdown,rb,scss,sls,xml,yaml,yml}]
 indent_size = 2
 
 [*.{diff,in,markdown,md,mdown,txt}]
 trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
