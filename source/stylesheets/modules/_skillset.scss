@@ -27,16 +27,16 @@ $h-skill-color-nine: #3300FF;
   padding: pxem(55px) 0;
 
   ul {
-    margin: pxem(9px) pxem(-20px) pxem(10px) pxem(40px);
-    -ms-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    margin: pxem(9px) pxem(40px) pxem(10px) pxem(-20px);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 
     @include respond-to('sm') {
-      margin: 16% -23% 5% 11%;
-      -ms-transform: rotate(-160deg);
-      -webkit-transform: rotate(-160deg);
-      transform: rotate(-160deg);
+      margin: 16% 11% 5% -23%;
+      -ms-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
     }
 
     li {
@@ -57,13 +57,7 @@ $h-skill-color-nine: #3300FF;
 
     .skill {
       color: $wild-sand;
-      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
       float: right;
-      ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2)';
-      -webkit-transform: rotate(-180deg);
-      -moz-transform: rotate(-180deg);
-      -o-transform: rotate(-180deg);
-      transform: rotate(-180deg);
     }
 
     [data-skill-level='0'] {
