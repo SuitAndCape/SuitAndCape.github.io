@@ -17,7 +17,7 @@ trim_trailing_whitespace = true
 [*.{bat,txt}]
 end_of_line = crlf
 
-[*.{c,cc,cpp,cs,go,h,hh,java,m,mm,php,py,rst}]
+[*.{c,cc,cpp,cs,go,h,hh,java,m,mm,php,py,rst,swift}]
 indent_size = 4
 
 [*.{css,haml,handlebars,hbs,hs,html,js,json,markdown,md,mdown,rb,scss,sls,xml,yaml,yml}]
